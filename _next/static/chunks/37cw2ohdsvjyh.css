@@ -78,3 +78,6 @@
   font-size:clamp(12px,1vw,15px);
   line-height:1.2;
 }
+
+/* S&D remove tautological eyebrow labels */
+[class*="sectionLabel"],[class*="kicker"],[class*="eyebrow"]{display:none!important}
