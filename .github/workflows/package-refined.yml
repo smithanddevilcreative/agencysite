@@ -44,3 +44,4 @@ jobs:
           git add -f release/smithanddevil-refined.zip
           git commit -m "Package refined Netlify deploy"
           git push
+
