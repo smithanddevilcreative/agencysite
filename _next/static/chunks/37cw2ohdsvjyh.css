@@ -67,3 +67,14 @@
 @media (max-width:700px){
   .EditorialStatement-module__HLcuOa__statement br{display:block}
 }
+
+/* S&D scroll-led card refinement */
+.ProjectPanel-module__8b2_aa__scrim,
+.ProjectCard-module__U_VZua__scrim{display:none!important}
+.ProjectCard-module__U_VZua__title{
+  color:var(--sd-ink);
+  background:rgba(255,255,255,.94);
+  padding:11px 13px;
+  font-size:clamp(12px,1vw,15px);
+  line-height:1.2;
+}
