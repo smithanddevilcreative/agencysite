@@ -1,6 +1,7 @@
 name: Package refined Netlify deploy
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - recovered-deploy
