@@ -1,0 +1,45 @@
+name: Package refined Netlify deploy
+
+on:
+  push:
+    branches:
+      - recovered-deploy
+    paths:
+      - ".github/workflows/package-refined.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate refinements
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f index.html
+          grep -q "S&D recovery refinement pass" _next/static/chunks/37cw2ohdsvjyh.css
+          grep -q "scrub:1.1" _next/static/chunks/20ywuormos27l.js
+          ! grep -q '>undefined</p>' services/digital-web.html
+          ! grep -q 'Brand strategy and design for the experience economy.' services/brand-strategy-design.html
+          ! grep -q 'Campaigns and content for the experience economy.' services/campaigns-content.html
+          ! grep -q 'Websites and digital journeys for the experience economy.' services/digital-web.html
+
+      - name: Build Netlify upload
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p release
+          zip -qr release/smithanddevil-refined.zip .             -x ".git/*"             -x ".github/*"             -x "release/*"
+
+      - name: Commit package
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f release/smithanddevil-refined.zip
+          git commit -m "Package refined Netlify deploy"
+          git push
