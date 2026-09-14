@@ -23,7 +23,7 @@ jobs:
           set -euo pipefail
           test -f index.html
           grep -q "S&D recovery refinement pass" _next/static/chunks/37cw2ohdsvjyh.css
-          grep -q "scrub:1.1" _next/static/chunks/20ywuormos27l.js
+          grep -q "scrub:1.35" _next/static/chunks/20ywuormos27l.js
           ! grep -q '>undefined</p>' services/digital-web.html
           ! grep -q 'Brand strategy and design for the experience economy.' services/brand-strategy-design.html
           ! grep -q 'Campaigns and content for the experience economy.' services/campaigns-content.html
