@@ -34,7 +34,22 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p release
-          zip -qr release/smithanddevil-refined.zip .             -x ".git/*"             -x ".github/*"             -x "release/*"
+          rm -f release/smithanddevil-refined.zip
+          zip -qr release/smithanddevil-refined.zip . \
+            -x ".git/*" \
+            -x ".github/*" \
+            -x "release/*" \
+            -x "package.json" \
+            -x "package-lock.json" \
+            -x "netlify.toml" \
+            -x "next.config.ts" \
+            -x "tsconfig.json" \
+            -x "tsconfig.tsbuildinfo" \
+            -x "eslint.config.mjs" \
+            -x "AGENTS.md" \
+            -x "CLAUDE.md" \
+            -x "DEPLOY.md" \
+            -x "README.md"
 
       - name: Commit package
         shell: bash
