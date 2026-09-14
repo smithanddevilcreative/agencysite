@@ -1,0 +1,44 @@
+name: Unpack recovered Netlify deploy
+
+on:
+  push:
+    branches:
+      - recovered-deploy
+    paths:
+      - "*.zip"
+
+permissions:
+  contents: write
+
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Unpack deploy
+        shell: bash
+        run: |
+          set -euo pipefail
+          zip_file="$(find . -maxdepth 1 -type f -name '*.zip' -print -quit)"
+          test -n "$zip_file"
+          unpack_dir="$(mktemp -d)"
+          unzip -q "$zip_file" -d "$unpack_dir"
+          rm "$zip_file"
+
+          shopt -s dotglob nullglob
+          entries=("$unpack_dir"/*)
+          if [ "${#entries[@]}" -eq 1 ] && [ -d "${entries[0]}" ]; then
+            cp -a "${entries[0]}"/. .
+          else
+            cp -a "$unpack_dir"/. .
+          fi
+
+      - name: Commit recovered files
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -m "Unpack recovered Netlify deploy"
+          git push
