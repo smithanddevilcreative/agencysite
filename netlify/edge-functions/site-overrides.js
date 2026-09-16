@@ -6,8 +6,19 @@ const OVERRIDES = `
   border-top-color: #050505 !important;
   color: #fff !important;
 }
+.Footer-module__S6Hkya__logoLink {
+  position: relative !important;
+}
 .Footer-module__S6Hkya__logo {
-  filter: url(#sd-footer-logo-filter) !important;
+  filter: brightness(0) invert(1) !important;
+}
+.Footer-module__S6Hkya__logoLink::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/brand/smith-and-devil-logo.png') center / contain no-repeat;
+  filter: url(#sd-red-only-filter);
+  pointer-events: none;
 }
 .Footer-module__S6Hkya__narrative,
 .Footer-module__S6Hkya__copyright,
@@ -17,20 +28,16 @@ const OVERRIDES = `
   color: #fff !important;
 }
 
-/* Homepage orbit cards: keep the white label band but remove project names. */
+/* Homepage orbit cards: remove the baked-in label area and run artwork full bleed. */
 .ProjectCard-module__U_VZua__title {
   display: none !important;
 }
-.ProjectCard-module__U_VZua__card::after {
-  content: "";
-  position: absolute;
-  z-index: 3;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 20.5%;
-  background: #fff;
-  pointer-events: none;
+.ProjectCard-module__U_VZua__image {
+  transform: scale(1.26) !important;
+  transform-origin: 50% 0 !important;
+}
+.ProjectCard-module__U_VZua__scrim {
+  display: none !important;
 }
 
 /* Work cards: let the artwork do the talking; remove the project/brand name overlay. */
@@ -114,8 +121,8 @@ a.WorkCard-module__bi6E2q__card[href="/work/strike"]:focus-visible .WorkCard-mod
 
 const FOOTER_LOGO_FILTER = `
 <svg aria-hidden="true" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden">
-  <filter id="sd-footer-logo-filter" color-interpolation-filters="sRGB">
-    <feColorMatrix type="matrix" values="0 0 0 0 1  -1 0 0 0 1  -1 0 0 0 1  0 0 0 1 0" />
+  <filter id="sd-red-only-filter" color-interpolation-filters="sRGB">
+    <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  1 -1 0 0 0" />
   </filter>
 </svg>`;
 
@@ -129,7 +136,7 @@ export default async function siteOverrides(_request, context) {
   if (!html.includes('id="sd-launch-overrides"')) {
     html = html.replace("</head>", `${OVERRIDES}</head>`);
   }
-  if (!html.includes('id="sd-footer-logo-filter"')) {
+  if (!html.includes('id="sd-red-only-filter"')) {
     html = html.replace("</body>", `${FOOTER_LOGO_FILTER}</body>`);
   }
 
