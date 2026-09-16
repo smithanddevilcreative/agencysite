@@ -17,6 +17,22 @@ const OVERRIDES = `
   color: #fff !important;
 }
 
+/* Homepage orbit cards: keep the white label band but remove project names. */
+.ProjectCard-module__U_VZua__title {
+  display: none !important;
+}
+.ProjectCard-module__U_VZua__card::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 20.5%;
+  background: #fff;
+  pointer-events: none;
+}
+
 /* Work cards: let the artwork do the talking; remove the project/brand name overlay. */
 .WorkCard-module__bi6E2q__title {
   display: none !important;
