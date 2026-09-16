@@ -43,8 +43,18 @@ const OVERRIDES = `
 /* Homepage featured projects: deeper, calmer, no hover theatrics. */
 @media (min-width: 801px) {
   .ProjectPanel-module__8b2_aa__panel {
-    aspect-ratio: 1240 / 560 !important;
-    min-height: 500px !important;
+    aspect-ratio: 1240 / 650 !important;
+    min-height: 580px !important;
+  }
+  .ProjectPanel-module__8b2_aa__copy {
+    width: min(34%, 340px) !important;
+    gap: 16px !important;
+  }
+  .ProjectPanel-module__8b2_aa__intro {
+    line-height: 1.62 !important;
+  }
+  .ProjectPanels-module__uRfApW__stack {
+    gap: clamp(18px, 1.8vw, 26px) !important;
   }
 }
 .ProjectPanel-module__8b2_aa__image {
