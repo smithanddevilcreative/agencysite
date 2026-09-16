@@ -40,21 +40,25 @@ const OVERRIDES = `
   display: none !important;
 }
 
-/* Homepage featured projects: one consistent image + copy system. */
+/* Homepage featured projects: confident editorial split — copy left, image right. */
 .ProjectPanel-module__8b2_aa__panel {
-  --sd-project-copy-h: 220px;
   aspect-ratio: auto !important;
-  height: clamp(650px, 55vw, 720px) !important;
+  height: clamp(520px, 46vw, 620px) !important;
   min-height: 0 !important;
   background: var(--sd-bg) !important;
+  border-radius: 0 !important;
+  overflow: hidden !important;
 }
 .ProjectPanel-module__8b2_aa__image {
+  position: absolute !important;
   top: 0 !important;
   right: 0 !important;
-  bottom: auto !important;
-  left: 0 !important;
-  width: 100% !important;
-  height: calc(100% - var(--sd-project-copy-h)) !important;
+  bottom: 0 !important;
+  left: auto !important;
+  width: 66% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transform: none !important;
   transition: none !important;
 }
 .ProjectPanel-module__8b2_aa__scrim {
@@ -62,42 +66,43 @@ const OVERRIDES = `
 }
 .ProjectPanel-module__8b2_aa__copy {
   position: absolute !important;
-  left: 0 !important;
-  right: 0 !important;
-  top: auto !important;
+  top: 0 !important;
   bottom: 0 !important;
-  width: 100% !important;
-  height: var(--sd-project-copy-h) !important;
-  padding: 30px clamp(28px, 3.2vw, 46px) !important;
+  left: 0 !important;
+  right: auto !important;
+  width: 28% !important;
+  height: auto !important;
+  padding: 18px 0 34px 0 !important;
   transform: none !important;
-  background: var(--sd-bg) !important;
+  background: transparent !important;
   color: var(--sd-ink) !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: center !important;
-  gap: 12px !important;
+  justify-content: flex-start !important;
+  gap: 0 !important;
 }
 .ProjectPanel-module__8b2_aa__title {
   color: var(--sd-ink) !important;
-  font-size: clamp(28px, 2.6vw, 38px) !important;
+  font-size: clamp(32px, 3vw, 44px) !important;
   line-height: 1.02 !important;
 }
 .ProjectPanel-module__8b2_aa__intro {
-  color: #5a5752 !important;
-  max-width: 680px !important;
-  font-size: clamp(14px, 1.2vw, 17px) !important;
-  line-height: 1.5 !important;
+  color: #3f3c38 !important;
+  max-width: 330px !important;
+  margin-top: auto !important;
+  font-size: clamp(15px, 1.25vw, 18px) !important;
+  line-height: 1.48 !important;
 }
 .ProjectPanel-module__8b2_aa__cta {
   color: var(--sd-ink) !important;
-  margin-top: 4px !important;
+  margin-top: 22px !important;
 }
 .ProjectPanels-module__uRfApW__stack {
-  gap: clamp(24px, 2.4vw, 34px) !important;
+  gap: clamp(34px, 4vw, 56px) !important;
 }
 .ProjectPanel-module__8b2_aa__panel:hover .ProjectPanel-module__8b2_aa__image,
 .ProjectPanel-module__8b2_aa__panel:focus-visible .ProjectPanel-module__8b2_aa__image {
-  transform: scale(var(--panel-scale,1)) !important;
+  transform: none !important;
 }
 .ProjectPanel-module__8b2_aa__arrow {
   transition: none !important;
@@ -108,16 +113,32 @@ const OVERRIDES = `
 }
 @media (max-width: 800px) {
   .ProjectPanel-module__8b2_aa__panel {
-    --sd-project-copy-h: 240px;
-    height: clamp(570px, 108vw, 690px) !important;
+    height: clamp(590px, 112vw, 700px) !important;
+    border-radius: var(--radius) !important;
+  }
+  .ProjectPanel-module__8b2_aa__image {
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: auto !important;
+    width: 100% !important;
+    height: 58% !important;
   }
   .ProjectPanel-module__8b2_aa__copy {
+    top: auto !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    width: 100% !important;
+    height: 42% !important;
     padding: 26px clamp(22px, 5vw, 34px) !important;
+    background: var(--sd-bg) !important;
   }
   .ProjectPanel-module__8b2_aa__title {
     font-size: clamp(27px, 6vw, 34px) !important;
   }
   .ProjectPanel-module__8b2_aa__intro {
+    margin-top: auto !important;
+    max-width: none !important;
     font-size: clamp(14px, 3.6vw, 16px) !important;
     line-height: 1.48 !important;
   }
