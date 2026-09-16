@@ -40,12 +40,26 @@ const OVERRIDES = `
   display: none !important;
 }
 
-/* Homepage featured projects: give each case study more visual depth. */
+/* Homepage featured projects: deeper, calmer, no hover theatrics. */
 @media (min-width: 801px) {
   .ProjectPanel-module__8b2_aa__panel {
     aspect-ratio: 1240 / 560 !important;
     min-height: 500px !important;
   }
+}
+.ProjectPanel-module__8b2_aa__image {
+  transition: none !important;
+}
+.ProjectPanel-module__8b2_aa__panel:hover .ProjectPanel-module__8b2_aa__image,
+.ProjectPanel-module__8b2_aa__panel:focus-visible .ProjectPanel-module__8b2_aa__image {
+  transform: scale(var(--panel-scale,1)) !important;
+}
+.ProjectPanel-module__8b2_aa__arrow {
+  transition: none !important;
+}
+.ProjectPanel-module__8b2_aa__panel:hover .ProjectPanel-module__8b2_aa__arrow,
+.ProjectPanel-module__8b2_aa__panel:focus-visible .ProjectPanel-module__8b2_aa__arrow {
+  transform: none !important;
 }
 
 /* Work cards: let the artwork do the talking; remove the project/brand name overlay. */
