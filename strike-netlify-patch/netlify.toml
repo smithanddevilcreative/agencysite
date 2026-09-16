@@ -1,6 +1,0 @@
-# Temporary static deploy of the recovered Smith & Devil site.
-# No Next.js rebuild: the recovered export is already in the repository root.
-
-[build]
-  publish = "."
-  edge_functions = "netlify/edge-functions"

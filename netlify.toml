@@ -1,12 +1,6 @@
-# Netlify build settings.
-#
-# The site is a Next.js static export (see next.config.ts), so there is no
-# server runtime to configure — Netlify just publishes the `out` folder and
-# resolves /studio to studio.html itself.
+# Temporary static deploy of the recovered Smith & Devil site.
+# No Next.js rebuild: the recovered export is already in the repository root.
 
 [build]
-  command = "npm run build"
-  publish = "out"
-
-[build.environment]
-  NODE_VERSION = "22"
+  publish = "."
+  edge_functions = "netlify/edge-functions"
