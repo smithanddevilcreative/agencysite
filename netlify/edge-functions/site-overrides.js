@@ -40,25 +40,60 @@ const OVERRIDES = `
   display: none !important;
 }
 
-/* Homepage featured projects: deeper, calmer, no hover theatrics. */
-@media (min-width: 801px) {
-  .ProjectPanel-module__8b2_aa__panel {
-    aspect-ratio: 1240 / 650 !important;
-    min-height: 580px !important;
-  }
-  .ProjectPanel-module__8b2_aa__copy {
-    width: min(34%, 340px) !important;
-    gap: 16px !important;
-  }
-  .ProjectPanel-module__8b2_aa__intro {
-    line-height: 1.62 !important;
-  }
-  .ProjectPanels-module__uRfApW__stack {
-    gap: clamp(18px, 1.8vw, 26px) !important;
-  }
+/* Homepage featured projects: one consistent image + copy system. */
+.ProjectPanel-module__8b2_aa__panel {
+  --sd-project-copy-h: 220px;
+  aspect-ratio: auto !important;
+  height: clamp(650px, 55vw, 720px) !important;
+  min-height: 0 !important;
+  background: var(--sd-bg) !important;
 }
 .ProjectPanel-module__8b2_aa__image {
+  top: 0 !important;
+  right: 0 !important;
+  bottom: auto !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: calc(100% - var(--sd-project-copy-h)) !important;
   transition: none !important;
+}
+.ProjectPanel-module__8b2_aa__scrim {
+  display: none !important;
+}
+.ProjectPanel-module__8b2_aa__copy {
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: auto !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: var(--sd-project-copy-h) !important;
+  padding: 30px clamp(28px, 3.2vw, 46px) !important;
+  transform: none !important;
+  background: var(--sd-bg) !important;
+  color: var(--sd-ink) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: 12px !important;
+}
+.ProjectPanel-module__8b2_aa__title {
+  color: var(--sd-ink) !important;
+  font-size: clamp(28px, 2.6vw, 38px) !important;
+  line-height: 1.02 !important;
+}
+.ProjectPanel-module__8b2_aa__intro {
+  color: #5a5752 !important;
+  max-width: 680px !important;
+  font-size: clamp(14px, 1.2vw, 17px) !important;
+  line-height: 1.5 !important;
+}
+.ProjectPanel-module__8b2_aa__cta {
+  color: var(--sd-ink) !important;
+  margin-top: 4px !important;
+}
+.ProjectPanels-module__uRfApW__stack {
+  gap: clamp(24px, 2.4vw, 34px) !important;
 }
 .ProjectPanel-module__8b2_aa__panel:hover .ProjectPanel-module__8b2_aa__image,
 .ProjectPanel-module__8b2_aa__panel:focus-visible .ProjectPanel-module__8b2_aa__image {
@@ -70,6 +105,22 @@ const OVERRIDES = `
 .ProjectPanel-module__8b2_aa__panel:hover .ProjectPanel-module__8b2_aa__arrow,
 .ProjectPanel-module__8b2_aa__panel:focus-visible .ProjectPanel-module__8b2_aa__arrow {
   transform: none !important;
+}
+@media (max-width: 800px) {
+  .ProjectPanel-module__8b2_aa__panel {
+    --sd-project-copy-h: 240px;
+    height: clamp(570px, 108vw, 690px) !important;
+  }
+  .ProjectPanel-module__8b2_aa__copy {
+    padding: 26px clamp(22px, 5vw, 34px) !important;
+  }
+  .ProjectPanel-module__8b2_aa__title {
+    font-size: clamp(27px, 6vw, 34px) !important;
+  }
+  .ProjectPanel-module__8b2_aa__intro {
+    font-size: clamp(14px, 3.6vw, 16px) !important;
+    line-height: 1.48 !important;
+  }
 }
 
 /* Work cards: let the artwork do the talking; remove the project/brand name overlay. */
