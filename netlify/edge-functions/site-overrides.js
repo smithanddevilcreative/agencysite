@@ -40,6 +40,14 @@ const OVERRIDES = `
   display: none !important;
 }
 
+/* Homepage featured projects: give each case study more visual depth. */
+@media (min-width: 801px) {
+  .ProjectPanel-module__8b2_aa__panel {
+    aspect-ratio: 1240 / 560 !important;
+    min-height: 500px !important;
+  }
+}
+
 /* Work cards: let the artwork do the talking; remove the project/brand name overlay. */
 .WorkCard-module__bi6E2q__title {
   display: none !important;
