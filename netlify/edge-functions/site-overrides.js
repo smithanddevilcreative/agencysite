@@ -122,7 +122,13 @@ a.WorkCard-module__bi6E2q__card[href="/work/strike"]:focus-visible .WorkCard-mod
 const FOOTER_LOGO_FILTER = `
 <svg aria-hidden="true" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden">
   <filter id="sd-red-only-filter" color-interpolation-filters="sRGB">
-    <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  1 -1 0 0 0" />
+    <feColorMatrix in="SourceGraphic" result="redMask" type="matrix" values="0 0 0 0 1  0 0 0 0 0  0 0 0 0 0  1 -1 0 0 0" />
+    <feComponentTransfer in="redMask" result="redMaskStrong">
+      <feFuncA type="linear" slope="4" intercept="0" />
+    </feComponentTransfer>
+    <feFlood flood-color="#ff0000" result="brandRed" />
+    <feComposite in="brandRed" in2="redMaskStrong" operator="in" result="redByColour" />
+    <feComposite in="redByColour" in2="SourceAlpha" operator="in" />
   </filter>
 </svg>`;
 
