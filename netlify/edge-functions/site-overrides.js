@@ -122,7 +122,7 @@ export default async function siteOverrides(_request, context) {
 
   return new Response(html, {
     status: response.status,
-    statusText: response.status.statusText,
+    statusText: response.statusText,
     headers,
   });
 }
