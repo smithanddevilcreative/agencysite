@@ -7,7 +7,7 @@ const OVERRIDES = `
   color: #fff !important;
 }
 .Footer-module__S6Hkya__logo {
-  filter: brightness(0) invert(1) !important;
+  filter: url(#sd-footer-logo-filter) !important;
 }
 .Footer-module__S6Hkya__narrative,
 .Footer-module__S6Hkya__copyright,
@@ -15,6 +15,11 @@ const OVERRIDES = `
 .Footer-module__S6Hkya__link,
 .Footer-module__S6Hkya__pending {
   color: #fff !important;
+}
+
+/* Work cards: let the artwork do the talking; remove the project/brand name overlay. */
+.WorkCard-module__bi6E2q__title {
+  display: none !important;
 }
 
 /* Keep Draughts and both Allstars case studies in the repo, but don't surface them for now. */
@@ -91,6 +96,13 @@ a.WorkCard-module__bi6E2q__card[href="/work/strike"]:focus-visible .WorkCard-mod
 }
 </style>`;
 
+const FOOTER_LOGO_FILTER = `
+<svg aria-hidden="true" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden">
+  <filter id="sd-footer-logo-filter" color-interpolation-filters="sRGB">
+    <feColorMatrix type="matrix" values="0 0 0 0 1  -1 0 0 0 1  -1 0 0 0 1  0 0 0 1 0" />
+  </filter>
+</svg>`;
+
 export default async function siteOverrides(_request, context) {
   const response = await context.next();
   const contentType = response.headers.get("content-type") || "";
@@ -101,13 +113,16 @@ export default async function siteOverrides(_request, context) {
   if (!html.includes('id="sd-launch-overrides"')) {
     html = html.replace("</head>", `${OVERRIDES}</head>`);
   }
+  if (!html.includes('id="sd-footer-logo-filter"')) {
+    html = html.replace("</body>", `${FOOTER_LOGO_FILTER}</body>`);
+  }
 
   const headers = new Headers(response.headers);
   headers.delete("content-length");
 
   return new Response(html, {
     status: response.status,
-    statusText: response.statusText,
+    statusText: response.status.statusText,
     headers,
   });
 }
