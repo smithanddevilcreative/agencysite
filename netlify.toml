@@ -2,5 +2,9 @@
 # No Next.js rebuild: the recovered export is already in the repository root.
 
 [build]
+  command = "echo 'Using recovered static export; no build required'"
   publish = "."
   edge_functions = "netlify/edge-functions"
+
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
