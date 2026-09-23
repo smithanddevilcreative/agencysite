@@ -119,7 +119,10 @@ a.WorkCard-module__bi6E2q__card[href="/work/strike"]:focus-visible .WorkCard-mod
 }
 </style>`;
 
-const FAVICON = `<link id="sd-favicon" rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23050505'/%3E%3Ctext x='50' y='73' text-anchor='middle' font-family='Georgia,serif' font-size='76' font-weight='700' fill='%23ff0000'%3E%26amp%3B%3C/text%3E%3C/svg%3E">`;
+const FAVICON = `
+<link id="sd-favicon" rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="alternate icon" type="image/x-icon" href="/favicon.ico">
+`;
 
 const FOOTER_LOGO_FILTER = `
 <svg aria-hidden="true" width="0" height="0" style="position:absolute;width:0;height:0;overflow:hidden">
