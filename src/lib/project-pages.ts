@@ -6,6 +6,7 @@ export type ProjectPageData = {
   results: { value: string; label: string }[];
   paragraphs: string[];
   quote: { text: string; by: string } | null;
+  bodyHtml?: string;
   heroHtml: string;
   leadHtml: string;
   galleryHtml: string;
@@ -189,6 +190,7 @@ export const projectPages: Record<string, ProjectPageData> = {
       "On the courses themselves, Horrible Histories-style signage turned every round into a journey of discovery, while interactive learning zones in the cafés kept curious minds busy between bites. We even worked with primary school teachers to develop curriculum-linked activity packs, giving schools a reason to book the trip.",
       "The result? A brand families came back to again and again — driving rapid expansion to three sites in just two years."
     ],
+    "bodyHtml": "<div class=\"study-module__vTcG6G__bodyFilm\"><div class=\"StudyVideoEmbed-module__8FDA2W__wrap\"><iframe class=\"StudyVideoEmbed-module__8FDA2W__frame\" src=\"https://player.vimeo.com/video/275826821?background=1&amp;autoplay=1&amp;loop=1&amp;muted=1&amp;title=0&amp;byline=0&amp;portrait=0\" title=\"Mighty Adventures film\" loading=\"lazy\" allow=\"autoplay; fullscreen; picture-in-picture\" allowFullScreen=\"\"></iframe></div></div>",
     "quote": {
       "text": "“ We asked for a brand, we got an experience. You only have to look at the faces of our customers to see how successful it’s been. ”",
       "by": "Allan Saud, CEO Simba Parks"

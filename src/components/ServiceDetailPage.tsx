@@ -84,9 +84,9 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
               <div className={c.actions}>
                 {data.actions.map((action) =>
                   action.href.startsWith("/") ? (
-                    <Link className={action.className} href={action.href} key={action.href}>{action.label}</Link>
+                    <Link className={action.className} href={action.href} key={action.href}>{action.label}{action.className.includes("primaryAction") ? <> <span aria-hidden="true">→</span></> : null}</Link>
                   ) : (
-                    <a className={action.className} href={action.href} key={action.href}>{action.label}</a>
+                    <a className={action.className} href={action.href} key={action.href}>{action.label}{action.className.includes("primaryAction") ? <> <span aria-hidden="true">→</span></> : null}</a>
                   )
                 )}
               </div>

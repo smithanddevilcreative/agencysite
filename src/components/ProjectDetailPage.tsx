@@ -80,6 +80,7 @@ export function ProjectDetailPage({ project }: { project: ProjectPageData }) {
             {project.paragraphs.map((paragraph, index) => (
               <p className={c.paragraph} key={index}>{paragraph}</p>
             ))}
+            {project.bodyHtml ? <div dangerouslySetInnerHTML={{ __html: project.bodyHtml }} /> : null}
             {project.quote ? (
               <blockquote className={c.quote}>
                 <p className={c.quoteText}>“{project.quote.text.replace(/^“|”$/g, "")}”</p>
