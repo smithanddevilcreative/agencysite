@@ -87,13 +87,15 @@ for (const [snapshot, route] of routes) {
   const newText = textContent(newMain);
 
   if (oldText !== newText) {
-    failures.push(`${route}: visible text differs`);
+    let i = 0;
+    while (i < oldText.length && i < newText.length && oldText[i] === newText[i]) i++;
+    failures.push(`${route}: visible text differs @${i}\n  old: ${oldText.slice(Math.max(0,i-120), i+220)}\n  new: ${newText.slice(Math.max(0,i-120), i+220)}`);
   }
 
   const oldMedia = JSON.stringify(mediaRefs(oldMain));
   const newMedia = JSON.stringify(mediaRefs(newMain));
   if (oldMedia !== newMedia) {
-    failures.push(`${route}: image/video references differ`);
+    failures.push(`${route}: image/video references differ\n  old: ${oldMedia}\n  new: ${newMedia}`);
   }
 }
 
