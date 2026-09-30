@@ -191,7 +191,7 @@ export const servicePages: Record<string, ServicePageData> = {
     "enquiry": {
       "label": "Start a conversation",
       "title": "Build a brand people choose.",
-      "intro": ""
+      "intro": "Tell us what is changing in the business and where the current brand is holding it back."
     }
   },
   "campaigns-content": {
@@ -365,7 +365,7 @@ export const servicePages: Record<string, ServicePageData> = {
     "enquiry": {
       "label": "Start a conversation",
       "title": "Give people a reason to act.",
-      "intro": ""
+      "intro": "Tell us what you need to launch, fill or grow. We will help turn the commercial target into a campaign people want to respond to."
     }
   },
   "digital-web": {
@@ -549,7 +549,7 @@ export const servicePages: Record<string, ServicePageData> = {
     "enquiry": {
       "label": "Start a conversation",
       "title": "Make the next step easier.",
-      "intro": ""
+      "intro": "Tell us where the current website loses people, or what the new one needs to make possible."
     }
   },
   "interiors-environments": {
@@ -726,7 +726,7 @@ export const servicePages: Record<string, ServicePageData> = {
     "enquiry": {
       "label": "Start a conversation",
       "title": "Create a place people choose.",
-      "intro": ""
+      "intro": "Tell us what the venue needs to make possible, how far the project has progressed and where the customer experience needs creative leadership."
     }
   },
   "themed-experiences": {
@@ -910,7 +910,7 @@ export const servicePages: Record<string, ServicePageData> = {
     "enquiry": {
       "label": "Start a conversation",
       "title": "Create something people want to enter.",
-      "intro": ""
+      "intro": "Bring us the activity, the site, the audience or simply the ambition. We will help find the world that can hold it all together."
     }
   }
 } as const;

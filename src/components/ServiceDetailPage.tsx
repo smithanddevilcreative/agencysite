@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import type { ServicePageData } from "@/lib/service-pages";
+import { serviceLinks } from "@/lib/site-data";
 
 const c = {
   main: "service-module__T4otXW__main",
@@ -39,6 +40,11 @@ const c = {
   faqSection: "service-module__T4otXW__faqSection",
   faqs: "service-module__T4otXW__faqs",
   faq: "service-module__T4otXW__faq",
+  serviceNav: "service-module__T4otXW__serviceNav",
+  serviceLinks: "service-module__T4otXW__serviceLinks",
+  enquiryGrid: "service-module__T4otXW__enquiryGrid",
+  enquiryTitle: "service-module__T4otXW__enquiryTitle",
+  enquiryBody: "service-module__T4otXW__enquiryBody",
   enquiry: "service-module__T4otXW__enquiry",
   enquiryIntro: "service-module__T4otXW__enquiryIntro",
 };
@@ -171,7 +177,7 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
       </section>
 
       <section className={c.fitSection}>
-        <div className={`${c.inner} ${c.fitGrid}`}>
+        <div className={`${c.inner} ${c.enquiryGrid}`}>
           <div className="Reveal-module__U2Tp6W__base">
             <p className={c.sectionLabel}>{data.fit.label}</p>
             <h2 className={c.displayHeading}>{data.fit.title}</h2>
@@ -199,12 +205,23 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
         </div>
       </section>
 
+      <nav className={c.serviceNav} aria-label="Other services">
+        <div className={c.inner}>
+          <p className={c.sectionLabel}>Explore the connected offer</p>
+          <div className={c.serviceLinks}>
+            {serviceLinks
+              .filter(([, href]) => href !== `/services/${data.slug}`)
+              .map(([label, href]) => <Link href={href} key={href}>{label}</Link>)}
+          </div>
+        </div>
+      </nav>
+
       <section className={c.enquiry} id="project-enquiry">
         <div className={`${c.inner} ${c.fitGrid}`}>
           <div className="Reveal-module__U2Tp6W__base">
             <p className={c.sectionLabel}>{data.enquiry.label || "Start a conversation"}</p>
-            <h2 className={c.displayHeading}>{data.enquiry.title || "Tell us what you are building."}</h2>
-            {data.enquiry.intro && <p className={c.enquiryIntro}>{data.enquiry.intro}</p>}
+            <h2 className={c.enquiryTitle}>{data.enquiry.title || "Tell us what you are building."}</h2>
+            {data.enquiry.intro && <p className={c.enquiryBody}>{data.enquiry.intro}</p>}
           </div>
           <div className="Reveal-module__U2Tp6W__base">
             <EnquiryForm service={data.kicker} />
