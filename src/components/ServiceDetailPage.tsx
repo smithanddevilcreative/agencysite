@@ -177,7 +177,7 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
       </section>
 
       <section className={c.fitSection}>
-        <div className={`${c.inner} ${c.enquiryGrid}`}>
+        <div className={`${c.inner} ${c.fitGrid}`}>
           <div className="Reveal-module__U2Tp6W__base">
             <p className={c.sectionLabel}>{data.fit.label}</p>
             <h2 className={c.displayHeading}>{data.fit.title}</h2>
@@ -217,7 +217,7 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
       </nav>
 
       <section className={c.enquiry} id="project-enquiry">
-        <div className={`${c.inner} ${c.fitGrid}`}>
+        <div className={`${c.inner} ${c.enquiryGrid}`}>
           <div className="Reveal-module__U2Tp6W__base">
             <p className={c.sectionLabel}>{data.enquiry.label || "Start a conversation"}</p>
             <h2 className={c.enquiryTitle}>{data.enquiry.title || "Tell us what you are building."}</h2>
