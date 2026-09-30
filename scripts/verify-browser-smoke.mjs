@@ -21,6 +21,12 @@ for (const viewport of viewports) {
   page.on("console", (msg) => {
     if (msg.type() === "error") failures.push(`${viewport.name}: console error: ${msg.text()}`);
   });
+  page.on("response", (response) => {
+    if (response.status() === 404) failures.push(`${viewport.name}: 404 ${response.url()}`);
+  });
+  page.on("requestfailed", (request) => {
+    failures.push(`${viewport.name}: request failed ${request.url()} — ${request.failure()?.errorText || "unknown"}`);
+  });
 
   for (const route of routes) {
     const response = await page.goto(base + route, { waitUntil: "networkidle" });
