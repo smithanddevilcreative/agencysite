@@ -102,7 +102,7 @@ export default function StudioPage() {
                     <span className={line}><Word i={0}>Small </Word><Word i={1}>agency </Word><Word i={2} emphasis freeMask>energy</Word></span>
                   </>
                 ) : (
-                  <span className={line}>{pillar.heading}</span>
+                  <span className={line}>{"heading" in pillar ? pillar.heading : null}</span>
                 )}
               </h2>
               <div className={c.pillarBody}><p className={c.body}>{pillar.body}</p></div>
