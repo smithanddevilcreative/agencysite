@@ -22,7 +22,7 @@ jobs:
       - run: npm run build
       - run: node scripts/verify-recovery-parity.mjs
       - run: npx playwright install --with-deps chromium
-      - run: python3 -m http.server 4173 -d out >/tmp/sd-http.log 2>&1 &
+      - run: node scripts/serve-static-export.mjs >/tmp/sd-http.log 2>&1 &
       - run: node scripts/verify-browser-smoke.mjs
       - uses: actions/upload-artifact@v4
         if: always()
