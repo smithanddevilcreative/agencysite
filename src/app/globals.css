@@ -1501,3 +1501,21 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
   object-position:top left!important;
   filter:none!important;
 }
+
+
+/* menu interaction correction: default/current white, hover/focus red with chevron */
+.Header-module__hBw1pG__primaryNav a[aria-current="page"]{
+  color:var(--sd-bg)!important;
+}
+.Header-module__hBw1pG__primaryNav a[aria-current="page"]::after{
+  opacity:0!important;
+}
+.Header-module__hBw1pG__primaryNav a[aria-current="page"]:hover,
+.Header-module__hBw1pG__primaryNav a[aria-current="page"]:focus-visible{
+  color:var(--sd-red)!important;
+}
+.Header-module__hBw1pG__primaryNav a[aria-current="page"]:hover::after,
+.Header-module__hBw1pG__primaryNav a[aria-current="page"]:focus-visible::after{
+  opacity:1!important;
+  transform:rotate(45deg) translate(3px,-3px)!important;
+}
