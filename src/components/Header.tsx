@@ -41,7 +41,7 @@ export function Header() {
           width="2517"
           height="433"
           className={c.logo}
-          src="/brand/smith-and-devil-logo-nav.png"
+          src={open || ink ? "/brand/smith-and-devil-logo-nav.png" : "/brand/smith-and-devil-logo.png"}
         />
       </Link>
       <button
