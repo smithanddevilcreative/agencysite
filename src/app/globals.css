@@ -2198,3 +2198,70 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
     grid-template-columns:repeat(2,minmax(0,1fr))!important;
   }
 }
+
+
+/* Studio fidelity correction — preserve Figma geometry until true tablet width. */
+@media (min-width:1240px){
+  .studio-module__W4fhGG__main{padding-top:148px!important}
+  .studio-module__W4fhGG__hero{padding:76px 0 40px!important}
+  .studio-module__W4fhGG__statement{
+    width:639px!important;
+    max-width:639px!important;
+    font-size:116px!important;
+    line-height:109.04px!important;
+    letter-spacing:-5.22px!important;
+  }
+  .studio-module__W4fhGG__rule{
+    display:flex!important;
+    margin-top:52px!important;
+    padding-top:18px!important;
+  }
+  .studio-module__W4fhGG__pillar,
+  .studio-module__W4fhGG__pillar:nth-child(2n){
+    min-height:344.344px!important;
+    gap:64px!important;
+    padding:87px 0 86px!important;
+    align-items:end!important;
+  }
+  .studio-module__W4fhGG__pillar{
+    grid-template-columns:704px 360px!important;
+  }
+  .studio-module__W4fhGG__pillar:nth-child(2n){
+    grid-template-columns:360px 704px!important;
+  }
+  .studio-module__W4fhGG__pillar:last-child{
+    min-height:516px!important;
+  }
+  .AboutHeadline-module__V-PVZq__headline{
+    width:704px!important;
+    max-width:704px!important;
+    font-size:90px!important;
+    line-height:83.4px!important;
+    letter-spacing:0!important;
+  }
+  .studio-module__W4fhGG__pillarBody{
+    width:360px!important;
+    max-width:360px!important;
+  }
+  .studio-module__W4fhGG__stack{
+    grid-template-columns:307.484px 730.281px!important;
+    column-gap:90.234px!important;
+  }
+  .studio-module__W4fhGG__card{width:730.281px!important}
+}
+
+/* Figma shows the emphasis colours in the resting state; motion can animate into these later. */
+.AboutHeadline-module__V-PVZq__kick .AboutHeadline-module__V-PVZq__accent,
+.AboutHeadline-module__V-PVZq__count .AboutHeadline-module__V-PVZq__accent,
+.AboutHeadline-module__V-PVZq__surge .AboutHeadline-module__V-PVZq__accent{
+  color:var(--sd-red)!important;
+  font-style:italic!important;
+}
+.AboutHeadline-module__V-PVZq__amp .AboutHeadline-module__V-PVZq__accent{
+  color:var(--sd-red)!important;
+}
+
+/* Keep the Figma's two separated divider rules on Studio only. */
+.studio-module__W4fhGG__hero + section .studio-module__W4fhGG__pillar:first-child{
+  border-top:1px solid rgba(20,18,15,.12)!important;
+}
