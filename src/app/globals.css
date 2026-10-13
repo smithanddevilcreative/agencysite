@@ -2212,9 +2212,7 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
     letter-spacing:-5.22px!important;
   }
   .studio-module__W4fhGG__rule{
-    display:flex!important;
-    margin-top:52px!important;
-    padding-top:18px!important;
+    display:none!important;
   }
   .studio-module__W4fhGG__pillar,
   .studio-module__W4fhGG__pillar:nth-child(2n){
@@ -2262,6 +2260,13 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
 }
 
 /* Keep the Figma's two separated divider rules on Studio only. */
+.studio-module__W4fhGG__hero + section .studio-module__W4fhGG__pillar:first-child{
+  border-top:1px solid rgba(20,18,15,.12)!important;
+}
+
+
+/* Studio divider correction — no empty duplicate rule below hero. */
+.studio-module__W4fhGG__rule{display:none!important}
 .studio-module__W4fhGG__hero + section .studio-module__W4fhGG__pillar:first-child{
   border-top:1px solid rgba(20,18,15,.12)!important;
 }
