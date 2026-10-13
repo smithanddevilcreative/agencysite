@@ -993,3 +993,262 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
 
 /* footer logo: white wordmark + S&D red ampersand */
 .Footer-module__S6Hkya__logo{filter:url(#footer-logo-colour)!important}
+
+
+/* 2026 service detail + navigation treatment — Figma 18:3564 / 92:14724. */
+@media (min-width:901px){
+  /* Service detail template */
+  .service-module__T4otXW__main{padding-top:136px!important}
+  .service-module__T4otXW__hero{padding:68px 0 0!important}
+  .service-module__T4otXW__breadcrumb{
+    margin-bottom:78px!important;
+    font-size:12px!important;
+    line-height:18px!important;
+    letter-spacing:0!important;
+    text-transform:none!important;
+    opacity:.72!important;
+  }
+  .service-module__T4otXW__heroGrid{
+    grid-template-columns:699.297px 336.688px!important;
+    gap:92.016px!important;
+    align-items:start!important;
+  }
+  .service-module__T4otXW__title{
+    width:699.297px!important;
+    max-width:699.297px!important;
+    font-size:70px!important;
+    line-height:71.4px!important;
+    letter-spacing:0!important;
+  }
+  .service-module__T4otXW__standfirst{
+    width:336.688px!important;
+    max-width:336.688px!important;
+    font-size:19px!important;
+    line-height:30.4px!important;
+  }
+  .service-module__T4otXW__actions{
+    width:336.688px!important;
+    margin-top:30px!important;
+  }
+  .service-module__T4otXW__primaryAction{
+    width:336.688px!important;
+    min-width:336.688px!important;
+    padding:15px 18px!important;
+    font-size:12px!important;
+    font-weight:500!important;
+    letter-spacing:1.2px!important;
+    text-transform:none!important;
+  }
+  .service-module__T4otXW__secondaryAction{
+    font-size:12px!important;
+    font-weight:500!important;
+    letter-spacing:1.2px!important;
+    text-transform:none!important;
+  }
+  .service-module__T4otXW__heroMedia{
+    width:1128px!important;
+    height:1200px!important;
+    min-height:1200px!important;
+    margin-top:92px!important;
+    border-radius:16px!important;
+  }
+  .service-module__T4otXW__heroMedia img{
+    width:100%!important;
+    height:100%!important;
+    object-fit:cover!important;
+  }
+  .service-module__T4otXW__proofLine{
+    width:1128px!important;
+    height:55px!important;
+    padding:18px 0!important;
+    font-size:12px!important;
+    line-height:18px!important;
+    letter-spacing:0!important;
+    text-transform:none!important;
+  }
+
+  .service-module__T4otXW__argument{padding:18px 0 106px!important}
+  .service-module__T4otXW__argumentGrid{
+    grid-template-columns:555.75px 432.25px!important;
+    gap:140px!important;
+  }
+  .service-module__T4otXW__displayHeading{
+    max-width:588px!important;
+    font-size:70px!important;
+    line-height:71.4px!important;
+    letter-spacing:0!important;
+  }
+  .service-module__T4otXW__copyColumn{
+    align-self:start!important;
+    gap:18px!important;
+    font-size:15px!important;
+    line-height:24px!important;
+  }
+
+  .service-module__T4otXW__capabilities{
+    padding:146px 0!important;
+  }
+  .service-module__T4otXW__sectionHead{margin-bottom:88px!important}
+  .service-module__T4otXW__capabilityGrid{
+    grid-template-columns:564px 564px!important;
+  }
+  .service-module__T4otXW__capability{
+    min-height:148px!important;
+    grid-template-columns:48px 190px 1fr!important;
+    gap:18px!important;
+    padding:28px 20px 28px 0!important;
+  }
+  .service-module__T4otXW__capability:nth-child(2n){
+    padding-left:20px!important;
+    padding-right:0!important;
+  }
+  .service-module__T4otXW__capability h3{
+    font-size:22px!important;
+    line-height:36.9px!important;
+  }
+  .service-module__T4otXW__capability p{
+    font-size:15px!important;
+    line-height:24px!important;
+  }
+
+  .service-module__T4otXW__process{padding:146px 0!important}
+  .service-module__T4otXW__processItem{
+    min-height:195px!important;
+    grid-template-columns:70px 340px 1fr!important;
+    gap:24px!important;
+    padding:32px 0!important;
+  }
+  .service-module__T4otXW__processNumber{
+    font-size:70px!important;
+    line-height:71.4px!important;
+  }
+  .service-module__T4otXW__processItem h3{
+    font-size:36px!important;
+    line-height:38.88px!important;
+  }
+  .service-module__T4otXW__processItem p{
+    font-size:15px!important;
+    line-height:24px!important;
+  }
+
+  .service-module__T4otXW__caseStudy{padding:0 0 146px!important}
+  .service-module__T4otXW__caseStudy>.service-module__T4otXW__inner{
+    grid-template-columns:670.828px 379px!important;
+    gap:78px!important;
+  }
+  .service-module__T4otXW__caseMedia{
+    width:670.828px!important;
+    height:900px!important;
+    min-height:900px!important;
+  }
+  .service-module__T4otXW__caseCopy{
+    top:146px!important;
+    width:379px!important;
+  }
+  .service-module__T4otXW__caseCopy .service-module__T4otXW__displayHeading{
+    margin-bottom:28px!important;
+    font-size:70px!important;
+    line-height:71.4px!important;
+  }
+  .service-module__T4otXW__caseCopy>p:not(.service-module__T4otXW__sectionLabel){
+    margin-bottom:18px!important;
+    font-size:15px!important;
+    line-height:24px!important;
+  }
+
+  .service-module__T4otXW__fitSection{padding:146px 0!important}
+  .service-module__T4otXW__fitGrid{
+    grid-template-columns:555.75px 432.25px!important;
+    gap:140px!important;
+  }
+  .service-module__T4otXW__fitList li{
+    min-height:57px!important;
+    padding:16px 0 16px 28px!important;
+    font-size:15px!important;
+    line-height:24px!important;
+  }
+  .service-module__T4otXW__fitList li:before{
+    font-family:"Playfair Display Variable","Playfair Display",Georgia,serif!important;
+    color:var(--sd-red)!important;
+    font-size:24px!important;
+    line-height:32px!important;
+  }
+
+  .service-module__T4otXW__faqSection{padding:146px 0!important}
+  .service-module__T4otXW__faq summary{
+    min-height:85px!important;
+    padding:22px 0!important;
+    font-size:36px!important;
+    line-height:38.88px!important;
+  }
+  .service-module__T4otXW__faq summary span{
+    font-family:var(--font-display)!important;
+    font-size:60px!important;
+    font-weight:200!important;
+    line-height:72px!important;
+  }
+  .service-module__T4otXW__faq p{
+    width:584px!important;
+    max-width:584px!important;
+    padding:0 0 24px!important;
+    font-size:15px!important;
+    line-height:24px!important;
+  }
+
+  .service-module__T4otXW__serviceNav{
+    padding:40px 0 59px!important;
+  }
+  .service-module__T4otXW__serviceLinks{gap:10px!important}
+  .service-module__T4otXW__serviceLinks a{
+    border-radius:999px!important;
+    padding:10px 16px!important;
+    font-size:12px!important;
+    line-height:18px!important;
+  }
+  .service-module__T4otXW__enquiry{padding:146px 0!important}
+  .service-module__T4otXW__enquiryGrid{
+    grid-template-columns:555.75px 432.25px!important;
+    gap:140px!important;
+  }
+  .service-module__T4otXW__enquiryTitle{
+    max-width:497px!important;
+    font-size:70px!important;
+    line-height:71.4px!important;
+    letter-spacing:0!important;
+  }
+
+  /* New Figma navigation treatment */
+  .Header-module__hBw1pG__panel{
+    padding:148px 56px 56px!important;
+    background:var(--sd-ink)!important;
+    grid-template-columns:minmax(0,1fr) 280px!important;
+    gap:56px 80px!important;
+  }
+  .Header-module__hBw1pG__primaryNav{gap:0!important}
+  .Header-module__hBw1pG__primaryNav a{
+    font-family:var(--font-display)!important;
+    color:var(--sd-bg)!important;
+    font-size:116px!important;
+    font-weight:400!important;
+    line-height:109.04px!important;
+    letter-spacing:-5.22px!important;
+    text-transform:none!important;
+    transition:color .2s ease!important;
+  }
+  .Header-module__hBw1pG__primaryNav a:hover,
+  .Header-module__hBw1pG__primaryNav a[aria-current="page"]{
+    color:var(--sd-red)!important;
+  }
+  .Header-module__hBw1pG__serviceNav{
+    align-self:end!important;
+    gap:8px!important;
+  }
+  .Header-module__hBw1pG__email{align-self:end!important}
+}
+@media (max-width:900px){
+  .Header-module__hBw1pG__primaryNav a{
+    font-size:clamp(54px,16vw,88px)!important;
+    line-height:.94!important;
+    letter-spacing:-.045em!important;
+  }
+}
