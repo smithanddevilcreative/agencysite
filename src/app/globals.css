@@ -973,3 +973,20 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
     line-height:18px!important;
   }
 }
+
+
+/* 2026 footer logo calibration — Figma footer source 5:804. */
+.Footer-module__S6Hkya__logoLink{
+  width:min(100%,373px)!important;
+  max-width:373px!important;
+}
+.Footer-module__S6Hkya__logo{
+  display:block!important;
+  width:373px!important;
+  max-width:100%!important;
+  height:auto!important;
+}
+@media (max-width:900px){
+  .Footer-module__S6Hkya__logoLink{width:min(100%,280px)!important}
+  .Footer-module__S6Hkya__logo{width:280px!important}
+}
