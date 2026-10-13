@@ -32,6 +32,8 @@ const redSelector = [
   ".services-module__g8J8Uq__enquiry",
 ].join(",");
 
+const footerSelector = ".Footer-module__S6Hkya__footer";
+
 export function AmpersandCursor() {
   const cursorRef = useRef<HTMLDivElement>(null);
 
@@ -65,7 +67,8 @@ export function AmpersandCursor() {
       visible = true;
 
       const target = event.target instanceof Element ? event.target : null;
-      if (target?.closest(projectSelector)) state = "view";
+      if (target?.closest(footerSelector)) state = "amp";
+      else if (target?.closest(projectSelector)) state = "view";
       else if (target?.closest(actionSelector)) state = "amp";
       else state = "arrow";
 

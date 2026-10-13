@@ -2701,3 +2701,9 @@ input[type="submit"]{
 .sd-cursor[data-surface="red"] .sd-cursor-arrow{
   color:var(--sd-bg);
 }
+
+
+/* Footer cursor assumption: the whole footer is one branded ampersand zone. */
+.Footer-module__S6Hkya__footer{
+  cursor:none!important;
+}
