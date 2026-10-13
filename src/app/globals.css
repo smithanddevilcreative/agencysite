@@ -624,3 +624,136 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
     line-height:38.88px!important;
   }
 }
+
+
+/* 2026 project template calibration — Figma Pop Playrooms 77:13800. */
+@media (min-width:901px){
+  .study-module__vTcG6G__main{
+    padding-top:148px!important;
+  }
+  .study-module__vTcG6G__layout{
+    width:1240px!important;
+    max-width:1240px!important;
+    padding:56px!important;
+    grid-template-columns:251.359px 771.734px!important;
+    column-gap:105px!important;
+    align-items:start!important;
+  }
+  .study-module__vTcG6G__stickyInner{
+    gap:30px!important;
+    top:148px!important;
+  }
+  .study-module__vTcG6G__title{
+    font-size:36px!important;
+    line-height:38.88px!important;
+    letter-spacing:0!important;
+    max-width:251.359px!important;
+  }
+  .study-module__vTcG6G__block{
+    gap:10px!important;
+  }
+  .study-module__vTcG6G__label{
+    font-size:10px!important;
+    line-height:1!important;
+    letter-spacing:1.5px!important;
+    font-weight:500!important;
+    opacity:.7!important;
+  }
+  .study-module__vTcG6G__description,
+  .study-module__vTcG6G__services{
+    font-size:12px!important;
+    line-height:18px!important;
+    opacity:.88!important;
+  }
+  .study-module__vTcG6G__back{
+    margin-top:0!important;
+    font-size:10px!important;
+    line-height:1!important;
+    letter-spacing:1.5px!important;
+    font-weight:500!important;
+    gap:10px!important;
+  }
+
+  .study-module__vTcG6G__content{
+    width:771.734px!important;
+  }
+  .study-module__vTcG6G__hero{
+    width:771.734px!important;
+    margin-bottom:30px!important;
+  }
+  .study-module__vTcG6G__hero .StudyVideoEmbed-module__8FDA2W__wrap{
+    width:771.734px!important;
+    height:440px!important;
+    aspect-ratio:auto!important;
+  }
+  .study-module__vTcG6G__lead{
+    width:771.734px!important;
+    height:514px!important;
+    overflow:hidden!important;
+  }
+  .study-module__vTcG6G__lead img{
+    width:100%!important;
+    height:100%!important;
+    object-fit:cover!important;
+    display:block!important;
+  }
+
+  .study-module__vTcG6G__about{
+    gap:26px!important;
+    margin-top:40px!important;
+    padding-top:20px!important;
+  }
+  .study-module__vTcG6G__aboutLabel{
+    font-family:var(--font-sans)!important;
+    font-size:10px!important;
+    line-height:1!important;
+    letter-spacing:1.5px!important;
+    text-transform:uppercase!important;
+    font-style:normal!important;
+    font-weight:500!important;
+    opacity:.7!important;
+  }
+  .study-module__vTcG6G__paragraph{
+    width:771.734px!important;
+    font-size:15px!important;
+    line-height:24px!important;
+    opacity:.88!important;
+  }
+  .study-module__vTcG6G__quote{
+    width:638px!important;
+    gap:14px!important;
+    margin:0!important;
+    padding-left:24px!important;
+    border-left:2px solid var(--sd-red)!important;
+  }
+  .study-module__vTcG6G__quoteText{
+    width:494px!important;
+    font-family:var(--font-display)!important;
+    font-size:24px!important;
+    line-height:31.9px!important;
+    font-weight:600!important;
+    font-style:italic!important;
+  }
+  .study-module__vTcG6G__quoteBy{
+    font-size:10px!important;
+    line-height:1!important;
+    letter-spacing:1.5px!important;
+    font-weight:500!important;
+    opacity:.6!important;
+  }
+
+  .study-module__vTcG6G__gallery{
+    width:771.734px!important;
+    grid-template-columns:repeat(6,minmax(0,1fr))!important;
+    gap:40px!important;
+    margin-top:40px!important;
+  }
+  .study-module__vTcG6G__gallery .study-module__vTcG6G__slot{
+    margin:0!important;
+  }
+  .study-module__vTcG6G__gallery img{
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+  }
+}
