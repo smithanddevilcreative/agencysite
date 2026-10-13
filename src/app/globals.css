@@ -1683,3 +1683,46 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
     gap:8px!important;
   }
 }
+
+
+/* mobile nav + service media correction from device QA */
+@media (max-width:900px){
+  /* Keep the complete navigation bar visible as one solid white strip while scrolling. */
+  .Header-module__hBw1pG__header:not(.Header-module__hBw1pG__menuOpen){
+    height:72px!important;
+    padding:23px 24px!important;
+    background:var(--sd-bg)!important;
+    backdrop-filter:none!important;
+    -webkit-backdrop-filter:none!important;
+    border-bottom:1px solid rgba(20,18,15,.06)!important;
+  }
+  .Header-module__hBw1pG__header:not(.Header-module__hBw1pG__menuOpen) .Header-module__hBw1pG__menuButton{
+    color:var(--sd-ink)!important;
+  }
+  .Header-module__hBw1pG__header > a[aria-label="Smith & Devil — home"]{
+    width:92px!important;
+    height:26px!important;
+    display:flex!important;
+    align-items:center!important;
+  }
+  .Header-module__hBw1pG__header:not(.Header-module__hBw1pG__menuOpen) .Header-module__hBw1pG__logo{
+    width:92px!important;
+    height:auto!important;
+    object-fit:contain!important;
+  }
+
+  /* On small screens show the service hero artwork as artwork, rather than an arbitrary crop. */
+  .service-module__T4otXW__heroMedia{
+    aspect-ratio:auto!important;
+    height:auto!important;
+    min-height:0!important;
+    overflow:hidden!important;
+  }
+  .service-module__T4otXW__heroMedia img{
+    position:static!important;
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    object-fit:contain!important;
+  }
+}
