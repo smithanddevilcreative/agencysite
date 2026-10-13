@@ -1519,3 +1519,167 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
   opacity:1!important;
   transform:rotate(45deg) translate(3px,-3px)!important;
 }
+
+
+/* 2026 responsive service detail pass — implementation proposal, no Figma mobile source. */
+@media (max-width:900px){
+  .service-module__T4otXW__main{padding-top:88px!important}
+  .service-module__T4otXW__hero{padding:34px 0 64px!important}
+  .service-module__T4otXW__breadcrumb{
+    margin-bottom:42px!important;
+    font-size:11px!important;
+    line-height:18px!important;
+    text-transform:none!important;
+    letter-spacing:0!important;
+  }
+  .service-module__T4otXW__heroGrid{
+    grid-template-columns:1fr!important;
+    gap:28px!important;
+  }
+  .service-module__T4otXW__title{
+    width:auto!important;
+    max-width:10ch!important;
+    font-size:clamp(50px,13vw,76px)!important;
+    line-height:.95!important;
+    letter-spacing:-.045em!important;
+  }
+  .service-module__T4otXW__standfirst{
+    width:auto!important;
+    max-width:34ch!important;
+    font-size:18px!important;
+    line-height:29px!important;
+  }
+  .service-module__T4otXW__actions{
+    width:100%!important;
+    align-items:stretch!important;
+  }
+  .service-module__T4otXW__primaryAction{
+    width:100%!important;
+    min-width:0!important;
+  }
+  .service-module__T4otXW__heroMedia{
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    aspect-ratio:4/5!important;
+    margin-top:52px!important;
+  }
+  .service-module__T4otXW__proofLine{
+    width:100%!important;
+    height:auto!important;
+    padding:16px 0!important;
+    line-height:18px!important;
+  }
+
+  .service-module__T4otXW__argument,
+  .service-module__T4otXW__capabilities,
+  .service-module__T4otXW__process,
+  .service-module__T4otXW__fitSection,
+  .service-module__T4otXW__faqSection,
+  .service-module__T4otXW__enquiry{
+    padding:76px 0!important;
+  }
+  .service-module__T4otXW__argumentGrid,
+  .service-module__T4otXW__fitGrid,
+  .service-module__T4otXW__enquiryGrid{
+    grid-template-columns:1fr!important;
+    gap:34px!important;
+  }
+  .service-module__T4otXW__displayHeading,
+  .service-module__T4otXW__enquiryTitle{
+    max-width:12ch!important;
+    font-size:48px!important;
+    line-height:49px!important;
+  }
+  .service-module__T4otXW__copyColumn{
+    font-size:15px!important;
+    line-height:24px!important;
+  }
+
+  .service-module__T4otXW__sectionHead{margin-bottom:46px!important}
+  .service-module__T4otXW__capabilityGrid{grid-template-columns:1fr!important}
+  .service-module__T4otXW__capability,
+  .service-module__T4otXW__capability:nth-child(2n){
+    min-height:0!important;
+    grid-template-columns:34px 1fr!important;
+    gap:16px!important;
+    padding:24px 0!important;
+  }
+  .service-module__T4otXW__capability h3{
+    font-size:26px!important;
+    line-height:30px!important;
+  }
+  .service-module__T4otXW__capability p{
+    grid-column:2!important;
+    font-size:15px!important;
+    line-height:24px!important;
+  }
+
+  .service-module__T4otXW__processItem{
+    min-height:0!important;
+    grid-template-columns:34px 1fr!important;
+    gap:16px!important;
+    padding:26px 0!important;
+  }
+  .service-module__T4otXW__processNumber{
+    font-size:42px!important;
+    line-height:44px!important;
+  }
+  .service-module__T4otXW__processItem h3{
+    font-size:28px!important;
+    line-height:31px!important;
+  }
+  .service-module__T4otXW__processItem p{
+    grid-column:2!important;
+    font-size:15px!important;
+    line-height:24px!important;
+  }
+
+  .service-module__T4otXW__caseStudy{padding:0 0 76px!important}
+  .service-module__T4otXW__caseStudy>.service-module__T4otXW__inner{
+    grid-template-columns:1fr!important;
+    gap:34px!important;
+  }
+  .service-module__T4otXW__caseMedia{
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    aspect-ratio:4/5!important;
+  }
+  .service-module__T4otXW__caseCopy{
+    position:static!important;
+    width:auto!important;
+  }
+  .service-module__T4otXW__caseCopy .service-module__T4otXW__displayHeading{
+    font-size:48px!important;
+    line-height:49px!important;
+  }
+
+  .service-module__T4otXW__fitList li{
+    min-height:0!important;
+    padding:14px 0 14px 28px!important;
+  }
+
+  .service-module__T4otXW__faq summary{
+    min-height:68px!important;
+    padding:16px 0!important;
+    font-size:26px!important;
+    line-height:30px!important;
+  }
+  .service-module__T4otXW__faq summary span{
+    font-size:42px!important;
+    line-height:46px!important;
+  }
+  .service-module__T4otXW__faq p{
+    width:auto!important;
+    max-width:40ch!important;
+  }
+  .service-module__T4otXW__serviceNav{
+    padding:28px 0 42px!important;
+  }
+  .service-module__T4otXW__serviceLinks{
+    display:flex!important;
+    flex-wrap:wrap!important;
+    gap:8px!important;
+  }
+}
