@@ -179,7 +179,7 @@ export function HomeHero() {
         start: "top top",
         end: () => `+=${1.85 * window.innerHeight}`,
         pin: true,
-        scrub: 0.32,
+        scrub: 0.12,
         anticipatePin: 1,
         onUpdate(self) {
           progress = self.progress;

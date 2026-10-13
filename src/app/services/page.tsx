@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { EnquiryForm } from "@/components/EnquiryForm";
+import { ServicesOrbit } from "@/components/ServicesOrbit";
 
 export const metadata: Metadata = {
   title: "Creative Services for the Experience Economy | Smith & Devil",
@@ -114,20 +115,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <section className={c.collage} aria-label="Our services">
-        <span className={c.ampersand} aria-hidden="true">&</span>
-        {services.map((service, index) => (
-          <div className={c.orbit} style={{ "--i": index } as React.CSSProperties} key={service.slug}>
-            <Link
-              className={`${c.collageItem} services-module__g8J8Uq__item${index + 1}`}
-              href={`/services/${service.slug}`}
-            >
-              <img alt="" loading="lazy" width="1200" height="800" src={service.image} />
-              <span>{service.title}</span>
-            </Link>
-          </div>
-        ))}
-      </section>
+      <ServicesOrbit services={services} />
 
       <section className={c.argument}>
         <div className={`${c.inner} ${c.twoCol}`}>

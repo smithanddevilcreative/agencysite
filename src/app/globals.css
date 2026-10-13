@@ -2507,3 +2507,81 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
     line-height:1.08!important;
   }
 }
+
+
+/* Scroll-driven services orbit — replaces autonomous CSS orbit. */
+.services-module__g8J8Uq__collage{display:none!important}
+
+.sd-services-orbit{
+  position:relative;
+  width:min(1500px,100%);
+  height:100svh;
+  min-height:760px;
+  margin:0 auto;
+  overflow:hidden;
+  background:var(--sd-bg);
+}
+.sd-services-orbit-amp{
+  position:absolute;
+  left:50%;
+  top:50%;
+  z-index:30;
+  color:var(--sd-red);
+  font-family:"Playfair Display Variable","Playfair Display",Georgia,serif;
+  font-size:216px;
+  font-weight:400;
+  line-height:.75;
+  transform:translate(-50%,-50%);
+  pointer-events:none;
+}
+.sd-services-orbit-slot{
+  position:absolute;
+  left:50%;
+  top:50%;
+  aspect-ratio:4/5;
+  opacity:0;
+  will-change:transform,opacity;
+}
+.sd-services-orbit-card{
+  position:absolute;
+  inset:0;
+  display:block;
+  overflow:hidden;
+  border-radius:16px;
+  color:#fff;
+  text-decoration:none;
+  box-shadow:0 18px 60px rgba(20,18,15,.12);
+}
+.sd-services-orbit-card img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+}
+.sd-services-orbit-card:after{
+  content:"";
+  position:absolute;
+  inset:58% 0 0;
+  background:linear-gradient(transparent,rgba(0,0,0,.78));
+}
+.sd-services-orbit-card span{
+  position:absolute;
+  z-index:2;
+  left:16px;
+  right:16px;
+  bottom:16px;
+  font-family:var(--font-sans);
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.sd-services-orbit-card:hover{box-shadow:0 24px 70px rgba(20,18,15,.2)}
+@media(max-width:700px){
+  .sd-services-orbit{min-height:660px}
+  .sd-services-orbit-amp{font-size:132px}
+}
+@media(prefers-reduced-motion:reduce){
+  .sd-services-orbit{height:720px}
+  .sd-services-orbit-slot{opacity:1}
+}
