@@ -1252,3 +1252,112 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
     letter-spacing:-.045em!important;
   }
 }
+
+
+/* 2026 menu correction — actual Figma nav instance 5:1602, hover variant 92:14725. */
+@media (min-width:901px){
+  .Header-module__hBw1pG__menuOpen{
+    background:transparent!important;
+    backdrop-filter:none!important;
+    -webkit-backdrop-filter:none!important;
+  }
+  .Header-module__hBw1pG__panel{
+    min-height:100svh!important;
+    height:100svh!important;
+    padding:180px 56px 42px!important;
+    grid-template-columns:minmax(0,935.625px) minmax(0,561.375px)!important;
+    grid-template-rows:minmax(0,1fr) 130.3125px!important;
+    column-gap:80px!important;
+    row-gap:36px!important;
+    overflow:hidden!important;
+  }
+
+  .Header-module__hBw1pG__primaryNav{
+    grid-column:1!important;
+    grid-row:1!important;
+    width:935.625px!important;
+    height:100%!important;
+    justify-content:space-between!important;
+    align-self:stretch!important;
+  }
+  .Header-module__hBw1pG__primaryNav a{
+    position:relative!important;
+    display:flex!important;
+    align-items:center!important;
+    width:max-content!important;
+    min-height:110px!important;
+    padding:0!important;
+    font-family:var(--font-display)!important;
+    color:var(--sd-bg)!important;
+    font-size:116px!important;
+    font-weight:400!important;
+    line-height:109.04px!important;
+    letter-spacing:-5.22px!important;
+    text-decoration:none!important;
+    transition:color .18s ease!important;
+  }
+  .Header-module__hBw1pG__primaryNav a::after{
+    content:""!important;
+    width:51px!important;
+    height:83px!important;
+    margin-left:-32px!important;
+    opacity:0!important;
+    transform:translateX(-8px)!important;
+    transition:opacity .18s ease,transform .18s ease!important;
+    background:
+      linear-gradient(45deg,transparent 48%,var(--sd-red) 49%,var(--sd-red) 51%,transparent 52%) center/100% 50% no-repeat,
+      linear-gradient(-45deg,transparent 48%,var(--sd-red) 49%,var(--sd-red) 51%,transparent 52%) center/100% 50% no-repeat!important;
+    clip-path:polygon(0 0,100% 50%,0 100%,0 96%,92% 50%,0 4%)!important;
+    flex:0 0 51px!important;
+  }
+  .Header-module__hBw1pG__primaryNav a:hover,
+  .Header-module__hBw1pG__primaryNav a:focus-visible,
+  .Header-module__hBw1pG__primaryNav a[aria-current="page"]{
+    color:var(--sd-red)!important;
+  }
+  .Header-module__hBw1pG__primaryNav a:hover::after,
+  .Header-module__hBw1pG__primaryNav a:focus-visible::after,
+  .Header-module__hBw1pG__primaryNav a[aria-current="page"]::after{
+    opacity:1!important;
+    transform:translateX(0)!important;
+  }
+
+  .Header-module__hBw1pG__serviceNav{
+    grid-column:2!important;
+    grid-row:1!important;
+    width:561.375px!important;
+    align-self:end!important;
+    gap:12px!important;
+  }
+  .Header-module__hBw1pG__serviceNav a{
+    font-family:var(--font-sans)!important;
+    color:var(--sd-bg)!important;
+    font-size:10px!important;
+    font-weight:500!important;
+    line-height:1!important;
+    letter-spacing:1.5px!important;
+    text-transform:uppercase!important;
+  }
+
+  .Header-module__hBw1pG__email{
+    grid-column:2!important;
+    grid-row:2!important;
+    align-self:start!important;
+    margin-top:6px!important;
+    font-family:var(--font-display)!important;
+    color:var(--sd-bg)!important;
+    font-size:22px!important;
+    font-weight:400!important;
+    line-height:36.9px!important;
+    letter-spacing:0!important;
+    text-transform:none!important;
+  }
+
+  .Header-module__hBw1pG__menuButton{
+    font-size:12px!important;
+    font-weight:500!important;
+    line-height:1!important;
+    letter-spacing:1.2px!important;
+    text-transform:none!important;
+  }
+}
