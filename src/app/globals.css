@@ -757,3 +757,219 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
     height:auto!important;
   }
 }
+
+
+/* 2026 Work / Studio / Contact desktop calibration — Figma source pages. */
+@media (min-width:901px){
+  /* Work — Figma 76:11886 */
+  .work-module__8vBVoq__main{padding-top:148px!important}
+  .work-module__8vBVoq__hero{padding:76px 0 52px!important}
+  .work-module__8vBVoq__headline{
+    width:739px!important;
+    max-width:739px!important;
+    font-family:var(--font-display)!important;
+    font-size:70px!important;
+    font-weight:400!important;
+    line-height:71.4px!important;
+    letter-spacing:0!important;
+  }
+  .work-module__8vBVoq__red{font-weight:600!important;font-style:italic!important}
+  .work-module__8vBVoq__grid{padding-bottom:96px!important}
+  .work-module__8vBVoq__label{
+    margin-bottom:34px!important;
+    font-size:11px!important;
+    font-weight:500!important;
+    line-height:1!important;
+    letter-spacing:2.2px!important;
+  }
+  .work-module__8vBVoq__cards{
+    grid-template-columns:repeat(3,370.666px)!important;
+    gap:8px!important;
+  }
+  .WorkCard-module__bi6E2q__card{
+    width:370.666px!important;
+    height:794.297px!important;
+    aspect-ratio:auto!important;
+  }
+  .WorkCard-module__bi6E2q__content{
+    bottom:17px!important;
+    left:17px!important;
+    right:17px!important;
+  }
+  .WorkCard-module__bi6E2q__category{
+    font-size:11px!important;
+    font-weight:500!important;
+    line-height:1!important;
+    letter-spacing:1.76px!important;
+  }
+  .WorkCard-module__bi6E2q__title{display:none!important}
+
+  /* Studio — Figma 5:1926 */
+  .studio-module__W4fhGG__main{padding-top:148px!important}
+  .studio-module__W4fhGG__hero{padding:76px 0 40px!important}
+  .studio-module__W4fhGG__statement{
+    width:639px!important;
+    max-width:639px!important;
+    font-size:116px!important;
+    line-height:109.04px!important;
+    letter-spacing:-5.22px!important;
+  }
+  .studio-module__W4fhGG__red{font-weight:600!important;font-style:italic!important}
+  .studio-module__W4fhGG__rule{
+    margin-top:52px!important;
+    padding-top:18px!important;
+  }
+  .studio-module__W4fhGG__pillar{
+    min-height:344.344px!important;
+    grid-template-columns:704px 360px!important;
+    gap:64px!important;
+    padding:87px 0 86px!important;
+    align-items:end!important;
+  }
+  .studio-module__W4fhGG__pillar:nth-child(2n){
+    grid-template-columns:360px 704px!important;
+  }
+  .studio-module__W4fhGG__pillar:last-child{
+    min-height:516px!important;
+  }
+  .studio-module__W4fhGG__pillarBody{
+    width:360px!important;
+    max-width:360px!important;
+  }
+  .studio-module__W4fhGG__body{
+    font-size:15px!important;
+    line-height:24px!important;
+  }
+  .AboutHeadline-module__V-PVZq__headline{
+    width:704px!important;
+    max-width:704px!important;
+    font-size:90px!important;
+    line-height:83.4px!important;
+    letter-spacing:0!important;
+  }
+  .studio-module__W4fhGG__waysSection{
+    padding:101px 0 40px!important;
+  }
+  .studio-module__W4fhGG__stack{
+    grid-template-columns:307.484px 730.281px!important;
+    column-gap:90.234px!important;
+  }
+  .studio-module__W4fhGG__stackSticky{top:148px!important}
+  .studio-module__W4fhGG__mark{
+    font-size:116px!important;
+    line-height:109.04px!important;
+  }
+  .studio-module__W4fhGG__flexHeading{
+    width:307.484px!important;
+    max-width:307.484px!important;
+    margin:16px 0 12px!important;
+    font-size:36px!important;
+    line-height:38.88px!important;
+  }
+  .studio-module__W4fhGG__card{
+    width:730.281px!important;
+    min-height:210px!important;
+    margin-bottom:12px!important;
+    padding:34px!important;
+  }
+  .studio-module__W4fhGG__tag{
+    margin-bottom:10px!important;
+    font-size:10px!important;
+    font-weight:500!important;
+    line-height:1!important;
+    letter-spacing:1.5px!important;
+  }
+  .studio-module__W4fhGG__cardTitle{
+    margin-bottom:12px!important;
+    font-size:36px!important;
+    line-height:38.88px!important;
+  }
+
+  /* Contact — Figma 77:12234 */
+  .contact-module__swMWYG__main{
+    min-height:797px!important;
+    padding-top:190px!important;
+    padding-bottom:179.688px!important;
+    color:var(--sd-bg)!important;
+  }
+  .contact-module__swMWYG__inner{
+    width:1240px!important;
+    max-width:1240px!important;
+    padding:0 56px!important;
+    grid-template-columns:569.891px 427.438px!important;
+    gap:130.68px!important;
+  }
+  .contact-module__swMWYG__main h1{
+    width:519px!important;
+    max-width:519px!important;
+    font-size:70px!important;
+    line-height:71.4px!important;
+    letter-spacing:0!important;
+    color:var(--sd-bg)!important;
+  }
+  .contact-module__swMWYG__main h1 em{font-style:normal!important}
+  .contact-module__swMWYG__intro{
+    width:381px!important;
+    max-width:381px!important;
+    margin-top:30px!important;
+    font-size:15px!important;
+    line-height:24px!important;
+    color:var(--sd-bg)!important;
+  }
+  .contact-module__swMWYG__formWrap{
+    width:427.438px!important;
+    align-self:start!important;
+  }
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__form{
+    width:427.438px!important;
+    color:var(--sd-bg)!important;
+  }
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__formGrid{
+    grid-template-columns:201.422px 201.438px!important;
+    gap:20px 18px!important;
+  }
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__field{
+    gap:8px!important;
+    font-size:10px!important;
+    font-weight:500!important;
+    line-height:1!important;
+    letter-spacing:1.5px!important;
+    color:var(--sd-bg)!important;
+  }
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__field input,
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__field textarea{
+    color:var(--sd-ink)!important;
+    background:var(--sd-bg)!important;
+    border:0!important;
+    border-radius:10px!important;
+    padding:10px 12px!important;
+  }
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__field input{
+    height:46.188px!important;
+  }
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__field textarea{
+    height:138.938px!important;
+    min-height:138.938px!important;
+    resize:none!important;
+  }
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__submit{
+    width:421px!important;
+    height:48px!important;
+    margin-top:22px!important;
+    padding:16px 18px!important;
+    border:1px solid var(--sd-bg)!important;
+    border-radius:10px!important;
+    background:transparent!important;
+    color:var(--sd-bg)!important;
+    font-size:12px!important;
+    font-weight:500!important;
+    letter-spacing:1.2px!important;
+    text-transform:none!important;
+  }
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__formNote{
+    margin-top:14px!important;
+    color:var(--sd-bg)!important;
+    font-size:12px!important;
+    line-height:18px!important;
+  }
+}
