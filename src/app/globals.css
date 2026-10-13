@@ -2418,3 +2418,67 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
     scale:none!important;
   }
 }
+
+
+/* Services orbit restoration — original animation with corrected Figma-centred ampersand. */
+.services-module__g8J8Uq__collage{
+  --rx:clamp(300px,28vw,470px)!important;
+  --ry:clamp(220px,24vw,320px)!important;
+  min-height:clamp(720px,77vw,1010px)!important;
+  position:relative!important;
+  overflow:hidden!important;
+}
+.services-module__g8J8Uq__orbit{
+  animation:56s linear infinite services-module__g8J8Uq__collageOrbit!important;
+  animation-delay:calc(var(--i) * -11.2s)!important;
+  transform-origin:center!important;
+}
+.services-module__g8J8Uq__ampersand{
+  z-index:3!important;
+  left:50%!important;
+  top:50%!important;
+  right:auto!important;
+  bottom:auto!important;
+  width:216px!important;
+  height:216px!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  color:var(--sd-red)!important;
+  font-family:"Playfair Display Variable","Playfair Display",Georgia,serif!important;
+  font-size:216px!important;
+  font-weight:400!important;
+  font-style:normal!important;
+  line-height:1!important;
+  text-align:center!important;
+  transform:translate(-50%,-50%) translateY(-.035em)!important;
+  pointer-events:none!important;
+}
+.services-module__g8J8Uq__collageItem{
+  width:clamp(180px,19vw,260px)!important;
+  transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s ease!important;
+}
+.services-module__g8J8Uq__collageItem:hover{
+  transform:rotate(0deg) scale(1.045)!important;
+  box-shadow:0 24px 70px rgba(20,18,15,.18)!important;
+}
+@media (max-width:900px){
+  .services-module__g8J8Uq__collage{
+    --rx:clamp(150px,39vw,300px)!important;
+    --ry:clamp(180px,42vw,260px)!important;
+    min-height:720px!important;
+  }
+  .services-module__g8J8Uq__ampersand{
+    width:132px!important;
+    height:132px!important;
+    font-size:132px!important;
+  }
+  .services-module__g8J8Uq__collageItem{
+    width:clamp(126px,31vw,190px)!important;
+  }
+}
+@media (prefers-reduced-motion:reduce){
+  .services-module__g8J8Uq__orbit{
+    animation-play-state:paused!important;
+  }
+}
