@@ -90,7 +90,7 @@
 /* S&D launch overrides */
 .Footer-module__S6Hkya__footer{background:#000!important;border-top-color:#ffffff24!important;color:#fff!important}
 .Footer-module__S6Hkya__narrative,.Footer-module__S6Hkya__copyright,.Footer-module__S6Hkya__colTitle,.Footer-module__S6Hkya__link,.Footer-module__S6Hkya__pending{color:#fff!important}
-.Footer-module__S6Hkya__logo{filter:grayscale(1) invert(1)!important}
+.Footer-module__S6Hkya__logo{filter:none!important}
 .Footer-module__S6Hkya__link:hover{opacity:1!important}
 
 /* Temporarily hide unfinished case studies from the frontend */

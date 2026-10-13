@@ -41,7 +41,7 @@ export function Footer() {
               width="2517"
               height="433"
               className={c.logo}
-              src="/brand/smith-and-devil-logo.png"
+              src="/brand/smith-and-devil-logo-footer.png"
             />
           </Link>
           <p className={c.narrative}>
