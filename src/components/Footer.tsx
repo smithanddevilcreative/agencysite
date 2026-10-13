@@ -37,9 +37,9 @@ export function Footer() {
         <filter id="footer-logo-colour" colorInterpolationFilters="sRGB">
           <feColorMatrix
             type="matrix"
-            values="-0.256 0 0 0 1
-                    -1.123 0 0 0 1
-                    -1.123 0 0 0 1
+            values="-0.2568 0 0 0 1.0005
+                    -1.2193 0 0 0 1.0760
+                    -1.2084 0 0 0 1.0673
                      0 0 0 1 0"
           />
         </filter>
