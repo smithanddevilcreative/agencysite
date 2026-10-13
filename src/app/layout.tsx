@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Smith & Devil is a creative strategy and design studio for the experience economy.",
   icons: {
-    icon: [{ url: "/favicon.ico?v=4", type: "image/x-icon" }],
+    icon: [{ url: "/favicon.ico?v=5", type: "image/x-icon" }],
     shortcut: "/favicon.ico?v=4",
   },
 };
