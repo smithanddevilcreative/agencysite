@@ -2,22 +2,39 @@
 
 import { useEffect, useRef } from "react";
 
+type CursorState = "arrow" | "amp" | "view";
+
+const projectSelector = [
+  ".sd-home-project",
+  ".WorkCard-module__bi6E2q__card",
+  ".ProjectCard-module__U_VZua__card",
+  ".sd-services-orbit-card",
+].join(",");
+
+const actionSelector = [
+  "a",
+  "button",
+  "[role='button']",
+  "summary",
+].join(",");
+
 export function AmpersandCursor() {
-  const cursorRef = useRef<HTMLImageElement>(null);
+  const cursorRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const finePointer = window.matchMedia("(pointer: fine)");
-    if (!finePointer.matches) return;
+    if (!window.matchMedia("(pointer: fine)").matches) return;
 
     let frame = 0;
     let x = -100;
     let y = -100;
     let visible = false;
+    let state: CursorState = "arrow";
 
     const paint = () => {
       frame = 0;
       const el = cursorRef.current;
       if (!el) return;
+      el.dataset.state = state;
       el.style.transform = `translate3d(${x}px,${y}px,0) translate(-50%,-50%)`;
       el.style.opacity = visible ? "1" : "0";
     };
@@ -28,9 +45,16 @@ export function AmpersandCursor() {
 
     const onMove = (event: PointerEvent) => {
       if (event.pointerType && event.pointerType !== "mouse") return;
+
       x = event.clientX;
       y = event.clientY;
       visible = true;
+
+      const target = event.target instanceof Element ? event.target : null;
+      if (target?.closest(projectSelector)) state = "view";
+      else if (target?.closest(actionSelector)) state = "amp";
+      else state = "arrow";
+
       schedule();
     };
 
@@ -49,5 +73,11 @@ export function AmpersandCursor() {
     };
   }, []);
 
-  return <img ref={cursorRef} className="sd-amp-cursor" src="/brand/cursor-ampersand.png" alt="" aria-hidden="true" />;
+  return (
+    <div ref={cursorRef} className="sd-cursor" data-state="arrow" aria-hidden="true">
+      <span className="sd-cursor-arrow">↗</span>
+      <img className="sd-cursor-amp" src="/brand/cursor-ampersand.png" alt="" />
+      <span className="sd-cursor-view">VIEW</span>
+    </div>
+  );
 }
