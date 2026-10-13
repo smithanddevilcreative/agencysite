@@ -499,3 +499,128 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
   .sd-home-statement p{font-size:27px}
   .CTASection-module__ETvUXq__statement,.CTASection-module__ETvUXq__cta{font-size:30px!important}
 }
+
+
+/* 2026 services static calibration — Figma 5:2577. Motion intentionally deferred. */
+@media (min-width:901px){
+  .services-module__g8J8Uq__collage{
+    height:1010px;
+    min-height:1010px;
+    max-width:1500px;
+  }
+  .services-module__g8J8Uq__orbit{
+    animation:none!important;
+    top:auto!important;
+    left:auto!important;
+    will-change:auto!important;
+    transform:none!important;
+  }
+  .services-module__g8J8Uq__orbit:nth-of-type(1){left:780px!important;top:61px!important}
+  .services-module__g8J8Uq__orbit:nth-of-type(2){left:1096px!important;top:349px!important}
+  .services-module__g8J8Uq__orbit:nth-of-type(3){left:255px!important;top:174px!important}
+  .services-module__g8J8Uq__orbit:nth-of-type(4){left:762px!important;top:639px!important}
+  .services-module__g8J8Uq__orbit:nth-of-type(5){left:244px!important;top:530px!important}
+
+  .services-module__g8J8Uq__orbit:nth-of-type(1) .services-module__g8J8Uq__collageItem{width:248px;height:300px}
+  .services-module__g8J8Uq__orbit:nth-of-type(2) .services-module__g8J8Uq__collageItem{width:268px;height:325px}
+  .services-module__g8J8Uq__orbit:nth-of-type(3) .services-module__g8J8Uq__collageItem{width:243px;height:300px}
+  .services-module__g8J8Uq__orbit:nth-of-type(4) .services-module__g8J8Uq__collageItem{width:286px;height:350px}
+  .services-module__g8J8Uq__orbit:nth-of-type(5) .services-module__g8J8Uq__collageItem{width:283px;height:343px}
+
+  .services-module__g8J8Uq__ampersand{
+    left:711.5px!important;
+    top:473.86px!important;
+    transform:translate(-50%,-50%)!important;
+    font-size:216.083px!important;
+    line-height:198.797px!important;
+  }
+
+  .services-module__g8J8Uq__argument,
+  .services-module__g8J8Uq__studioSection,
+  .services-module__g8J8Uq__proofSection{
+    padding-block:148px!important;
+  }
+  .services-module__g8J8Uq__twoCol{
+    grid-template-columns:513px 513px!important;
+    column-gap:102px!important;
+  }
+  .services-module__g8J8Uq__twoCol h2{
+    max-width:572px!important;
+    font-size:70px!important;
+    line-height:71.4px!important;
+    letter-spacing:0!important;
+  }
+  .services-module__g8J8Uq__bodyCopy{
+    align-self:start!important;
+    width:421px!important;
+    gap:18px!important;
+    font-size:15px!important;
+    line-height:24px!important;
+  }
+
+  .services-module__g8J8Uq__serviceIndex{
+    padding-block:148px!important;
+  }
+  .services-module__g8J8Uq__indexHead{
+    height:161px!important;
+    margin-bottom:90px!important;
+  }
+  .services-module__g8J8Uq__indexHead h2{
+    max-width:none!important;
+    font-size:70px!important;
+    line-height:71.4px!important;
+    letter-spacing:0!important;
+  }
+  .services-module__g8J8Uq__cards{
+    padding-bottom:149px!important;
+  }
+  .services-module__g8J8Uq__card{
+    min-height:135px!important;
+    grid-template-columns:68px 393px 524px max-content!important;
+    gap:40px!important;
+    padding:28px 0!important;
+    align-items:center!important;
+  }
+  .services-module__g8J8Uq__cardNumber{
+    color:var(--sd-bg)!important;
+    font-family:var(--font-display)!important;
+    font-size:70px!important;
+    font-weight:400!important;
+    line-height:71.4px!important;
+    letter-spacing:0!important;
+  }
+  .services-module__g8J8Uq__card h3{
+    width:393px!important;
+    font-size:36px!important;
+    line-height:38.88px!important;
+    letter-spacing:0!important;
+  }
+  .services-module__g8J8Uq__card p{
+    width:524px!important;
+    opacity:.75!important;
+    font-size:15px!important;
+    line-height:24px!important;
+  }
+  .services-module__g8J8Uq__cardLink{
+    font-size:10px!important;
+    font-weight:500!important;
+    letter-spacing:1.5px!important;
+  }
+
+  .services-module__g8J8Uq__proofIntro{
+    width:454px!important;
+    max-width:none!important;
+    margin-top:24px!important;
+    font-size:15px!important;
+    line-height:24px!important;
+  }
+  .services-module__g8J8Uq__proofLinks{
+    margin-top:44px!important;
+  }
+  .services-module__g8J8Uq__proofLinks a{
+    min-height:93px!important;
+    padding:20px 0!important;
+    font-size:36px!important;
+    line-height:38.88px!important;
+  }
+}
