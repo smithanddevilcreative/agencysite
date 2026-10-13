@@ -1471,3 +1471,19 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
     height:39.1px!important;
   }
 }
+
+
+/* header logo source correction: dark nav asset only on dark header/menu */
+.Header-module__hBw1pG__header:not(.Header-module__hBw1pG__menuOpen):not(.Header-module__hBw1pG__ink) .Header-module__hBw1pG__logo{
+  filter:none!important;
+}
+.Header-module__hBw1pG__logo{
+  width:151px!important;
+  height:auto!important;
+}
+@media (max-width:900px){
+  .Header-module__hBw1pG__logo{
+    width:92px!important;
+    height:auto!important;
+  }
+}
