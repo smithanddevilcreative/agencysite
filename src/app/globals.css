@@ -1989,3 +1989,212 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
     background:var(--sd-ink)!important;
   }
 }
+
+
+/* 2026 stability pass — remove empty-rule artefacts and make Figma desktop fluid below source width. */
+
+/* Hidden eyebrow/label content must not leave empty ruled rows behind. */
+.studio-module__W4fhGG__rule{display:none!important}
+.service-module__T4otXW__sectionHead:has(> .service-module__T4otXW__sectionLabel:only-child),
+.services-module__g8J8Uq__sectionHead:has(> .services-module__g8J8Uq__sectionLabel:only-child){
+  display:none!important;
+}
+
+/* Avoid doubled rules where adjacent blocks both own the same divider. */
+.studio-module__W4fhGG__hero + section .studio-module__W4fhGG__pillar:first-child{
+  border-top:0!important;
+}
+.studio-module__W4fhGG__waysSection{
+  border-top:1px solid rgba(20,18,15,.12)!important;
+}
+.service-module__T4otXW__proofLine + .service-module__T4otXW__argument{
+  border-top:0!important;
+}
+
+/* The Figma desktop measurements are exact at ~1689px.
+   Below that, keep the hierarchy but let widths and type scale instead of forcing 1689px geometry. */
+@media (min-width:901px) and (max-width:1550px){
+  :root{
+    --gutter:clamp(28px,3.4vw,48px);
+  }
+
+  /* Work */
+  .work-module__8vBVoq__headline{
+    width:min(739px,62vw)!important;
+    max-width:min(739px,62vw)!important;
+    font-size:clamp(52px,4.15vw,70px)!important;
+    line-height:1.02!important;
+  }
+  .work-module__8vBVoq__cards{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    width:100%!important;
+  }
+  .WorkCard-module__bi6E2q__card{
+    width:100%!important;
+    height:auto!important;
+    aspect-ratio:336/720!important;
+  }
+
+  /* Studio */
+  .studio-module__W4fhGG__statement{
+    width:min(760px,64vw)!important;
+    max-width:min(760px,64vw)!important;
+    font-size:clamp(72px,6.5vw,108px)!important;
+    line-height:.94!important;
+    letter-spacing:-.045em!important;
+  }
+  .studio-module__W4fhGG__pillar,
+  .studio-module__W4fhGG__pillar:nth-child(2n){
+    grid-template-columns:minmax(0,1.65fr) minmax(280px,.85fr)!important;
+    gap:clamp(34px,4vw,64px)!important;
+    min-height:0!important;
+  }
+  .studio-module__W4fhGG__pillar:nth-child(2n){
+    grid-template-columns:minmax(280px,.85fr) minmax(0,1.65fr)!important;
+  }
+  .AboutHeadline-module__V-PVZq__headline{
+    width:auto!important;
+    max-width:100%!important;
+    font-size:clamp(58px,5.25vw,86px)!important;
+    line-height:.94!important;
+  }
+  .studio-module__W4fhGG__pillarBody{
+    width:auto!important;
+    max-width:360px!important;
+  }
+  .studio-module__W4fhGG__stack{
+    grid-template-columns:minmax(240px,.42fr) minmax(0,1fr)!important;
+    column-gap:clamp(42px,5vw,90px)!important;
+  }
+  .studio-module__W4fhGG__card{
+    width:100%!important;
+  }
+
+  /* Project template */
+  .study-module__vTcG6G__layout{
+    width:min(1240px,100%)!important;
+    max-width:1240px!important;
+    grid-template-columns:minmax(210px,.34fr) minmax(0,1fr)!important;
+    column-gap:clamp(56px,7vw,105px)!important;
+  }
+  .study-module__vTcG6G__content,
+  .study-module__vTcG6G__hero,
+  .study-module__vTcG6G__lead,
+  .study-module__vTcG6G__paragraph,
+  .study-module__vTcG6G__gallery{
+    width:100%!important;
+  }
+  .study-module__vTcG6G__hero .StudyVideoEmbed-module__8FDA2W__wrap{
+    width:100%!important;
+    height:auto!important;
+    aspect-ratio:16/9!important;
+  }
+  .study-module__vTcG6G__lead{
+    height:auto!important;
+  }
+  .study-module__vTcG6G__lead img{
+    position:static!important;
+    width:100%!important;
+    height:auto!important;
+    object-fit:contain!important;
+  }
+
+  /* Contact */
+  .contact-module__swMWYG__inner{
+    width:min(1240px,100%)!important;
+    grid-template-columns:minmax(0,1.15fr) minmax(360px,.85fr)!important;
+    gap:clamp(60px,7vw,130px)!important;
+  }
+  .contact-module__swMWYG__main h1{
+    width:auto!important;
+    max-width:8ch!important;
+    font-size:clamp(58px,4.6vw,70px)!important;
+  }
+  .contact-module__swMWYG__formWrap,
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__form{
+    width:100%!important;
+  }
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__formGrid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__submit{
+    width:100%!important;
+  }
+
+  /* Service detail */
+  .service-module__T4otXW__heroGrid,
+  .service-module__T4otXW__argumentGrid,
+  .service-module__T4otXW__fitGrid,
+  .service-module__T4otXW__enquiryGrid{
+    grid-template-columns:minmax(0,1.25fr) minmax(300px,.75fr)!important;
+    gap:clamp(60px,7vw,140px)!important;
+  }
+  .service-module__T4otXW__title{
+    width:auto!important;
+    max-width:10ch!important;
+    font-size:clamp(58px,4.6vw,70px)!important;
+  }
+  .service-module__T4otXW__standfirst,
+  .service-module__T4otXW__actions,
+  .service-module__T4otXW__primaryAction{
+    width:100%!important;
+    min-width:0!important;
+  }
+  .service-module__T4otXW__heroMedia,
+  .service-module__T4otXW__proofLine{
+    width:100%!important;
+  }
+  .service-module__T4otXW__heroMedia{
+    height:auto!important;
+    min-height:0!important;
+    aspect-ratio:1128/1200!important;
+  }
+  .service-module__T4otXW__capabilityGrid{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+  .service-module__T4otXW__caseStudy>.service-module__T4otXW__inner{
+    grid-template-columns:minmax(0,1.15fr) minmax(300px,.65fr)!important;
+    gap:clamp(44px,5vw,78px)!important;
+  }
+  .service-module__T4otXW__caseMedia{
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    aspect-ratio:670.828/900!important;
+  }
+  .service-module__T4otXW__caseCopy{
+    width:auto!important;
+  }
+}
+
+/* Tablet bridge: stop desktop Figma dimensions fighting the mobile layout. */
+@media (min-width:901px) and (max-width:1180px){
+  .studio-module__W4fhGG__pillar,
+  .studio-module__W4fhGG__pillar:nth-child(2n),
+  .studio-module__W4fhGG__stack,
+  .contact-module__swMWYG__inner,
+  .service-module__T4otXW__heroGrid,
+  .service-module__T4otXW__argumentGrid,
+  .service-module__T4otXW__fitGrid,
+  .service-module__T4otXW__enquiryGrid,
+  .service-module__T4otXW__caseStudy>.service-module__T4otXW__inner{
+    grid-template-columns:1fr!important;
+  }
+  .studio-module__W4fhGG__pillar:nth-child(2n)>h2,
+  .studio-module__W4fhGG__pillar:nth-child(2n) .studio-module__W4fhGG__pillarBody{
+    order:0!important;
+    text-align:left!important;
+  }
+  .studio-module__W4fhGG__stackSticky,
+  .service-module__T4otXW__caseCopy{
+    position:static!important;
+  }
+  .study-module__vTcG6G__layout{
+    grid-template-columns:1fr!important;
+    row-gap:40px!important;
+  }
+  .study-module__vTcG6G__stickyInner{position:static!important}
+  .work-module__8vBVoq__cards{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  }
+}
