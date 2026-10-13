@@ -2692,3 +2692,12 @@ summary,
 input[type="submit"]{
   cursor:none!important;
 }
+
+
+/* Cursor contrast on S&D red surfaces. */
+.sd-cursor[data-surface="red"] .sd-cursor-amp{
+  filter:brightness(0) invert(1);
+}
+.sd-cursor[data-surface="red"] .sd-cursor-arrow{
+  color:var(--sd-bg);
+}
