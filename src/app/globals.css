@@ -1444,3 +1444,30 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
     transform:rotate(45deg) translate(3px,-3px)!important;
   }
 }
+
+
+/* header logo proportions — Figma 76:11883 / 76:11884 */
+.Header-module__hBw1pG__header > a[aria-label="Smith & Devil — home"]{
+  width:151px!important;
+  height:26px!important;
+  overflow:hidden!important;
+  display:block!important;
+}
+.Header-module__hBw1pG__logo{
+  width:151px!important;
+  height:64.148px!important;
+  max-width:none!important;
+  display:block!important;
+  object-fit:contain!important;
+  object-position:top left!important;
+}
+@media (max-width:900px){
+  .Header-module__hBw1pG__header > a[aria-label="Smith & Devil — home"]{
+    width:92px!important;
+    height:16px!important;
+  }
+  .Header-module__hBw1pG__logo{
+    width:92px!important;
+    height:39.1px!important;
+  }
+}
