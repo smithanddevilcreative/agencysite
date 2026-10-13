@@ -1487,3 +1487,17 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
     height:auto!important;
   }
 }
+
+
+/* menu logo crop fix — preserve Figma overflow */
+.Header-module__hBw1pG__header > a[aria-label="Smith & Devil — home"]{
+  overflow:visible!important;
+}
+.Header-module__hBw1pG__menuOpen .Header-module__hBw1pG__logo,
+.Header-module__hBw1pG__ink .Header-module__hBw1pG__logo{
+  width:151px!important;
+  height:64.148px!important;
+  object-fit:contain!important;
+  object-position:top left!important;
+  filter:none!important;
+}
