@@ -725,8 +725,8 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "enquiry": {
       "label": "Start a conversation",
-      "title": "Create a place people choose.",
-      "intro": "Tell us what the venue needs to make possible, how far the project has progressed and where the customer experience needs creative leadership."
+      "title": "What should happen when people walk through the door?",
+      "intro": "Tell us what you’re making, where you’ve got to and what still needs figuring out."
     }
   },
   "themed-experiences": {
