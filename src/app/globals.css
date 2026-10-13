@@ -1411,3 +1411,36 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
     max-width:561.375px!important;
   }
 }
+
+
+/* menu chevron clean-up */
+@media (min-width:901px){
+  .Header-module__hBw1pG__primaryNav a{
+    display:inline-flex!important;
+    align-items:center!important;
+    gap:24px!important;
+  }
+  .Header-module__hBw1pG__primaryNav a::after{
+    content:""!important;
+    box-sizing:border-box!important;
+    width:42px!important;
+    height:42px!important;
+    margin-left:0!important;
+    flex:0 0 42px!important;
+    border-top:2px solid var(--sd-red)!important;
+    border-right:2px solid var(--sd-red)!important;
+    border-bottom:0!important;
+    border-left:0!important;
+    background:none!important;
+    clip-path:none!important;
+    opacity:0!important;
+    transform:rotate(45deg)!important;
+    transition:opacity .18s ease,transform .18s ease!important;
+  }
+  .Header-module__hBw1pG__primaryNav a:hover::after,
+  .Header-module__hBw1pG__primaryNav a:focus-visible::after,
+  .Header-module__hBw1pG__primaryNav a[aria-current="page"]::after{
+    opacity:1!important;
+    transform:rotate(45deg) translate(3px,-3px)!important;
+  }
+}
