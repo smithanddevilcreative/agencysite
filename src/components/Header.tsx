@@ -58,7 +58,7 @@ export function Header() {
         <div className={c.panel} id="site-menu">
           <nav className={c.primaryNav} aria-label="Primary">
             {primaryNav.map(([label, href]) => {
-              const active = pathname === href || (href !== "/" && pathname.startsWith(`${href}/`));
+              const active = pathname === href || pathname.startsWith(`${href}/`);
               return <Link href={href} key={href} aria-current={active ? "page" : undefined}>{label}</Link>;
             })}
           </nav>
