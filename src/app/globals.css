@@ -2585,3 +2585,31 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
   .sd-services-orbit{height:720px}
   .sd-services-orbit-slot{opacity:1}
 }
+
+
+/* S&D custom cursor — exact red Figma ampersand on fine pointers only. */
+.sd-amp-cursor{
+  position:fixed;
+  z-index:2147483647;
+  left:0;
+  top:0;
+  width:34px;
+  height:auto;
+  pointer-events:none;
+  opacity:0;
+  transform:translate3d(-100px,-100px,0) translate(-50%,-50%);
+  transition:opacity .12s ease, width .18s cubic-bezier(.16,1,.3,1);
+  will-change:transform;
+}
+@media (pointer:fine){
+  html,body,a,button,[role="button"],input,textarea,select,summary{
+    cursor:none!important;
+  }
+  a:hover~.sd-amp-cursor,
+  button:hover~.sd-amp-cursor{
+    width:38px;
+  }
+}
+@media (pointer:coarse),(prefers-reduced-motion:reduce){
+  .sd-amp-cursor{display:none!important}
+}
