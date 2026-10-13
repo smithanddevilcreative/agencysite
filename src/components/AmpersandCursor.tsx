@@ -12,10 +12,18 @@ const projectSelector = [
 ].join(",");
 
 const actionSelector = [
-  "a",
+  "a[href]",
   "button",
   "[role='button']",
   "summary",
+  "input[type='submit']",
+].join(",");
+
+const darkSelector = [
+  ".Footer-module__S6Hkya__footer",
+  ".Header-module__hBw1pG__panel",
+  ".services-module__g8J8Uq__serviceIndex",
+  ".contact-module__swMWYG__main",
 ].join(",");
 
 export function AmpersandCursor() {
@@ -55,6 +63,9 @@ export function AmpersandCursor() {
       else if (target?.closest(actionSelector)) state = "amp";
       else state = "arrow";
 
+      const el = cursorRef.current;
+      if (el) el.dataset.tone = target?.closest(darkSelector) ? "light" : "dark";
+
       schedule();
     };
 
@@ -74,7 +85,7 @@ export function AmpersandCursor() {
   }, []);
 
   return (
-    <div ref={cursorRef} className="sd-cursor" data-state="arrow" aria-hidden="true">
+    <div ref={cursorRef} className="sd-cursor" data-state="arrow" data-tone="dark" aria-hidden="true">
       <span className="sd-cursor-arrow">↗</span>
       <img className="sd-cursor-amp" src="/brand/cursor-ampersand.png" alt="" />
       <span className="sd-cursor-view">VIEW</span>

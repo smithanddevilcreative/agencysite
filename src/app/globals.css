@@ -2672,3 +2672,23 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
   .sd-cursor{display:none!important}
   html,body,a,button,[role="button"],summary{cursor:auto!important}
 }
+
+
+/* Cursor contrast + complete action coverage. */
+.sd-cursor[data-tone="light"] .sd-cursor-arrow{
+  color:var(--sd-bg);
+}
+.sd-cursor[data-tone="dark"] .sd-cursor-arrow{
+  color:var(--sd-ink);
+}
+
+/* The ampersand is the universal click/act state, including footer navigation. */
+.Footer-module__S6Hkya__footer a,
+.Header-module__hBw1pG__panel a,
+a[href],
+button,
+[role="button"],
+summary,
+input[type="submit"]{
+  cursor:none!important;
+}
