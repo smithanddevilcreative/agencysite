@@ -2270,3 +2270,25 @@ body{background:var(--sd-bg);color:var(--sd-ink)}
 .studio-module__W4fhGG__hero + section .studio-module__W4fhGG__pillar:first-child{
   border-top:1px solid rgba(20,18,15,.12)!important;
 }
+
+
+/* Studio hero rule — single divider exactly as Figma. */
+.studio-module__W4fhGG__rule{
+  display:block!important;
+  height:1px!important;
+  margin-top:52px!important;
+  padding:0!important;
+  border-top:1px solid rgba(20,18,15,.12)!important;
+  overflow:hidden!important;
+}
+.studio-module__W4fhGG__rule > *{
+  display:none!important;
+}
+.studio-module__W4fhGG__hero + section .studio-module__W4fhGG__pillar:first-child{
+  border-top:0!important;
+}
+@media (max-width:900px){
+  .studio-module__W4fhGG__rule{
+    margin-top:34px!important;
+  }
+}
