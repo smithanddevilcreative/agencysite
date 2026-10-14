@@ -3143,3 +3143,27 @@ input[type="submit"]{
 .study-module__vTcG6G__gallery:has(> :nth-child(9)) > :nth-last-child(-n+2){
   display:none!important;
 }
+
+
+/* Menu service-link underline to match footer. */
+.Header-module__hBw1pG__serviceNav a{
+  position:relative!important;
+  display:inline-block!important;
+  width:max-content!important;
+}
+.Header-module__hBw1pG__serviceNav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-3px;
+  height:1px;
+  background:var(--sd-red);
+  transform:scaleX(0);
+  transform-origin:left center;
+  transition:transform .22s ease;
+}
+.Header-module__hBw1pG__serviceNav a:hover::after,
+.Header-module__hBw1pG__serviceNav a:focus-visible::after{
+  transform:scaleX(1);
+}
