@@ -4,8 +4,9 @@ import { CTASection } from "@/components/CTASection";
 import { projects } from "@/lib/projects";
 
 export const metadata: Metadata = {
-  title: "Work — Smith & Devil",
+  title: "Work",
   description: "Selected Smith & Devil projects across branding, digital, campaigns and experiences.",
+  alternates: { canonical: "/work" },
 };
 
 const c = {
