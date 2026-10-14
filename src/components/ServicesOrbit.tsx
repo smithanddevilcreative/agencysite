@@ -44,11 +44,15 @@ export function ServicesOrbit({ services }: { services: readonly ServiceOrbitIte
         const vw = window.innerWidth;
         const vh = window.innerHeight;
 
-        const rx = Math.min(Math.max(vw * 0.27, 250), 470);
-        const ry = Math.min(Math.max(vh * 0.28, 190), 320);
         const mobile = vw < 700;
+        const rx = mobile
+          ? Math.min(vw * 0.32, 145)
+          : Math.min(Math.max(vw * 0.27, 250), 470);
+        const ry = mobile
+          ? Math.min(Math.max(vh * 0.24, 170), 230)
+          : Math.min(Math.max(vh * 0.28, 190), 320);
         const cardSize = mobile
-          ? Math.min(Math.max(vw * 0.32, 120), 180)
+          ? Math.min(Math.max(vw * 0.27, 104), 132)
           : Math.min(Math.max(vw * 0.18, 190), 270);
 
         const turn = progress * Math.PI * 1.15;
