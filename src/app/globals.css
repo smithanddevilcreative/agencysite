@@ -4449,3 +4449,20 @@ input[type="submit"]{
 @media(prefers-reduced-motion:reduce){
   .sd-404-pixel__artEmbers span{animation:none!important}
 }
+
+
+/* Homepage statement mobile rhythm */
+.sd-home-statement-mobile{display:none}
+@media(max-width:700px){
+  .sd-home-statement-desktop{display:none!important}
+  .sd-home-statement-mobile{
+    display:block!important;
+    max-width:92vw!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+    font-size:clamp(38px,10.4vw,54px)!important;
+    line-height:1.04!important;
+    letter-spacing:-.045em!important;
+    text-align:center!important;
+  }
+}
