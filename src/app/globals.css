@@ -3369,3 +3369,26 @@ input[type="submit"]{
     letter-spacing:-.025em!important;
   }
 }
+
+
+/* Menu visibility repair — keep primary and secondary nav together. */
+.Header-module__hBw1pG__panel .Header-module__hBw1pG__primaryNav{
+  display:flex!important;
+  visibility:visible!important;
+  opacity:1!important;
+  position:relative!important;
+  z-index:2!important;
+}
+.Header-module__hBw1pG__panel .Header-module__hBw1pG__serviceNav,
+.Header-module__hBw1pG__panel .Header-module__hBw1pG__email{
+  visibility:visible!important;
+  opacity:1!important;
+  z-index:2!important;
+}
+@media (min-width:901px){
+  .Header-module__hBw1pG__primaryNav{
+    position:absolute!important;
+    left:16px!important;
+    top:146px!important;
+  }
+}
