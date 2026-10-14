@@ -14,6 +14,7 @@ const c = {
   panel: "Header-module__hBw1pG__panel",
   primaryNav: "Header-module__hBw1pG__primaryNav",
   serviceNav: "Header-module__hBw1pG__serviceNav",
+  secondary: "Header-module__hBw1pG__secondary",
   email: "Header-module__hBw1pG__email",
 };
 
@@ -63,15 +64,17 @@ export function Header() {
             })}
           </nav>
 
-          <nav className={c.serviceNav} aria-label="Services">
-            {serviceLinks.map(([label, href]) => (
-              <Link href={href} key={href}>{label}</Link>
-            ))}
-          </nav>
+          <div className={c.secondary}>
+            <nav className={c.serviceNav} aria-label="Services">
+              {serviceLinks.map(([label, href]) => (
+                <Link href={href} key={href}>{label}</Link>
+              ))}
+            </nav>
 
-          <a className={c.email} href="mailto:hello@smithanddevil.com">
-            hello@smithanddevil.com
-          </a>
+            <a className={c.email} href="mailto:hello@smithanddevil.com">
+              hello@smithanddevil.com
+            </a>
+          </div>
         </div>
       )}
     </header>
