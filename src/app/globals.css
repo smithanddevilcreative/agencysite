@@ -3241,10 +3241,3 @@ input[type="submit"]{
     text-transform:none!important;
   }
 }
-
-
-/* Branded ampersand asset sizing. */
-.sd-cursor-amp{
-  object-fit:contain!important;
-  padding:0!important;
-}
