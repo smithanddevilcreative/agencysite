@@ -4,8 +4,9 @@ import { EnquiryForm } from "@/components/EnquiryForm";
 import { ServicesOrbit } from "@/components/ServicesOrbit";
 
 export const metadata: Metadata = {
-  title: "Creative Services for the Experience Economy | Smith & Devil",
+  title: "Creative Services for the Experience Economy",
   description: "Brand, campaign, digital, interior and themed experience services for hospitality, leisure, entertainment and experience-led businesses.",
+  alternates: { canonical: "/services" },
 };
 
 const services = [
