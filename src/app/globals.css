@@ -3493,3 +3493,53 @@ input[type="submit"]{
     translate:none!important;
   }
 }
+
+
+/* Menu layout — compact Figma stack with shared bottom edge. */
+@media (min-width:901px){
+  .Header-module__hBw1pG__panel{
+    height:100svh!important;
+    min-height:100svh!important;
+    padding:0 32px 165px!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,67%) minmax(280px,33%)!important;
+    grid-template-rows:1fr!important;
+    column-gap:0!important;
+    align-items:end!important;
+    overflow:hidden!important;
+  }
+
+  .Header-module__hBw1pG__primaryNav{
+    position:static!important;
+    grid-column:1!important;
+    grid-row:1!important;
+    width:max-content!important;
+    max-width:none!important;
+    height:auto!important;
+    align-self:end!important;
+    justify-content:flex-start!important;
+    gap:10px!important;
+    padding:0!important;
+  }
+
+  .Header-module__hBw1pG__primaryNav a{
+    min-height:0!important;
+    font-size:clamp(82px,7.4vw,104px)!important;
+    line-height:1.06!important;
+    letter-spacing:-.05em!important;
+  }
+
+  .Header-module__hBw1pG__secondary{
+    position:static!important;
+    grid-column:2!important;
+    grid-row:1!important;
+    align-self:end!important;
+    justify-self:start!important;
+    display:flex!important;
+    flex-direction:column!important;
+    gap:38px!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+  }
+}
