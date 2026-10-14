@@ -111,7 +111,7 @@ export function AmpersandCursor() {
   return (
     <div ref={cursorRef} className="sd-cursor" data-state="arrow" data-tone="dark" data-surface="normal" aria-hidden="true">
       <span className="sd-cursor-arrow">↗</span>
-      <span className="sd-cursor-amp">&</span>
+      <img className="sd-cursor-amp" alt="" src="/brand/cursor-ampersand.png" />
       <span className="sd-cursor-view">VIEW</span>
     </div>
   );
