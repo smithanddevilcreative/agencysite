@@ -3392,3 +3392,43 @@ input[type="submit"]{
     top:146px!important;
   }
 }
+
+
+/* Menu secondary block — explicit Figma grouping. */
+.Header-module__hBw1pG__secondary{
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  gap:40px!important;
+}
+@media (min-width:901px){
+  .Header-module__hBw1pG__secondary{
+    position:absolute!important;
+    left:67.1%!important;
+    top:57.8%!important;
+    z-index:3!important;
+    visibility:visible!important;
+    opacity:1!important;
+    transform:none!important;
+    translate:none!important;
+  }
+  .Header-module__hBw1pG__secondary .Header-module__hBw1pG__serviceNav,
+  .Header-module__hBw1pG__secondary .Header-module__hBw1pG__email{
+    position:static!important;
+    left:auto!important;
+    top:auto!important;
+    width:auto!important;
+    max-width:none!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+    visibility:visible!important;
+    opacity:1!important;
+    animation:none!important;
+  }
+}
+@media (max-width:900px){
+  .Header-module__hBw1pG__secondary{
+    gap:28px!important;
+  }
+}
