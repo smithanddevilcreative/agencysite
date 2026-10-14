@@ -4,9 +4,10 @@ import { HomeHero } from "@/components/HomeHero";
 import { CTASection } from "@/components/CTASection";
 
 export const metadata: Metadata = {
-  title: "Smith & Devil — Win hearts & markets",
+  title: { absolute: "Smith & Devil — Win hearts & markets" },
   description:
     "Smith & Devil is a creative strategy and design studio for the experience economy. We partner with brands and businesses that are as ambitious as we are. Winning hearts and markets with solid strategy and powerful creative.",
+  alternates: { canonical: "/" },
 };
 
 const panels = [
