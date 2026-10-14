@@ -116,7 +116,7 @@ export default function StudioPage() {
           <div className={c.stack}>
             <div>
               <div className={c.stackSticky}>
-                <span className={c.mark} aria-hidden="true">&</span>
+                <img className={c.mark} aria-hidden="true" alt="" src="/brand/cursor-ampersand.png" />
                 <h2 id="ways" className={c.flexHeading}>Work with us, it’s a flex.</h2>
                 <p className={c.body}>No rigid systems, no hidden fees, no wasting time. Just really talented people partnered with your business on terms that work for you.</p>
               </div>
