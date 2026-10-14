@@ -14,8 +14,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const project = projectPages[slug];
   if (!project) return {};
   return {
-    title: `${project.title} — Smith & Devil`,
+    title: project.title,
     description: project.description,
+    alternates: { canonical: `/work/${slug}` },
+    openGraph: {
+      type: "article",
+      url: `/work/${slug}`,
+      title: project.title,
+      description: project.description,
+    },
   };
 }
 
