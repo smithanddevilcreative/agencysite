@@ -3716,3 +3716,12 @@ input[type="submit"]{
     transform:translateY(-9px)!important;
   }
 }
+
+
+/* Menu final alignment — match Figma secondary block to Contact. */
+@media (min-width:901px){
+  .Header-module__hBw1pG__secondary{
+    left:71.5%!important;
+    transform:translateY(-12vh)!important;
+  }
+}
