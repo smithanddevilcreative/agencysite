@@ -3124,3 +3124,9 @@ input[type="submit"]{
   height:100%!important;
   object-fit:cover!important;
 }
+
+
+/* Strike duplicate-render guard. */
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(n+8){
+  display:none!important;
+}
