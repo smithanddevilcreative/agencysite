@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { EnquiryForm } from "@/components/EnquiryForm";
 
 export const metadata: Metadata = {
-  title: "Contact — Smith & Devil",
+  title: "Contact",
   description: "Start a conversation with Smith & Devil about your next brand, venue, website, campaign or experience.",
+  alternates: { canonical: "/contact" },
 };
 
 export default function ContactPage() {
