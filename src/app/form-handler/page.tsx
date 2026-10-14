@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 export default function FormHandlerPage() {
   return (
     <main hidden>
@@ -20,3 +21,7 @@ export default function FormHandlerPage() {
     </main>
   );
 }
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
