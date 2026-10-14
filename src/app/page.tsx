@@ -96,11 +96,17 @@ export default function HomePage() {
       </section>
 
       <section className="sd-home-statement">
-        <p>
+        <p className="sd-home-statement-desktop">
           We partner with brands and businesses<br />
           that are as ambitious as we are.<br />
           Winning <em>hearts &amp; markets</em> with<br />
           solid strategy and powerful creative.
+        </p>
+        <p className="sd-home-statement-mobile">
+          We partner with brands and businesses<br />
+          that are as ambitious as we are.<br /><br />
+          Winning <em>hearts &amp; markets</em><br />
+          with solid strategy and powerful creative.
         </p>
       </section>
 
