@@ -6,7 +6,7 @@ import { MotionController } from "@/components/MotionController";
 import { AmpersandCursor } from "@/components/AmpersandCursor";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://smithanddevil.com"),
+  metadataBase: new URL("https://www.smithanddevil.com"),
   title: {
     default: "Smith & Devil — Win hearts & markets",
     template: "%s | Smith & Devil",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://smithanddevil.com",
+    url: "https://www.smithanddevil.com",
     siteName: "Smith & Devil",
     title: "Smith & Devil — Win hearts & markets",
     description:
@@ -75,8 +75,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Smith & Devil",
-              url: "https://smithanddevil.com",
-              logo: "https://smithanddevil.com/favicon.svg",
+              url: "https://www.smithanddevil.com",
+              logo: "https://www.smithanddevil.com/favicon.svg",
               email: "hello@smithanddevil.com",
               description:
                 "Creative strategy and design studio for the experience economy.",
