@@ -59,14 +59,8 @@ export function AmpersandCursor() {
       if (!frame) frame = requestAnimationFrame(paint);
     };
 
-    const onMove = (event: PointerEvent) => {
-      if (event.pointerType && event.pointerType !== "mouse") return;
-
-      x = event.clientX;
-      y = event.clientY;
-      visible = true;
-
-      const target = event.target instanceof Element ? event.target : null;
+    const updateStateAtPoint = () => {
+      const target = document.elementFromPoint(x, y);
       if (target?.closest(footerSelector)) state = "amp";
       else if (target?.closest(projectSelector)) state = "view";
       else if (target?.closest(actionSelector)) state = "amp";
@@ -77,7 +71,21 @@ export function AmpersandCursor() {
         el.dataset.tone = target?.closest(darkSelector) ? "light" : "dark";
         el.dataset.surface = target?.closest(redSelector) ? "red" : "normal";
       }
+    };
 
+    const onMove = (event: PointerEvent) => {
+      if (event.pointerType && event.pointerType !== "mouse") return;
+
+      x = event.clientX;
+      y = event.clientY;
+      visible = true;
+      updateStateAtPoint();
+      schedule();
+    };
+
+    const onViewportChange = () => {
+      if (!visible) return;
+      updateStateAtPoint();
       schedule();
     };
 
@@ -87,10 +95,14 @@ export function AmpersandCursor() {
     };
 
     window.addEventListener("pointermove", onMove, { passive: true });
+    window.addEventListener("scroll", onViewportChange, { passive: true });
+    window.addEventListener("resize", onViewportChange, { passive: true });
     document.documentElement.addEventListener("mouseleave", onLeave);
 
     return () => {
       window.removeEventListener("pointermove", onMove);
+      window.removeEventListener("scroll", onViewportChange);
+      window.removeEventListener("resize", onViewportChange);
       document.documentElement.removeEventListener("mouseleave", onLeave);
       if (frame) cancelAnimationFrame(frame);
     };
@@ -99,7 +111,7 @@ export function AmpersandCursor() {
   return (
     <div ref={cursorRef} className="sd-cursor" data-state="arrow" data-tone="dark" data-surface="normal" aria-hidden="true">
       <span className="sd-cursor-arrow">↗</span>
-      <img className="sd-cursor-amp" src="/brand/cursor-ampersand.png" alt="" />
+      <span className="sd-cursor-amp">&</span>
       <span className="sd-cursor-view">VIEW</span>
     </div>
   );

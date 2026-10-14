@@ -3027,3 +3027,41 @@ input[type="submit"]{
 .services-module__g8J8Uq__card:focus-visible .services-module__g8J8Uq__cardNumber{
   color:var(--sd-red)!important;
 }
+
+
+/* Cursor refinement — larger VIEW, circular ampersand, live scroll-state refresh. */
+.sd-cursor[data-state="view"]{
+  width:60px!important;
+  height:60px!important;
+}
+.sd-cursor-view{
+  width:60px!important;
+  height:60px!important;
+  font-size:9px!important;
+}
+
+.sd-cursor-amp{
+  width:38px!important;
+  height:38px!important;
+  border-radius:50%!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  background:var(--sd-red)!important;
+  color:var(--sd-bg)!important;
+  font-family:"Playfair Display Variable","Playfair Display",Georgia,serif!important;
+  font-size:27px!important;
+  font-weight:500!important;
+  line-height:1!important;
+  padding-bottom:3px!important;
+  filter:none!important;
+}
+.sd-cursor[data-state="amp"]{
+  width:38px!important;
+  height:38px!important;
+}
+.sd-cursor[data-surface="red"] .sd-cursor-amp{
+  background:var(--sd-bg)!important;
+  color:var(--sd-red)!important;
+  filter:none!important;
+}
