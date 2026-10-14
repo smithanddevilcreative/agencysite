@@ -28,3 +28,19 @@ for (const [source, target] of compatibilityCopies) {
   await mkdir(target.slice(0, target.lastIndexOf("/")), { recursive: true });
   await copyFile(source, target);
 }
+
+
+const pixel404Parts = [
+  "scripts/assets/404-art-00.txt",
+  "scripts/assets/404-art-01.txt",
+  "scripts/assets/404-art-02.txt",
+  "scripts/assets/404-art-03.txt",
+  "scripts/assets/404-art-04.txt",
+];
+
+if (pixel404Parts.every((part) => existsSync(part))) {
+  const { readFile, writeFile } = await import("node:fs/promises");
+  const encoded = (await Promise.all(pixel404Parts.map((part) => readFile(part, "utf8")))).join("");
+  await mkdir("public/brand", { recursive: true });
+  await writeFile("public/brand/404-approved-art.webp", Buffer.from(encoded, "base64"));
+}
