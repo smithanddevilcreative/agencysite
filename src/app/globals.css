@@ -3610,3 +3610,101 @@ input[type="submit"]{
     animation:none!important;
   }
 }
+
+
+/* Desktop menu — exact Figma composition from 2026-10-14 reference. */
+@media (min-width:901px){
+  .Header-module__hBw1pG__panel{
+    position:fixed!important;
+    inset:0!important;
+    height:100svh!important;
+    min-height:100svh!important;
+    padding:0!important;
+    display:block!important;
+    overflow:hidden!important;
+    background:var(--sd-ink)!important;
+  }
+
+  .Header-module__hBw1pG__primaryNav{
+    position:absolute!important;
+    left:32px!important;
+    top:19.5vh!important;
+    width:max-content!important;
+    height:auto!important;
+    max-width:none!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    justify-content:flex-start!important;
+    gap:8px!important;
+    padding:0!important;
+    margin:0!important;
+  }
+
+  .Header-module__hBw1pG__primaryNav a{
+    display:inline-flex!important;
+    min-height:0!important;
+    width:max-content!important;
+    font-family:var(--font-display)!important;
+    font-size:clamp(84px,7.6vw,102px)!important;
+    line-height:1.08!important;
+    letter-spacing:-.05em!important;
+    color:var(--sd-bg)!important;
+  }
+
+  .Header-module__hBw1pG__secondary{
+    position:absolute!important;
+    left:68.4%!important;
+    bottom:24.7vh!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:38px!important;
+    width:max-content!important;
+    margin:0!important;
+    padding:0!important;
+    transform:none!important;
+    translate:none!important;
+  }
+
+  .Header-module__hBw1pG__secondary .Header-module__hBw1pG__serviceNav{
+    position:static!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:9px!important;
+    width:max-content!important;
+    margin:0!important;
+    padding:0!important;
+    transform:none!important;
+    translate:none!important;
+    visibility:visible!important;
+    opacity:1!important;
+    animation:none!important;
+  }
+
+  .Header-module__hBw1pG__secondary .Header-module__hBw1pG__serviceNav a{
+    font-size:9px!important;
+    line-height:1.15!important;
+    letter-spacing:.16em!important;
+    color:var(--sd-bg)!important;
+  }
+
+  .Header-module__hBw1pG__secondary .Header-module__hBw1pG__email{
+    position:static!important;
+    width:max-content!important;
+    margin:0!important;
+    padding:0!important;
+    font-family:var(--font-display)!important;
+    font-size:22px!important;
+    line-height:1!important;
+    letter-spacing:-.025em!important;
+    text-transform:none!important;
+    color:var(--sd-bg)!important;
+    transform:none!important;
+    translate:none!important;
+    visibility:visible!important;
+    opacity:1!important;
+    animation:none!important;
+  }
+}
