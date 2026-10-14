@@ -6,12 +6,45 @@ import { MotionController } from "@/components/MotionController";
 import { AmpersandCursor } from "@/components/AmpersandCursor";
 
 export const metadata: Metadata = {
-  title: "Smith & Devil — Win hearts & markets",
+  metadataBase: new URL("https://smithanddevil.com"),
+  title: {
+    default: "Smith & Devil — Win hearts & markets",
+    template: "%s | Smith & Devil",
+  },
   description:
     "Smith & Devil is a creative strategy and design studio for the experience economy.",
+  alternates: {
+    canonical: "/",
+  },
   icons: {
-    icon: [{ url: "/icon.svg?v=7", type: "image/svg+xml" }],
-    shortcut: "/icon.svg?v=7",
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml", sizes: "any" }],
+    shortcut: "/favicon.svg",
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_GB",
+    url: "https://smithanddevil.com",
+    siteName: "Smith & Devil",
+    title: "Smith & Devil — Win hearts & markets",
+    description:
+      "Creative strategy, branding, campaigns, digital, interiors and themed experiences for the experience economy.",
+    images: [
+      {
+        url: "/images/humbug.jpg",
+        alt: "Smith & Devil creative studio work",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Smith & Devil — Win hearts & markets",
+    description:
+      "Creative strategy, branding, campaigns, digital, interiors and themed experiences for the experience economy.",
+    images: ["/images/humbug.jpg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -35,6 +68,21 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         />
       </head>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Smith & Devil",
+              url: "https://smithanddevil.com",
+              logo: "https://smithanddevil.com/favicon.svg",
+              email: "hello@smithanddevil.com",
+              description:
+                "Creative strategy and design studio for the experience economy.",
+            }),
+          }}
+        />
         <Header />
         <MotionController />
         <AmpersandCursor />
