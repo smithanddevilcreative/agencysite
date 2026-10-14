@@ -13,7 +13,6 @@ const c = {
   menuButton: "Header-module__hBw1pG__menuButton",
   panel: "Header-module__hBw1pG__panel",
   primaryNav: "Header-module__hBw1pG__primaryNav",
-  menuBody: "Header-module__hBw1pG__menuBody",
   serviceNav: "Header-module__hBw1pG__serviceNav",
   secondary: "Header-module__hBw1pG__secondary",
   email: "Header-module__hBw1pG__email",
@@ -58,25 +57,23 @@ export function Header() {
 
       {open && (
         <div className={c.panel} id="site-menu">
-          <div className={c.menuBody}>
-            <nav className={c.primaryNav} aria-label="Primary">
-              {primaryNav.map(([label, href]) => {
-                const active = pathname === href || pathname.startsWith(`${href}/`);
-                return <Link href={href} key={href} aria-current={active ? "page" : undefined}>{label}</Link>;
-              })}
-            </nav>
+          <nav className={c.primaryNav} aria-label="Primary">
+            {primaryNav.map(([label, href]) => {
+              const active = pathname === href || pathname.startsWith(`${href}/`);
+              return <Link href={href} key={href} aria-current={active ? "page" : undefined}>{label}</Link>;
+            })}
+          </nav>
 
-            <div className={c.secondary}>
+          <div className={c.secondary}>
             <nav className={c.serviceNav} aria-label="Services">
               {serviceLinks.map(([label, href]) => (
                 <Link href={href} key={href}>{label}</Link>
               ))}
             </nav>
 
-              <a className={c.email} href="mailto:hello@smithanddevil.com">
-                hello@smithanddevil.com
-              </a>
-            </div>
+            <a className={c.email} href="mailto:hello@smithanddevil.com">
+              hello@smithanddevil.com
+            </a>
           </div>
         </div>
       )}
