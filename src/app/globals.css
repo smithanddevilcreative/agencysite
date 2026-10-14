@@ -2707,3 +2707,12 @@ input[type="submit"]{
 .Footer-module__S6Hkya__footer{
   cursor:none!important;
 }
+
+
+/* Keep the homepage descriptor from orphaning “studio” on mobile. */
+.sd-home-hero-studio{white-space:nowrap}
+@media (max-width:700px){
+  .Hero-module__ZARIfG__subcopy{
+    max-width:92vw;
+  }
+}

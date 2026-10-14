@@ -217,7 +217,7 @@ export function HomeHero() {
           </span>
         </h1>
         <p ref={subcopyRef} className={c.subcopy}>
-          A creative strategy and design studio<br />
+          A creative strategy and <span className="sd-home-hero-studio">design studio</span><br />
           for the <strong>experience</strong> economy.
         </p>
       </div>
