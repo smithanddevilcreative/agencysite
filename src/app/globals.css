@@ -2716,3 +2716,140 @@ input[type="submit"]{
     max-width:92vw;
   }
 }
+
+
+/* Service enquiry footer — match Figma form treatment. */
+.service-module__T4otXW__enquiry{
+  background:var(--sd-red)!important;
+  color:var(--sd-bg)!important;
+  padding:84px var(--gutter) 88px!important;
+}
+.service-module__T4otXW__enquiry>.service-module__T4otXW__inner{
+  width:min(1240px,100%)!important;
+  max-width:1240px!important;
+  margin:0 auto!important;
+  padding:0!important;
+}
+.service-module__T4otXW__enquiryGrid{
+  grid-template-columns:minmax(0,440px) minmax(0,1fr)!important;
+  gap:clamp(72px,8vw,132px)!important;
+  align-items:start!important;
+}
+.service-module__T4otXW__enquiry .service-module__T4otXW__sectionLabel{
+  display:none!important;
+}
+.service-module__T4otXW__enquiryTitle{
+  color:var(--sd-bg)!important;
+  max-width:7.2ch!important;
+  font-family:var(--font-display)!important;
+  font-size:clamp(58px,5.3vw,76px)!important;
+  font-weight:400!important;
+  line-height:.96!important;
+  letter-spacing:-.045em!important;
+  text-wrap:balance!important;
+}
+.service-module__T4otXW__enquiryBody{
+  color:var(--sd-bg)!important;
+  max-width:31ch!important;
+  margin-top:28px!important;
+  font-family:var(--font-sans)!important;
+  font-size:15px!important;
+  line-height:1.55!important;
+}
+
+.service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__form{
+  width:100%!important;
+  color:var(--sd-bg)!important;
+}
+.service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__formGrid{
+  grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:18px 14px!important;
+}
+.service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__field{
+  gap:7px!important;
+  color:var(--sd-bg)!important;
+  font-family:var(--font-sans)!important;
+  font-size:9px!important;
+  font-weight:600!important;
+  line-height:1!important;
+  letter-spacing:.13em!important;
+}
+.service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__fieldWide{
+  grid-column:1/-1!important;
+}
+.service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__field input,
+.service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__field textarea{
+  width:100%!important;
+  color:var(--sd-ink)!important;
+  background:var(--sd-bg)!important;
+  border:0!important;
+  border-radius:8px!important;
+  outline:0!important;
+  padding:12px 14px!important;
+  font:15px/1.4 var(--font-sans)!important;
+  box-shadow:none!important;
+}
+.service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__field input{
+  min-height:42px!important;
+}
+.service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__field textarea{
+  min-height:126px!important;
+  resize:vertical!important;
+}
+.service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__field input:focus,
+.service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__field textarea:focus{
+  outline:2px solid var(--sd-bg)!important;
+  outline-offset:3px!important;
+}
+.service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__submit{
+  width:100%!important;
+  min-height:48px!important;
+  margin-top:18px!important;
+  padding:0 16px!important;
+  color:var(--sd-bg)!important;
+  background:transparent!important;
+  border:1px solid rgba(250,250,248,.92)!important;
+  border-radius:8px!important;
+  justify-content:space-between!important;
+  font-family:var(--font-sans)!important;
+  font-size:10px!important;
+  font-weight:500!important;
+  letter-spacing:.04em!important;
+  text-transform:none!important;
+}
+.service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__submit:hover{
+  color:var(--sd-red)!important;
+  background:var(--sd-bg)!important;
+}
+.service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__formNote{
+  color:var(--sd-bg)!important;
+  margin-top:10px!important;
+  font-size:10px!important;
+  line-height:1.35!important;
+}
+.service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__formNote a{
+  color:inherit!important;
+}
+
+@media (max-width:900px){
+  .service-module__T4otXW__enquiry{
+    padding:64px var(--gutter) 72px!important;
+  }
+  .service-module__T4otXW__enquiryGrid{
+    grid-template-columns:1fr!important;
+    gap:46px!important;
+  }
+  .service-module__T4otXW__enquiryTitle{
+    max-width:9ch!important;
+    font-size:clamp(48px,11vw,70px)!important;
+  }
+}
+@media (max-width:560px){
+  .service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__formGrid{
+    grid-template-columns:1fr!important;
+    gap:18px!important;
+  }
+  .service-module__T4otXW__enquiry .EnquiryForm-module__ZxCRSG__fieldWide{
+    grid-column:1!important;
+  }
+}
