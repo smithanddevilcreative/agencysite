@@ -3136,3 +3136,10 @@ input[type="submit"]{
 .study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery ~ .study-module__vTcG6G__gallery{
   display:none!important;
 }
+
+
+/* Strike remove trailing repeated brewery/bar pair. */
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"])
+.study-module__vTcG6G__gallery:has(> :nth-child(9)) > :nth-last-child(-n+2){
+  display:none!important;
+}
