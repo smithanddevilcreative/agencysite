@@ -11,7 +11,7 @@ export default function NotFound() {
     <main className="sd-404">
       <div className="sd-404__inner">
         <div className="sd-404__code" aria-label="404">
-          <span>4</span><span className="sd-404__amp">&amp;</span><span>4</span>
+          <span>4</span><img className="sd-404__amp" src="/brand/cursor-ampersand.png" alt="&" /><span>4</span>
         </div>
 
         <div className="sd-404__copy">
