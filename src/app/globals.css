@@ -3167,3 +3167,27 @@ input[type="submit"]{
 .Header-module__hBw1pG__serviceNav a:focus-visible::after{
   transform:scaleX(1);
 }
+
+
+/* Contact mobile — preserve desktop contact styling. */
+@media (max-width:900px){
+  .contact-module__swMWYG__main{
+    color:var(--sd-bg)!important;
+  }
+  .contact-module__swMWYG__main h1,
+  .contact-module__swMWYG__intro,
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__field,
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__form,
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__formNote{
+    color:var(--sd-bg)!important;
+  }
+  .contact-module__swMWYG__main h1 em{
+    font-style:normal!important;
+    font-weight:400!important;
+  }
+  .contact-module__swMWYG__main .EnquiryForm-module__ZxCRSG__submit{
+    color:var(--sd-bg)!important;
+    border:1px solid var(--sd-bg)!important;
+    background:transparent!important;
+  }
+}
