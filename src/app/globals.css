@@ -3759,3 +3759,23 @@ input[type="submit"]{
     transform:translateY(-69px)!important;
   }
 }
+
+
+/* Mobile menu email — match desktop treatment and left alignment. */
+@media (max-width:900px){
+  .Header-module__hBw1pG__email{
+    grid-column:1!important;
+    justify-self:start!important;
+    align-self:start!important;
+    width:auto!important;
+    max-width:100%!important;
+    margin:0!important;
+    font-family:var(--font-display)!important;
+    font-size:22px!important;
+    line-height:1!important;
+    letter-spacing:-.025em!important;
+    text-transform:none!important;
+    text-align:left!important;
+    white-space:nowrap!important;
+  }
+}
