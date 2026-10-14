@@ -11,19 +11,14 @@ export default function NotFound() {
     <main className="sd-404-pixel">
       <div className="sd-404-pixel__screen">
         <div className="sd-404-pixel__content">
-          <div className="sd-404-pixel__code" aria-label="404">
-            <span className="sd-404-pixel__four">4</span>
-            <span className="sd-404-pixel__and">&amp;</span>
-            <span className="sd-404-pixel__four">4</span>
-          </div>
-
-          <div className="sd-404-pixel__stage" aria-hidden="true">
-            <div className="sd-404-pixel__embers">
-              {Array.from({ length: 12 }).map((_, i) => <span key={i} />)}
-            </div>
-            <img className="sd-404-pixel__devil" src="/brand/pixel-devil.svg" alt="" />
-            <div className="sd-404-pixel__flames">
-              {Array.from({ length: 10 }).map((_, i) => <span key={i} />)}
+          <div className="sd-404-pixel__artWrap" aria-hidden="true">
+            <img
+              className="sd-404-pixel__approvedArt"
+              src="/brand/404-approved-art.webp"
+              alt=""
+            />
+            <div className="sd-404-pixel__artEmbers">
+              {Array.from({ length: 9 }).map((_, i) => <span key={i} />)}
             </div>
           </div>
 
