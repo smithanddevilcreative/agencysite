@@ -1,6 +1,9 @@
 User-Agent: *
 Allow: /
 
+User-Agent: Googlebot-Image
+Allow: /
+
 User-Agent: OAI-SearchBot
 Allow: /
 
