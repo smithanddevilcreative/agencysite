@@ -4460,9 +4460,6 @@ input[type="submit"]{
     max-width:92vw!important;
     margin-left:auto!important;
     margin-right:auto!important;
-    font-size:clamp(38px,10.4vw,54px)!important;
-    line-height:1.04!important;
-    letter-spacing:-.045em!important;
     text-align:center!important;
   }
 }
