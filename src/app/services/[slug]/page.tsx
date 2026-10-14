@@ -11,7 +11,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const data = servicePages[slug];
   if (!data) return {};
-  return { title: data.title, description: data.description };
+  const title = data.title.replace(/\s*\|\s*Smith & Devil\s*$/, "");
+  return {
+    title,
+    description: data.description,
+    alternates: { canonical: `/services/${slug}` },
+    openGraph: {
+      type: "website",
+      url: `/services/${slug}`,
+      title,
+      description: data.description,
+    },
+  };
 }
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
