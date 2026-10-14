@@ -2968,3 +2968,18 @@ input[type="submit"]{
     grid-column:1!important;
   }
 }
+
+
+/* Global header treatment — solid white everywhere unless menu is open. */
+.Header-module__hBw1pG__header:not(.Header-module__hBw1pG__menuOpen){
+  background:var(--sd-bg)!important;
+  backdrop-filter:none!important;
+  -webkit-backdrop-filter:none!important;
+  border-bottom:1px solid rgba(20,18,15,.06)!important;
+}
+.Header-module__hBw1pG__header:not(.Header-module__hBw1pG__menuOpen) .Header-module__hBw1pG__menuButton{
+  color:var(--sd-ink)!important;
+}
+.Header-module__hBw1pG__header:not(.Header-module__hBw1pG__menuOpen) .Header-module__hBw1pG__logo{
+  filter:none!important;
+}
