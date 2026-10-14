@@ -3191,3 +3191,53 @@ input[type="submit"]{
     background:transparent!important;
   }
 }
+
+
+/* Figma menu layout — desktop. */
+@media (min-width:901px){
+  .Header-module__hBw1pG__panel{
+    padding:42px 32px 44px!important;
+    grid-template-columns:minmax(0,64%) minmax(280px,36%)!important;
+    grid-template-rows:1fr!important;
+    gap:0!important;
+    align-items:start!important;
+  }
+  .Header-module__hBw1pG__primaryNav{
+    grid-column:1!important;
+    grid-row:1!important;
+    align-self:start!important;
+    gap:14px!important;
+    padding-top:0!important;
+  }
+  .Header-module__hBw1pG__primaryNav a{
+    font-family:var(--font-display)!important;
+    font-size:clamp(74px,7.4vw,108px)!important;
+    line-height:.96!important;
+    letter-spacing:-.045em!important;
+  }
+  .Header-module__hBw1pG__serviceNav{
+    grid-column:2!important;
+    grid-row:1!important;
+    align-self:center!important;
+    justify-self:start!important;
+    gap:12px!important;
+    transform:translateY(-34px);
+  }
+  .Header-module__hBw1pG__serviceNav a{
+    font-size:10px!important;
+    letter-spacing:.16em!important;
+    line-height:1.2!important;
+  }
+  .Header-module__hBw1pG__email{
+    grid-column:2!important;
+    grid-row:1!important;
+    align-self:center!important;
+    justify-self:start!important;
+    margin-top:176px!important;
+    font-family:var(--font-display)!important;
+    font-size:22px!important;
+    line-height:1!important;
+    letter-spacing:-.025em!important;
+    text-transform:none!important;
+  }
+}
