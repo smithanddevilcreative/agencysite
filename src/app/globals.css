@@ -3065,3 +3065,62 @@ input[type="submit"]{
   color:var(--sd-red)!important;
   filter:none!important;
 }
+
+
+/* Strike current-site gallery composition. */
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__lead{
+  display:none!important;
+}
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery{
+  grid-template-columns:repeat(6,minmax(0,1fr))!important;
+  gap:6px!important;
+  margin-top:30px!important;
+}
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery::before{
+  content:"";
+  grid-column:1/-1;
+  display:block;
+  width:100%;
+  aspect-ratio:16/9;
+  margin-bottom:10px;
+  border-radius:10px;
+  background:url("/images/work/strike/strike-main.jpg") center center/cover no-repeat;
+}
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(1){
+  grid-column:1/-1!important;
+  margin-bottom:6px!important;
+}
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(2),
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(3){
+  grid-column:span 3!important;
+}
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(4){
+  grid-column:1/-1!important;
+}
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(5),
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(6),
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(7){
+  grid-column:span 2!important;
+}
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(n+2) .RevealMedia-module__8VxjUa__frame{
+  height:100%!important;
+  overflow:hidden!important;
+  border-radius:8px!important;
+}
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(2) .RevealMedia-module__8VxjUa__frame,
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(3) .RevealMedia-module__8VxjUa__frame{
+  aspect-ratio:4/5!important;
+}
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(4) .RevealMedia-module__8VxjUa__frame{
+  aspect-ratio:2.45/1!important;
+}
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(5) .RevealMedia-module__8VxjUa__frame,
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(6) .RevealMedia-module__8VxjUa__frame,
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(7) .RevealMedia-module__8VxjUa__frame{
+  aspect-ratio:1/1!important;
+}
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(n+2) img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+}
