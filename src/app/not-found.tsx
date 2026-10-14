@@ -15,7 +15,7 @@ export default function NotFound() {
         </div>
 
         <div className="sd-404__copy">
-          <h1>Looks like you wandered off the path.</h1>
+          <h1>Looks like you wandered off the righteous path.</h1>
           <p>
             Good news: you can turn back now.<br />
             Bad news: this page doesn’t exist.
