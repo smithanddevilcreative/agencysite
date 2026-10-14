@@ -3879,3 +3879,37 @@ input[type="submit"]{
     align-items:flex-start;
   }
 }
+
+
+/* 404 centred composition */
+.sd-404__inner{
+  text-align:center;
+}
+.sd-404__code{
+  justify-content:center;
+}
+.sd-404__amp{
+  width:.72em;
+  height:.72em;
+  object-fit:contain;
+  flex:0 0 auto;
+  padding:0;
+}
+.sd-404__copy{
+  grid-template-columns:1fr!important;
+  justify-items:center;
+  text-align:center;
+}
+.sd-404__copy h1,
+.sd-404__copy p{
+  margin-left:auto;
+  margin-right:auto;
+}
+.sd-404__actions{
+  justify-content:center;
+}
+@media (max-width:700px){
+  .sd-404__actions{
+    align-items:center!important;
+  }
+}
