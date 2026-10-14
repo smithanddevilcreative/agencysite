@@ -3543,3 +3543,70 @@ input[type="submit"]{
     translate:none!important;
   }
 }
+
+
+/* Menu correction — restore prior main nav, place submenu to Figma. */
+@media (min-width:901px){
+  /* Main nav: one step back */
+  .Header-module__hBw1pG__panel{
+    height:100svh!important;
+    min-height:100svh!important;
+    padding:88px 32px 190px!important;
+    display:grid!important;
+    grid-template-columns:minmax(0,67%) minmax(280px,33%)!important;
+    grid-template-rows:1fr!important;
+    column-gap:0!important;
+    align-items:end!important;
+    overflow:hidden!important;
+  }
+
+  .Header-module__hBw1pG__primaryNav{
+    position:static!important;
+    grid-column:1!important;
+    grid-row:1!important;
+    width:max-content!important;
+    max-width:none!important;
+    height:100%!important;
+    align-self:stretch!important;
+    justify-content:space-between!important;
+    gap:0!important;
+    padding:0!important;
+  }
+
+  .Header-module__hBw1pG__primaryNav a{
+    min-height:0!important;
+    font-size:clamp(88px,7.4vw,104px)!important;
+    line-height:.98!important;
+    letter-spacing:-.05em!important;
+  }
+
+  /* Secondary block: place it where it sits in the Figma composition */
+  .Header-module__hBw1pG__secondary{
+    position:absolute!important;
+    left:68.4%!important;
+    top:58%!important;
+    display:flex!important;
+    flex-direction:column!important;
+    align-items:flex-start!important;
+    gap:40px!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+    z-index:3!important;
+  }
+
+  .Header-module__hBw1pG__secondary .Header-module__hBw1pG__serviceNav,
+  .Header-module__hBw1pG__secondary .Header-module__hBw1pG__email{
+    position:static!important;
+    left:auto!important;
+    top:auto!important;
+    width:auto!important;
+    max-width:none!important;
+    margin:0!important;
+    transform:none!important;
+    translate:none!important;
+    visibility:visible!important;
+    opacity:1!important;
+    animation:none!important;
+  }
+}
