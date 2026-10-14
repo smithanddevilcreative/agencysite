@@ -8,23 +8,29 @@ export const metadata: Metadata = {
 
 export default function NotFound() {
   return (
-    <main className="sd-404">
-      <div className="sd-404__inner">
-        <div className="sd-404__code" aria-label="404">
-          <span>4</span><img className="sd-404__amp" src="/brand/cursor-ampersand.png" alt="&" /><span>4</span>
+    <main className="sd-404-pixel">
+      <div className="sd-404-pixel__screen">
+        <p className="sd-404-pixel__eyebrow">SMITH &amp; DEVIL // CREATIVE UNDERWORLD</p>
+
+        <div className="sd-404-pixel__code" aria-label="404">4&amp;4</div>
+
+        <img className="sd-404-pixel__devil" src="/brand/pixel-devil.svg" alt="" aria-hidden="true" />
+
+        <div className="sd-404-pixel__copy">
+          <h1>Looks like you wandered off<br />the righteous path.</h1>
+          <p>Good news: you can turn back now.<br />Bad news: this page doesn’t exist.</p>
         </div>
 
-        <div className="sd-404__copy">
-          <h1>Looks like you wandered off the righteous path.</h1>
-          <p>
-            Good news: you can turn back now.<br />
-            Bad news: this page doesn’t exist.
-          </p>
-        </div>
+        <nav className="sd-404-pixel__actions" aria-label="404 options">
+          <Link className="sd-404-pixel__button sd-404-pixel__button--primary" href="/">
+            <span aria-hidden="true">▶</span> Back to safety
+          </Link>
+          <Link className="sd-404-pixel__button" href="/work">See our work</Link>
+        </nav>
 
-        <div className="sd-404__actions">
-          <Link className="sd-404__primary" href="/">Back to safety <span aria-hidden="true">→</span></Link>
-          <Link className="sd-404__secondary" href="/work">See our work</Link>
+        <div className="sd-404-pixel__status" aria-hidden="true">
+          <span>SMITH &amp; DEVIL&nbsp;&nbsp;//&nbsp;&nbsp;CREATIVE UNDERWORLD</span>
+          <span><b>ERROR 404</b>&nbsp;&nbsp;//&nbsp;&nbsp;FILE NOT FOUND</span>
         </div>
       </div>
     </main>
