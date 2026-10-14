@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { CTASection } from "@/components/CTASection";
 
 export const metadata: Metadata = {
-  title: "Studio — Smith & Devil",
+  title: "Studio",
   description: "Meet Smith & Devil and discover how we work with ambitious brands and experience-led businesses.",
+  alternates: { canonical: "/studio" },
 };
 
 const c = {
