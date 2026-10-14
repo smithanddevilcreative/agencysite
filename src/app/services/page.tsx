@@ -157,7 +157,7 @@ export default function ServicesPage() {
         <div className={`${c.inner} ${c.twoCol}`}>
           <div className="Reveal-module__U2Tp6W__base">
             <p className={c.sectionLabel}>How we work</p>
-            <h2>Big agency craft. Small studio energy.</h2>
+            <h2>Big agency craft. <em>Small studio energy.</em></h2>
           </div>
           <div className={`Reveal-module__U2Tp6W__base ${c.bodyCopy}`}>
             <p>You work with senior people throughout. We bring in trusted specialists when the job needs them, without building unnecessary layers between the idea and the person paying for it.</p>
@@ -171,7 +171,7 @@ export default function ServicesPage() {
         <div className={c.inner}>
           <div className={`Reveal-module__U2Tp6W__base ${c.indexHead}`}>
             <p className={c.sectionLabel}>Selected results</p>
-            <h2>Built for the real world.</h2>
+            <h2>Built for the <em>real world.</em></h2>
             <p className={c.proofIntro}>Our work has sold tickets, launched venues, supported international expansion and helped brands reach new markets.</p>
           </div>
           <div className={c.proofLinks}>

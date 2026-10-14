@@ -2983,3 +2983,47 @@ input[type="submit"]{
 .Header-module__hBw1pG__header:not(.Header-module__hBw1pG__menuOpen) .Header-module__hBw1pG__logo{
   filter:none!important;
 }
+
+
+/* Interaction polish — footer underline, service emphasis and hover numbers. */
+.Footer-module__S6Hkya__link{
+  position:relative!important;
+  display:inline-block!important;
+  width:max-content!important;
+  opacity:.72!important;
+  transition:opacity .2s ease!important;
+}
+.Footer-module__S6Hkya__link::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:-3px;
+  height:1px;
+  background:var(--sd-red);
+  transform:scaleX(0);
+  transform-origin:left center;
+  transition:transform .22s ease;
+}
+.Footer-module__S6Hkya__link:hover,
+.Footer-module__S6Hkya__link:focus-visible{
+  opacity:1!important;
+}
+.Footer-module__S6Hkya__link:hover::after,
+.Footer-module__S6Hkya__link:focus-visible::after{
+  transform:scaleX(1);
+}
+
+.services-module__g8J8Uq__studioSection h2 em,
+.services-module__g8J8Uq__proofSection h2 em{
+  font-style:italic!important;
+  font-weight:400!important;
+}
+
+.services-module__g8J8Uq__card .services-module__g8J8Uq__cardNumber{
+  transition:color .2s ease!important;
+}
+.services-module__g8J8Uq__card:hover .services-module__g8J8Uq__cardNumber,
+.services-module__g8J8Uq__card:focus-visible .services-module__g8J8Uq__cardNumber{
+  color:var(--sd-red)!important;
+}
