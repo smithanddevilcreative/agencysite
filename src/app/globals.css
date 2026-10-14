@@ -3130,3 +3130,9 @@ input[type="submit"]{
 .study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery > :nth-child(n+8){
   display:none!important;
 }
+
+
+/* Strike duplicate-gallery container guard. */
+.study-module__vTcG6G__content:has(.StudyVideoEmbed-module__8FDA2W__frame[title="Strike film"]) .study-module__vTcG6G__gallery ~ .study-module__vTcG6G__gallery{
+  display:none!important;
+}
