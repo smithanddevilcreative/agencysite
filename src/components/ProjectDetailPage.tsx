@@ -89,7 +89,45 @@ export function ProjectDetailPage({ project }: { project: ProjectPageData }) {
             ) : null}
           </section>
 
-          {project.galleryHtml ? (
+          {project.slug === "strike" ? (
+            <div className={c.gallery}>
+              <figure className="study-module__vTcG6G__slot">
+                <div className="RevealMedia-module__8VxjUa__frame">
+                  <img alt="Strike — menu design" loading="lazy" width="1400" height="900" src="/images/work/strike/strike-gallery.webp" />
+                </div>
+              </figure>
+              <figure className="study-module__vTcG6G__slot study-module__vTcG6G__slotHalf">
+                <div className="RevealMedia-module__8VxjUa__frame">
+                  <img alt="Strike — venue photography 01" loading="lazy" width="1400" height="900" src="/images/work/strike/20220619_strike_0011.webp" />
+                </div>
+              </figure>
+              <figure className="study-module__vTcG6G__slot study-module__vTcG6G__slotHalf">
+                <div className="RevealMedia-module__8VxjUa__frame">
+                  <img alt="Strike — venue photography 02" loading="lazy" width="1400" height="900" src="/images/work/strike/20220619_strike_0622.webp" />
+                </div>
+              </figure>
+              <figure className="study-module__vTcG6G__slot">
+                <div className="RevealMedia-module__8VxjUa__frame">
+                  <img alt="Strike — venue photography 03" loading="lazy" width="1400" height="900" src="/images/work/strike/20220619_strike_1041.webp" />
+                </div>
+              </figure>
+              <figure className="study-module__vTcG6G__slot study-module__vTcG6G__slotHalf">
+                <div className="RevealMedia-module__8VxjUa__frame">
+                  <img alt="Strike — venue photography 04" loading="lazy" width="1400" height="900" src="/images/work/strike/20220619_strike_1106.webp" />
+                </div>
+              </figure>
+              <figure className="study-module__vTcG6G__slot study-module__vTcG6G__slotHalf">
+                <div className="RevealMedia-module__8VxjUa__frame">
+                  <img alt="Strike — venue photography 05" loading="lazy" width="1400" height="900" src="/images/work/strike/20220619_strike_1569.webp" />
+                </div>
+              </figure>
+              <figure className="study-module__vTcG6G__slot">
+                <div className="RevealMedia-module__8VxjUa__frame">
+                  <img alt="Strike — venue photography 06" loading="lazy" width="1400" height="900" src="/images/work/strike/20220619_strike_1810.webp" />
+                </div>
+              </figure>
+            </div>
+          ) : project.galleryHtml ? (
             <div className={c.gallery} dangerouslySetInnerHTML={{ __html: project.galleryHtml }} />
           ) : null}
         </div>
