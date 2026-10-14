@@ -1,13 +1,10 @@
 export const workLinks = [
   ["Humbug", "/work/humbug"],
   ["Pop Playrooms", "/work/pop-playrooms"],
-  ["Draughts", "/work/draughts"],
   ["Mighty Adventures", "/work/mighty-adventures"],
   ["Levels @ Maj", "/work/levels"],
   ["T2 Design Solutions", "/work/t2-design-solutions"],
   ["Mama Bamboo", "/work/mama-bamboo"],
-  ["Allstars Sports Bars", "/work/allstars-sports-bars"],
-  ["Allstars Sports Bowl", "/work/allstars-sports-bowl"],
   ["Strike", "/work/strike"],
   ["Fortune Favours", "/work/fortune-favours"],
   ["More Concierge", "/work/more-concierge"],
