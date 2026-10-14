@@ -3725,3 +3725,12 @@ input[type="submit"]{
     transform:translateY(-12vh)!important;
   }
 }
+
+
+/* Menu submenu vertical alignment only — main nav locked. */
+@media (min-width:901px){
+  .Header-module__hBw1pG__secondary{
+    bottom:20vh!important;
+    transform:none!important;
+  }
+}
