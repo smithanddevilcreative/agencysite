@@ -4677,3 +4677,45 @@ input[type="submit"]{
 .sd-404-pixel__hellGround span:nth-child(10){left:82%;animation-delay:-.4s}
 .sd-404-pixel__hellGround span:nth-child(11){left:89%;animation-delay:-1.6s}
 .sd-404-pixel__hellGround span:nth-child(12){left:94%;animation-delay:-.8s}
+
+
+/* Exact approved Creative Hell artwork */
+.sd-404-pixel__hellArtwork{
+  position:relative;
+  width:min(100%,900px);
+  margin:0 auto 18px;
+}
+.sd-404-pixel__hellArtwork img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+.sd-404-pixel__hellRetry{
+  position:absolute;
+  left:50%;
+  top:61.6%;
+  transform:translate(-50%,-50%);
+  width:25%;
+  height:8.8%;
+  min-width:150px;
+  min-height:44px;
+  border:0;
+  background:transparent;
+  color:transparent;
+  cursor:pointer;
+}
+.sd-404-pixel__hellRetry:focus-visible{
+  outline:3px solid #fff;
+  outline-offset:4px;
+}
+@media(max-width:700px){
+  .sd-404-pixel__hellArtwork{
+    width:calc(100% + 12px);
+    margin-left:-6px;
+    margin-right:-6px;
+  }
+  .sd-404-pixel__hellRetry{
+    width:34%;
+    top:61.7%;
+  }
+}
