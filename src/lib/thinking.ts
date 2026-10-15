@@ -65,11 +65,11 @@ export const thinkingArticles: ThinkingArticle[] = [
         ]
       },
       {
-        heading: "The danger of starting with the category",
+        heading: "Do not let the category become the idea",
         paragraphs: [
-          "The experience economy has grown quickly enough that a lot of categories now come with their own visual shorthand.",
-          "Competitive socialising can look like competitive socialising. Immersive experiences can look very immersive. Premium mini golf can acquire a lot of neon remarkably quickly.",
-          "None of that is inherently wrong. The problem starts when the category becomes the idea.",
+          "Many experience categories now come with familiar visual cues."
+          "Competitive socialising, immersive experiences and premium mini golf can all start to look very similar."
+          "The problem starts when those category cues become the whole idea."
           "If three concepts can all credibly promise great drinks, great games and a great atmosphere, the customer still has a decision to make. That is where positioning earns its keep."
         ],
         media: {
@@ -80,11 +80,11 @@ export const thinkingArticles: ThinkingArticle[] = [
         }
       },
       {
-        heading: "Mighty Adventures: the golf was only the start",
+        heading: "Mighty Adventures: building more around the golf",
         paragraphs: [
           "Mighty Adventures began with outdoor mini golf. Perfectly good product. But 'come and play mini golf' leaves a lot of the experience on the table.",
           "We helped turn the visit into a mission-led family adventure. Characters, story, signage and the way the course was presented all began working towards the same idea.",
-          "The proposition gave the golf a role inside something bigger. That matters because the more distinctive parts of an experience are usually harder to copy than the activity itself."
+          "The proposition turned the golf into part of a bigger experience. That gave the brand more to own than the activity alone."
         ],
         media: {
           src: "/images/work/mighty-adventures/signage-kids.jpg",
@@ -94,11 +94,11 @@ export const thinkingArticles: ThinkingArticle[] = [
         }
       },
       {
-        heading: "If it takes ten minutes to explain, it probably is not ready",
+        heading: "If the idea is hard to explain, it needs more work",
         paragraphs: [
           "Some experience concepts are naturally harder to sell than others. Humbug is a good example.",
           "It combines live music, interactive performance, party games, singalongs, drinks and a Christmas story. All true. All useful. And all capable of becoming a fairly exhausting paragraph if everything is asked to lead at once.",
-          "A large part of the strategic job is deciding what people need to understand first, what creates desire and what can wait until they are already interested.",
+          "The strategic job is to decide what people need to understand first, what makes them want to come and what can wait until later.",
           "This happens before the media plan. Buying more attention does not make a complicated proposition simpler."
         ],
         media: {
@@ -111,18 +111,18 @@ export const thinkingArticles: ThinkingArticle[] = [
       {
         heading: "What should be clear before branding starts?",
         paragraphs: [
-          "Not every strategic question needs a 70-page deck. But before committing to an identity or taking a new experience to market, we would want confident answers on the audience, the value, the difference, the promise, the personality and the commercial reality.",
+          "Before committing to an identity or taking a new experience to market, you need clear answers on the audience, the value, the difference, the promise, the personality and the commercial model.",
           "Can the proposition support the price? Does it give the experience room to grow? Can it survive a second venue? Does it help the team decide what belongs and what does not?",
           "Those answers do not have to be perfect forever. They do need to be good enough to make the next decisions with confidence."
         ]
       },
       {
-        heading: "What gets easier once the proposition is clear",
+        heading: "What a clear proposition helps you do",
         paragraphs: [
-          "Once the proposition is clear, the rest of the work tends to sharpen up.",
-          "The identity has something to express. The interior has something to bring to life. The website knows what to lead with. The campaign has a reason for people to pay attention.",
+          "Once the proposition is clear, the next decisions become easier.",
+          "The identity has a clear idea to express. The interior has a clear role. The website knows what to lead with. The campaign has a clear message.",
           "And everyone involved in building the thing has a shared idea of what they are trying to create.",
-          "Which is rather more useful than agreeing on a Pantone."
+          "That is more useful than starting with colours and logos."
         ]
       }
     ],
@@ -150,11 +150,11 @@ export const thinkingArticles: ThinkingArticle[] = [
         paragraphs: [
           "Positioning is often treated as the bit of strategy that produces a diagram with several competitors dotted around it.",
           "That can be useful. It is not the point.",
-          "The point is to decide where the brand should matter, who it should matter to and why."
+          "The point is to decide who the brand is for, where it should compete and why people should choose it."
         ]
       },
       {
-        heading: "Category is not position",
+        heading: "Your category is not your positioning",
         paragraphs: [
           "Saying you are a premium competitive socialising venue describes the market you are entering. It does not tell anyone why your version deserves their evening.",
           "The same is true of boutique hotels, immersive attractions, sports bars, food halls and family entertainment. Customers are rarely comparing you with an empty space. They are comparing you with other ways to spend the same money and time.",
@@ -162,12 +162,12 @@ export const thinkingArticles: ThinkingArticle[] = [
         ]
       },
       {
-        heading: "Start with a tension, not an adjective",
+        heading: "Start with a real customer problem",
         paragraphs: [
-          "Brand workshops can produce a heroic quantity of adjectives. Fun. Premium. Social. Bold. Inclusive. Energetic.",
-          "Most of them are perfectly pleasant. Very few are positions.",
+          "Brand workshops often produce long lists of adjectives. Fun. Premium. Social. Bold. Inclusive. Energetic."
+          "Most of them describe how you would like the brand to feel. They do not explain why customers should choose it."
           "We are more interested in tensions the business can resolve. Parents want an activity that keeps children happy without making the adults endure it. Groups want something to do without sacrificing the quality of the night out. Fans want immersion without needing a doctorate in the source material.",
-          "That is more useful because it leads to choices."
+          "Those problems are useful because they lead to practical choices."
         ],
         media: {
           src: "/images/work/mighty-adventures/05.webp",
@@ -177,15 +177,15 @@ export const thinkingArticles: ThinkingArticle[] = [
         }
       },
       {
-        heading: "Positioning should make things easier to say no to",
+        heading: "Good positioning helps you make decisions",
         paragraphs: [
-          "A good position should make it easier to reject the wrong ideas.",
+          "A good position should make it easier to choose what fits the brand and reject what does not.",
           "If an offer, partnership, interior treatment or campaign makes the business less like the thing it has chosen to be, the strategy should make that visible.",
-          "That discipline matters more as a concept grows. The first venue can rely on founders making instinctive decisions. The fifth cannot."
+          "That becomes more important as a concept grows. The first venue can rely on founders making instinctive decisions. The fifth needs a clearer system."
         ]
       },
       {
-        heading: "Fortune Favours: thinking beyond the first site",
+        heading: "Fortune Favours: building for more than one site",
         paragraphs: [
           "Fortune Favours was created for an entertainment business with ambitions across more than fifteen European destinations.",
           "That changes the strategic job. The brand cannot depend on one building, one local audience or one fashionable execution.",
@@ -221,7 +221,7 @@ export const thinkingArticles: ThinkingArticle[] = [
     seoTitle: "Customer Value in the Experience Economy",
     description: "Why experience-led brands need to understand the emotional and social value customers are really buying.",
     eyebrow: "Customer value",
-    standfirst: "The activity is often only the delivery mechanism.",
+    standfirst: "People are often buying more than the activity itself.",
     heroImage: {
       src: "/images/work/humbug/06.webp",
       alt: "Guests inside the Humbug Christmas experience",
@@ -232,19 +232,19 @@ export const thinkingArticles: ThinkingArticle[] = [
       {
         paragraphs: [
           "A customer can book bowling and be buying an excuse to get everyone together. They can book mini golf and be buying an easy family afternoon. They can buy a theatre ticket and be buying permission to behave differently for two hours.",
-          "The functional product tells you what to operate. The customer value tells you what to build the brand around."
+          "The activity tells you what to operate. The customer value tells you what to build the brand around."
         ]
       },
       {
-        heading: "Features are evidence, not always the reason",
+        heading: "Features do not explain why people choose you",
         paragraphs: [
           "Eighteen holes. Four karaoke rooms. Twenty taps. Live band. Ninety minutes of gameplay.",
           "Necessary information, sometimes.",
-          "But features tend to become interchangeable quickly. The emotional job is often much more durable: make this group feel closer, make this date easier, make this family outing feel worth the effort, give this fan a story to tell afterwards."
+          "Features become interchangeable quickly. What matters more is the value they create: an easier date, a better family day out, a stronger group occasion or a story worth sharing afterwards."
         ]
       },
       {
-        heading: "Occasion changes value",
+        heading: "The occasion changes what people need",
         paragraphs: [
           "The same venue can mean different things at different times.",
           "A sports bar on a Tuesday afternoon is not selling the same value as the same room during a cup final. A bowling lane for a children's party is not the same product as a late-night date.",
@@ -272,16 +272,16 @@ export const thinkingArticles: ThinkingArticle[] = [
         }
       },
       {
-        heading: "Why this matters commercially",
+        heading: "Why this matters to the business",
         paragraphs: [
           "If you know what people value, price becomes easier to defend. Marketing becomes less dependent on offers. New products can be judged against the same idea. Repeat visits can be designed rather than simply hoped for.",
           "It also helps identify where not to spend. Customers do not need every part of an experience to be extraordinary. They need the parts that carry the value to be right."
         ]
       },
       {
-        heading: "A useful question to keep asking",
+        heading: "A simple test",
         paragraphs: [
-          "If we removed the activity name from the proposition, would there still be something worth wanting?",
+          "If you remove the activity name from the proposition, is there still a clear reason to want it?",
           "If there is, you may be getting close to the real value."
         ]
       }
@@ -310,22 +310,22 @@ export const thinkingArticles: ThinkingArticle[] = [
         paragraphs: [
           "Early concepts tend to arrive with lots of good things attached. References. Features. Audiences. Revenue ideas. A name somebody loves. A name somebody else hates.",
           "That is normal.",
-          "The strategic job is to find the organising idea that helps customers understand the offer and helps the business make consistent decisions."
+          "The strategic job is to find one clear idea that helps customers understand the offer and helps the business make consistent decisions."
         ]
       },
       {
-        heading: "Separate the ingredients from the idea",
+        heading: "Separate what you offer from what the brand stands for",
         paragraphs: [
           "A bar, darts, karaoke and food are ingredients. So are dinosaurs, golf and educational content.",
-          "The brand idea is the thing that explains why those ingredients belong together.",
+          "The brand idea explains why those ingredients belong together and why the customer should care.",
           "Without it, each part tends to get designed separately and the customer experiences the joins."
         ]
       },
       {
-        heading: "Build the hierarchy before the identity",
+        heading: "Decide what leads before you design the identity",
         paragraphs: [
           "What leads? What supports? What is a reason to visit and what is simply expected?",
-          "This is one of the least glamorous parts of brand strategy and one of the most commercially useful.",
+          "This is basic brand strategy, but it has a direct commercial effect.",
           "If everything is equally important, the website becomes a menu. The launch campaign becomes a list. The interior tries to communicate six things at once."
         ]
       },
@@ -344,9 +344,9 @@ export const thinkingArticles: ThinkingArticle[] = [
         }
       },
       {
-        heading: "Then give the brand enough range",
+        heading: "Make sure the identity works in the real world",
         paragraphs: [
-          "A concept needs consistency, but hospitality brands also live hard lives.",
+          "A hospitality brand needs to work across many different touchpoints.",
           "They need to work on a fascia, a menu, a booking screen, an Instagram post, a staff T-shirt, a toilet sign and a piece of performance creative asking someone to book by Friday.",
           "The identity needs a recognisable centre and enough range to survive all of that without becoming repetitive."
         ],
@@ -358,7 +358,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         }
       },
       {
-        heading: "Do not confuse completeness with readiness",
+        heading: "You do not need everything before launch",
         paragraphs: [
           "You do not need every future campaign line before launch. You do need the central choices to be clear.",
           "Audience. Proposition. Position. Personality. The visual and verbal principles that hold them together.",
@@ -388,24 +388,24 @@ export const thinkingArticles: ThinkingArticle[] = [
     sections: [
       {
         paragraphs: [
-          "Competitive socialising is now an established category.",
-          "Customers understand the broad idea. The problem is that concepts can quickly end up describing themselves with the same handful of ingredients: games, drinks, food, music, groups.",
-          "So the strategic question moves on: why this one?"
+          "Competitive socialising is now easy for customers to understand as a category.",
+          "The problem is that many venues now describe themselves with the same ingredients: games, drinks, food, music and groups.",
+          "The next question is simple: why should someone choose your venue?"
         ]
       },
       {
-        heading: "Games are product. The occasion is often the proposition",
+        heading: "The games matter, but the occasion matters too",
         paragraphs: [
-          "Different games attract different people, create different group dynamics and produce different dwell times. They matter enormously.",
+          "Different games attract different audiences, create different group dynamics and affect dwell time. They matter.",
           "But the customer may still be choosing the venue because it solves a social problem: something everyone can join in with, somewhere lively enough for a birthday, a date that gives you something to do, or an office night out with less standing around.",
-          "The proposition needs to connect the mechanics of the games to the occasion people are actually buying."
+          "The proposition needs to connect the games to the occasion people are actually buying."
         ]
       },
       {
-        heading: "Hospitality is not the bit around the games",
+        heading: "Food and drink need to work with the games",
         paragraphs: [
           "If food and drink are important to the commercial model, they need to belong to the same experience.",
-          "That does not mean themed cocktails with funny names are compulsory. It means service style, seating, ordering, pacing and atmosphere should support the way people play.",
+          "That means service style, seating, ordering, pacing and atmosphere should support the way people play.",
           "A beautiful bar that interrupts the game journey can still be bad experience design."
         ],
         media: {
@@ -416,23 +416,23 @@ export const thinkingArticles: ThinkingArticle[] = [
         }
       },
       {
-        heading: "Design for spectators as well as players",
+        heading: "Design for the people who are waiting too",
         paragraphs: [
-          "One of the useful realities of social games is that not everyone is active every second.",
+          "In most social games, not everyone is active every second.",
           "Those gaps can be dead time or they can create theatre: watching, teasing, ordering another drink, noticing what is happening elsewhere in the venue.",
           "Brand and spatial design should make those moments feel intentional."
         ]
       },
       {
-        heading: "Give repeat visits a reason",
+        heading: "Plan for repeat visits from the start",
         paragraphs: [
-          "Novelty is powerful at launch and unreliable as a long-term strategy.",
+          "Novelty helps at launch, but it is not enough to drive repeat visits.",
           "Repeat can come from mastery, social ritual, new modes, leagues, changing content, different occasions or simply a venue people enjoy spending time in.",
           "The brand strategy should know which of those it is betting on. Otherwise 'come back' becomes a CRM message rather than a product truth."
         ]
       },
       {
-        heading: "Pop Playrooms: a concept beyond the equipment",
+        heading: "Pop Playrooms: creating a brand around the whole venue",
         paragraphs: [
           "Our work on Pop Playrooms was about creating an environment where the activities felt like parts of one entertainment world.",
           "That gave the brand something distinctive to own beyond the individual game formats and gave the physical design a central idea to amplify."
@@ -467,33 +467,33 @@ export const thinkingArticles: ThinkingArticle[] = [
     sections: [
       {
         paragraphs: [
-          "A clear proposition gives the business a shared idea. The next job is getting it to the customer intact.",
-          "Hospitality and experience brands have more chances than most to lose it. Website, booking flow, arrival, signage, host, room, game, menu, music, results, follow-up email. Every one is capable of feeling like it came from a different meeting.",
-          "The job is to join those moments up."
+          "A clear proposition only matters if customers experience it consistently.",
+          "Hospitality and experience brands have many touchpoints where that consistency can break: website, booking flow, arrival, signage, hosts, the room, the game, the menu and the follow-up.",
+          "Those moments need to feel like parts of the same brand."
         ]
       },
       {
-        heading: "Start with the moments that change behaviour",
+        heading: "Focus on the moments that affect the customer journey",
         paragraphs: [
-          "Not every touchpoint deserves the same amount of attention.",
-          "We are interested in moments where confusion stops a booking, where anticipation can increase value, where waiting can become part of the experience, where a result creates a reason to share, or where the end of the visit can become the start of the next one.",
+          "Not every touchpoint matters equally.",
+          "Focus on the moments that affect behaviour: where confusion stops a booking, where anticipation adds value, where waiting becomes part of the experience, where results create a reason to share and where the end of the visit can lead to the next one.",
           "Those moments usually matter more than decorative consistency."
         ]
       },
       {
-        heading: "The website is already part of the experience",
+        heading: "The experience starts on the website",
         paragraphs: [
           "For an unfamiliar concept, the website has to teach people how to buy it without making the experience feel complicated.",
           "What is it? Who can play? How long does it take? What should we book? What happens when we arrive?",
-          "The brand promise is already being tested before anybody gets near the front door."
+          "Customers are already judging the brand before they reach the front door."
         ]
       },
       {
-        heading: "The room has to keep the promise",
+        heading: "The venue has to deliver the same idea",
         paragraphs: [
-          "This is where brand and interiors stop being separate disciplines.",
+          "This is where brand strategy has to inform the interior.",
           "If the proposition promises social energy, the layout cannot make every group feel isolated. If it promises discovery, the whole journey cannot be visible from reception. If it promises premium hospitality, the game cannot be surrounded by operational clutter.",
-          "Strategy earns its keep when it helps resolve those choices."
+          "The strategy should help resolve those choices."
         ],
         media: {
           src: "/images/work/pop-playrooms/03.webp",
@@ -503,9 +503,9 @@ export const thinkingArticles: ThinkingArticle[] = [
         }
       },
       {
-        heading: "Mighty Adventures: one story, lots of touchpoints",
+        heading: "Mighty Adventures: carrying one idea across the experience",
         paragraphs: [
-          "The Mighty Adventures proposition could move naturally from identity into character design, on-course storytelling, school materials and take-home content.",
+          "The Mighty Adventures proposition carried from the identity into character design, on-course storytelling, school materials and take-home content.",
           "That continuity came from giving each touchpoint a role inside the same world, not by making every surface look identical."
         ],
         media: {
@@ -516,19 +516,19 @@ export const thinkingArticles: ThinkingArticle[] = [
         }
       },
       {
-        heading: "The end of the visit is part of it too",
+        heading: "The customer journey does not end when they leave",
         paragraphs: [
-          "Experience businesses often spend heavily getting people through the door and comparatively little thinking about what happens once they leave.",
+          "Experience businesses often spend heavily on acquisition and less on what happens after the visit.",
           "Results, photos, rewards, CRM, reviews, new content and return reasons can all extend the experience beyond the visit.",
-          "If repeat custom matters to the model, that is not aftercare. It is part of the product strategy."
+          "If repeat custom matters, the post-visit journey is part of the product strategy."
         ]
       },
       {
-        heading: "Joined-up does not mean one agency has to make everything",
+        heading: "Different specialists still need one clear direction",
         paragraphs: [
           "Architects, operators, developers, media specialists and production partners will all bring expertise.",
-          "The important thing is that somebody protects the organising idea while those disciplines do their jobs.",
-          "That is how the strategy becomes something a customer can actually feel."
+          "The important thing is that everyone is working from the same proposition and brand direction.",
+          "That is how the strategy turns into a consistent customer experience."
         ]
       }
     ],
