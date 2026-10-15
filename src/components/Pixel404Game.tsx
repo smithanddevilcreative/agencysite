@@ -264,6 +264,12 @@ export function Pixel404Game() {
           )}
         </div>
 
+        {room !== "landing" && room !== "win" && room !== "hell" && (
+          <Link className="sd-404-pixel__giveUp" href="/">
+            Enough heroics. Take the easy way out →
+          </Link>
+        )}
+
         <div className="sd-404-pixel__status" aria-hidden="true">
           <span>SMITH &amp; DEVIL&nbsp;&nbsp;<i>//</i>&nbsp;&nbsp;CREATIVE UNDERWORLD</span>
           <span><b>4 &amp; 4</b>&nbsp;&nbsp;<i>//</i>&nbsp;&nbsp;PAGE NOT FOUND</span>
