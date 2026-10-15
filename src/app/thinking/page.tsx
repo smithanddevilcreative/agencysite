@@ -14,9 +14,7 @@ export default function ThinkingPage() {
     <main className="sd-thinking-index">
       <section className="sd-thinking-index-hero">
         <div className="sd-thinking-inner">
-          <p className="sd-thinking-eyebrow">Smith &amp; Devil thinking</p>
-          <h1>Thinking for people building things people choose to do.</h1>
-          <p>Brand strategy, positioning and practical lessons from the experience economy. Built from the work, not borrowed from a textbook.</p>
+          <h1>Brand strategy, positioning and practical lessons from the experience economy.</h1>
         </div>
       </section>
 
