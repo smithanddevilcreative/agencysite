@@ -264,13 +264,13 @@ export function Pixel404Game() {
               </Link>
             </nav>
           )}
-        </div>
 
-        {room !== "landing" && room !== "win" && (
-          <Link className="sd-404-pixel__giveUp" href="/">
-            Enough heroics. Take the easy way out →
-          </Link>
-        )}
+          {room !== "landing" && room !== "win" && (
+            <Link className="sd-404-pixel__giveUp" href="/">
+              Enough heroics. Take the easy way out →
+            </Link>
+          )}
+        </div>
 
         <div className="sd-404-pixel__status" aria-hidden="true">
           <span>SMITH &amp; DEVIL&nbsp;&nbsp;<i>//</i>&nbsp;&nbsp;CREATIVE UNDERWORLD</span>
