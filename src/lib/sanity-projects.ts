@@ -135,7 +135,10 @@ export async function getSanityProject(slug: string): Promise<{
 
 export async function getSanityProjectSlugs(): Promise<string[]> {
   try {
-    const slugs = await sanityQuery<string[]>(`*[_type == "project" && defined(slug.current)] | order(displayOrder asc){"slug": slug.current}.slug`);
+    const items = await sanityQuery<{ slug?: string | null }[]>(
+      `*[_type == "project" && defined(slug.current)] | order(displayOrder asc){"slug": slug.current}`,
+    );
+    const slugs = items.map((item) => item.slug).filter((slug): slug is string => Boolean(slug));
     return slugs.length ? slugs : Object.keys(projectPages);
   } catch {
     return Object.keys(projectPages);
