@@ -4557,3 +4557,15 @@ input[type="submit"]{
 @media(prefers-reduced-motion:reduce){
   .sd-404-pixel__key{animation:none!important}
 }
+
+
+/* 404 adventure labels */
+.sd-404-pixel__room{
+  display:block;
+  margin:0 0 10px;
+  color:#ef1111;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+}
