@@ -44,7 +44,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         paragraphs: [
           "The venue might be found. The games selected. The renders underway. The name may even be causing arguments in a WhatsApp group.",
           "But if the answer to that question is still a little woolly, there is work to do before serious money starts bringing the idea to life.",
-          "That work is the proposition."
+          "That is the proposition."
         ]
       },
       {
@@ -53,13 +53,13 @@ export const thinkingArticles: ThinkingArticle[] = [
           "Most new concepts begin with the thing they do. Mini golf. Bowling. Darts. Live music. Immersive theatre. A sports bar. A collection of games under one roof.",
           "That tells us the category. It does not necessarily tell us why anyone should choose you.",
           "A useful proposition gets underneath the activity and works out what the customer is really being offered. Easy family time. A bit of healthy competition. Escapism. A proper night out. Something worth talking about the next day.",
-          "The activity matters. Very often, though, it is the mechanism rather than the value."
+          "The activity matters. But it is often the mechanism rather than the value."
         ]
       },
       {
         heading: "A proposition is not a tagline",
         paragraphs: [
-          "A tagline is something you might say. A proposition is the reason the business makes sense to the customer.",
+          "A tagline is something you might say. A proposition is why the business makes sense to the customer.",
           "It should help answer who this is really for, why they would choose it, what it gives them that the alternatives do not, and what the experience needs to feel like for that promise to be believable.",
           "If the strategy is doing its job, those answers start making decisions for you. Not just in the identity, but in the venue, website, pricing, launch campaign and the way the team talks about the experience."
         ]
@@ -99,7 +99,7 @@ export const thinkingArticles: ThinkingArticle[] = [
           "Some experience concepts are naturally harder to sell than others. Humbug is a good example.",
           "It combines live music, interactive performance, party games, singalongs, drinks and a Christmas story. All true. All useful. And all capable of becoming a fairly exhausting paragraph if everything is asked to lead at once.",
           "A large part of the strategic job is deciding what people need to understand first, what creates desire and what can wait until they are already interested.",
-          "That work happens before the media plan. Buying more attention does not make a complicated proposition simpler."
+          "This happens before the media plan. Buying more attention does not make a complicated proposition simpler."
         ],
         media: {
           src: "/images/work/humbug/03.webp",
@@ -117,7 +117,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         ]
       },
       {
-        heading: "The useful thing about getting this right early",
+        heading: "What gets easier once the proposition is clear",
         paragraphs: [
           "Once the proposition is clear, the rest of the work tends to sharpen up.",
           "The identity has something to express. The interior has something to bring to life. The website knows what to lead with. The campaign has a reason for people to pay attention.",
@@ -134,11 +134,11 @@ export const thinkingArticles: ThinkingArticle[] = [
   },
   {
     slug: "hospitality-brand-positioning",
-    title: "Positioning an experience people can actually choose",
+    title: "Brand positioning for hospitality and experience businesses",
     seoTitle: "Hospitality Brand Positioning for Experience-Led Businesses",
     description: "How hospitality and experience brands can find a distinctive position customers understand and choose.",
     eyebrow: "Brand positioning",
-    standfirst: "Being different is useful. Being different in a way customers care about is rather more useful.",
+    standfirst: "The job is to give customers a reason to choose this one.",
     heroImage: {
       src: "/images/work/fortune-favours/lead.webp",
       alt: "Fortune Favours entertainment brand",
@@ -150,7 +150,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         paragraphs: [
           "Positioning is often treated as the bit of strategy that produces a diagram with several competitors dotted around it.",
           "That can be useful. It is not the point.",
-          "The point is to make a choice about where the brand should matter, who it should matter to and why that choice gives the business a better chance of winning."
+          "The point is to decide where the brand should matter, who it should matter to and why."
         ]
       },
       {
@@ -158,7 +158,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         paragraphs: [
           "Saying you are a premium competitive socialising venue describes the market you are entering. It does not tell anyone why your version deserves their evening.",
           "The same is true of boutique hotels, immersive attractions, sports bars, food halls and family entertainment. Customers are rarely comparing you with an empty space. They are comparing you with other ways to spend the same money and time.",
-          "A useful position gives them a reason to make that comparison in your favour."
+          "Positioning gives them a reason to choose you over those alternatives."
         ]
       },
       {
@@ -167,7 +167,7 @@ export const thinkingArticles: ThinkingArticle[] = [
           "Brand workshops can produce a heroic quantity of adjectives. Fun. Premium. Social. Bold. Inclusive. Energetic.",
           "Most of them are perfectly pleasant. Very few are positions.",
           "We are more interested in tensions the business can resolve. Parents want an activity that keeps children happy without making the adults endure it. Groups want something to do without sacrificing the quality of the night out. Fans want immersion without needing a doctorate in the source material.",
-          "Those tensions are useful because they lead to choices."
+          "That is more useful because it leads to choices."
         ],
         media: {
           src: "/images/work/mighty-adventures/05.webp",
@@ -179,7 +179,7 @@ export const thinkingArticles: ThinkingArticle[] = [
       {
         heading: "Positioning should make things easier to say no to",
         paragraphs: [
-          "A good position is not only a way to generate ideas. It is a way to reject them.",
+          "A good position should make it easier to reject the wrong ideas.",
           "If an offer, partnership, interior treatment or campaign makes the business less like the thing it has chosen to be, the strategy should make that visible.",
           "That discipline matters more as a concept grows. The first venue can rely on founders making instinctive decisions. The fifth cannot."
         ]
@@ -221,7 +221,7 @@ export const thinkingArticles: ThinkingArticle[] = [
     seoTitle: "Customer Value in the Experience Economy",
     description: "Why experience-led brands need to understand the emotional and social value customers are really buying.",
     eyebrow: "Customer value",
-    standfirst: "The thing on the ticket is not always the thing people came for.",
+    standfirst: "The activity is often only the delivery mechanism.",
     heroImage: {
       src: "/images/work/humbug/06.webp",
       alt: "Guests inside the Humbug Christmas experience",
@@ -232,14 +232,14 @@ export const thinkingArticles: ThinkingArticle[] = [
       {
         paragraphs: [
           "A customer can book bowling and be buying an excuse to get everyone together. They can book mini golf and be buying an easy family afternoon. They can buy a theatre ticket and be buying permission to behave differently for two hours.",
-          "The distinction matters because the functional product tells you what to operate. The customer value tells you what to build the brand around."
+          "The functional product tells you what to operate. The customer value tells you what to build the brand around."
         ]
       },
       {
         heading: "Features are evidence, not always the reason",
         paragraphs: [
           "Eighteen holes. Four karaoke rooms. Twenty taps. Live band. Ninety minutes of gameplay.",
-          "Useful information. Necessary information, sometimes.",
+          "Necessary information, sometimes."
           "But features tend to become interchangeable quickly. The emotional job is often much more durable: make this group feel closer, make this date easier, make this family outing feel worth the effort, give this fan a story to tell afterwards."
         ]
       },
@@ -248,7 +248,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         paragraphs: [
           "The same venue can mean different things at different times.",
           "A sports bar on a Tuesday afternoon is not selling the same value as the same room during a cup final. A bowling lane for a children's party is not the same product as a late-night date.",
-          "Understanding occasion is one of the fastest ways to make a proposition more useful. It tells you who matters, what they need, how much friction they will tolerate and what should lead in the message."
+          "Occasion tells you who matters, what they need, how much friction they will tolerate and what should lead in the message."
         ],
         media: {
           src: "/images/work/pop-playrooms/07.webp",
@@ -294,11 +294,11 @@ export const thinkingArticles: ThinkingArticle[] = [
   },
   {
     slug: "branding-new-hospitality-concept",
-    title: "From a good idea to a brand people understand",
+    title: "Turning a new hospitality concept into a brand",
     seoTitle: "Branding a New Hospitality or Experience Concept",
     description: "How to turn an early hospitality or experience concept into a clear, coherent brand customers can understand.",
     eyebrow: "New concept development",
-    standfirst: "Ideas are allowed to be messy. Brands eventually have to make a choice.",
+    standfirst: "Early ideas are messy. Brand strategy turns them into choices a business can use.",
     heroImage: {
       src: "/images/work/pop-playrooms/01.webp",
       alt: "Pop Playrooms concept and interior",
@@ -309,8 +309,8 @@ export const thinkingArticles: ThinkingArticle[] = [
       {
         paragraphs: [
           "Early concepts tend to arrive with lots of good things attached. References. Features. Audiences. Revenue ideas. A name somebody loves. A name somebody else hates.",
-          "That mess is normal.",
-          "The strategic job is not to make it sound impressive. It is to find the organising idea that lets customers understand the offer and lets the business make consistent decisions around it."
+          "That is normal."
+          "The strategic job is to find the organising idea that helps customers understand the offer and helps the business make consistent decisions."
         ]
       },
       {
@@ -374,11 +374,11 @@ export const thinkingArticles: ThinkingArticle[] = [
   },
   {
     slug: "competitive-socialising-brand-strategy",
-    title: "Brand strategy for competitive socialising",
+    title: "Building a competitive socialising brand",
     seoTitle: "Competitive Socialising Brand Strategy",
     description: "How competitive socialising venues can build a distinctive proposition around games, hospitality and the occasion.",
     eyebrow: "Competitive socialising",
-    standfirst: "The games get people through the door. They do not automatically give the business a brand.",
+    standfirst: "Once the category is understood, the question is why yours.",
     heroImage: {
       src: "/images/work/pop-playrooms/10.webp",
       alt: "Pop Playrooms competitive socialising venue",
@@ -388,9 +388,9 @@ export const thinkingArticles: ThinkingArticle[] = [
     sections: [
       {
         paragraphs: [
-          "Competitive socialising is now a category, which is both useful and slightly dangerous.",
-          "Useful because customers understand the broad idea. Dangerous because it becomes very easy for concepts to describe themselves with the same handful of ingredients: games, drinks, food, music, groups.",
-          "Once the category is understood, the strategic question moves on. Why this one?"
+          "Competitive socialising is now an established category."
+          "Customers understand the broad idea. The problem is that concepts can quickly end up describing themselves with the same handful of ingredients: games, drinks, food, music, groups."
+          "So the strategic question moves on: why this one?"
         ]
       },
       {
@@ -453,7 +453,7 @@ export const thinkingArticles: ThinkingArticle[] = [
   },
   {
     slug: "hospitality-brand-experience-strategy",
-    title: "Making the proposition live through the whole experience",
+    title: "Taking the brand proposition through the whole experience",
     seoTitle: "Hospitality Brand Experience Strategy",
     description: "How to carry a hospitality brand proposition through identity, interiors, digital, campaigns and the customer journey.",
     eyebrow: "Brand experience",
@@ -467,9 +467,9 @@ export const thinkingArticles: ThinkingArticle[] = [
     sections: [
       {
         paragraphs: [
-          "A proposition is useful because it creates a shared idea. The next challenge is making sure that idea reaches the customer intact.",
+          "A clear proposition gives the business a shared idea. The next job is getting it to the customer intact.",
           "Hospitality and experience brands have more chances than most to lose it. Website, booking flow, arrival, signage, host, room, game, menu, music, results, follow-up email. Every one is capable of feeling like it came from a different meeting.",
-          "Brand experience is the job of joining those moments up."
+          "The job is to join those moments up."
         ]
       },
       {
@@ -477,7 +477,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         paragraphs: [
           "Not every touchpoint deserves the same amount of attention.",
           "We are interested in moments where confusion stops a booking, where anticipation can increase value, where waiting can become part of the experience, where a result creates a reason to share, or where the end of the visit can become the start of the next one.",
-          "Those moments often deserve more strategic energy than decorative consistency."
+          "Those moments usually matter more than decorative consistency."
         ]
       },
       {
@@ -493,7 +493,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         paragraphs: [
           "This is where brand and interiors stop being separate disciplines.",
           "If the proposition promises social energy, the layout cannot make every group feel isolated. If it promises discovery, the whole journey cannot be visible from reception. If it promises premium hospitality, the game cannot be surrounded by operational clutter.",
-          "The strategy becomes useful when it helps resolve those choices."
+          "Strategy earns its keep when it helps resolve those choices."
         ],
         media: {
           src: "/images/work/pop-playrooms/03.webp",
@@ -506,7 +506,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         heading: "Mighty Adventures: one story, lots of touchpoints",
         paragraphs: [
           "The Mighty Adventures proposition could move naturally from identity into character design, on-course storytelling, school materials and take-home content.",
-          "That continuity was not created by making every surface look identical. It came from giving each touchpoint a role inside the same world."
+          "That continuity came from giving each touchpoint a role inside the same world, not by making every surface look identical."
         ],
         media: {
           src: "/images/work/mighty-adventures/14.webp",
@@ -528,7 +528,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         paragraphs: [
           "Architects, operators, developers, media specialists and production partners will all bring expertise.",
           "The important thing is that somebody protects the organising idea while those disciplines do their jobs.",
-          "That is how a brand moves from something a business says to something a customer can actually feel."
+          "That is how the strategy becomes something a customer can actually feel."
         ]
       }
     ],
