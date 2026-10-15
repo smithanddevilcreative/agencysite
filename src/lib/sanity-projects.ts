@@ -99,17 +99,17 @@ export async function getSanityProjectCards(): Promise<ProjectCard[]> {
   }
 }
 
-function heroHtml(project: SanityProject, fallback: ProjectPageData) {
+function heroHtml(project: SanityProject, fallback?: ProjectPageData) {
   const provider = project.heroVideoProvider;
   const id = provider === "vimeo" ? project.heroVimeoId : provider === "skiv" ? project.heroSkivId : null;
-  if (!provider || !id) return fallback.heroHtml;
+  if (!provider || !id) return fallback?.heroHtml || "";
 
   const src =
     provider === "vimeo"
       ? `https://player.vimeo.com/video/${id}?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0`
       : `https://skiv.com/embed/${id}?search=0&links=0&logo=0&title=0&autoplay=1&loop=1&volume=0&style=no-controls`;
 
-  return `<div class="StudyVideoEmbed-module__8FDA2W__wrap"><iframe class="StudyVideoEmbed-module__8FDA2W__frame" src="${src}" title="${project.title || fallback.title} film" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
+  return `<div class="StudyVideoEmbed-module__8FDA2W__wrap"><iframe class="StudyVideoEmbed-module__8FDA2W__frame" src="${src}" title="${project.title || fallback?.title || "Project"} film" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
 }
 
 function escapeHtml(value: string) {
@@ -120,15 +120,15 @@ function escapeHtml(value: string) {
     .replace(/"/g, "&quot;");
 }
 
-function galleryHtml(project: SanityProject, fallback: ProjectPageData) {
-  if (!project.gallery?.length) return fallback.galleryHtml;
+function galleryHtml(project: SanityProject, fallback?: ProjectPageData) {
+  if (!project.gallery?.length) return fallback?.galleryHtml || "";
 
   const rendered = project.gallery.map((item, index) => {
     const half = item.format === "half" ? " study-module__vTcG6G__slotHalf" : "";
     const caption = item.caption
       ? `<figcaption class="study-module__vTcG6G__caption">${escapeHtml(item.caption)}</figcaption>`
       : "";
-    const title = escapeHtml(item.altText || `${project.title || fallback.title} — ${String(index + 1).padStart(2, "0")}`);
+    const title = escapeHtml(item.altText || `${project.title || fallback?.title || "Project"} — ${String(index + 1).padStart(2, "0")}`);
 
     if (item.kind === "image" && item.imageUrl) {
       return `<figure class="study-module__vTcG6G__slot${half}"><div class="RevealMedia-module__8VxjUa__frame"><img alt="${title}" loading="lazy" width="1400" height="900" style="color:transparent" src="${item.imageUrl}"/></div>${caption}</figure>`;
@@ -145,7 +145,7 @@ function galleryHtml(project: SanityProject, fallback: ProjectPageData) {
     return `<div class="study-module__vTcG6G__slot${half}"><div class="RevealMedia-module__8VxjUa__frame"><div class="StudyVideoEmbed-module__8FDA2W__wrap"><iframe class="StudyVideoEmbed-module__8FDA2W__frame" src="${src}" title="${title}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div>${caption}</div>`;
   }).join("");
 
-  return rendered || fallback.galleryHtml;
+  return rendered || fallback?.galleryHtml || "";
 }
 
 export async function getSanityProject(slug: string): Promise<{
@@ -153,40 +153,41 @@ export async function getSanityProject(slug: string): Promise<{
   seo: SanityProject["seo"];
 }> {
   const fallback = projectPages[slug];
-  if (!fallback) return { project: null, seo: null };
 
   try {
     const item = await sanityQuery<SanityProject | null>(PROJECT_QUERY, { slug });
-    if (!item?.slug) return { project: fallback, seo: null };
+    if (!item?.slug) return { project: fallback || null, seo: null };
 
+    const title = item.title || fallback?.title || slug.replace(/-/g, " ");
     const paragraphs = item.caseText
       ? item.caseText.split(/\n\s*\n/).map((paragraph) => paragraph.trim()).filter(Boolean)
-      : fallback.paragraphs;
+      : fallback?.paragraphs || [];
 
     const results = (item.results || [])
       .filter((result): result is { value: string; label: string } => Boolean(result.value && result.label))
       .map(({ value, label }) => ({ value, label }));
 
     const leadHtml = item.leadImageUrl
-      ? `<img alt="${item.title || fallback.title}" width="1600" height="1100" style="color:transparent" src="${item.leadImageUrl}"/>`
-      : fallback.leadHtml;
+      ? `<img alt="${title}" width="1600" height="1100" style="color:transparent" src="${item.leadImageUrl}"/>`
+      : fallback?.leadHtml || "";
 
-    return {
-      project: {
-        ...fallback,
-        title: item.title || fallback.title,
-        description: item.summary || fallback.description,
-        services: item.services?.length ? item.services.join(" | ") : fallback.services,
-        results: item.results ? results : fallback.results,
-        paragraphs,
-        heroHtml: heroHtml(item, fallback),
-        leadHtml,
-        galleryHtml: galleryHtml(item, fallback),
-      },
-      seo: item.seo || null,
+    const project: ProjectPageData = {
+      slug: item.slug,
+      title,
+      description: item.summary || fallback?.description || "",
+      services: item.services?.length ? item.services.join(" | ") : fallback?.services || "",
+      results: item.results ? results : fallback?.results || [],
+      paragraphs,
+      quote: fallback?.quote || null,
+      bodyHtml: fallback?.bodyHtml,
+      heroHtml: heroHtml(item, fallback),
+      leadHtml,
+      galleryHtml: galleryHtml(item, fallback),
     };
+
+    return { project, seo: item.seo || null };
   } catch {
-    return { project: fallback, seo: null };
+    return { project: fallback || null, seo: null };
   }
 }
 
