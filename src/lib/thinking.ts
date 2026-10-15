@@ -67,10 +67,10 @@ export const thinkingArticles: ThinkingArticle[] = [
       {
         heading: "Do not rely on category cues to do the work",
         paragraphs: [
-          "Many experience categories now come with familiar visual cues."
-          "Competitive socialising, immersive experiences and premium mini golf can all start to look very similar."
-          "The problem starts when those category cues become the whole idea."
-          "If three concepts can all credibly promise great drinks, great games and a great atmosphere, the customer still has a decision to make. That is where positioning earns its keep."
+          "Many experience categories now come with familiar visual cues.",
+          "Competitive socialising, immersive experiences and premium mini golf can all start to look very similar.",
+          "The problem starts when those category cues become the whole idea.",
+          "If three concepts can all credibly promise great drinks, great games and a great atmosphere, the customer still has a decision to make. That is why clear positioning matters."
         ],
         media: {
           src: "/images/work/pop-playrooms/03.webp",
@@ -164,9 +164,9 @@ export const thinkingArticles: ThinkingArticle[] = [
       {
         heading: "Start with a real customer problem",
         paragraphs: [
-          "Brand workshops often produce long lists of adjectives. Fun. Premium. Social. Bold. Inclusive. Energetic."
-          "Most of them describe how you would like the brand to feel. They do not explain why customers should choose it."
-          "We are more interested in tensions the business can resolve. Parents want an activity that keeps children happy without making the adults endure it. Groups want something to do without sacrificing the quality of the night out. Fans want immersion without needing a doctorate in the source material.",
+          "Brand workshops often produce long lists of adjectives. Fun. Premium. Social. Bold. Inclusive. Energetic.",
+          "Most of them describe how you would like the brand to feel. They do not explain why customers should choose it.",
+          "We are more interested in real customer problems the business can solve. Parents want an activity that keeps children happy without making the adults endure it. Groups want something to do without sacrificing the quality of the night out. Fans want immersion without needing a doctorate in the source material.",
           "Those problems are useful because they lead to practical choices."
         ],
         media: {
