@@ -4489,12 +4489,12 @@ input[type="submit"]{
 .sd-thinking-hero-media img,.sd-thinking-media img{display:block;width:100%;height:auto}
 .sd-thinking-hero-media figcaption,.sd-thinking-media figcaption{font-family:"Helvetica Neue",Arial,sans-serif;font-size:13px;line-height:1.45;margin-top:10px;max-width:760px}
 .sd-thinking-body{width:min(1180px,calc(100% - 48px));margin:0 auto;padding:90px 0 120px}
-.sd-thinking-section{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:90px;padding:58px 0;border-top:1px solid #111}
+.sd-thinking-section{display:block;padding:58px 0;border-top:1px solid #111}
 .sd-thinking-section:first-child{border-top:0;padding-top:0}
-.sd-thinking-copy{grid-column:2}
+.sd-thinking-copy{max-width:780px}
 .sd-thinking-copy h2{font-family:"NaNSuperXSerifDisplay",Georgia,serif;font-weight:400;font-size:clamp(36px,4vw,58px);line-height:1.02;letter-spacing:-.025em;margin:0 0 25px}
 .sd-thinking-copy p{font-size:20px;line-height:1.58;margin:0 0 22px;max-width:760px}
-.sd-thinking-media{grid-column:1 / -1;margin-top:24px}
+.sd-thinking-media{margin-top:34px}
 .sd-thinking-media img{max-height:760px;object-fit:cover}
 .sd-thinking-project-link{display:inline-block;margin-top:13px;color:inherit;text-decoration:none;border-bottom:1px solid #111;padding-bottom:2px}
 .sd-thinking-video{position:relative;aspect-ratio:16/9;background:#000}
