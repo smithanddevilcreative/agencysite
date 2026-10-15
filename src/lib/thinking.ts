@@ -65,7 +65,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         ]
       },
       {
-        heading: "Do not let the category become the idea",
+        heading: "Do not rely on category cues to do the work",
         paragraphs: [
           "Many experience categories now come with familiar visual cues."
           "Competitive socialising, immersive experiences and premium mini golf can all start to look very similar."
@@ -80,7 +80,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         }
       },
       {
-        heading: "Mighty Adventures: building more around the golf",
+        heading: "Mighty Adventures: turning mini golf into a fuller family experience",
         paragraphs: [
           "Mighty Adventures began with outdoor mini golf. Perfectly good product. But 'come and play mini golf' leaves a lot of the experience on the table.",
           "We helped turn the visit into a mission-led family adventure. Characters, story, signage and the way the course was presented all began working towards the same idea.",
@@ -117,7 +117,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         ]
       },
       {
-        heading: "What a clear proposition helps you do",
+        heading: "What becomes easier once the proposition is clear",
         paragraphs: [
           "Once the proposition is clear, the next decisions become easier.",
           "The identity has a clear idea to express. The interior has a clear role. The website knows what to lead with. The campaign has a clear message.",
@@ -138,7 +138,7 @@ export const thinkingArticles: ThinkingArticle[] = [
     seoTitle: "Hospitality Brand Positioning for Experience-Led Businesses",
     description: "How hospitality and experience brands can find a distinctive position customers understand and choose.",
     eyebrow: "Brand positioning",
-    standfirst: "The job is to give customers a reason to choose this one.",
+    standfirst: "Positioning should explain why customers should choose you over the alternatives.",
     heroImage: {
       src: "/images/work/fortune-favours/lead.webp",
       alt: "Fortune Favours entertainment brand",
@@ -258,7 +258,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         }
       },
       {
-        heading: "Mighty Adventures: more than a scorecard",
+        heading: "Mighty Adventures: creating more value around the game",
         paragraphs: [
           "With Mighty Adventures, the opportunity was not simply to improve a golf course.",
           "The family value sat in the shared mission: characters to discover, things to learn, moments parents and children could talk about together.",
@@ -330,7 +330,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         ]
       },
       {
-        heading: "Pop Playrooms: one world around many activities",
+        heading: "Pop Playrooms: bringing different activities under one brand",
         paragraphs: [
           "Pop Playrooms brought together multiple competitive socialising activities inside a concept inspired by the energy of pop performance.",
           "The opportunity was not to give every room its own theme. It was to make the entire place feel like one recognisable experience.",
@@ -378,7 +378,7 @@ export const thinkingArticles: ThinkingArticle[] = [
     seoTitle: "Competitive Socialising Brand Strategy",
     description: "How competitive socialising venues can build a distinctive proposition around games, hospitality and the occasion.",
     eyebrow: "Competitive socialising",
-    standfirst: "Once the category is understood, the question is why yours.",
+    standfirst: "Customers understand the category. Your brand still has to explain why they should choose your venue.",
     heroImage: {
       src: "/images/work/pop-playrooms/10.webp",
       alt: "Pop Playrooms competitive socialising venue",
@@ -457,7 +457,7 @@ export const thinkingArticles: ThinkingArticle[] = [
     seoTitle: "Hospitality Brand Experience Strategy",
     description: "How to carry a hospitality brand proposition through identity, interiors, digital, campaigns and the customer journey.",
     eyebrow: "Brand experience",
-    standfirst: "The customer never sees the strategy deck. They see whether the idea survives contact with the real world.",
+    standfirst: "A proposition only matters if it carries through the website, venue, service and customer journey.",
     heroImage: {
       src: "/images/work/mighty-adventures/12.webp",
       alt: "Mighty Adventures brand expressed through the physical experience",
