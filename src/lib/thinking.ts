@@ -239,7 +239,7 @@ export const thinkingArticles: ThinkingArticle[] = [
         heading: "Features are evidence, not always the reason",
         paragraphs: [
           "Eighteen holes. Four karaoke rooms. Twenty taps. Live band. Ninety minutes of gameplay.",
-          "Necessary information, sometimes."
+          "Necessary information, sometimes.",
           "But features tend to become interchangeable quickly. The emotional job is often much more durable: make this group feel closer, make this date easier, make this family outing feel worth the effort, give this fan a story to tell afterwards."
         ]
       },
