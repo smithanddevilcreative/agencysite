@@ -309,7 +309,7 @@ export const thinkingArticles: ThinkingArticle[] = [
       {
         paragraphs: [
           "Early concepts tend to arrive with lots of good things attached. References. Features. Audiences. Revenue ideas. A name somebody loves. A name somebody else hates.",
-          "That is normal."
+          "That is normal.",
           "The strategic job is to find the organising idea that helps customers understand the offer and helps the business make consistent decisions."
         ]
       },
@@ -388,8 +388,8 @@ export const thinkingArticles: ThinkingArticle[] = [
     sections: [
       {
         paragraphs: [
-          "Competitive socialising is now an established category."
-          "Customers understand the broad idea. The problem is that concepts can quickly end up describing themselves with the same handful of ingredients: games, drinks, food, music, groups."
+          "Competitive socialising is now an established category.",
+          "Customers understand the broad idea. The problem is that concepts can quickly end up describing themselves with the same handful of ingredients: games, drinks, food, music, groups.",
           "So the strategic question moves on: why this one?"
         ]
       },
