@@ -125,11 +125,11 @@ export function Pixel404Game() {
 
           {room === "smithy" && (
             <div className="sd-404-pixel__actions">
-              <button className={choiceClass} type="button" onClick={() => setRoom("chairWon")}>
-                Tell him you are ready. Offer him a seat while you fetch your coat.
-              </button>
               <button className={choiceClass} type="button" onClick={() => setRoom("chairMistake")}>
                 Stall him at the door.
+              </button>
+              <button className={choiceClass} type="button" onClick={() => setRoom("chairWon")}>
+                Tell him you are ready. Offer him a seat while you fetch your coat.
               </button>
               <button className={choiceClass} type="button" onClick={lose}>
                 Admit the bargain is due and go with him.
@@ -139,94 +139,94 @@ export function Pixel404Game() {
 
           {room === "chairMistake" && (
             <div className="sd-404-pixel__actions">
-              <button className={choiceClass} type="button" onClick={() => setRoom("chairWon")}>
-                Change tack. Offer him the chair while you fetch your coat.
-              </button>
               <button className={choiceClass} type="button" onClick={lose}>
                 Try to force your way past him.
+              </button>
+              <button className={choiceClass} type="button" onClick={() => setRoom("chairWon")}>
+                Change tack. Offer him the chair while you fetch your coat.
               </button>
             </div>
           )}
 
           {room === "chairWon" && (
             <div className="sd-404-pixel__actions">
-              <button className={choiceClass} type="button" onClick={() => setRoom("tree")}>
-                Take the seven years. Let him go.
-              </button>
               <button className={choiceClass} type="button" onClick={lose}>
                 Let him go before he gives his word.
+              </button>
+              <button className={choiceClass} type="button" onClick={() => setRoom("tree")}>
+                Take the seven years. Let him go.
               </button>
             </div>
           )}
 
           {room === "tree" && (
             <div className="sd-404-pixel__actions">
-              <button className={choiceClass} type="button" onClick={() => setRoom("treeWon")}>
-                Ask him to fetch the finest apple.
-              </button>
               <button className={choiceClass} type="button" onClick={() => setRoom("treeMistake")}>
                 Climb up and get the apple yourself.
               </button>
               <button className={choiceClass} type="button" onClick={lose}>
                 Tell him you are out of tricks.
               </button>
+              <button className={choiceClass} type="button" onClick={() => setRoom("treeWon")}>
+                Ask him to fetch the finest apple.
+              </button>
             </div>
           )}
 
           {room === "treeMistake" && (
             <div className="sd-404-pixel__actions">
-              <button className={choiceClass} type="button" onClick={() => setRoom("treeWon")}>
-                Call the apple rotten. Dare him to climb up and choose a better one.
-              </button>
               <button className={choiceClass} type="button" onClick={lose}>
                 Climb down into his reach.
+              </button>
+              <button className={choiceClass} type="button" onClick={() => setRoom("treeWon")}>
+                Call the apple rotten. Dare him to climb up and choose a better one.
               </button>
             </div>
           )}
 
           {room === "treeWon" && (
             <div className="sd-404-pixel__actions">
-              <button className={choiceClass} type="button" onClick={() => setRoom("purse")}>
-                Take another seven years. Let him down.
-              </button>
               <button className={choiceClass} type="button" onClick={lose}>
                 Let him down before he gives his word.
+              </button>
+              <button className={choiceClass} type="button" onClick={() => setRoom("purse")}>
+                Take another seven years. Let him down.
               </button>
             </div>
           )}
 
           {room === "purse" && (
             <div className="sd-404-pixel__actions">
+              <button className={choiceClass} type="button" onClick={lose}>
+                Run from the forge.
+              </button>
               <button className={choiceClass} type="button" onClick={() => setRoom("purseWon")}>
                 Use the tongs. Drop the sovereign into your enchanted purse.
               </button>
               <button className={choiceClass} type="button" onClick={() => setRoom("purseMistake")}>
                 Pick up the sovereign.
               </button>
-              <button className={choiceClass} type="button" onClick={lose}>
-                Run from the forge.
-              </button>
             </div>
           )}
 
           {room === "purseMistake" && (
             <div className="sd-404-pixel__actions">
-              <button className={choiceClass} type="button" onClick={() => setRoom("purseWon")}>
-                Throw the changing coin into the purse.
-              </button>
               <button className={choiceClass} type="button" onClick={lose}>
                 Hold on to the gold.
+              </button>
+              <button className={choiceClass} type="button" onClick={() => setRoom("purseWon")}>
+                Throw the changing coin into the purse.
               </button>
             </div>
           )}
 
           {room === "purseWon" && (
             <div className="sd-404-pixel__actions">
-              <button className={choiceClass} type="button" onClick={() => setRoom("win")}>
-                Put the purse on the anvil. Take up your sledgehammer.
-              </button>
               <button className={choiceClass} type="button" onClick={lose}>
                 Open the purse and hear him out.
+              </button>
+              <button className={choiceClass} type="button" onClick={() => setRoom("win")}>
+                Put the purse on the anvil. Take up your sledgehammer.
               </button>
             </div>
           )}
