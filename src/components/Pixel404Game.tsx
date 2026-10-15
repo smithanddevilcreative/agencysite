@@ -122,14 +122,6 @@ export function Pixel404Game() {
                 src="https://cdn.sanity.io/images/6y2dn5q3/production/5ac200be4bd74b6f89770e7ec93c86e3aeb98d27-1672x941.png"
                 alt="Creative Hell. Game over. A pixel-art hellscape filled with bad creative clichés."
               />
-              <button
-                className="sd-404-pixel__hellRetry"
-                type="button"
-                aria-label="Try again"
-                onClick={reset}
-              >
-                Try again
-              </button>
             </div>
           ) : (
             <div className="sd-404-pixel__artWrap" aria-hidden="true">
@@ -253,7 +245,17 @@ export function Pixel404Game() {
             </div>
           )}
 
-          {room === "hell" && <span className="sr-only">Game over. Try again.</span>}
+          {room === "hell" && (
+            <div className="sd-404-pixel__actions" aria-label="Game over">
+              <button
+                className="sd-404-pixel__button sd-404-pixel__button--primary"
+                type="button"
+                onClick={reset}
+              >
+                <span aria-hidden="true">▶</span> Try again
+              </button>
+            </div>
+          )}
 
           {room === "win" && (
             <nav className="sd-404-pixel__actions" aria-label="Winning option">
