@@ -4569,3 +4569,30 @@ input[type="submit"]{
   letter-spacing:.14em;
   text-transform:uppercase;
 }
+
+
+/* 404 game outcomes */
+.sd-404-pixel__hellEnd{
+  margin-top:26px;
+  width:min(100%,430px);
+  padding:26px 20px;
+  border:3px solid #ef1111;
+  box-shadow:4px 4px 0 #710000;
+  text-align:center;
+  background:#120000;
+}
+.sd-404-pixel__hellEnd p{
+  margin:0 0 8px;
+  color:#ef1111;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+}
+.sd-404-pixel__hellEnd strong{
+  display:block;
+  color:#f7f7f5;
+  font-size:clamp(24px,4vw,42px);
+  line-height:1;
+  letter-spacing:.06em;
+}
