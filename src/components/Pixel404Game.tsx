@@ -65,8 +65,8 @@ export function Pixel404Game() {
       case "hell":
         return {
           label: "CREATIVE HELL",
-          title: "You have arrived somewhere dreadful.",
-          body: "Thousands of identical neon signs cover the walls. Every one says BE BOLD. A deck on a plinth contains 94 slides and no idea.",
+          title: "You chose badly.",
+          body: "The shortcut ends here. Neon slogans burn across the walls. Every idea is loud, derivative and half-finished. There is no way back from this screen.",
         };
       case "chair":
         return {
@@ -84,9 +84,9 @@ export function Pixel404Game() {
         };
       case "ending":
         return {
-          label: "THE WAY HOME",
-          title: "The door opens.",
-          body: "The strange thing now has shape, purpose and just enough mischief. The Devil looks at it, then at you. “That’ll do.”",
+          label: "INGENIOUS IDEAS",
+          title: "You win.",
+          body: "The idea has survived temptation, gained shape at the forge and come out better for both. The path home opens.",
         };
       default:
         return {
@@ -169,14 +169,9 @@ export function Pixel404Game() {
           )}
 
           {room === "hell" && (
-            <div className="sd-404-pixel__actions">
-              <button className="sd-404-pixel__button" type="button" onClick={() => setMessage("You open the deck. Slide 37 says AUTHENTICITY in 96pt type. You close it again.")}>Inspect the deck</button>
-              <button className="sd-404-pixel__button" type="button" onClick={() => setMessage("The nearest neon sign flickers. It now says BE BOLDER. Somehow worse.")}>Read the signs</button>
-              {has("hammer") ? (
-                <button className="sd-404-pixel__button sd-404-pixel__button--primary" type="button" onClick={() => { setRoom("forge"); setMessage(""); }}>Use the hammer</button>
-              ) : (
-                <button className="sd-404-pixel__button sd-404-pixel__button--primary" type="button" onClick={() => { setRoom("crossroads"); setMessage("You have imagination, but no tools. Back to the crossroads."); }}>Find a way out</button>
-              )}
+            <div className="sd-404-pixel__hellEnd" role="status">
+              <p>CREATIVE HELL</p>
+              <strong>GAME OVER</strong>
             </div>
           )}
 
@@ -202,11 +197,10 @@ export function Pixel404Game() {
           )}
 
           {room === "ending" && (
-            <nav className="sd-404-pixel__actions" aria-label="404 options">
+            <nav className="sd-404-pixel__actions" aria-label="Winning options">
               <Link className="sd-404-pixel__button sd-404-pixel__button--primary" href="/">
-                <span aria-hidden="true">▶</span> Return to Smith &amp; Devil
+                <span aria-hidden="true">▶</span> Enter Smith &amp; Devil
               </Link>
-              <button className="sd-404-pixel__button" type="button" onClick={() => { setRoom("smithy"); setItems([]); setDevilTrapped(false); setMessage(""); }}>Play again</button>
             </nav>
           )}
         </div>
