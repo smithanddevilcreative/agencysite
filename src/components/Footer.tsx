@@ -73,6 +73,7 @@ export function Footer() {
 
           <Column title="Studio">
             <li><Link className={c.link} href="/studio">About</Link></li>
+            <li><Link className={c.link} href="/thinking">Thinking</Link></li>
           </Column>
 
           <Column title="Services">
