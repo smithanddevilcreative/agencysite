@@ -4746,3 +4746,27 @@ input[type="submit"]{
     font-size:8px;
   }
 }
+
+
+/* 404 easy way out — visible in game flow */
+.sd-404-pixel__giveUp{
+  position:static;
+  display:inline-block;
+  margin-top:24px;
+  color:#777780;
+  font-size:9px;
+  font-weight:800;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  text-decoration:none;
+}
+.sd-404-pixel__giveUp:hover,
+.sd-404-pixel__giveUp:focus-visible{
+  color:#f7f7f5;
+}
+@media(max-width:700px){
+  .sd-404-pixel__giveUp{
+    margin-top:22px;
+    font-size:8px;
+  }
+}
