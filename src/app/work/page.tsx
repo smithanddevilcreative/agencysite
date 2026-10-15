@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { WorkCard } from "@/components/WorkCard";
 import { CTASection } from "@/components/CTASection";
-import { projects } from "@/lib/projects";
+import { getSanityProjectCards } from "@/lib/sanity-projects";
 
 export const metadata: Metadata = {
   title: "Work",
@@ -20,7 +20,8 @@ const c = {
   cards: "work-module__8vBVoq__cards",
 };
 
-export default function WorkPage() {
+export default async function WorkPage() {
+  const projects = await getSanityProjectCards();
   return (
     <main className={c.main}>
       <section className={c.hero}>
