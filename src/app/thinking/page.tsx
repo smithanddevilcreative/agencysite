@@ -20,17 +20,20 @@ export default function ThinkingPage() {
 
       <section className="sd-thinking-index-list">
         <div className="sd-thinking-inner">
-          {thinkingArticles.map((article, index) => (
-            <Link className="sd-thinking-card" href={`/thinking/${article.slug}`} key={article.slug}>
-              <span className="sd-thinking-card-number">{String(index + 1).padStart(2, "0")}</span>
-              <div>
-                <span className="sd-thinking-card-eyebrow">{article.eyebrow}</span>
-                <h2>{article.title}</h2>
-                <p>{article.standfirst}</p>
-              </div>
-              <span className="sd-thinking-card-arrow" aria-hidden="true">→</span>
-            </Link>
-          ))}
+          <div className="sd-thinking-grid">
+            {thinkingArticles.map((article) => (
+              <Link className="sd-thinking-card" href={`/thinking/${article.slug}`} key={article.slug}>
+                <div className="sd-thinking-card-media">
+                  <img src={article.heroImage.src} alt="" loading="lazy" width="900" height="600" />
+                </div>
+                <div className="sd-thinking-card-copy">
+                  <span className="sd-thinking-card-eyebrow">{article.eyebrow}</span>
+                  <h2>{article.title}</h2>
+                  <p>{article.standfirst}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
       <CTASection />
