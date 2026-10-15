@@ -4,6 +4,16 @@ import { projectPages, type ProjectPageData } from "@/lib/project-pages";
 
 type SanityMetric = { value?: string | null; label?: string | null };
 
+type SanityGalleryItem = {
+  kind?: "image" | "vimeo" | "skiv" | null;
+  format?: "standard" | "full" | "half" | "laptop" | "phone" | "instagram-grid" | null;
+  imageUrl?: string | null;
+  vimeoId?: string | null;
+  skivId?: string | null;
+  altText?: string | null;
+  caption?: string | null;
+};
+
 type SanityProject = {
   title?: string | null;
   slug?: string | null;
@@ -19,6 +29,7 @@ type SanityProject = {
   heroVideoProvider?: "vimeo" | "skiv" | null;
   heroVimeoId?: string | null;
   heroSkivId?: string | null;
+  gallery?: SanityGalleryItem[] | null;
   seo?: {
     title?: string | null;
     description?: string | null;
@@ -50,6 +61,15 @@ const PROJECT_QUERY = `*[_type == "project" && slug.current == $slug][0]{
   heroVideoProvider,
   heroVimeoId,
   heroSkivId,
+  gallery[]{
+    kind,
+    format,
+    altText,
+    caption,
+    vimeoId,
+    skivId,
+    "imageUrl": image.asset->url
+  },
   seo{title,description,noIndex}
 }`;
 
@@ -92,6 +112,42 @@ function heroHtml(project: SanityProject, fallback: ProjectPageData) {
   return `<div class="StudyVideoEmbed-module__8FDA2W__wrap"><iframe class="StudyVideoEmbed-module__8FDA2W__frame" src="${src}" title="${project.title || fallback.title} film" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
 }
 
+function escapeHtml(value: string) {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function galleryHtml(project: SanityProject, fallback: ProjectPageData) {
+  if (!project.gallery?.length) return fallback.galleryHtml;
+
+  const rendered = project.gallery.map((item, index) => {
+    const half = item.format === "half" ? " study-module__vTcG6G__slotHalf" : "";
+    const caption = item.caption
+      ? `<figcaption class="study-module__vTcG6G__caption">${escapeHtml(item.caption)}</figcaption>`
+      : "";
+    const title = escapeHtml(item.altText || `${project.title || fallback.title} — ${String(index + 1).padStart(2, "0")}`);
+
+    if (item.kind === "image" && item.imageUrl) {
+      return `<figure class="study-module__vTcG6G__slot${half}"><div class="RevealMedia-module__8VxjUa__frame"><img alt="${title}" loading="lazy" width="1400" height="900" style="color:transparent" src="${item.imageUrl}"/></div>${caption}</figure>`;
+    }
+
+    const id = item.kind === "vimeo" ? item.vimeoId : item.kind === "skiv" ? item.skivId : null;
+    if (!id) return "";
+
+    const src =
+      item.kind === "vimeo"
+        ? `https://player.vimeo.com/video/${id}?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0`
+        : `https://skiv.com/embed/${id}?search=0&links=0&logo=0&title=0&autoplay=1&loop=1&volume=0&style=no-controls`;
+
+    return `<div class="study-module__vTcG6G__slot${half}"><div class="RevealMedia-module__8VxjUa__frame"><div class="StudyVideoEmbed-module__8FDA2W__wrap"><iframe class="StudyVideoEmbed-module__8FDA2W__frame" src="${src}" title="${title}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div>${caption}</div>`;
+  }).join("");
+
+  return rendered || fallback.galleryHtml;
+}
+
 export async function getSanityProject(slug: string): Promise<{
   project: ProjectPageData | null;
   seo: SanityProject["seo"];
@@ -125,6 +181,7 @@ export async function getSanityProject(slug: string): Promise<{
         paragraphs,
         heroHtml: heroHtml(item, fallback),
         leadHtml,
+        galleryHtml: galleryHtml(item, fallback),
       },
       seo: item.seo || null,
     };
