@@ -101,7 +101,7 @@ export function Pixel404Game() {
     hell: {
       label: "CREATIVE HELL",
       title: "The Devil outwitted you.",
-      body: "The bargain is collected. This path ends here.",
+      body: "Your bargain has finally come due.",
     },
     win: {
       label: "INGENIOUS IDEAS",
@@ -119,7 +119,7 @@ export function Pixel404Game() {
           {room === "hell" ? (
             <div className="sd-404-pixel__hellArtwork">
               <img
-                src="https://cdn.sanity.io/images/6y2dn5q3/production/5ac200be4bd74b6f89770e7ec93c86e3aeb98d27-1672x941.png"
+                src="https://cdn.sanity.io/images/6y2dn5q3/production/a6b0c2e8b0421611a45321ac1f91ac54514f1581-1881x836.png"
                 alt="Creative Hell. Game over. A pixel-art hellscape filled with bad creative clichés."
               />
             </div>
