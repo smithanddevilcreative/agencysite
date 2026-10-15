@@ -266,7 +266,7 @@ export function Pixel404Game() {
           )}
         </div>
 
-        {room !== "landing" && room !== "win" && room !== "hell" && (
+        {room !== "landing" && room !== "win" && (
           <Link className="sd-404-pixel__giveUp" href="/">
             Enough heroics. Take the easy way out →
           </Link>
