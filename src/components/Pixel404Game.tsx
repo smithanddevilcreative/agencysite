@@ -4,104 +4,78 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 
 type GameState =
-  | "start"
-  | "look"
-  | "left"
-  | "key"
-  | "talk"
-  | "door"
-  | "ready"
-  | "open"
-  | "stay";
+  | "landing"
+  | "fork"
+  | "devil"
+  | "moreDevil"
+  | "craft"
+  | "hell"
+  | "return";
 
 export function Pixel404Game() {
-  const [state, setState] = useState<GameState>("start");
-  const [hasKey, setHasKey] = useState(false);
+  const [state, setState] = useState<GameState>("landing");
 
   const scene = useMemo(() => {
     switch (state) {
-      case "look":
+      case "fork":
         return {
-          title: "And you looked upon the place.",
-          body: "Brimstone. Broken links. One suspiciously expensive chair. Something glints on the floor.",
+          title: "The path divides.",
+          body: "To the left: craft, discipline and a very sensible sign. To the right: a red glow and the faint sound of a bad idea getting interesting.",
           actions: [
-            ["Pick it up", "key"],
-            ["Leave it alone", "left"],
+            ["Take the devilish path", "devil"],
+            ["Take the sensible path", "craft"],
           ] as const,
         };
-      case "left":
+      case "devil":
         return {
-          title: "You leave it alone.",
-          body: "Probably wise. Although you are still trapped in hell.",
+          title: "The devil is in the detail.",
+          body: "He offers no shortcuts. Just a question: do you want the idea people expect, or the one they remember?",
           actions: [
-            ["Look again", "look"],
-            ["Talk to the devil", "talk"],
+            ["Choose the one they remember", "moreDevil"],
+            ["Maybe craft matters too", "craft"],
           ] as const,
         };
-      case "key":
+      case "moreDevil":
         return {
-          title: "And there was a key.",
-          body: "As was foretold.",
+          title: "A little devil is useful.",
+          body: "Enough to make the work distinctive. Not enough to set fire to the brief. Ahead, the path splits again.",
           actions: [
-            ["Talk to the devil", "talk"],
-            ["Inspect the door", "door"],
+            ["Add more mischief", "hell"],
+            ["Temper it with craft", "return"],
           ] as const,
         };
-      case "talk":
+      case "craft":
         return {
-          title: "The devil looks up.",
-          body: hasKey
-            ? "“4 & 4?” You nod. “And lo, it was not found.” He notices the key. “Go forth.”"
-            : "“4 & 4?” You nod. “And lo, it was not found.” He points towards the floor. “Seek, and ye shall find.”",
-          actions: hasKey
-            ? ([["Inspect the door", "door"]] as const)
-            : ([["Look around", "look"], ["Inspect the door", "door"]] as const),
+          title: "Craft keeps the devil honest.",
+          body: "Ideas need judgement. Detail. Restraint. The kind of work that looks effortless because somebody did the hard bit properly.",
+          actions: [
+            ["Bring the devil back in", "return"],
+            ["Stay completely sensible", "hell"],
+          ] as const,
         };
-      case "door":
+      case "hell":
         return {
-          title: "You inspect the door.",
-          body: hasKey
-            ? "A small brass plaque reads WAY OUT. Underneath: NO REFUNDS. The key fits."
-            : "A small brass plaque reads WAY OUT. Underneath: NO REFUNDS. The handle does not move.",
-          actions: hasKey
-            ? ([["Open the door", "ready"]] as const)
-            : ([["Look around", "look"], ["Talk to the devil", "talk"]] as const),
+          title: "Welcome to creative hell.",
+          body: "Too much devil and it becomes noise. Too much safety and it becomes wallpaper. Either way, nobody remembers who made it.",
+          actions: [
+            ["Try again", "fork"],
+            ["Escape to the main site", "return"],
+          ] as const,
         };
-      case "ready":
+      case "return":
         return {
-          title: "Knock, and it shall be opened unto you.",
-          body: "The lock clicks. The devil sighs. “They always leave.”",
-          actions: [["Open the door", "open"]] as const,
-        };
-      case "open":
-        return {
-          title: "Go forth.",
-          body: "The door opens onto a rather more familiar part of the internet.",
+          title: "Smith. Devil. In that order.",
+          body: "Craft gives the idea shape. Devilish creativity gives it a reason to exist. That is the path home.",
           actions: [] as const,
-        };
-      case "stay":
-        return {
-          title: "Bold choice.",
-          body: "The devil seems pleased. “Fancy doing some brand strategy?”",
-          actions: [["Actually, open the door", "open"]] as const,
         };
       default:
         return {
           title: "You have strayed from the path.",
-          body: "There is a door. There is a devil. The door is locked.",
-          actions: [
-            ["Look around", "look"],
-            ["Talk to the devil", "talk"],
-            ["Inspect the door", "door"],
-          ] as const,
+          body: "4 & 4. Page not found.",
+          actions: [] as const,
         };
     }
-  }, [state, hasKey]);
-
-  function choose(next: GameState) {
-    if (next === "key") setHasKey(true);
-    setState(next);
-  }
+  }, [state]);
 
   return (
     <main className="sd-404-pixel">
@@ -116,9 +90,6 @@ export function Pixel404Game() {
             <div className="sd-404-pixel__artEmbers">
               {Array.from({ length: 9 }).map((_, i) => <span key={i} />)}
             </div>
-            {hasKey && state !== "open" && (
-              <span className="sd-404-pixel__key" aria-hidden="true">◆</span>
-            )}
           </div>
 
           <div className="sd-404-pixel__copy" aria-live="polite">
@@ -126,27 +97,36 @@ export function Pixel404Game() {
             <p>{scene.body}</p>
           </div>
 
-          {hasKey && state !== "open" && (
-            <p className="sd-404-pixel__inventory">YOU HAVE: 1 KEY</p>
-          )}
-
-          {state === "open" ? (
+          {state === "landing" ? (
+            <nav className="sd-404-pixel__actions" aria-label="404 options">
+              <Link className="sd-404-pixel__button" href="/">
+                Turn back to safety
+              </Link>
+              <button
+                className="sd-404-pixel__button sd-404-pixel__button--primary"
+                type="button"
+                onClick={() => setState("fork")}
+              >
+                <span aria-hidden="true">▶</span> Follow the path
+              </button>
+            </nav>
+          ) : state === "return" ? (
             <nav className="sd-404-pixel__actions" aria-label="404 options">
               <Link className="sd-404-pixel__button sd-404-pixel__button--primary" href="/">
-                <span aria-hidden="true">▶</span> Return to Smith &amp; Devil
+                <span aria-hidden="true">▶</span> Enter Smith &amp; Devil
               </Link>
-              <button className="sd-404-pixel__button" type="button" onClick={() => setState("stay")}>
-                Stay in hell
+              <button className="sd-404-pixel__button" type="button" onClick={() => setState("fork")}>
+                Walk the path again
               </button>
             </nav>
           ) : (
-            <div className="sd-404-pixel__actions" role="group" aria-label="Choose an action">
+            <div className="sd-404-pixel__actions" role="group" aria-label="Choose a path">
               {scene.actions.map(([label, next], index) => (
                 <button
                   className={"sd-404-pixel__button" + (index === 0 ? " sd-404-pixel__button--primary" : "")}
                   type="button"
                   key={state + "-" + label}
-                  onClick={() => choose(next)}
+                  onClick={() => setState(next)}
                 >
                   {index === 0 && <span aria-hidden="true">▶</span>}
                   {label}
