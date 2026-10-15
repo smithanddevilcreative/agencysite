@@ -4523,3 +4523,37 @@ input[type="submit"]{
   .sd-thinking-service-link{display:block}
   .sd-thinking-service-link a{display:inline-block;margin-top:28px}
 }
+
+
+/* 404 scripted adventure */
+.sd-404-pixel__button{font-family:inherit;cursor:pointer}
+.sd-404-pixel__inventory{
+  margin:16px 0 -8px;
+  color:#ef1111;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+}
+.sd-404-pixel__key{
+  position:absolute;
+  left:51%;
+  bottom:14%;
+  z-index:5;
+  color:#f2d56b;
+  font-size:18px;
+  line-height:1;
+  text-shadow:2px 2px 0 #5f4100,0 0 8px rgba(242,213,107,.45);
+  animation:sd404key 1.1s steps(2,end) infinite alternate;
+}
+@keyframes sd404key{
+  from{transform:translateY(0)}
+  to{transform:translateY(-3px)}
+}
+@media(max-width:700px){
+  .sd-404-pixel__inventory{font-size:9px}
+  .sd-404-pixel__key{font-size:15px}
+}
+@media(prefers-reduced-motion:reduce){
+  .sd-404-pixel__key{animation:none!important}
+}
