@@ -4463,3 +4463,60 @@ input[type="submit"]{
     text-align:center!important;
   }
 }
+
+
+/* Thinking / authority content */
+.sd-thinking-inner{width:min(1180px,calc(100% - 48px));margin:0 auto}
+.sd-thinking-eyebrow,.sd-thinking-breadcrumb,.sd-thinking-card-eyebrow{font-family:"Helvetica Neue",Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;font-size:12px;line-height:1.3}
+.sd-thinking-index,.sd-thinking-article{background:#fff;color:#0b0b0b}
+.sd-thinking-index-hero{padding:150px 0 90px}
+.sd-thinking-index-hero h1,.sd-thinking-hero h1{font-family:"NaNSuperXSerifDisplay",Georgia,serif;font-weight:400;letter-spacing:-.04em;line-height:.92;margin:18px 0 28px}
+.sd-thinking-index-hero h1{font-size:clamp(58px,8vw,122px);max-width:1050px}
+.sd-thinking-index-hero>div>p:last-child{font-size:22px;line-height:1.4;max-width:720px}
+.sd-thinking-index-list{border-top:1px solid #111;padding-bottom:110px}
+.sd-thinking-card{display:grid;grid-template-columns:70px 1fr 60px;gap:24px;padding:34px 0;border-bottom:1px solid #111;color:inherit;text-decoration:none;align-items:start}
+.sd-thinking-card h2{font-family:"NaNSuperXSerifDisplay",Georgia,serif;font-weight:400;font-size:clamp(34px,4vw,62px);line-height:1;margin:7px 0 12px;letter-spacing:-.025em}
+.sd-thinking-card p{max-width:760px;font-size:18px;line-height:1.5;margin:0}
+.sd-thinking-card-number,.sd-thinking-card-arrow{font-family:"Helvetica Neue",Arial,sans-serif;font-size:14px}
+.sd-thinking-card-arrow{font-size:30px;text-align:right;transition:transform .2s ease}
+.sd-thinking-card:hover .sd-thinking-card-arrow{transform:translateX(6px)}
+.sd-thinking-hero{padding:140px 0 70px}
+.sd-thinking-breadcrumb{display:flex;gap:9px;margin-bottom:65px}
+.sd-thinking-breadcrumb a{color:inherit;text-decoration:none}
+.sd-thinking-hero h1{font-size:clamp(60px,8.5vw,128px);max-width:1120px}
+.sd-thinking-standfirst{font-family:"NaNSuperXSerifDisplay",Georgia,serif;font-size:clamp(26px,3vw,42px);line-height:1.15;max-width:900px;margin:0}
+.sd-thinking-hero-media,.sd-thinking-media{margin:0}
+.sd-thinking-hero-media img,.sd-thinking-media img{display:block;width:100%;height:auto}
+.sd-thinking-hero-media figcaption,.sd-thinking-media figcaption{font-family:"Helvetica Neue",Arial,sans-serif;font-size:13px;line-height:1.45;margin-top:10px;max-width:760px}
+.sd-thinking-body{width:min(1180px,calc(100% - 48px));margin:0 auto;padding:90px 0 120px}
+.sd-thinking-section{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:90px;padding:58px 0;border-top:1px solid #111}
+.sd-thinking-section:first-child{border-top:0;padding-top:0}
+.sd-thinking-copy{grid-column:2}
+.sd-thinking-copy h2{font-family:"NaNSuperXSerifDisplay",Georgia,serif;font-weight:400;font-size:clamp(36px,4vw,58px);line-height:1.02;letter-spacing:-.025em;margin:0 0 25px}
+.sd-thinking-copy p{font-size:20px;line-height:1.58;margin:0 0 22px;max-width:760px}
+.sd-thinking-media{grid-column:1 / -1;margin-top:24px}
+.sd-thinking-media img{max-height:760px;object-fit:cover}
+.sd-thinking-project-link{display:inline-block;margin-top:13px;color:inherit;text-decoration:none;border-bottom:1px solid #111;padding-bottom:2px}
+.sd-thinking-video{position:relative;aspect-ratio:16/9;background:#000}
+.sd-thinking-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.sd-thinking-related{background:#111;color:#fff;padding:90px 0}
+.sd-thinking-related-links{display:flex;flex-wrap:wrap;gap:12px;margin:24px 0 70px}
+.sd-thinking-related-links a{color:#fff;text-decoration:none;border:1px solid rgba(255,255,255,.55);border-radius:999px;padding:12px 17px}
+.sd-thinking-service-link{display:grid;grid-template-columns:1fr auto;gap:30px;align-items:end;border-top:1px solid rgba(255,255,255,.45);padding-top:35px}
+.sd-thinking-service-link p{font-family:"NaNSuperXSerifDisplay",Georgia,serif;font-size:clamp(34px,4vw,62px);line-height:1;max-width:760px;margin:0}
+.sd-thinking-service-link a{color:#fff;text-decoration:none;border-bottom:1px solid #fff;padding-bottom:3px}
+@media(max-width:760px){
+  .sd-thinking-inner,.sd-thinking-body{width:min(100% - 28px,1180px)}
+  .sd-thinking-index-hero{padding:115px 0 60px}
+  .sd-thinking-hero{padding:105px 0 45px}
+  .sd-thinking-breadcrumb{margin-bottom:42px}
+  .sd-thinking-card{grid-template-columns:42px 1fr 28px;gap:12px;padding:26px 0}
+  .sd-thinking-card p{font-size:16px}
+  .sd-thinking-body{padding:60px 0 80px}
+  .sd-thinking-section{display:block;padding:42px 0}
+  .sd-thinking-copy p{font-size:18px}
+  .sd-thinking-media{margin-top:28px}
+  .sd-thinking-related{padding:65px 0}
+  .sd-thinking-service-link{display:block}
+  .sd-thinking-service-link a{display:inline-block;margin-top:28px}
+}
