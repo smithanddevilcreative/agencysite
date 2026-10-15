@@ -89,15 +89,7 @@ export function ProjectDetailPage({ project }: { project: ProjectPageData }) {
             ) : null}
           </section>
 
-          {project.slug === "strike" ? (
-            <div className={c.gallery}>
-              <figure className="study-module__vTcG6G__slot">
-                <div className="RevealMedia-module__8VxjUa__frame">
-                  <img alt="Strike — gallery" loading="lazy" width="1400" height="900" src="/images/work/strike/strike-gallery.webp" />
-                </div>
-              </figure>
-            </div>
-          ) : project.galleryHtml ? (
+          {project.galleryHtml ? (
             <div className={c.gallery} dangerouslySetInnerHTML={{ __html: project.galleryHtml }} />
           ) : null}
         </div>
