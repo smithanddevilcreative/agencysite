@@ -101,7 +101,7 @@ export function Pixel404Game() {
     hell: {
       label: "CREATIVE HELL",
       title: "The Devil outwitted you.",
-      body: "Your bargain has finally come due.",
+      body: "You should not have bargained with the Devil. You lose.",
     },
     win: {
       label: "INGENIOUS IDEAS",
