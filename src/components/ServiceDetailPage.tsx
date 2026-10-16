@@ -159,7 +159,7 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
 
       <section className={c.caseStudy}>
         <div className={c.inner}>
-          <div className={c.caseMedia}>
+          <div className={`${c.caseMedia}${featuredWork.image.includes("/t2-design-solutions/") ? " sd-service-case-media--landscape" : ""}`}>
             <img alt={data.caseStudy.image.alt} loading="lazy" width="1400" height="900" src={data.caseStudy.image.src} />
           </div>
           <div className={`Reveal-module__U2Tp6W__base ${c.caseCopy}`}>
