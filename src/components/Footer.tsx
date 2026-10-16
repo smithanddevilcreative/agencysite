@@ -34,26 +34,15 @@ function Column({
 export function Footer() {
   return (
     <footer className={c.footer}>
-      <svg aria-hidden="true" width="0" height="0" style={{ position: "absolute" }}>
-        <filter id="footer-logo-colour" colorInterpolationFilters="sRGB">
-          <feColorMatrix
-            type="matrix"
-            values="-0.2568 0 0 0 1.0005
-                    -1.2193 0 0 0 1.0760
-                    -1.2084 0 0 0 1.0673
-                     0 0 0 1 0"
-          />
-        </filter>
-      </svg>
       <div className={c.inner}>
         <div className={c.brand}>
           <Link className={c.logoLink} aria-label="Smith & Devil — home" href="/">
             <img
               alt="Smith & Devil"
-              width="2517"
-              height="433"
+              width="800"
+              height="139"
               className={c.logo}
-              src="/brand/smith-and-devil-logo.png"
+              src="/brand/smith-and-devil-logo-footer.png"
             />
           </Link>
           <p className={c.narrative}>

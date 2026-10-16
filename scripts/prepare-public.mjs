@@ -9,7 +9,7 @@ for (const dir of ["brand", "images"]) {
 
 if (existsSync("fonts")) await cp("fonts", "public/fonts", { recursive: true, force: true });
 
-for (const file of ["favicon.ico", "favicon.svg", "robots.txt", "sitemap.xml"]) {
+for (const file of ["favicon.ico", "favicon.svg", "favicon-2026.png", "robots.txt", "sitemap.xml"]) {
   if (existsSync(file)) await copyFile(file, `public/${file}`);
 }
 

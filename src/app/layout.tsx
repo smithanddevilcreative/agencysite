@@ -17,8 +17,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   icons: {
-    icon: [{ url: "/favicon.svg", type: "image/svg+xml", sizes: "any" }],
-    shortcut: "/favicon.svg",
+    icon: [{ url: "/favicon-2026.png", type: "image/png", sizes: "192x192" }],
+    shortcut: "/favicon-2026.png",
   },
   openGraph: {
     type: "website",
@@ -76,7 +76,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               "@type": "Organization",
               name: "Smith & Devil",
               url: "https://www.smithanddevil.com",
-              logo: "https://www.smithanddevil.com/favicon.svg",
+              logo: "https://www.smithanddevil.com/brand/smith-and-devil-logo.png",
               email: "hello@smithanddevil.com",
               description:
                 "Creative strategy and design studio for the experience economy.",

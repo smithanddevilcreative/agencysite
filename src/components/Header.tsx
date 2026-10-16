@@ -39,8 +39,8 @@ export function Header() {
       <Link aria-label="Smith & Devil — home" href="/">
         <img
           alt="Smith & Devil"
-          width="2517"
-          height="433"
+          width="800"
+          height="123"
           className={c.logo}
           src={open || ink ? "/brand/smith-and-devil-logo-nav.png" : "/brand/smith-and-devil-logo.png"}
         />

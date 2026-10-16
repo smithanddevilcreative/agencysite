@@ -4804,3 +4804,37 @@ input[type="submit"]{
   outline:1px solid #ef1111;
   outline-offset:5px;
 }
+
+
+/* 2026 Smith & Devil identity */
+.Header-module__hBw1pG__header > a[aria-label="Smith & Devil — home"]{
+  width:151px!important;
+  height:auto!important;
+  overflow:visible!important;
+}
+.Header-module__hBw1pG__logo,
+.Header-module__hBw1pG__menuOpen .Header-module__hBw1pG__logo,
+.Header-module__hBw1pG__ink .Header-module__hBw1pG__logo{
+  width:151px!important;
+  height:auto!important;
+  object-fit:contain!important;
+  object-position:left center!important;
+  filter:none!important;
+}
+.Footer-module__S6Hkya__logo{
+  width:100%!important;
+  height:auto!important;
+  filter:none!important;
+}
+@media(max-width:900px){
+  .Header-module__hBw1pG__header > a[aria-label="Smith & Devil — home"]{
+    width:92px!important;
+    height:auto!important;
+  }
+  .Header-module__hBw1pG__logo,
+  .Header-module__hBw1pG__menuOpen .Header-module__hBw1pG__logo,
+  .Header-module__hBw1pG__ink .Header-module__hBw1pG__logo{
+    width:92px!important;
+    height:auto!important;
+  }
+}
