@@ -4778,6 +4778,9 @@ input[type="submit"]{
   align-items:center;
   width:max-content;
   margin-top:-4px;
+  padding:0;
+  border:0;
+  background:transparent;
   color:#ef1111!important;
   font-family:var(--font-sans);
   font-size:10px;
@@ -4786,12 +4789,17 @@ input[type="submit"]{
   line-height:1.4;
   text-decoration:none;
   text-transform:uppercase;
+  cursor:pointer;
 }
-.sd-footer-underworld__hover{display:none}
-.sd-footer-underworld:hover .sd-footer-underworld__default,
-.sd-footer-underworld:focus-visible .sd-footer-underworld__default{display:none}
-.sd-footer-underworld:hover .sd-footer-underworld__hover,
-.sd-footer-underworld:focus-visible .sd-footer-underworld__hover{display:inline}
+.sd-footer-underworld__hover,
+.sd-footer-underworld__armed{display:none}
+.sd-footer-underworld:not(.is-armed):hover .sd-footer-underworld__default,
+.sd-footer-underworld:not(.is-armed):focus-visible .sd-footer-underworld__default{display:none}
+.sd-footer-underworld:not(.is-armed):hover .sd-footer-underworld__hover,
+.sd-footer-underworld:not(.is-armed):focus-visible .sd-footer-underworld__hover{display:inline}
+.sd-footer-underworld.is-armed .sd-footer-underworld__default,
+.sd-footer-underworld.is-armed .sd-footer-underworld__hover{display:none}
+.sd-footer-underworld.is-armed .sd-footer-underworld__armed{display:inline}
 .sd-footer-underworld:focus-visible{
   outline:1px solid #ef1111;
   outline-offset:5px;
