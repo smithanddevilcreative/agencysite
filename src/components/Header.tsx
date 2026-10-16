@@ -36,12 +36,12 @@ export function Header() {
 
   return (
     <header className={[c.header, ink ? c.ink : "", open ? c.menuOpen : ""].filter(Boolean).join(" ")}>
-      <Link aria-label="Smith & Devil — home" href="/">
+      <Link className="sd-brand-logo-header-link" aria-label="Smith & Devil home" href="/">
         <img
           alt="Smith & Devil"
           width="800"
           height="123"
-          className={c.logo}
+          className="sd-brand-logo-header"
           src={open || ink ? "/brand/sd-logo-2026-white.png" : "/brand/sd-logo-2026-black.png"}
         />
       </Link>

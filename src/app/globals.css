@@ -4838,3 +4838,47 @@ input[type="submit"]{
     height:auto!important;
   }
 }
+
+
+/* Clean 2026 logo implementation — isolated from recovered legacy logo rules */
+.sd-brand-logo-header-link{
+  display:block;
+  width:151px;
+  height:auto;
+  line-height:0;
+  position:relative;
+  z-index:2;
+}
+.sd-brand-logo-header{
+  display:block;
+  width:151px;
+  height:auto;
+  max-width:none;
+  object-fit:contain;
+  object-position:left center;
+  filter:none;
+}
+.sd-brand-logo-footer-link{
+  display:block;
+  width:min(373px,100%);
+  height:auto;
+  line-height:0;
+}
+.sd-brand-logo-footer{
+  display:block;
+  width:100%;
+  height:auto;
+  max-width:100%;
+  object-fit:contain;
+  object-position:left center;
+  filter:none;
+}
+@media(max-width:900px){
+  .sd-brand-logo-header-link,
+  .sd-brand-logo-header{
+    width:92px;
+  }
+  .sd-brand-logo-footer-link{
+    width:min(280px,80vw);
+  }
+}

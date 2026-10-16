@@ -36,12 +36,12 @@ export function Footer() {
     <footer className={c.footer}>
       <div className={c.inner}>
         <div className={c.brand}>
-          <Link className={c.logoLink} aria-label="Smith & Devil — home" href="/">
+          <Link className="sd-brand-logo-footer-link" aria-label="Smith & Devil home" href="/">
             <img
               alt="Smith & Devil"
               width="800"
               height="139"
-              className={c.logo}
+              className="sd-brand-logo-footer"
               src="/brand/sd-logo-2026-white.png"
             />
           </Link>
