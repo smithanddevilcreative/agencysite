@@ -4882,3 +4882,10 @@ input[type="submit"]{
     width:min(280px,80vw);
   }
 }
+
+
+/* 4&4 retro game cursor */
+.sd-404-pixel,
+.sd-404-pixel *{
+  cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='30' viewBox='0 0 22 30' shape-rendering='crispEdges'%3E%3Cpath d='M1 1v23l6-6 5 11 4-2-5-10h9z' fill='%23f4f4f4' stroke='%23e10600' stroke-width='2' stroke-linejoin='miter'/%3E%3C/svg%3E") 1 1, auto!important;
+}
