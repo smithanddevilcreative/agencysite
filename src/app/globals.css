@@ -4889,3 +4889,21 @@ input[type="submit"]{
 .sd-404-pixel *{
   cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='30' viewBox='0 0 22 30' shape-rendering='crispEdges'%3E%3Cpath d='M1 1v23l6-6 5 11 4-2-5-10h9z' fill='%23f4f4f4' stroke='%23e10600' stroke-width='2' stroke-linejoin='miter'/%3E%3C/svg%3E") 1 1, auto!important;
 }
+
+
+/* T2 service case study: preserve the wide source artwork instead of forcing it into the portrait case-study crop */
+.sd-service-case-media--landscape{
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:1400/680!important;
+  background:#fff!important;
+}
+.sd-service-case-media--landscape img{
+  position:absolute!important;
+  inset:0!important;
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+  object-position:center center!important;
+}
