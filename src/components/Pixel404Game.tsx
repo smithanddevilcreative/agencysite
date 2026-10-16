@@ -118,7 +118,7 @@ export function Pixel404Game() {
             <nav className="sd-404-pixel__actions" aria-label="404 options">
               <Link className="sd-404-pixel__button" href="/">Turn back to safety</Link>
               <button className="sd-404-pixel__button sd-404-pixel__button--primary" type="button" onClick={reset}>
-                <span aria-hidden="true">▶</span> Follow the path
+                <span aria-hidden="true">▶</span> Follow temptation
               </button>
             </nav>
           )}
