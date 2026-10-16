@@ -42,7 +42,7 @@ export function Header() {
           width="800"
           height="123"
           className={c.logo}
-          src={open || ink ? "/brand/smith-and-devil-logo-nav.png" : "/brand/smith-and-devil-logo.png"}
+          src={open || ink ? "/brand/sd-logo-2026-white.png" : "/brand/sd-logo-2026-black.png"}
         />
       </Link>
       <button

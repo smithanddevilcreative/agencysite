@@ -76,7 +76,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               "@type": "Organization",
               name: "Smith & Devil",
               url: "https://www.smithanddevil.com",
-              logo: "https://www.smithanddevil.com/brand/smith-and-devil-logo.png",
+              logo: "https://www.smithanddevil.com/brand/sd-logo-2026-black.png",
               email: "hello@smithanddevil.com",
               description:
                 "Creative strategy and design studio for the experience economy.",
