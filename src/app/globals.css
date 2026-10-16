@@ -4770,3 +4770,29 @@ input[type="submit"]{
     font-size:8px;
   }
 }
+
+
+/* Footer Creative Underworld easter egg */
+.sd-footer-underworld{
+  display:inline-flex;
+  align-items:center;
+  width:max-content;
+  margin-top:-4px;
+  color:#ef1111!important;
+  font-family:var(--font-sans);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.12em;
+  line-height:1.4;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+.sd-footer-underworld__hover{display:none}
+.sd-footer-underworld:hover .sd-footer-underworld__default,
+.sd-footer-underworld:focus-visible .sd-footer-underworld__default{display:none}
+.sd-footer-underworld:hover .sd-footer-underworld__hover,
+.sd-footer-underworld:focus-visible .sd-footer-underworld__hover{display:inline}
+.sd-footer-underworld:focus-visible{
+  outline:1px solid #ef1111;
+  outline-offset:5px;
+}
