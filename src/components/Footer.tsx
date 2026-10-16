@@ -61,6 +61,10 @@ export function Footer() {
             the way, but the devil’s in the detail. A great story well-told has the power to last forever.
           </p>
           <p className={c.copyright}>© 2026 Smith & Devil Creative Ltd.</p>
+          <Link className="sd-footer-underworld" href="/creative-underworld" aria-label="Enter the creative underworld">
+            <span className="sd-footer-underworld__default">Enter the creative underworld →</span>
+            <span className="sd-footer-underworld__hover" aria-hidden="true">You’ve been warned →</span>
+          </Link>
         </div>
 
         <nav className={c.nav} aria-label="Footer">
