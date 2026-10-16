@@ -484,8 +484,8 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "caseStudy": {
       "image": {
-        "src": "/images/work/t2-design-solutions/01.webp",
-        "alt": "T2 Design Solutions digital identity"
+        "src": "/images/work/t2-design-solutions/04.webp",
+        "alt": "T2 Design Solutions digital twin experience on tablet"
       },
       "label": "Relevant proof",
       "title": "A digital identity with infinite range.",
