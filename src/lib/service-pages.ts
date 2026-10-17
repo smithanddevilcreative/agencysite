@@ -557,7 +557,7 @@ export const servicePages: Record<string, ServicePageData> = {
     "title": "Hospitality & Leisure Interior Design | Smith & Devil",
     "description": "Interior concepts, branded environments, customer journeys, signage and wayfinding for hospitality, leisure and entertainment venues.",
     "kicker": "Interiors & Environments",
-    "heroTitle": "Make the place as good as the idea.",
+    "heroTitle": "We design venues & experiences.",
     "standfirst": "We turn brands and commercial propositions into places people understand instinctively, enjoy fully and want to return to.",
     "actions": [
       {
