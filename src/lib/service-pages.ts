@@ -388,8 +388,8 @@ export const servicePages: Record<string, ServicePageData> = {
       }
     ],
     "heroImage": {
-      "src": "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwww.mightyadventures.com%2F?w=1600&h=1000",
-      "alt": "Mighty Adventures website homepage"
+      "src": "/images/mighty-adventures.webp",
+      "alt": "Mighty Adventures digital experience"
     },
     "proofLine": "",
     "argument": {
@@ -484,8 +484,8 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "caseStudy": {
       "image": {
-        "src": "https://s.wordpress.com/mshots/v1/https%3A%2F%2Fwww.moreconcierge.com%2F?w=1600&h=1000",
-        "alt": "More Concierge website homepage"
+        "src": "/images/work/more-concierge/01.webp",
+        "alt": "More Concierge website and digital proposition"
       },
       "label": "Relevant proof",
       "title": "Make a complicated offer easy to choose.",
