@@ -4,3 +4,89 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# Preserve authority from the previous site structure.
+[[redirects]]
+  from = "/projects"
+  to = "https://www.smithanddevil.com/work/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/project/humbug"
+  to = "https://www.smithanddevil.com/work/humbug/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/project/mama-bamboo"
+  to = "https://www.smithanddevil.com/work/mama-bamboo/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/project/t2-design-solutions"
+  to = "https://www.smithanddevil.com/work/t2-design-solutions/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/project/more-concierge"
+  to = "https://www.smithanddevil.com/work/more-concierge/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/project/pop-playrooms"
+  to = "https://www.smithanddevil.com/work/pop-playrooms/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/project/fortune-favours-2"
+  to = "https://www.smithanddevil.com/work/fortune-favours/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/project/fortune-favours"
+  to = "https://www.smithanddevil.com/work/fortune-favours/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/what-we-do/creative-studio"
+  to = "https://www.smithanddevil.com/services/brand-strategy-design/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/what-we-do/venue-concept-design"
+  to = "https://www.smithanddevil.com/services/interiors-environments/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/what-we-do/hospitality"
+  to = "https://www.smithanddevil.com/services/"
+  status = 301
+  force = true
+
+# Consolidate every protocol/host variant on the canonical www HTTPS host.
+[[redirects]]
+  from = "http://smithanddevil.com/*"
+  to = "https://www.smithanddevil.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://smithanddevil.com/*"
+  to = "https://www.smithanddevil.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.smithanddevil.com/*"
+  to = "https://www.smithanddevil.com/:splat"
+  status = 301
+  force = true
