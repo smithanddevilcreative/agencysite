@@ -229,7 +229,7 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "capabilities": {
       "label": "Capabilities",
-      "title": "What we can help you design.",
+      "title": "What we can help you create.",
       "items": [
         {
           "number": "01",
@@ -587,7 +587,7 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "capabilities": {
       "label": "Capabilities",
-      "title": "What we can help you create.",
+      "title": "What we can help you design.",
       "items": [
         {
           "number": "01",
