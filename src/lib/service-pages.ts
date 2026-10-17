@@ -27,6 +27,213 @@ export type ServicePageData =
 }
 
 export const servicePages: Record<string, ServicePageData> = {
+  "venue-concept-development": {
+    "slug": "venue-concept-development",
+    "title": "Venue Concept Development for Leisure & Hospitality | Smith & Devil",
+    "description": "Venue concept development for founders, operators, developers and architects. Proposition, audience, brand direction, customer journey and an experience brief ready to design, fund and build.",
+    "kicker": "Venue Concept Development",
+    "heroTitle": "Define the idea before you design the venue.",
+    "standfirst": "We help founders, operators, developers and architects turn early-stage leisure and hospitality ideas into clear propositions, brands and experience briefs that can actually be designed, funded and built.",
+    "actions": [
+      {
+        "className": "service-module__T4otXW__primaryAction",
+        "href": "#project-enquiry",
+        "label": "Talk to us about your concept"
+      },
+      {
+        "className": "service-module__T4otXW__secondaryAction",
+        "href": "/work/fortune-favours",
+        "label": "See our concept work"
+      }
+    ],
+    "heroImage": {
+      "src": "/images/work/pop-playrooms/10.webp",
+      "alt": "Branded leisure venue concept developed by Smith & Devil"
+    },
+    "proofLine": "We help turn the thing in someone's head into a proposition that investors, architects, designers and customers can all understand.",
+    "argument": {
+      "label": "The problem",
+      "title": "An idea is not yet a design brief.",
+      "paragraphs": [
+        "A founder has the product. An architect has the space. An investor wants the story. But if the proposition, audience, customer experience and brand are still unresolved, everyone is being asked to design around assumptions.",
+        "We work upstream of architecture and fit-out to define what the business is actually trying to become. That gives the creative and delivery teams a stronger brief, gives investors a clearer proposition and gives customers a more compelling reason to choose it."
+      ]
+    },
+    "comparison": {
+      "label": "Where we fit",
+      "title": "Before architecture. Before fit-out. Before the expensive decisions.",
+      "intro": "Different specialists solve different parts of a venue project. Our job is to make sure the idea they are working from is strong enough.",
+      "items": [
+        {
+          "title": "Founders and operators",
+          "body": "You may know the product, technology or activity, but still need to turn it into a proposition people can understand, fund and buy."
+        },
+        {
+          "title": "Architects and interior designers",
+          "body": "You can design the space more effectively when the audience, brand, experience principles and commercial priorities are already clear."
+        },
+        {
+          "title": "Developers and investors",
+          "body": "A sharper concept makes it easier to test the opportunity, brief partners and understand what the finished venue is meant to achieve."
+        },
+        {
+          "title": "IP owners and experience builders",
+          "body": "The world or asset may already exist. We help define the customer product, proposition and commercial experience that should be built from it."
+        }
+      ],
+      "closing": "We define what the place is before the delivery team has to decide what it looks like."
+    },
+    "capabilities": {
+      "label": "What we define",
+      "title": "Turn the raw idea into something everyone can work from.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Commercial proposition",
+          "body": "Clarify what the venue is, why it deserves to exist, who it is for and what should make people choose it."
+        },
+        {
+          "number": "02",
+          "title": "Audience and occasion",
+          "body": "Define the priority audiences, visit occasions and behaviours that should shape the product and experience."
+        },
+        {
+          "number": "03",
+          "title": "Competitive position",
+          "body": "Understand the alternatives customers will compare you with and identify a position the concept can credibly own."
+        },
+        {
+          "number": "04",
+          "title": "Product and experience logic",
+          "body": "Stress-test the core activity, session, format, dwell time and reasons to return before they become expensive assumptions."
+        },
+        {
+          "number": "05",
+          "title": "Brand direction",
+          "body": "Define the strategic and creative territory the name, identity, environment and communications should grow from."
+        },
+        {
+          "number": "06",
+          "title": "Customer journey",
+          "body": "Map discovery, booking, arrival, participation, food and drink, social moments, exit and return as one connected experience."
+        },
+        {
+          "number": "07",
+          "title": "Spatial principles",
+          "body": "Translate the proposition into useful principles for zoning, atmosphere, hierarchy, moments of theatre and operational flow."
+        },
+        {
+          "number": "08",
+          "title": "Architect-ready brief",
+          "body": "Give architects, interior designers and technical partners a clearer creative and commercial brief to design against."
+        },
+        {
+          "number": "09",
+          "title": "Investor story",
+          "body": "Turn the concept into a coherent narrative that explains the audience, opportunity, experience and reasons the idea can win."
+        }
+      ]
+    },
+    "process": {
+      "label": "Process",
+      "title": "From early idea to buildable proposition.",
+      "items": [
+        {
+          "number": "1",
+          "title": "Interrogate the idea",
+          "body": "We get underneath the product, site, audience, commercial ambition and assumptions already sitting inside the brief."
+        },
+        {
+          "number": "2",
+          "title": "Stress-test the proposition",
+          "body": "We challenge who it is for, what makes it different, what customers are really buying and where the concept could fall apart."
+        },
+        {
+          "number": "3",
+          "title": "Define the experience",
+          "body": "We connect the proposition to the customer journey, brand direction and principles that should guide the physical environment."
+        },
+        {
+          "number": "4",
+          "title": "Create the working brief",
+          "body": "We package the thinking into a clear story and practical brief for investors, architects, designers and delivery partners."
+        }
+      ]
+    },
+    "caseStudy": {
+      "image": {
+        "src": "/images/work/fortune-favours/02.webp",
+        "alt": "Fortune Favours entertainment concept and brand"
+      },
+      "label": "Relevant proof",
+      "title": "A concept built to become a business.",
+      "paragraphs": [
+        "Fortune Favours needed more than a visual identity. The ambition was to create an entertainment proposition capable of working across multiple European destinations.",
+        "We helped shape the proposition and brand as one system, creating an idea strong enough to guide the customer experience, environment and future rollout rather than leaving those decisions to be solved independently."
+      ],
+      "link": {
+        "href": "/work/fortune-favours",
+        "label": "See the Fortune Favours project"
+      },
+      "related": [
+        "Pop Playrooms: brand and venue thinking brought together around one competitive-socialising proposition.",
+        "Mighty Adventures: a family entertainment concept expanded to three venues in two years.",
+        "Levels Prague: a playable attraction designed around the commercial role it needed to perform inside a much larger venue."
+      ]
+    },
+    "fit": {
+      "label": "A useful time to talk",
+      "title": "Bring us in before the brief hardens.",
+      "items": [
+        "You have a leisure or hospitality idea but it is still difficult to explain.",
+        "An architect is asking questions the current brief cannot answer.",
+        "You are raising investment and need the concept to feel like a credible business, not just an exciting thought.",
+        "An IP or technology exists, but the customer product has not been properly defined.",
+        "Several activities need turning into one coherent venue proposition.",
+        "You are about to spend heavily on architecture, fit-out or fabrication and want to test the idea first.",
+        "A concept works operationally but lacks a brand, story or reason for customers to care."
+      ]
+    },
+    "faq": {
+      "label": "Questions founders and architects ask",
+      "title": "Useful answers before we talk.",
+      "items": [
+        {
+          "question": "What is venue concept development?",
+          "answer": "It is the stage between having an idea and designing the finished venue. We define the proposition, audience, customer experience, brand direction and spatial principles so the teams that follow have a stronger brief."
+        },
+        {
+          "question": "Should we do this before appointing an architect?",
+          "answer": "Ideally, yes, or alongside them at the beginning. Architects can make better spatial decisions when the commercial proposition, audience and experience principles are already clear."
+        },
+        {
+          "question": "Can you work with an architect we have already appointed?",
+          "answer": "Yes. We often complement architecture and interior design teams by resolving the proposition, brand and customer experience questions that sit upstream of detailed spatial design."
+        },
+        {
+          "question": "Can this help with fundraising?",
+          "answer": "Yes. We can help turn an early concept into a clearer investor story, with a stronger proposition, audience case, experience logic and creative direction."
+        },
+        {
+          "question": "What if the brand does not exist yet?",
+          "answer": "That is common. We can define the strategic brand direction as part of concept development, then continue into naming and identity if the project needs it."
+        },
+        {
+          "question": "Do you produce architectural drawings?",
+          "answer": "No. We define the proposition, customer journey, brand and experience brief that architects and technical designers can then develop into detailed spatial and construction information."
+        },
+        {
+          "question": "Can you work with established IP?",
+          "answer": "Yes. Where the IP world and creative rules already exist, our role can be to define the customer product, proposition, operating experience and commercial logic that translate the IP into a physical experience."
+        }
+      ]
+    },
+    "enquiry": {
+      "label": "Start with the idea",
+      "title": "Before you build it, make sure it is worth building.",
+      "intro": "Tell us what you have: a product, a site, an IP, a half-formed venue idea or a deck that is not quite convincing yet. We will help define what the business should actually become."
+    }
+  },
   "brand-strategy-design": {
     "slug": "brand-strategy-design",
     "title": "Brand Strategy & Design Agency | Smith & Devil",
