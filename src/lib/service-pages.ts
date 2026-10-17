@@ -729,6 +729,190 @@ export const servicePages: Record<string, ServicePageData> = {
       "intro": "Tell us what you’re making, where you’ve got to and what still needs figuring out."
     }
   },
+  "mini-golf": {
+    "slug": "mini-golf",
+    "title": "Mini Golf Design & Build UK | Smith & Devil",
+    "description": "Premium mini golf design and build for hospitality, leisure and entertainment venues. Concept, course design, theming, branding, customer journey and delivery.",
+    "kicker": "Mini Golf Design & Build",
+    "heroTitle": "Premium mini golf, designed to perform.",
+    "standfirst": "We create distinctive mini golf experiences for operators, developers and hospitality brands — from the commercial idea and course concept through theming, brand, customer journey and delivery.",
+    "actions": [
+      {
+        "className": "service-module__T4otXW__primaryAction",
+        "href": "#project-enquiry",
+        "label": "Talk to us about your course"
+      },
+      {
+        "className": "service-module__T4otXW__secondaryAction",
+        "href": "/work/levels",
+        "label": "See our mini golf work"
+      }
+    ],
+    "heroImage": {
+      "src": "/images/levels.jpg",
+      "alt": "Premium mini golf course designed by Smith & Devil at Levels Prague"
+    },
+    "proofLine": "Our 18-hole course at Levels Prague recorded 13,000 rounds in its first three months.",
+    "argument": {
+      "label": "Why it matters",
+      "title": "A good course does more than fill a room.",
+      "paragraphs": [
+        "Mini golf can be a destination, a high-performing secondary spend or the activity that gives an entire venue its identity. The commercial role changes the design.",
+        "We start with the audience, site and business model, then shape the course around flow, capacity, dwell time, replay value and the wider customer experience. The result should be fun to play, distinctive enough to remember and practical enough to operate every day."
+      ]
+    },
+    "capabilities": {
+      "label": "Capabilities",
+      "title": "From first idea to playable course.",
+      "items": [
+        {
+          "number": "01",
+          "title": "Commercial concept",
+          "body": "Define the audience, occasion, pricing role, capacity needs and place mini golf should occupy within the wider venue."
+        },
+        {
+          "number": "02",
+          "title": "Course planning",
+          "body": "Plan hole count, routing, pacing, player flow and footprint around the realities of the site and operating model."
+        },
+        {
+          "number": "03",
+          "title": "Hole design",
+          "body": "Create varied, intuitive holes with enough challenge, spectacle and rhythm to keep different groups engaged."
+        },
+        {
+          "number": "04",
+          "title": "Theme and world-building",
+          "body": "Develop the visual idea, narrative and environmental language that make the course feel like one complete experience."
+        },
+        {
+          "number": "05",
+          "title": "Brand and naming",
+          "body": "Create or extend the brand so the course has a clear identity before customers ever pick up a putter."
+        },
+        {
+          "number": "06",
+          "title": "Customer journey",
+          "body": "Design arrival, queuing, briefing, gameplay, scoring, photo moments, F&B connections and the route into a return visit."
+        },
+        {
+          "number": "07",
+          "title": "Interior and graphic design",
+          "body": "Carry the concept through materials, signage, wayfinding, graphic surfaces, lighting direction and branded touchpoints."
+        },
+        {
+          "number": "08",
+          "title": "Build coordination",
+          "body": "Work with trusted fabricators, contractors and technical specialists to move the design into a safe, durable playable environment."
+        },
+        {
+          "number": "09",
+          "title": "Turnkey delivery",
+          "body": "Bring strategy, creative direction, course design and delivery together under one joined-up team where the project needs it."
+        },
+        {
+          "number": "10",
+          "title": "Rollout and refresh",
+          "body": "Create repeatable design principles for multi-site operators or evolve an existing course when the offer needs new reasons to return."
+        }
+      ]
+    },
+    "process": {
+      "label": "Process",
+      "title": "How we design a mini golf course.",
+      "items": [
+        {
+          "number": "1",
+          "title": "Define the commercial job",
+          "body": "We agree who the course is for, what the site needs it to achieve and the constraints that should shape the brief."
+        },
+        {
+          "number": "2",
+          "title": "Design the experience",
+          "body": "We create the creative concept, routing, hole ideas, customer journey and visual world as one connected system."
+        },
+        {
+          "number": "3",
+          "title": "Develop the course",
+          "body": "We turn the concept into detailed creative and technical information, resolving materials, graphics, theming and operating details."
+        },
+        {
+          "number": "4",
+          "title": "Build and open",
+          "body": "We coordinate with the delivery team through fabrication, installation, snagging and launch so the final experience stays true to the idea."
+        }
+      ]
+    },
+    "caseStudy": {
+      "image": {
+        "src": "/images/work/levels/05.webp",
+        "alt": "Mini golf at Levels Prague"
+      },
+      "label": "Relevant proof",
+      "title": "13,000 rounds in three months.",
+      "paragraphs": [
+        "Levels Prague needed an 18-hole course that could hold its own inside a large multi-activity entertainment venue rather than feel like an add-on.",
+        "We created a visually distinctive course around the venue experience, balancing spectacle with playability and throughput. The course recorded 13,000 rounds in its first three months."
+      ],
+      "link": {
+        "href": "/work/levels",
+        "label": "See the Levels Prague project"
+      },
+      "related": [
+        "Mighty Adventures: a family mini golf concept expanded to three venues in two years.",
+        "Pop Playrooms: competitive socialising shaped around music, play and a highly distinctive visual world.",
+        "Putt Crazy: mini golf brand, venue design and digital work for a leisure concept built around repeatable fun."
+      ]
+    },
+    "fit": {
+      "label": "A useful time to talk",
+      "title": "When to bring us in.",
+      "items": [
+        "A new venue needs a premium mini golf offer.",
+        "Mini golf needs to sit inside a larger hospitality or leisure concept.",
+        "An existing site needs a stronger course and clearer identity.",
+        "A developer needs to understand what will fit the space and commercial model.",
+        "A family attraction needs more story, play value or repeatability.",
+        "A competitive socialising venue needs an experience customers cannot get elsewhere.",
+        "A successful concept needs a design system that can roll into more sites."
+      ]
+    },
+    "faq": {
+      "label": "Questions clients ask",
+      "title": "Useful answers before we talk.",
+      "items": [
+        {
+          "question": "Do you design and build mini golf courses?",
+          "answer": "Yes. We can take a project from commercial concept and course design through brand, theming, customer journey and build coordination. The delivery model is agreed around the site, programme and procurement route."
+        },
+        {
+          "question": "Do you work on indoor and outdoor mini golf?",
+          "answer": "Yes. We design indoor, outdoor and mixed-format courses. The site conditions, audience and operating model determine the materials, technical approach and level of theming."
+        },
+        {
+          "question": "Can you work with an architect or existing contractor?",
+          "answer": "Yes. We can lead the mini golf creative and experience work inside a wider design team, or bring trusted specialists into the project where needed."
+        },
+        {
+          "question": "Can you help before we have a final site?",
+          "answer": "Yes. Early feasibility work can help establish likely footprint, hole count, customer flow, experience direction and the role mini golf should play in the wider business."
+        },
+        {
+          "question": "Do you only create heavily themed courses?",
+          "answer": "No. Theme is one tool. Some venues need a full world and story; others need a more architectural, brand-led or premium design approach. We design around the audience and proposition."
+        },
+        {
+          "question": "Can you design a course for more than one venue?",
+          "answer": "Yes. We can create a repeatable course and brand system with enough fixed principles to stay recognisable and enough flexibility to adapt to different sites."
+        }
+      ]
+    },
+    "enquiry": {
+      "label": "Start a conversation",
+      "title": "Build a course people choose on purpose.",
+      "intro": "Tell us about the site, audience and commercial ambition. We will help shape the right mini golf experience around them."
+    }
+  },
   "themed-experiences": {
     "slug": "themed-experiences",
     "title": "Themed Experience Design Agency | Smith & Devil",
