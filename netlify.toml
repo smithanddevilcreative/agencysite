@@ -61,6 +61,12 @@
   force = true
 
 [[redirects]]
+  from = "/archive/minigolf-design"
+  to = "https://www.smithanddevil.com/services/mini-golf/"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/what-we-do/creative-studio"
   to = "https://www.smithanddevil.com/services/brand-strategy-design/"
   status = 301
