@@ -2,6 +2,53 @@ import Link from "next/link";
 import { CTASection } from "@/components/CTASection";
 import type { ProjectPageData } from "@/lib/project-pages";
 
+const relatedServices: Record<string, { label: string; href: string }[]> = {
+  "humbug": [
+    { label: "Brand Strategy & Design", href: "/services/brand-strategy-design" },
+    { label: "Campaigns & Content", href: "/services/campaigns-content" },
+  ],
+  "pop-playrooms": [
+    { label: "Brand Strategy & Design", href: "/services/brand-strategy-design" },
+    { label: "Interiors & Environments", href: "/services/interiors-environments" },
+    { label: "Mini Golf Design & Build", href: "/services/mini-golf" },
+    { label: "Themed Experiences", href: "/services/themed-experiences" },
+  ],
+  "mighty-adventures": [
+    { label: "Brand Strategy & Design", href: "/services/brand-strategy-design" },
+    { label: "Digital & Web", href: "/services/digital-web" },
+    { label: "Mini Golf Design & Build", href: "/services/mini-golf" },
+    { label: "Themed Experiences", href: "/services/themed-experiences" },
+  ],
+  "levels": [
+    { label: "Interiors & Environments", href: "/services/interiors-environments" },
+    { label: "Mini Golf Design & Build", href: "/services/mini-golf" },
+    { label: "Themed Experiences", href: "/services/themed-experiences" },
+  ],
+  "t2-design-solutions": [
+    { label: "Brand Strategy & Design", href: "/services/brand-strategy-design" },
+    { label: "Digital & Web", href: "/services/digital-web" },
+  ],
+  "mama-bamboo": [
+    { label: "Brand Strategy & Design", href: "/services/brand-strategy-design" },
+  ],
+  "strike": [
+    { label: "Brand Strategy & Design", href: "/services/brand-strategy-design" },
+    { label: "Digital & Web", href: "/services/digital-web" },
+  ],
+  "fortune-favours": [
+    { label: "Brand Strategy & Design", href: "/services/brand-strategy-design" },
+    { label: "Themed Experiences", href: "/services/themed-experiences" },
+  ],
+  "more-concierge": [
+    { label: "Brand Strategy & Design", href: "/services/brand-strategy-design" },
+    { label: "Digital & Web", href: "/services/digital-web" },
+  ],
+  "precision-microdrives": [
+    { label: "Brand Strategy & Design", href: "/services/brand-strategy-design" },
+    { label: "Digital & Web", href: "/services/digital-web" },
+  ],
+};
+
 const c = {
   main: "study-module__vTcG6G__main",
   layout: "study-module__vTcG6G__layout",
@@ -47,6 +94,20 @@ export function ProjectDetailPage({ project }: { project: ProjectPageData }) {
               <p className={c.label}>Services</p>
               <p className={c.services}>{project.services}</p>
             </div>
+
+            {relatedServices[project.slug]?.length ? (
+              <div className={c.block}>
+                <p className={c.label}>Explore related services</p>
+                <p className={c.services}>
+                  {relatedServices[project.slug].map((service, index) => (
+                    <span key={service.href}>
+                      {index > 0 ? " · " : ""}
+                      <Link href={service.href}>{service.label}</Link>
+                    </span>
+                  ))}
+                </p>
+              </div>
+            ) : null}
 
             <Link className={c.back} href="/work">
               <span className={c.backArrow} aria-hidden="true">←</span>
