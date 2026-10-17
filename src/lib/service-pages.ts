@@ -229,7 +229,7 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "capabilities": {
       "label": "Capabilities",
-      "title": "What we can help you create.",
+      "title": "What we can help you design.",
       "items": [
         {
           "number": "01",
@@ -555,11 +555,11 @@ export const servicePages: Record<string, ServicePageData> = {
   },
   "interiors-environments": {
     "slug": "interiors-environments",
-    "title": "Hospitality & Leisure Interior Design | Smith & Devil",
-    "description": "Interior concepts, branded environments, customer journeys, signage and wayfinding for hospitality, leisure and entertainment venues.",
-    "kicker": "Interiors & Environments",
+    "title": "Venue & Experience Design Agency | Smith & Devil",
+    "description": "Venue and experience design for hospitality, leisure and entertainment brands. Commercial concept, customer journey, interiors, branded environments, signage and delivery.",
+    "kicker": "Venue & Experience Design",
     "heroTitle": "We design venues & experiences.",
-    "standfirst": "We turn brands and commercial propositions into places people understand instinctively, enjoy fully and want to return to.",
+    "standfirst": "We design hospitality, leisure and entertainment venues around the commercial idea, customer journey and brand — creating places people understand instinctively, enjoy fully and want to return to.",
     "actions": [
       {
         "className": "service-module__T4otXW__primaryAction",
