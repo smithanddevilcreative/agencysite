@@ -8,8 +8,9 @@ const relatedServices: Record<string, { label: string; href: string }[]> = {
     { label: "Campaigns & Content", href: "/services/campaigns-content" },
   ],
   "pop-playrooms": [
+    { label: "Venue Concept Development", href: "/services/venue-concept-development" },
     { label: "Brand Strategy & Design", href: "/services/brand-strategy-design" },
-    { label: "Interiors & Environments", href: "/services/interiors-environments" },
+    { label: "Venue & Experience Design", href: "/services/interiors-environments" },
     { label: "Mini Golf Design & Build", href: "/services/mini-golf" },
     { label: "Themed Experiences", href: "/services/themed-experiences" },
   ],
@@ -20,7 +21,7 @@ const relatedServices: Record<string, { label: string; href: string }[]> = {
     { label: "Themed Experiences", href: "/services/themed-experiences" },
   ],
   "levels": [
-    { label: "Interiors & Environments", href: "/services/interiors-environments" },
+    { label: "Venue & Experience Design", href: "/services/interiors-environments" },
     { label: "Mini Golf Design & Build", href: "/services/mini-golf" },
     { label: "Themed Experiences", href: "/services/themed-experiences" },
   ],
@@ -36,6 +37,7 @@ const relatedServices: Record<string, { label: string; href: string }[]> = {
     { label: "Digital & Web", href: "/services/digital-web" },
   ],
   "fortune-favours": [
+    { label: "Venue Concept Development", href: "/services/venue-concept-development" },
     { label: "Brand Strategy & Design", href: "/services/brand-strategy-design" },
     { label: "Themed Experiences", href: "/services/themed-experiences" },
   ],
