@@ -484,7 +484,7 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "caseStudy": {
       "image": {
-        "src": "/images/work/more-concierge/01.webp",
+        "src": "/images/work/more-concierge/05.webp",
         "alt": "More Concierge website and digital proposition"
       },
       "label": "Relevant proof",
