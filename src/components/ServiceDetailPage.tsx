@@ -119,6 +119,27 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
         </div>
       </section>
 
+      {data.comparison && (
+        <section className={c.fitSection}>
+          <div className={`${c.inner} ${c.fitGrid}`}>
+            <div className="Reveal-module__U2Tp6W__base">
+              <p className={c.sectionLabel}>{data.comparison.label}</p>
+              <h2 className={c.displayHeading}>{data.comparison.title}</h2>
+            </div>
+            <div className={`Reveal-module__U2Tp6W__base ${c.copyColumn}`}>
+              <p>{data.comparison.intro}</p>
+              {data.comparison.items.map((item) => (
+                <div key={item.title}>
+                  <h3>{item.title}</h3>
+                  <p>{item.body}</p>
+                </div>
+              ))}
+              <p><strong>{data.comparison.closing}</strong></p>
+            </div>
+          </div>
+        </section>
+      )}
+
       <section className={c.capabilities}>
         <div className={c.inner}>
           <div className={`Reveal-module__U2Tp6W__base ${c.sectionHead}`}>
