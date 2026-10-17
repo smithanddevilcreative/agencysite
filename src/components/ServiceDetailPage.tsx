@@ -57,7 +57,7 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
         "@type": "Service",
         name: data.kicker,
         description: data.description,
-        url: `https://smithanddevil.com/services/${data.slug}`,
+        url: `https://www.smithanddevil.com/services/${data.slug}`,
         provider: { "@type": "Organization", name: "Smith & Devil" },
       },
       {
