@@ -5,48 +5,55 @@ import { ServicesOrbit } from "@/components/ServicesOrbit";
 
 export const metadata: Metadata = {
   title: "Creative Services for the Experience Economy",
-  description: "Brand, campaign, digital, interior and themed experience services for hospitality, leisure, entertainment and experience-led businesses.",
+  description: "Venue concept development, brand, campaign, digital, interior and themed experience services for hospitality, leisure, entertainment and experience-led businesses.",
   alternates: { canonical: "/services" },
 };
 
 const services = [
   {
     n: "01",
+    title: "Venue Concept Development",
+    slug: "venue-concept-development",
+    desc: "We turn early-stage leisure and hospitality ideas into clear propositions, brands and experience briefs that can actually be designed, funded and built.",
+    image: "/images/work/pop-playrooms/10.webp",
+  },
+  {
+    n: "02",
     title: "Brand Strategy & Design",
     slug: "brand-strategy-design",
     desc: "We create distinctive brands for hospitality, leisure, entertainment and ambitious businesses built around customer experience. Clear enough to guide the business. Powerful enough to win hearts — and markets.",
     image: "/images/work/fortune-favours/logo-tile.jpg",
   },
   {
-    n: "02",
+    n: "03",
     title: "Campaigns & Content",
     slug: "campaigns-content",
     desc: "We plan and create launch campaigns, always-on content and customer communications that give people a reason to notice, book and come back.",
     image: "/images/work/pop-golf/popgolf-boxpark.jpg",
   },
   {
-    n: "03",
+    n: "04",
     title: "Digital & Web",
     slug: "digital-web",
     desc: "We design and build websites that help people understand the offer, find the right experience and take the next step. Clear strategy, distinctive design and less friction between interest and action.",
     image: "/images/work/humbug/06.webp",
   },
   {
-    n: "04",
+    n: "05",
     title: "Venue & Experience Design",
     slug: "interiors-environments",
     desc: "We design hospitality, leisure and entertainment venues around the commercial idea, customer journey and brand — creating places people understand instinctively, enjoy fully and want to return to.",
     image: "/images/work/pop-playrooms/10.webp",
   },
   {
-    n: "05",
+    n: "06",
     title: "Mini Golf Design & Build",
     slug: "mini-golf",
     desc: "We design and deliver premium mini golf experiences around the site, audience and commercial model — from first concept to playable course.",
     image: "/images/work/levels/05.webp",
   },
   {
-    n: "06",
+    n: "07",
     title: "Themed Experiences",
     slug: "themed-experiences",
     desc: "We create original worlds, stories and play experiences that give people more to feel, talk about and come back for.",
@@ -112,7 +119,7 @@ export default function ServicesPage() {
           <h1>Creative services for the <em>experience economy.</em></h1>
           <div className={c.heroBottom}>
             <p>
-              Smith & Devil brings strategy, brand, campaign, digital and spatial thinking together.
+              Smith & Devil brings concept, strategy, brand, campaign, digital and spatial thinking together.
               Work with us on one defined challenge, or bring us into the whole experience.
             </p>
             <div className={c.actions}>
@@ -142,7 +149,7 @@ export default function ServicesPage() {
         <div className={c.inner}>
           <div className={`Reveal-module__U2Tp6W__base ${c.indexHead}`}>
             <p className={c.sectionLabel}>The connected offer</p>
-            <h2>Six ways we help.</h2>
+            <h2>Seven ways we help.</h2>
           </div>
           <div className={c.cards}>
             {services.map((service) => (
