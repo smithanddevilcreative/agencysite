@@ -10,6 +10,7 @@ export type ServicePageData =
   heroImage: { src: string; alt: string };
   proofLine: string;
   argument: { label: string; title: string; paragraphs: string[] };
+  comparison?: { label: string; title: string; intro: string; items: { title: string; body: string }[]; closing: string };
   capabilities: { label: string; title: string; items: { number: string; title: string; body: string }[] };
   process: { label: string; title: string; items: { number: string; title: string; body: string }[] };
   caseStudy: {
@@ -760,6 +761,34 @@ export const servicePages: Record<string, ServicePageData> = {
         "Mini golf can be a destination, a high-performing secondary spend or the activity that gives an entire venue its identity. The commercial role changes the design.",
         "We start with the audience, site and business model, then shape the course around flow, capacity, dwell time, replay value and the wider customer experience. The result should be fun to play, distinctive enough to remember and practical enough to operate every day."
       ]
+    },
+    "comparison": {
+      "label": "Choosing the right partner",
+      "title": "Not all mini golf designers do the same job.",
+      "intro": "There are several ways to buy a mini golf course. The right choice depends on whether you simply need holes in a space, or a venue people actively choose, remember and return to.",
+      "items": [
+        {
+          "title": "Course builders",
+          "body": "Best when the main requirement is fabrication and installation of a defined course."
+        },
+        {
+          "title": "Specialist mini golf designers",
+          "body": "Focused on course layout, hole design, playability and the golf experience itself."
+        },
+        {
+          "title": "Theming companies",
+          "body": "Strong when scenic treatment, props and spectacle are the main creative requirement."
+        },
+        {
+          "title": "Architects and interior designers",
+          "body": "Useful when mini golf sits inside a wider venue project, although the game may be only one part of their brief."
+        },
+        {
+          "title": "Smith & Devil",
+          "body": "We connect the commercial proposition, brand, course, customer journey, interiors, theming and wider venue experience. The golf is designed as part of the business, not as something dropped into it."
+        }
+      ],
+      "closing": "If all you need is someone to fabricate nine holes, we may be more than you need. If you are building a venue people have to choose, remember and come back to, that is where we are strongest."
     },
     "capabilities": {
       "label": "Capabilities",
