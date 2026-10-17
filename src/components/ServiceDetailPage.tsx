@@ -61,6 +61,23 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
         provider: { "@type": "Organization", name: "Smith & Devil" },
       },
       {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Services",
+            item: "https://www.smithanddevil.com/services",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: data.kicker,
+            item: `https://www.smithanddevil.com/services/${data.slug}`,
+          },
+        ],
+      },
+      {
         "@type": "FAQPage",
         mainEntity: data.faq.items.map((item) => ({
           "@type": "Question",
