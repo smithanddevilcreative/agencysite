@@ -15,7 +15,7 @@ export const serviceLinks = [
   ["Brand Strategy & Design", "/services/brand-strategy-design"],
   ["Campaigns & Content", "/services/campaigns-content"],
   ["Digital & Web", "/services/digital-web"],
-  ["Interiors & Environments", "/services/interiors-environments"],
+  ["Venue & Experience Design", "/services/interiors-environments"],
   ["Mini Golf Design & Build", "/services/mini-golf"],
   ["Themed Experiences", "/services/themed-experiences"],
 ] as const;
