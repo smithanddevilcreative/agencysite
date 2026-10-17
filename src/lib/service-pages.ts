@@ -383,13 +383,13 @@ export const servicePages: Record<string, ServicePageData> = {
       },
       {
         "className": "service-module__T4otXW__secondaryAction",
-        "href": "/work/t2-design-solutions",
+        "href": "/work/mighty-adventures",
         "label": "See our digital work"
       }
     ],
     "heroImage": {
-      "src": "/images/work/t2-design-solutions/04.webp",
-      "alt": "T2 Design Solutions website interface"
+      "src": "/images/mighty-adventures.webp",
+      "alt": "Mighty Adventures digital experience"
     },
     "proofLine": "",
     "argument": {
@@ -484,18 +484,18 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "caseStudy": {
       "image": {
-        "src": "/images/work/t2-design-solutions/04.webp",
-        "alt": "T2 Design Solutions digital twin experience on tablet"
+        "src": "/images/work/more-concierge/01.webp",
+        "alt": "More Concierge website and digital proposition"
       },
       "label": "Relevant proof",
-      "title": "A digital identity with infinite range.",
+      "title": "Make a complicated offer easy to choose.",
       "paragraphs": [
-        "T2 Design Solutions needed to explain a complex creative technology offer across retail, construction, entertainment and future services that did not yet exist.",
-        "We created a brand and website around a living infinity mark made with T2's own 3D capabilities. The site gave the business a more credible international presence and a flexible way to show what its technology could make possible. T2 has since expanded from Worksop to London and Bahrain."
+        "More Concierge had a valuable service, but the category language made it difficult for decision-makers to understand why it mattered.",
+        "We reframed the proposition around the commercial value of giving top talent their time back, then carried that clarity through the messaging, UX and website. The result was a digital journey built to move people from curiosity to understanding — and from understanding to enquiry."
       ],
       "link": {
-        "href": "/work/t2-design-solutions",
-        "label": "See the T2 Design Solutions project"
+        "href": "/work/more-concierge",
+        "label": "See the More Concierge project"
       },
       "related": [
         "More Concierge: proposition, messaging, UX and web design for an employee benefit entering the legal sector.",
