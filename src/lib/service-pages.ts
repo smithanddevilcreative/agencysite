@@ -388,7 +388,7 @@ export const servicePages: Record<string, ServicePageData> = {
       }
     ],
     "heroImage": {
-      "src": "/images/mighty-adventures.webp",
+      "src": "/images/work/mighty-adventures/03.webp",
       "alt": "Mighty Adventures digital experience"
     },
     "proofLine": "",
