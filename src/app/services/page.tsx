@@ -40,6 +40,13 @@ const services = [
   },
   {
     n: "05",
+    title: "Mini Golf Design & Build",
+    slug: "mini-golf",
+    desc: "We design and deliver premium mini golf experiences around the site, audience and commercial model — from first concept to playable course.",
+    image: "/images/work/levels/05.webp",
+  },
+  {
+    n: "06",
     title: "Themed Experiences",
     slug: "themed-experiences",
     desc: "We create original worlds, stories and play experiences that give people more to feel, talk about and come back for.",
@@ -135,7 +142,7 @@ export default function ServicesPage() {
         <div className={c.inner}>
           <div className={`Reveal-module__U2Tp6W__base ${c.indexHead}`}>
             <p className={c.sectionLabel}>The connected offer</p>
-            <h2>Five ways we help.</h2>
+            <h2>Six ways we help.</h2>
           </div>
           <div className={c.cards}>
             {services.map((service) => (
