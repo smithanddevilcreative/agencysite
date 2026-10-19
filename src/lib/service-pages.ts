@@ -760,18 +760,18 @@ export const servicePages: Record<string, ServicePageData> = {
       "intro": "Tell us where the current website loses people, or what the new one needs to make possible."
     }
   },
-  "venue-design": {
-    "slug": "venue-design",
-    "title": "Hospitality & Leisure Venue Design & Interior Design | Smith & Devil",
-    "description": "Venue design for hospitality, leisure and experience brands. From customer journey and zoning to interior creative direction, signage and delivery.",
-    "kicker": "Venue Design",
-    "heroTitle": "Venue Design",
-    "standfirst": "We design hospitality, leisure and entertainment venues around the commercial idea, customer journey and brand — creating places people understand instinctively, enjoy fully and want to return to.",
+  "venue-experience-design": {
+    "slug": "venue-experience-design",
+    "title": "Venue & Experience Design for Hospitality & Attractions | Smith & Devil",
+    "description": "Venue and experience design for hospitality, leisure and attractions. Interior creative direction, branded environments, signage, wayfinding and guest experiences.",
+    "kicker": "Venue & Experience Design",
+    "heroTitle": "Venue & Experience Design",
+    "standfirst": "From complete hospitality and leisure venues to individual experiences inside attractions, we bring brands to life through spaces, signage, wayfinding and the moments guests remember.",
     "actions": [
       {
         "className": "service-module__T4otXW__primaryAction",
         "href": "#project-enquiry",
-        "label": "Talk to us about your venue"
+        "label": "Talk to us about your experience"
       },
       {
         "className": "service-module__T4otXW__secondaryAction",
@@ -814,7 +814,7 @@ export const servicePages: Record<string, ServicePageData> = {
         {
           "number": "04",
           "title": "Experience touchpoints",
-          "body": "Design the moments that shape perception, from entrances and hosts to tables, scorecards, menus and photo opportunities."
+          "body": "Design guest experiences within venues and attractions, from themed areas and café environments to menus, scorecards and memorable brand touchpoints."
         },
         {
           "number": "05",
@@ -824,7 +824,7 @@ export const servicePages: Record<string, ServicePageData> = {
         {
           "number": "06",
           "title": "Signage and wayfinding",
-          "body": "Help customers understand where to go and what to do without filling the venue with instructions."
+          "body": "Create signage and wayfinding for venues and attractions that helps guests explore, understand and enjoy the experience."
         },
         {
           "number": "07",
