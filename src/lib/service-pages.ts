@@ -760,12 +760,12 @@ export const servicePages: Record<string, ServicePageData> = {
       "intro": "Tell us where the current website loses people, or what the new one needs to make possible."
     }
   },
-  "interiors-environments": {
-    "slug": "interiors-environments",
-    "title": "Venue & Experience Design Agency | Smith & Devil",
-    "description": "Venue and experience design for hospitality, leisure and entertainment brands. Commercial concept, customer journey, interiors, branded environments, signage and delivery.",
-    "kicker": "Venue & Experience Design",
-    "heroTitle": "We design venues & experiences.",
+  "venue-design": {
+    "slug": "venue-design",
+    "title": "Hospitality & Leisure Venue Design & Interior Design | Smith & Devil",
+    "description": "Venue design for hospitality, leisure and experience brands. From customer journey and zoning to interior creative direction, signage and delivery.",
+    "kicker": "Venue Design",
+    "heroTitle": "Venue Design",
     "standfirst": "We design hospitality, leisure and entertainment venues around the commercial idea, customer journey and brand — creating places people understand instinctively, enjoy fully and want to return to.",
     "actions": [
       {
