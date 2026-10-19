@@ -74,13 +74,19 @@
 
 [[redirects]]
   from = "/what-we-do/venue-concept-design"
-  to = "https://www.smithanddevil.com/services/interiors-environments/"
+  to = "https://www.smithanddevil.com/services/venue-design/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/what-we-do/hospitality"
   to = "https://www.smithanddevil.com/services/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/interiors-environments/*"
+  to = "https://www.smithanddevil.com/services/venue-design/"
   status = 301
   force = true
 
