@@ -40,9 +40,9 @@ const services = [
   },
   {
     n: "05",
-    title: "Venue Design",
-    slug: "venue-design",
-    desc: "We design hospitality, leisure and entertainment venues around the commercial idea, customer journey and brand — creating places people understand instinctively, enjoy fully and want to return to.",
+    title: "Venue & Experience Design",
+    slug: "venue-experience-design",
+    desc: "From complete hospitality and leisure venues to individual guest experiences within attractions, we design branded environments, signage, wayfinding and places people want to explore.",
     image: "/images/work/pop-playrooms/10.webp",
   },
   {
