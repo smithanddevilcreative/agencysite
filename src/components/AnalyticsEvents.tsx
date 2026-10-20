@@ -35,8 +35,28 @@ export function AnalyticsEvents() {
         trackGA4Event("contact_cta_click", { link_location: location, link_text: label });
       }
     }
-    document.addEventListener("click", handleClick, true);
-    return () => document.removeEventListener("click", handleClick, true);
+    // mailto: can launch an email application immediately after click.
+    // Capture pointer intent earlier, leaving click as the keyboard fallback.
+    let lastEmailPointerTime = 0;
+    function handlePointerDown(event: PointerEvent) {
+      if (!(event.target instanceof Element)) return;
+      const link = event.target.closest("a[href^='mailto:']");
+      if (!link) return;
+      lastEmailPointerTime = Date.now();
+      trackGA4Event("email_click", { link_location: window.location.pathname });
+    }
+    function handleClickWithKeyboardFallback(event: MouseEvent) {
+      if (event.target instanceof Element && event.target.closest("a[href^='mailto:']")) {
+        if (Date.now() - lastEmailPointerTime < 1500) return;
+      }
+      handleClick(event);
+    }
+    document.addEventListener("pointerdown", handlePointerDown, true);
+    document.addEventListener("click", handleClickWithKeyboardFallback, true);
+    return () => {
+      document.removeEventListener("pointerdown", handlePointerDown, true);
+      document.removeEventListener("click", handleClickWithKeyboardFallback, true);
+    };
   }, []);
 
   return null;
