@@ -65,7 +65,7 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "OfferCatalog",
   name: "Smith & Devil creative services",
-  url: "https://www.smithanddevil.com/services",
+  url: "https://smithanddevil.com/services",
   itemListElement: services.map((service, index) => ({
     "@type": "Offer",
     position: index + 1,
@@ -73,7 +73,7 @@ const schema = {
       "@type": "Service",
       name: service.title,
       description: service.desc,
-      url: `https://www.smithanddevil.com/services/${service.slug}`,
+      url: `https://smithanddevil.com/services/${service.slug}`,
     },
   })),
 };
