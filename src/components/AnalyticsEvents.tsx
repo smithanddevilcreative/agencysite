@@ -3,16 +3,14 @@
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
+import { trackGA4Event } from "@/lib/analytics";
+
 declare global {
   interface Window {
     dataLayer?: Array<Record<string, unknown>>;
   }
 }
 
-function track(event: string, attributes: Record<string, string>) {
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({ event, ...attributes });
-}
 
 export function AnalyticsEvents() {
   const pathname = usePathname();
@@ -21,8 +19,8 @@ export function AnalyticsEvents() {
   useEffect(() => {
     const project = pathname.match(/^\/work\/([^/]+)\/?$/);
     const service = pathname.match(/^\/services\/([^/]+)\/?$/);
-    if (project) track("project_view", { project_name: project[1] });
-    if (service) track("service_view", { service_name: service[1] });
+    if (project) trackGA4Event("project_view", { project_name: project[1] });
+    if (service) trackGA4Event("service_view", { service_name: service[1] });
   }, [pathname]);
 
   useEffect(() => {
@@ -35,13 +33,13 @@ export function AnalyticsEvents() {
       const location = window.location.pathname;
       const label = (link.textContent || "").trim().replace(/\s+/g, " ").slice(0, 100);
       if (url.protocol === "mailto:") {
-        track("email_click", { link_location: location });
+        trackGA4Event("email_click", { link_location: location });
       } else if (url.protocol === "tel:") {
-        track("phone_click", { link_location: location });
+        trackGA4Event("phone_click", { link_location: location });
       } else if (/calendly\.com$/i.test(url.hostname) || /\.calendly\.com$/i.test(url.hostname)) {
-        track("book_call_click", { link_location: location });
+        trackGA4Event("book_call_click", { link_location: location });
       } else if (url.origin === window.location.origin && url.pathname.replace(/\/$/, "") === "/contact") {
-        track("contact_cta_click", { link_location: location, link_text: label });
+        trackGA4Event("contact_cta_click", { link_location: location, link_text: label });
       }
     }
     document.addEventListener("click", handleClick, true);
