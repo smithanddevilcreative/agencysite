@@ -8,7 +8,7 @@ import { AmpersandCursor } from "@/components/AmpersandCursor";
 import { AnalyticsEvents } from "@/components/AnalyticsEvents";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.smithanddevil.com"),
+  metadataBase: new URL("https://smithanddevil.com"),
   title: {
     default: "Smith & Devil — Win hearts & markets",
     template: "%s | Smith & Devil",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_GB",
-    url: "https://www.smithanddevil.com",
+    url: "https://smithanddevil.com",
     siteName: "Smith & Devil",
     title: "Smith & Devil — Win hearts & markets",
     description:
@@ -93,8 +93,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Smith & Devil",
-              url: "https://www.smithanddevil.com",
-              logo: "https://www.smithanddevil.com/brand/sd-logo-2026-black.png",
+              url: "https://smithanddevil.com",
+              logo: "https://smithanddevil.com/brand/sd-logo-2026-black.png",
               email: "hello@smithanddevil.com",
               description:
                 "Creative strategy and design studio for the experience economy.",
