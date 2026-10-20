@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CTASection } from "@/components/CTASection";
+import styles from "../WhenToBringUsIn.module.css";
 
 export const metadata: Metadata = {
   title: "Studio",
@@ -109,6 +110,45 @@ export default function StudioPage() {
               <div className={c.pillarBody}><p className={c.body}>{pillar.body}</p></div>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section className={styles.section} aria-label="When to bring us in">
+        <div className={styles.inner}>
+          <details className={styles.details}>
+            <summary className={styles.summary}>
+              <h2 className={styles.heading}>When to bring us in</h2>
+              <span className={styles.toggle} aria-hidden="true">+</span>
+            </summary>
+            <div className={styles.content}>
+              <h3 className={styles.introHeading}>Got big plans? Good. We like big plans.</h3>
+              <p className={styles.intro}>From a brilliant idea on the back of a napkin to a business with its sights set on world domination, there’s plenty we can do together.</p>
+              <div className={styles.item}>
+                <h3 className={styles.itemTitle}>Something up your sleeve?</h3>
+                <p className={styles.itemBody}>A new venue, attraction or experience? Bring us in early. We’ll help turn the big idea into a brilliant concept, a compelling brand and a business worth getting excited about.</p>
+              </div>
+              <div className={styles.item}>
+                <h3 className={styles.itemTitle}>Ready to make an entrance?</h3>
+                <p className={styles.itemBody}>Opening the doors on something new? We’ll make sure there’s a great story to tell and plenty of people ready to hear it.</p>
+              </div>
+              <div className={styles.item}>
+                <h3 className={styles.itemTitle}>Outgrown your old self?</h3>
+                <p className={styles.itemBody}>Businesses evolve. Brands should too. If yours no longer does you justice, we’ve got some ideas about that.</p>
+              </div>
+              <div className={styles.item}>
+                <h3 className={styles.itemTitle}>Ready to grow your business?</h3>
+                <p className={styles.itemBody}>More customers, more bookings, more revenue. Whether you’re looking to get more from an existing venue or grow an entire estate, we’ll help make the numbers move in the right direction.</p>
+              </div>
+              <div className={styles.item}>
+                <h3 className={styles.itemTitle}>Something else?</h3>
+                <p className={styles.itemBody}>Every business has its own ambitions and obstacles. Tell us what you’re working towards. We’ll see where our thinking and experience can make a difference.</p>
+              </div>
+              <div className={styles.close}>
+                <h3 className={styles.closeTitle}>Got something in mind?</h3>
+                <Link className={styles.link} href="/contact">Let’s talk <span className={styles.arrow} aria-hidden="true">→</span></Link>
+              </div>
+            </div>
+          </details>
         </div>
       </section>
 
