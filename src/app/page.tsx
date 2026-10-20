@@ -95,7 +95,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="sd-home-statement">
+      <section className="sd-home-statement" style={{ flexDirection: "column" }}>
         <p className="sd-home-statement-desktop">
           We partner with brands and businesses<br />
           that are as ambitious as we are.<br />
@@ -108,6 +108,10 @@ export default function HomePage() {
           Winning <em>hearts &amp; markets</em><br />
           with solid strategy and powerful creative.
         </p>
+        <Link className="sd-home-more-link" href="/studio" style={{ marginTop: "clamp(32px, 4vw, 54px)" }}>
+          <span>About us</span>
+          <span className="sd-circle-arrow" aria-hidden="true">→</span>
+        </Link>
       </section>
 
       <section className="sd-home-clients" aria-label="Our clients">
