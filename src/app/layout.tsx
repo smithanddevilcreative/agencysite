@@ -5,6 +5,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { MotionController } from "@/components/MotionController";
 import { AmpersandCursor } from "@/components/AmpersandCursor";
+import { AnalyticsEvents } from "@/components/AnalyticsEvents";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.smithanddevil.com"),
@@ -103,6 +104,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Header />
         <MotionController />
         <AmpersandCursor />
+        <AnalyticsEvents />
         {children}
         <Footer />
       </body>
