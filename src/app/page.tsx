@@ -123,7 +123,7 @@ export default function HomePage() {
                 <p className={styles.itemBody}>More customers, more bookings, more revenue. Whether you’re looking to get more from an existing venue or grow an entire estate, we’ll help make the numbers move in the right direction.</p>
               </div>
               <div className={styles.item}>
-                <h3 className={styles.itemTitle}>Have a different challenge in mind?</h3>
+                <h3 className={styles.itemTitle}>Have a challenge we haven’t covered?</h3>
                 <p className={styles.itemBody}>Every business has its own ambitions and obstacles. Tell us what you’re working towards. We’ll see where our thinking and experience can make a difference.</p>
               </div>
               <div className={styles.close}>
