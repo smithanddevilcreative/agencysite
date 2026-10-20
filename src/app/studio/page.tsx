@@ -125,19 +125,19 @@ export default function StudioPage() {
               <h3 className={styles.introHeading}>Got big plans? Good. We like big plans.</h3>
               <p className={styles.intro}>From a brilliant idea on the back of a napkin to a business with its sights set on world domination, there’s plenty we can do together.</p>
               <div className={styles.item}>
-                <h3 className={styles.itemTitle}>Something up your sleeve?</h3>
+                <h3 className={styles.itemTitle}>Right at the beginning</h3>
                 <p className={styles.itemBody}>A new venue, attraction or experience? Bring us in early. We’ll help turn the big idea into a brilliant concept, a compelling brand and a business worth getting excited about.</p>
               </div>
               <div className={styles.item}>
-                <h3 className={styles.itemTitle}>Ready to make an entrance?</h3>
+                <h3 className={styles.itemTitle}>Before you launch</h3>
                 <p className={styles.itemBody}>Opening the doors on something new? We’ll make sure there’s a great story to tell and plenty of people ready to hear it.</p>
               </div>
               <div className={styles.item}>
-                <h3 className={styles.itemTitle}>Outgrown your old self?</h3>
+                <h3 className={styles.itemTitle}>When it’s time for a change</h3>
                 <p className={styles.itemBody}>Businesses evolve. Brands should too. If yours no longer does you justice, we’ve got some ideas about that.</p>
               </div>
               <div className={styles.item}>
-                <h3 className={styles.itemTitle}>Ready to grow your business?</h3>
+                <h3 className={styles.itemTitle}>When you’re ready to grow</h3>
                 <p className={styles.itemBody}>More customers, more bookings, more revenue. Whether you’re looking to get more from an existing venue or grow an entire estate, we’ll help make the numbers move in the right direction.</p>
               </div>
               <div className={styles.item}>
