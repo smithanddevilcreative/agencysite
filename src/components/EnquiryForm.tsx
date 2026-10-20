@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
+import { trackGA4Event } from "@/lib/analytics";
 
 export function EnquiryForm({ service = "General" }: { service?: string }) {
   const router = useRouter();
@@ -26,8 +27,7 @@ export function EnquiryForm({ service = "General" }: { service?: string }) {
       });
 
       if (!response.ok) throw new Error("Submission failed");
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: "generate_lead", enquiry_service: service, form_location: window.location.pathname });
+      trackGA4Event("generate_lead", { enquiry_service: service, form_location: window.location.pathname });
       router.push("/thank-you/");
     } catch {
       setError("Something went wrong. Please try again or email hello@smithanddevil.com.");
