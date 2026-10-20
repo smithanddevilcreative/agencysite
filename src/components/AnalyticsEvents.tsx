@@ -5,13 +5,6 @@ import { useEffect } from "react";
 
 import { trackGA4Event } from "@/lib/analytics";
 
-declare global {
-  interface Window {
-    dataLayer?: Array<Record<string, unknown>>;
-  }
-}
-
-
 export function AnalyticsEvents() {
   const pathname = usePathname();
 
