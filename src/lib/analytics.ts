@@ -11,9 +11,14 @@ declare global {
 const MEASUREMENT_ID = "G-JY4CPWQZB7";
 let configured = false;
 
-function gtag(...args: unknown[]) {
+// Google tag commands must use the native arguments object. Pushing a
+// rest-parameter Array is not the documented gtag command format.
+function gtag(command: string, ...parameters: unknown[]) {
   window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push(args);
+  function queue(..._unused: unknown[]) {
+    window.dataLayer?.push(arguments);
+  }
+  queue(command, ...parameters);
 }
 
 export function trackGA4Event(eventName: string, parameters: Record<string, string>) {
