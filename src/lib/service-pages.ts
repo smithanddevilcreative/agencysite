@@ -33,7 +33,7 @@ export const servicePages: Record<string, ServicePageData> = {
     "description": "Venue concept development for founders, operators, developers and architects. Proposition, audience, brand direction, customer journey and an experience brief ready to design, fund and build.",
     "kicker": "Venue Concept Development",
     "heroTitle": "Define the idea before you design the venue.",
-    "standfirst": "We help founders, operators, developers and architects turn early-stage leisure and hospitality ideas into clear propositions, brands and experience briefs that can actually be designed, funded and built.",
+    "standfirst": "Creating a leisure, entertainment or experience-led venue? We help founders, operators and developers turn early ideas into strong propositions, brands and experience briefs ready to design, fund and launch.",
     "actions": [
       {
         "className": "service-module__T4otXW__primaryAction",
@@ -765,8 +765,8 @@ export const servicePages: Record<string, ServicePageData> = {
     "title": "Venue & Experience Design for Hospitality & Attractions | Smith & Devil",
     "description": "Venue and experience design for hospitality, leisure and attractions. Interior creative direction, branded environments, signage, wayfinding and guest experiences.",
     "kicker": "Venue & Experience Design",
-    "heroTitle": "Venue & Experience Design",
-    "standfirst": "From complete hospitality and leisure venues to individual experiences inside attractions, we bring brands to life through spaces, signage, wayfinding and the moments guests remember.",
+    "heroTitle": "Design a venue people want to choose.",
+    "standfirst": "Launching a new leisure concept or improving an existing one? We connect the customer proposition to interiors, branding, signage, wayfinding and the moments guests remember.",
     "actions": [
       {
         "className": "service-module__T4otXW__primaryAction",
@@ -940,10 +940,10 @@ export const servicePages: Record<string, ServicePageData> = {
   "mini-golf": {
     "slug": "mini-golf",
     "title": "Mini Golf Design & Build UK | Smith & Devil",
-    "description": "Premium mini golf design and build for hospitality, leisure and entertainment venues. Concept, course design, theming, branding, customer journey and delivery.",
+    "description": "Commercial mini golf course design from £40,000 for nine holes. Premium 9- and 18-hole mini golf design, experience development and separately quoted construction.",
     "kicker": "Mini Golf Design & Build",
     "heroTitle": "Premium mini golf, designed to perform.",
-    "standfirst": "We create distinctive mini golf experiences for operators, developers and hospitality brands — from the commercial idea and course concept through theming, brand, customer journey and delivery.",
+    "standfirst": "Commercial mini golf course design from £40,000 for nine holes, with 18-hole design typically £68,000. Construction is costed separately. We create distinctive courses for operators and developers, with branding and launch support when needed.",
     "actions": [
       {
         "className": "service-module__T4otXW__primaryAction",
