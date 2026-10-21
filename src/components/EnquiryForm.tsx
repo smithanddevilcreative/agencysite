@@ -70,23 +70,23 @@ export function EnquiryForm({ service = "General" }: { service?: string }) {
           <select name="project_stage" defaultValue="">
             <option value="" disabled>Choose a stage</option>
             <option>Exploring an idea</option>
-            <option>Concept and business planning</option>
-            <option>Site identified or secured</option>
-            <option>Design or refurbishment underway</option>
-            <option>Preparing to launch</option>
-            <option>Existing venue looking to grow</option>
+            <option>Developing the brief</option>
+            <option>Ready to appoint a creative partner</option>
+            <option>Ready to get started</option>
+            <option>Improving something that already exists</option>
           </select>
         </label>
         <label className="EnquiryForm-module__ZxCRSG__field">
-          <span>Anticipated total project investment</span>
-          <select name="project_investment" defaultValue="">
+          <span>What budget do you have in mind for our help?</span>
+          <select name="project_investment" defaultValue="" aria-describedby="enquiry-budget-note">
             <option value="">Still working this out</option>
-            <option>Under £100,000</option>
-            <option>£100,000–£250,000</option>
-            <option>£250,000–£500,000</option>
-            <option>£500,000–£1 million</option>
-            <option>Over £1 million</option>
+            <option>Under £10,000</option>
+            <option>£10,000–£25,000</option>
+            <option>£25,000–£50,000</option>
+            <option>£50,000–£100,000</option>
+            <option>£100,000+</option>
           </select>
+          <small id="enquiry-budget-note">An estimate is fine. This helps us suggest the right approach.</small>
         </label>
         {isMiniGolf ? (
           <>
@@ -109,18 +109,20 @@ export function EnquiryForm({ service = "General" }: { service?: string }) {
             <span>What would you like our help with?</span>
             <select name="project_interest" defaultValue="">
               <option value="">Not decided yet</option>
-              <option>Creating and launching a new concept</option>
-              <option>Improving an existing customer experience</option>
+              <option>Concept development</option>
               <option>Brand strategy and identity</option>
+              <option>Website design and development</option>
+              <option>Marketing and campaigns</option>
               <option>Venue and interior design</option>
-              <option>Marketing and customer acquisition</option>
+              <option>Mini golf design and build</option>
+              <option>Themed experiences</option>
               <option>Something else</option>
             </select>
           </label>
         )}
         <label className="EnquiryForm-module__ZxCRSG__field EnquiryForm-module__ZxCRSG__fieldWide">
-          <span>What are you building, changing or trying to solve?</span>
-          <textarea name="message" rows={5} required />
+          <span>Tell us a bit more.</span>
+          <textarea name="message" rows={5} required placeholder="A little about the project, what you need and any timings you have in mind." />
         </label>
       </div>
       <button type="submit" className="EnquiryForm-module__ZxCRSG__submit" disabled={submitting}>
