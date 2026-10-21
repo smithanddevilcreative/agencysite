@@ -15,6 +15,11 @@ export default function FormHandlerPage() {
         <input name="name" />
         <input name="email" type="email" />
         <input name="organisation" />
+        <input name="project_stage" />
+        <input name="project_investment" />
+        <input name="project_interest" />
+        <input name="course_holes" />
+        <input name="project_location" />
         <textarea name="message" />
         <button type="submit">Send</button>
       </form>
