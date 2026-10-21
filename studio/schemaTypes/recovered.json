@@ -1,0 +1,1441 @@
+[
+  {
+    "name": "metric",
+    "type": "object",
+    "fields": [
+      {
+        "name": "value",
+        "type": "string",
+        "title": "Figure"
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "title": "What it means"
+      }
+    ],
+    "title": "Result",
+    "options": {},
+    "orderings": [
+      {
+        "by": [
+          {
+            "field": "label",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.label"
+          }
+        },
+        "name": "label",
+        "title": "Label"
+      }
+    ]
+  },
+  {
+    "name": "seo",
+    "type": "object",
+    "fields": [
+      {
+        "name": "title",
+        "type": "string",
+        "title": "Page title"
+      },
+      {
+        "name": "description",
+        "type": "text",
+        "title": "Description"
+      },
+      {
+        "name": "image",
+        "type": "image",
+        "title": "Social sharing image",
+        "options": {
+          "hotspot": true
+        }
+      },
+      {
+        "name": "noIndex",
+        "type": "boolean",
+        "title": "Hide from search engines",
+        "initialValue": false
+      }
+    ],
+    "title": "Search and sharing",
+    "options": {},
+    "orderings": [
+      {
+        "by": [
+          {
+            "field": "title",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.title"
+          }
+        },
+        "name": "title",
+        "title": "Title"
+      }
+    ]
+  },
+  {
+    "name": "siteSettings",
+    "type": "document",
+    "title": "Site settings",
+    "fields": [
+      {
+        "name": "siteName",
+        "type": "string",
+        "title": "Site name"
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "title": "Main email address"
+      },
+      {
+        "name": "phone",
+        "type": "string",
+        "title": "Main telephone"
+      },
+      {
+        "name": "navigation",
+        "type": "array",
+        "title": "Navigation",
+        "of": [
+          {
+            "type": "navLink",
+            "title": "Navigation link"
+          }
+        ]
+      },
+      {
+        "name": "socialLinks",
+        "type": "array",
+        "title": "Social links",
+        "of": [
+          {
+            "type": "socialLink",
+            "title": "Social link"
+          }
+        ]
+      },
+      {
+        "name": "footerCopy",
+        "type": "string",
+        "title": "Footer copy"
+      },
+      {
+        "name": "defaultSeo",
+        "type": "seo",
+        "title": "Default search and sharing"
+      }
+    ]
+  },
+  {
+    "name": "faqItem",
+    "type": "object",
+    "fields": [
+      {
+        "name": "question",
+        "type": "string",
+        "title": "Question"
+      },
+      {
+        "name": "answer",
+        "type": "text",
+        "title": "Answer"
+      }
+    ],
+    "title": "Question and answer",
+    "options": {},
+    "orderings": [
+      {
+        "by": [
+          {
+            "field": "question",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.question"
+          }
+        },
+        "name": "question",
+        "title": "Question"
+      }
+    ]
+  },
+  {
+    "name": "homePage",
+    "type": "document",
+    "fields": [
+      {
+        "name": "heroLineOne",
+        "type": "string",
+        "title": "Hero line one"
+      },
+      {
+        "name": "heroLineTwo",
+        "type": "string",
+        "title": "Hero line two"
+      },
+      {
+        "name": "intro",
+        "type": "text",
+        "title": "Introduction"
+      },
+      {
+        "name": "featuredProjects",
+        "type": "array",
+        "of": [
+          {
+            "name": "reference",
+            "type": "reference",
+            "to": [
+              {
+                "type": "project"
+              }
+            ],
+            "title": "Reference to projects"
+          }
+        ],
+        "title": "Featured projects",
+        "description": "Drag these into the order they should appear."
+      },
+      {
+        "name": "clientLogos",
+        "type": "array",
+        "of": [
+          {
+            "name": "clientLogo",
+            "type": "clientLogo",
+            "title": "Client logo"
+          }
+        ],
+        "title": "Client logos"
+      },
+      {
+        "name": "seo",
+        "type": "seo",
+        "title": "Search and sharing"
+      }
+    ],
+    "title": "Homepage",
+    "options": {},
+    "orderings": [
+      {
+        "by": [
+          {
+            "field": "heroLineOne",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.heroLineOne"
+          }
+        },
+        "name": "heroLineOne",
+        "title": "Hero line one"
+      },
+      {
+        "by": [
+          {
+            "field": "heroLineTwo",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.heroLineTwo"
+          }
+        },
+        "name": "heroLineTwo",
+        "title": "Hero line two"
+      }
+    ]
+  },
+  {
+    "name": "project",
+    "type": "document",
+    "fields": [
+      {
+        "name": "title",
+        "type": "string",
+        "title": "Project name"
+      },
+      {
+        "name": "slug",
+        "type": "slug",
+        "title": "Page address",
+        "options": {
+          "source": "title"
+        }
+      },
+      {
+        "name": "category",
+        "type": "string",
+        "title": "Category"
+      },
+      {
+        "name": "displayOrder",
+        "type": "number",
+        "title": "Position on work page"
+      },
+      {
+        "name": "cardImage",
+        "type": "image",
+        "title": "Card image",
+        "options": {
+          "hotspot": true
+        }
+      },
+      {
+        "name": "hoverImage",
+        "type": "image",
+        "title": "Hover image",
+        "options": {
+          "hotspot": true
+        }
+      },
+      {
+        "name": "leadImage",
+        "type": "image",
+        "title": "Case-study lead image",
+        "options": {
+          "hotspot": true
+        }
+      },
+      {
+        "name": "summary",
+        "type": "text",
+        "title": "Short introduction"
+      },
+      {
+        "name": "caseStudy",
+        "type": "array",
+        "of": [
+          {
+            "name": "block",
+            "type": "block",
+            "marks": {
+              "decorators": [
+                {
+                  "title": "Strong",
+                  "value": "strong",
+                  "i18nTitleKey": "inputs.portable-text.decorator.strong"
+                },
+                {
+                  "title": "Italic",
+                  "value": "em",
+                  "i18nTitleKey": "inputs.portable-text.decorator.emphasis"
+                },
+                {
+                  "title": "Code",
+                  "value": "code",
+                  "i18nTitleKey": "inputs.portable-text.decorator.code"
+                },
+                {
+                  "title": "Underline",
+                  "value": "underline",
+                  "i18nTitleKey": "inputs.portable-text.decorator.underline"
+                },
+                {
+                  "title": "Strike",
+                  "value": "strike-through",
+                  "i18nTitleKey": "inputs.portable-text.decorator.strike-through"
+                }
+              ],
+              "annotations": [
+                {
+                  "name": "link",
+                  "type": "object",
+                  "fields": [
+                    {
+                      "name": "href",
+                      "type": "url",
+                      "title": "Link",
+                      "description": "A valid web, email, phone, or relative link."
+                    }
+                  ],
+                  "title": "Link",
+                  "options": {
+                    "modal": {
+                      "type": "popover"
+                    }
+                  },
+                  "orderings": []
+                }
+              ]
+            },
+            "options": {}
+          }
+        ],
+        "title": "Case study"
+      },
+      {
+        "name": "services",
+        "type": "array",
+        "of": [
+          {
+            "name": "string",
+            "type": "string"
+          }
+        ],
+        "title": "Services provided"
+      },
+      {
+        "name": "results",
+        "type": "array",
+        "of": [
+          {
+            "name": "metric",
+            "type": "metric",
+            "title": "Result"
+          }
+        ],
+        "title": "Results"
+      },
+      {
+        "name": "gallery",
+        "type": "array",
+        "of": [
+          {
+            "name": "mediaItem",
+            "type": "mediaItem",
+            "title": "Gallery item"
+          }
+        ],
+        "title": "Gallery"
+      },
+      {
+        "name": "heroVideoProvider",
+        "type": "string",
+        "title": "Hero video provider",
+        "options": {
+          "list": [
+            {
+              "title": "Vimeo",
+              "value": "vimeo"
+            },
+            {
+              "title": "Skiv",
+              "value": "skiv"
+            }
+          ],
+          "layout": "radio"
+        },
+        "initialValue": "vimeo"
+      },
+      {
+        "name": "heroVimeoId",
+        "type": "string",
+        "title": "Hero Vimeo ID"
+      },
+      {
+        "name": "heroSkivId",
+        "type": "string",
+        "title": "Hero Skiv ID"
+      },
+      {
+        "name": "seo",
+        "type": "seo",
+        "title": "Search and sharing"
+      }
+    ],
+    "title": "Project",
+    "options": {},
+    "orderings": [
+      {
+        "by": [
+          {
+            "field": "title",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.title"
+          }
+        },
+        "name": "title",
+        "title": "Title"
+      }
+    ]
+  },
+  {
+    "name": "clientLogo",
+    "type": "object",
+    "fields": [
+      {
+        "name": "name",
+        "type": "string",
+        "title": "Client name"
+      },
+      {
+        "name": "logo",
+        "type": "image",
+        "title": "Logo",
+        "options": {}
+      },
+      {
+        "name": "website",
+        "type": "url",
+        "title": "Website"
+      }
+    ],
+    "title": "Client logo",
+    "options": {},
+    "orderings": [
+      {
+        "by": [
+          {
+            "field": "name",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.name"
+          }
+        },
+        "name": "name",
+        "title": "Name"
+      }
+    ]
+  },
+  {
+    "name": "service",
+    "type": "document",
+    "fields": [
+      {
+        "name": "title",
+        "type": "string",
+        "title": "Service name"
+      },
+      {
+        "name": "slug",
+        "type": "slug",
+        "title": "Page address",
+        "options": {
+          "source": "title"
+        }
+      },
+      {
+        "name": "displayOrder",
+        "type": "number",
+        "title": "Position on services page"
+      },
+      {
+        "name": "headline",
+        "type": "string",
+        "title": "Headline"
+      },
+      {
+        "name": "introduction",
+        "type": "text",
+        "title": "Introduction"
+      },
+      {
+        "name": "heroImage",
+        "type": "image",
+        "title": "Hero image",
+        "options": {
+          "hotspot": true
+        }
+      },
+      {
+        "name": "proofLine",
+        "type": "string",
+        "title": "Opening proof point"
+      },
+      {
+        "name": "whyHeadline",
+        "type": "string",
+        "title": "Why it matters headline"
+      },
+      {
+        "name": "whyItMatters",
+        "type": "array",
+        "of": [
+          {
+            "name": "block",
+            "type": "block",
+            "marks": {
+              "decorators": [
+                {
+                  "title": "Strong",
+                  "value": "strong",
+                  "i18nTitleKey": "inputs.portable-text.decorator.strong"
+                },
+                {
+                  "title": "Italic",
+                  "value": "em",
+                  "i18nTitleKey": "inputs.portable-text.decorator.emphasis"
+                },
+                {
+                  "title": "Code",
+                  "value": "code",
+                  "i18nTitleKey": "inputs.portable-text.decorator.code"
+                },
+                {
+                  "title": "Underline",
+                  "value": "underline",
+                  "i18nTitleKey": "inputs.portable-text.decorator.underline"
+                },
+                {
+                  "title": "Strike",
+                  "value": "strike-through",
+                  "i18nTitleKey": "inputs.portable-text.decorator.strike-through"
+                }
+              ],
+              "annotations": [
+                {
+                  "name": "link",
+                  "type": "object",
+                  "fields": [
+                    {
+                      "name": "href",
+                      "type": "url",
+                      "title": "Link",
+                      "description": "A valid web, email, phone, or relative link."
+                    }
+                  ],
+                  "title": "Link",
+                  "options": {
+                    "modal": {
+                      "type": "popover"
+                    }
+                  },
+                  "orderings": []
+                }
+              ]
+            },
+            "options": {}
+          }
+        ],
+        "title": "Why it matters copy"
+      },
+      {
+        "name": "capabilitiesHeadline",
+        "type": "string",
+        "title": "Capabilities headline"
+      },
+      {
+        "name": "capabilities",
+        "type": "array",
+        "of": [
+          {
+            "name": "processStep",
+            "type": "processStep",
+            "title": "Process step"
+          }
+        ],
+        "title": "Capabilities"
+      },
+      {
+        "name": "processHeadline",
+        "type": "string",
+        "title": "Process headline"
+      },
+      {
+        "name": "process",
+        "type": "array",
+        "of": [
+          {
+            "name": "processStep",
+            "type": "processStep",
+            "title": "Process step"
+          }
+        ],
+        "title": "Process"
+      },
+      {
+        "name": "proofHeadline",
+        "type": "string",
+        "title": "Proof headline"
+      },
+      {
+        "name": "proofBody",
+        "type": "array",
+        "of": [
+          {
+            "name": "block",
+            "type": "block",
+            "marks": {
+              "decorators": [
+                {
+                  "title": "Strong",
+                  "value": "strong",
+                  "i18nTitleKey": "inputs.portable-text.decorator.strong"
+                },
+                {
+                  "title": "Italic",
+                  "value": "em",
+                  "i18nTitleKey": "inputs.portable-text.decorator.emphasis"
+                },
+                {
+                  "title": "Code",
+                  "value": "code",
+                  "i18nTitleKey": "inputs.portable-text.decorator.code"
+                },
+                {
+                  "title": "Underline",
+                  "value": "underline",
+                  "i18nTitleKey": "inputs.portable-text.decorator.underline"
+                },
+                {
+                  "title": "Strike",
+                  "value": "strike-through",
+                  "i18nTitleKey": "inputs.portable-text.decorator.strike-through"
+                }
+              ],
+              "annotations": [
+                {
+                  "name": "link",
+                  "type": "object",
+                  "fields": [
+                    {
+                      "name": "href",
+                      "type": "url",
+                      "title": "Link",
+                      "description": "A valid web, email, phone, or relative link."
+                    }
+                  ],
+                  "title": "Link",
+                  "options": {
+                    "modal": {
+                      "type": "popover"
+                    }
+                  },
+                  "orderings": []
+                }
+              ]
+            },
+            "options": {}
+          }
+        ],
+        "title": "Proof copy"
+      },
+      {
+        "name": "proofProject",
+        "type": "reference",
+        "to": [
+          {
+            "type": "project"
+          }
+        ],
+        "title": "Relevant project"
+      },
+      {
+        "name": "relatedProof",
+        "type": "array",
+        "of": [
+          {
+            "name": "string",
+            "type": "string"
+          }
+        ],
+        "title": "Other proof points"
+      },
+      {
+        "name": "whenHeadline",
+        "type": "string",
+        "title": "When to bring us in headline"
+      },
+      {
+        "name": "whenPoints",
+        "type": "array",
+        "of": [
+          {
+            "name": "string",
+            "type": "string"
+          }
+        ],
+        "title": "When to bring us in"
+      },
+      {
+        "name": "faqHeadline",
+        "type": "string",
+        "title": "Questions headline"
+      },
+      {
+        "name": "faqs",
+        "type": "array",
+        "of": [
+          {
+            "name": "faqItem",
+            "type": "faqItem",
+            "title": "Question and answer"
+          }
+        ],
+        "title": "Questions"
+      },
+      {
+        "name": "enquiryHeadline",
+        "type": "string",
+        "title": "Enquiry headline"
+      },
+      {
+        "name": "enquiryBody",
+        "type": "text",
+        "title": "Enquiry introduction"
+      },
+      {
+        "name": "seo",
+        "type": "seo",
+        "title": "Search and sharing"
+      }
+    ],
+    "title": "Services",
+    "options": {},
+    "orderings": [
+      {
+        "by": [
+          {
+            "field": "title",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.title"
+          }
+        },
+        "name": "title",
+        "title": "Title"
+      }
+    ]
+  },
+  {
+    "name": "principle",
+    "type": "object",
+    "fields": [
+      {
+        "name": "title",
+        "type": "string",
+        "title": "Headline"
+      },
+      {
+        "name": "copy",
+        "type": "text",
+        "title": "Copy"
+      }
+    ],
+    "title": "Studio principle",
+    "options": {},
+    "orderings": [
+      {
+        "by": [
+          {
+            "field": "title",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.title"
+          }
+        },
+        "name": "title",
+        "title": "Title"
+      }
+    ]
+  },
+  {
+    "name": "studioPage",
+    "type": "document",
+    "fields": [
+      {
+        "name": "headline",
+        "type": "string",
+        "title": "Headline"
+      },
+      {
+        "name": "introduction",
+        "type": "text",
+        "title": "Introduction"
+      },
+      {
+        "name": "principles",
+        "type": "array",
+        "of": [
+          {
+            "name": "principle",
+            "type": "principle",
+            "title": "Studio principle"
+          }
+        ],
+        "title": "What clients can expect"
+      },
+      {
+        "name": "body",
+        "type": "array",
+        "of": [
+          {
+            "name": "block",
+            "type": "block",
+            "marks": {
+              "decorators": [
+                {
+                  "title": "Strong",
+                  "value": "strong",
+                  "i18nTitleKey": "inputs.portable-text.decorator.strong"
+                },
+                {
+                  "title": "Italic",
+                  "value": "em",
+                  "i18nTitleKey": "inputs.portable-text.decorator.emphasis"
+                },
+                {
+                  "title": "Code",
+                  "value": "code",
+                  "i18nTitleKey": "inputs.portable-text.decorator.code"
+                },
+                {
+                  "title": "Underline",
+                  "value": "underline",
+                  "i18nTitleKey": "inputs.portable-text.decorator.underline"
+                },
+                {
+                  "title": "Strike",
+                  "value": "strike-through",
+                  "i18nTitleKey": "inputs.portable-text.decorator.strike-through"
+                }
+              ],
+              "annotations": [
+                {
+                  "name": "link",
+                  "type": "object",
+                  "fields": [
+                    {
+                      "name": "href",
+                      "type": "url",
+                      "title": "Link",
+                      "description": "A valid web, email, phone, or relative link."
+                    }
+                  ],
+                  "title": "Link",
+                  "options": {
+                    "modal": {
+                      "type": "popover"
+                    }
+                  },
+                  "orderings": []
+                }
+              ]
+            },
+            "options": {}
+          }
+        ],
+        "title": "Additional copy"
+      },
+      {
+        "name": "seo",
+        "type": "seo",
+        "title": "Search and sharing"
+      }
+    ],
+    "title": "Studio page",
+    "options": {},
+    "orderings": [
+      {
+        "by": [
+          {
+            "field": "headline",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.headline"
+          }
+        },
+        "name": "headline",
+        "title": "Headline"
+      }
+    ]
+  },
+  {
+    "name": "socialLink",
+    "type": "object",
+    "fields": [
+      {
+        "name": "platform",
+        "type": "string",
+        "title": "Platform",
+        "options": {
+          "list": [
+            {
+              "title": "Instagram",
+              "value": "instagram"
+            },
+            {
+              "title": "LinkedIn",
+              "value": "linkedin"
+            },
+            {
+              "title": "Facebook",
+              "value": "facebook"
+            },
+            {
+              "title": "TikTok",
+              "value": "tiktok"
+            },
+            {
+              "title": "X / Twitter",
+              "value": "x"
+            },
+            {
+              "title": "YouTube",
+              "value": "youtube"
+            },
+            {
+              "title": "Other",
+              "value": "other"
+            }
+          ]
+        }
+      },
+      {
+        "name": "label",
+        "type": "string",
+        "title": "Label",
+        "description": "Only needed if platform is \"Other\""
+      },
+      {
+        "name": "url",
+        "type": "url",
+        "title": "URL"
+      }
+    ],
+    "title": "Social Link",
+    "options": {},
+    "orderings": [
+      {
+        "by": [
+          {
+            "field": "label",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.label"
+          }
+        },
+        "name": "label",
+        "title": "Label"
+      }
+    ]
+  },
+  {
+    "name": "contactPage",
+    "type": "document",
+    "fields": [
+      {
+        "name": "headline",
+        "type": "string",
+        "title": "Headline"
+      },
+      {
+        "name": "introduction",
+        "type": "text",
+        "title": "Introduction"
+      },
+      {
+        "name": "email",
+        "type": "string",
+        "title": "Email address"
+      },
+      {
+        "name": "phone",
+        "type": "string",
+        "title": "Telephone"
+      },
+      {
+        "name": "formSuccessMessage",
+        "type": "text",
+        "title": "Form success message"
+      },
+      {
+        "name": "seo",
+        "type": "seo",
+        "title": "Search and sharing"
+      }
+    ],
+    "title": "Contact page",
+    "options": {},
+    "orderings": [
+      {
+        "by": [
+          {
+            "field": "headline",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.headline"
+          }
+        },
+        "name": "headline",
+        "title": "Headline"
+      },
+      {
+        "by": [
+          {
+            "field": "email",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.email"
+          }
+        },
+        "name": "email",
+        "title": "Email"
+      },
+      {
+        "by": [
+          {
+            "field": "phone",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.phone"
+          }
+        },
+        "name": "phone",
+        "title": "Phone"
+      }
+    ]
+  },
+  {
+    "name": "navLink",
+    "type": "object",
+    "fields": [
+      {
+        "name": "label",
+        "type": "string",
+        "title": "Label"
+      },
+      {
+        "name": "path",
+        "type": "string",
+        "title": "Page path"
+      }
+    ],
+    "title": "Navigation link",
+    "options": {},
+    "orderings": [
+      {
+        "by": [
+          {
+            "field": "label",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.label"
+          }
+        },
+        "name": "label",
+        "title": "Label"
+      }
+    ]
+  },
+  {
+    "name": "servicesPage",
+    "type": "document",
+    "fields": [
+      {
+        "name": "headline",
+        "type": "string",
+        "title": "Headline"
+      },
+      {
+        "name": "introduction",
+        "type": "text",
+        "title": "Introduction"
+      },
+      {
+        "name": "approach",
+        "type": "array",
+        "of": [
+          {
+            "name": "block",
+            "type": "block",
+            "marks": {
+              "decorators": [
+                {
+                  "title": "Strong",
+                  "value": "strong",
+                  "i18nTitleKey": "inputs.portable-text.decorator.strong"
+                },
+                {
+                  "title": "Italic",
+                  "value": "em",
+                  "i18nTitleKey": "inputs.portable-text.decorator.emphasis"
+                },
+                {
+                  "title": "Code",
+                  "value": "code",
+                  "i18nTitleKey": "inputs.portable-text.decorator.code"
+                },
+                {
+                  "title": "Underline",
+                  "value": "underline",
+                  "i18nTitleKey": "inputs.portable-text.decorator.underline"
+                },
+                {
+                  "title": "Strike",
+                  "value": "strike-through",
+                  "i18nTitleKey": "inputs.portable-text.decorator.strike-through"
+                }
+              ],
+              "annotations": [
+                {
+                  "name": "link",
+                  "type": "object",
+                  "fields": [
+                    {
+                      "name": "href",
+                      "type": "url",
+                      "title": "Link",
+                      "description": "A valid web, email, phone, or relative link."
+                    }
+                  ],
+                  "title": "Link",
+                  "options": {
+                    "modal": {
+                      "type": "popover"
+                    }
+                  },
+                  "orderings": []
+                }
+              ]
+            },
+            "options": {}
+          }
+        ],
+        "title": "Approach"
+      },
+      {
+        "name": "featuredServices",
+        "type": "array",
+        "of": [
+          {
+            "name": "reference",
+            "type": "reference",
+            "to": [
+              {
+                "type": "service"
+              }
+            ],
+            "title": "Reference to services"
+          }
+        ],
+        "title": "Services"
+      },
+      {
+        "name": "seo",
+        "type": "seo",
+        "title": "Search and sharing"
+      }
+    ],
+    "title": "Services page",
+    "options": {},
+    "orderings": [
+      {
+        "by": [
+          {
+            "field": "headline",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.headline"
+          }
+        },
+        "name": "headline",
+        "title": "Headline"
+      }
+    ]
+  },
+  {
+    "name": "mediaItem",
+    "type": "object",
+    "fields": [
+      {
+        "name": "kind",
+        "type": "string",
+        "title": "Media type",
+        "options": {
+          "list": [
+            {
+              "title": "Image",
+              "value": "image"
+            },
+            {
+              "title": "Vimeo video",
+              "value": "vimeo"
+            },
+            {
+              "title": "Skiv video",
+              "value": "skiv"
+            }
+          ],
+          "layout": "radio"
+        },
+        "initialValue": "image"
+      },
+      {
+        "name": "image",
+        "type": "image",
+        "title": "Image",
+        "options": {
+          "hotspot": true
+        }
+      },
+      {
+        "name": "vimeoId",
+        "type": "string",
+        "title": "Vimeo video ID"
+      },
+      {
+        "name": "skivId",
+        "type": "string",
+        "title": "Skiv video ID"
+      },
+      {
+        "name": "altText",
+        "type": "string",
+        "title": "Alternative text"
+      },
+      {
+        "name": "caption",
+        "type": "string",
+        "title": "Caption"
+      },
+      {
+        "name": "format",
+        "type": "string",
+        "title": "Display format",
+        "options": {
+          "list": [
+            {
+              "title": "Standard",
+              "value": "standard"
+            },
+            {
+              "title": "Full width",
+              "value": "full"
+            },
+            {
+              "title": "Half width",
+              "value": "half"
+            },
+            {
+              "title": "Laptop",
+              "value": "laptop"
+            },
+            {
+              "title": "Phone",
+              "value": "phone"
+            },
+            {
+              "title": "Instagram grid",
+              "value": "instagram-grid"
+            }
+          ]
+        },
+        "initialValue": "standard"
+      }
+    ],
+    "title": "Gallery item",
+    "options": {},
+    "orderings": [
+      {
+        "by": [
+          {
+            "field": "caption",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.caption"
+          }
+        },
+        "name": "caption",
+        "title": "Caption"
+      }
+    ]
+  },
+  {
+    "name": "processStep",
+    "type": "object",
+    "fields": [
+      {
+        "name": "title",
+        "type": "string",
+        "title": "Step title"
+      },
+      {
+        "name": "description",
+        "type": "text",
+        "title": "Description"
+      }
+    ],
+    "title": "Process step",
+    "options": {},
+    "orderings": [
+      {
+        "by": [
+          {
+            "field": "title",
+            "direction": "asc"
+          }
+        ],
+        "i18n": {
+          "title": {
+            "ns": "studio",
+            "key": "default-orderings.title"
+          }
+        },
+        "name": "title",
+        "title": "Title"
+      }
+    ]
+  }
+]
