@@ -1,5 +1,16 @@
 # Sanity workflow for the 2026 visual rebuild
 
+## Editor source recovery — October 2026
+
+The standalone Studio source now lives in `studio/`. Its CLI configuration targets
+the existing application `gbcuwynmh0ayy4bvbioyl05c` and the existing production
+dataset. Use the CLI from that directory to build/deploy this Studio; the
+MCP-managed schema under the same workspace name is a separate source.
+
+See `studio/README.md` for recovery provenance, validation, deployment order and
+the optional gallery row editor. Existing gallery content remains in place.
+The historical rebuild notes below describe the state before this recovery.
+
 ## Sources of truth
 
 - The recovered live website source is the copy/content source of truth during the redesign.

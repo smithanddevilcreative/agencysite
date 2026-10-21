@@ -1,3 +1,5 @@
+import { renderGalleryRows, type GalleryRow } from "./gallery-rows";
+import { videoEmbedUrl } from "./gallery-media";
 import { sanityQuery } from "@/lib/sanity";
 import { projects as fallbackCards, type ProjectCard } from "@/lib/projects";
 import { projectPages, type ProjectPageData } from "@/lib/project-pages";
@@ -30,6 +32,7 @@ type SanityProject = {
   heroVimeoId?: string | null;
   heroSkivId?: string | null;
   gallery?: SanityGalleryItem[] | null;
+  galleryRows?: GalleryRow[] | null;
   seo?: {
     title?: string | null;
     description?: string | null;
@@ -61,6 +64,10 @@ const PROJECT_QUERY = `*[_type == "project" && slug.current == $slug][0]{
   heroVideoProvider,
   heroVimeoId,
   heroSkivId,
+  galleryRows[]{
+    _key, internalName, layout, spaceAbove, spaceBelow, sideMargins,
+    items[]{_key, internalName, kind, altText, caption, vimeoId, skivId, "imageUrl": image.asset->url}
+  },
   gallery[]{
     kind,
     format,
@@ -104,12 +111,10 @@ function heroHtml(project: SanityProject, fallback?: ProjectPageData) {
   const id = provider === "vimeo" ? project.heroVimeoId : provider === "skiv" ? project.heroSkivId : null;
   if (!provider || !id) return fallback?.heroHtml || "";
 
-  const src =
-    provider === "vimeo"
-      ? `https://player.vimeo.com/video/${id}?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0`
-      : `https://skiv.com/embed/${id}?search=0&links=0&logo=0&title=0&autoplay=1&loop=1&volume=0&style=no-controls`;
+  const src = videoEmbedUrl(provider, id);
+  if (!src) return fallback?.heroHtml || "";
 
-  return `<div class="StudyVideoEmbed-module__8FDA2W__wrap"><iframe class="StudyVideoEmbed-module__8FDA2W__frame" src="${src}" title="${project.title || fallback?.title || "Project"} film" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
+  return `<div class="StudyVideoEmbed-module__8FDA2W__wrap"><iframe class="StudyVideoEmbed-module__8FDA2W__frame" src="${escapeHtml(src)}" title="${project.title || fallback?.title || "Project"} film" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
 }
 
 function escapeHtml(value: string) {
@@ -121,6 +126,8 @@ function escapeHtml(value: string) {
 }
 
 function galleryHtml(project: SanityProject, fallback?: ProjectPageData) {
+  const rows = renderGalleryRows(project.galleryRows, project.title || fallback?.title || "Project");
+  if (rows) return rows;
   if (!project.gallery?.length) return fallback?.galleryHtml || "";
 
   const rendered = project.gallery.map((item, index) => {
@@ -137,12 +144,10 @@ function galleryHtml(project: SanityProject, fallback?: ProjectPageData) {
     const id = item.kind === "vimeo" ? item.vimeoId : item.kind === "skiv" ? item.skivId : null;
     if (!id) return "";
 
-    const src =
-      item.kind === "vimeo"
-        ? `https://player.vimeo.com/video/${id}?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0`
-        : `https://skiv.com/embed/${id}?search=0&links=0&logo=0&title=0&autoplay=1&loop=1&volume=0&style=no-controls`;
+    const src = videoEmbedUrl(item.kind, id);
+    if (!src) return "";
 
-    return `<div class="study-module__vTcG6G__slot${half}"><div class="RevealMedia-module__8VxjUa__frame"><div class="StudyVideoEmbed-module__8FDA2W__wrap"><iframe class="StudyVideoEmbed-module__8FDA2W__frame" src="${src}" title="${title}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div>${caption}</div>`;
+    return `<div class="study-module__vTcG6G__slot${half}"><div class="RevealMedia-module__8VxjUa__frame"><div class="StudyVideoEmbed-module__8FDA2W__wrap"><iframe class="StudyVideoEmbed-module__8FDA2W__frame" src="${escapeHtml(src)}" title="${title}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div>${caption}</div>`;
   }).join("");
 
   return rendered || fallback?.galleryHtml || "";

@@ -4913,3 +4913,23 @@ input[type="submit"]{
 /* Enquiry qualification controls */
 .EnquiryForm-module__ZxCRSG__field select { appearance:none; width:100%; min-height:48px; padding:12px 16px; border:1px solid #bdbdbd; border-radius:0; background-color:#fff; color:#171717; font:inherit; cursor:pointer; }
 .EnquiryForm-module__ZxCRSG__field select:focus-visible { outline:2px solid #cd2027; outline-offset:2px; }
+/* Explicit CMS gallery rows. Scope overrides to new rows; legacy galleries keep their layout. */
+.study-module__vTcG6G__gallery:has(> .sd-gallery-rows){display:block!important;grid-template-columns:none!important;gap:0!important}
+.study-module__vTcG6G__gallery:has(> .sd-gallery-rows)::before{display:none!important}
+.study-module__vTcG6G__gallery > .sd-gallery-rows{display:block!important;grid-column:1/-1!important;margin:0!important;max-width:100%;width:100%}
+.sd-gallery-row{display:grid;grid-template-columns:minmax(0,1fr);gap:clamp(12px,2vw,24px);padding:var(--row-above,0) var(--row-sides,clamp(12px,2vw,24px)) var(--row-below,0)}
+.sd-gallery-row[data-layout="pair"]{grid-template-columns:repeat(2,minmax(0,1fr))}
+.sd-gallery-row[data-above="small"]{--row-above:clamp(8px,1vw,16px)}
+.sd-gallery-row[data-above="medium"]{--row-above:clamp(16px,2vw,32px)}
+.sd-gallery-row[data-above="large"]{--row-above:clamp(24px,4vw,64px)}
+.sd-gallery-row[data-below="small"]{--row-below:clamp(8px,1vw,16px)}
+.sd-gallery-row[data-below="medium"]{--row-below:clamp(16px,2vw,32px)}
+.sd-gallery-row[data-below="large"]{--row-below:clamp(24px,4vw,64px)}
+.sd-gallery-row[data-margins="wide"]{--row-sides:clamp(20px,5vw,64px)}
+.sd-gallery-row[data-margins="edge"]{--row-sides:0px}
+.sd-gallery-row > .sd-gallery-media{margin:0;min-width:0;align-self:start}
+.study-module__vTcG6G__gallery .sd-gallery-row > .sd-gallery-media img{display:block;width:100%!important;height:auto!important;max-width:100%;object-fit:contain!important;aspect-ratio:auto!important;border-radius:0;transform:none}
+.sd-gallery-video{position:relative;aspect-ratio:16/9;width:100%;overflow:hidden;background:#000}
+.sd-gallery-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.sd-gallery-caption{font-family:var(--font-sans);font-size:11px;line-height:1.5;margin-top:12px;opacity:.65}
+@media(max-width:640px){.sd-gallery-row[data-layout="pair"]{grid-template-columns:minmax(0,1fr)}}
