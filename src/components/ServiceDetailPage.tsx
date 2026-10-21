@@ -57,7 +57,7 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
         "@type": "Service",
         name: data.kicker,
         description: data.description,
-        url: `https://www.smithanddevil.com/services/${data.slug}`,
+        url: `https://smithanddevil.com/services/${data.slug}`,
         provider: { "@type": "Organization", name: "Smith & Devil" },
       },
       {
@@ -67,13 +67,13 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
             "@type": "ListItem",
             position: 1,
             name: "Services",
-            item: "https://www.smithanddevil.com/services",
+            item: "https://smithanddevil.com/services",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: data.kicker,
-            item: `https://www.smithanddevil.com/services/${data.slug}`,
+            item: `https://smithanddevil.com/services/${data.slug}`,
           },
         ],
       },
@@ -152,6 +152,25 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
                 </div>
               ))}
               <p><strong>{data.comparison.closing}</strong></p>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {data.slug === "mini-golf" && (
+        <section className={c.fitSection} aria-labelledby="mini-golf-investment">
+          <div className={`${c.inner} ${c.fitGrid}`}>
+            <div>
+              <p className={c.sectionLabel}>Project investment</p>
+              <h2 className={c.displayHeading} id="mini-golf-investment">Plan the investment before the course.</h2>
+            </div>
+            <div className={c.copyColumn}>
+              <p><strong>9-hole course design — from £40,000.</strong></p>
+              <p><strong>18-hole course design — typically £68,000.</strong></p>
+              <p>These are indicative design investments for commercial projects, developed through to construction-ready drawings. The final fee depends on the site, brief, complexity and scope.</p>
+              <p>Construction is quoted separately. Site preparation, materials, lighting, theming, interactive elements and moving parts all affect the total build cost. We will discuss the likely overall investment before developing a detailed proposal.</p>
+              <p>We also help with naming, branding, websites and launch marketing where your project needs them. You can commission course design on its own.</p>
+              <a href="#project-enquiry" className={c.textLink}>Discuss your project →</a>
             </div>
           </div>
         </section>
