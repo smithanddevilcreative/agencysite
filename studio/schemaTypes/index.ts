@@ -82,12 +82,25 @@ const base = recoveredTypes;
 export const schemaTypes: SchemaTypeDefinition[] = [
   ...base.filter(type => type.name !== 'mediaItem').map(type => {
     const fields: import('sanity').FieldDefinition[] = type.fields.map(field => {
+      if (type.name === 'project' && field.name === 'leadImage') {
+        // Keep the existing asset reference, but hide Sanity's complex crop/hotspot editor.
+        return {...field, options: {hotspot: false}, description: 'Choose an image below, then set how it fills the case-study lead area.'};
+      }
       if (type.name === 'project' && field.name === 'gallery') {
         return {...field, title: 'Existing gallery', description: 'Used when Gallery rows is empty. Existing items are preserved; use Gallery rows for explicit layout and spacing.'};
       }
       return field;
     });
     if (type.name === 'project') {
+      fields.splice(fields.findIndex(field => field.name === 'leadImage') + 1, 0, defineField({
+        name: 'leadImageFit', title: 'Lead image display', type: 'string',
+        description: 'Full bleed fills the lead image area edge to edge. Fit entire image shows the whole photograph.',
+        initialValue: 'cover',
+        options: {layout: 'radio', list: [
+          {title: 'Full bleed', value: 'cover'},
+          {title: 'Fit entire image', value: 'contain'},
+        ]},
+      }));
       fields.splice(fields.findIndex(field => field.name === 'gallery'), 0, defineField({
         name: 'galleryRows', title: 'Gallery rows — layout and spacing', type: 'array',
         description: 'Add a row, choose one item or two side by side, then add images or videos. Drag rows to set the page order. Once a complete row is added, these rows replace the existing gallery on the website.',
