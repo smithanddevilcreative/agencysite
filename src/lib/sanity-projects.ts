@@ -28,6 +28,7 @@ type SanityProject = {
   cardImageUrl?: string | null;
   hoverImageUrl?: string | null;
   leadImageUrl?: string | null;
+  leadImageFit?: "cover" | "contain" | null;
   heroVideoProvider?: "vimeo" | "skiv" | null;
   heroVimeoId?: string | null;
   heroSkivId?: string | null;
@@ -61,6 +62,7 @@ const PROJECT_QUERY = `*[_type == "project" && slug.current == $slug][0]{
   "cardImageUrl": cardImage.asset->url,
   "hoverImageUrl": hoverImage.asset->url,
   "leadImageUrl": leadImage.asset->url,
+  leadImageFit,
   heroVideoProvider,
   heroVimeoId,
   heroSkivId,
@@ -173,7 +175,7 @@ export async function getSanityProject(slug: string): Promise<{
       .map(({ value, label }) => ({ value, label }));
 
     const leadHtml = item.leadImageUrl
-      ? `<img alt="${title}" width="1600" height="1100" style="color:transparent" src="${item.leadImageUrl}"/>`
+      ? `<img class="sd-lead-image--${item.leadImageFit === "contain" ? "contain" : "cover"}" alt="${escapeHtml(title)}" width="1600" height="1100" style="color:transparent" src="${escapeHtml(item.leadImageUrl)}"/>`
       : fallback?.leadHtml || "";
 
     const project: ProjectPageData = {
