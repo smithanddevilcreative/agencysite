@@ -4933,3 +4933,9 @@ input[type="submit"]{
 .sd-gallery-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .sd-gallery-caption{font-family:var(--font-sans);font-size:11px;line-height:1.5;margin-top:12px;opacity:.65}
 @media(max-width:640px){.sd-gallery-row[data-layout="pair"]{grid-template-columns:minmax(0,1fr)}}
+
+/* Sanity case-study lead image: simple full-bleed / fit-entire control. */
+.study-module__vTcG6G__lead:has(img.sd-lead-image--cover){aspect-ratio:3 / 2;overflow:hidden!important;}
+.study-module__vTcG6G__lead img.sd-lead-image--cover{width:100%!important;height:100%!important;object-fit:cover!important;display:block!important;}
+.study-module__vTcG6G__lead:has(img.sd-lead-image--contain){height:auto!important;aspect-ratio:auto!important;}
+.study-module__vTcG6G__lead img.sd-lead-image--contain{width:100%!important;height:auto!important;object-fit:contain!important;display:block!important;}
