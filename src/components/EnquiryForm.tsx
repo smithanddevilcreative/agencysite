@@ -130,7 +130,15 @@ export function EnquiryForm({ service = "General" }: { service?: string }) {
       </button>
       {error ? <p role="alert" className="EnquiryForm-module__ZxCRSG__formNote">{error}</p> : null}
       <p className="EnquiryForm-module__ZxCRSG__formNote">
-        Or email <a href="mailto:hello@smithanddevil.com">hello@smithanddevil.com</a>
+        <a
+          href="https://calendly.com/hello-zkdj"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => trackGA4Event("book_call_click", { enquiry_service: service, form_location: window.location.pathname })}
+        >
+          Book a call <span aria-hidden="true">↗</span>
+        </a>
+        {" or email "}<a href="mailto:hello@smithanddevil.com">hello@smithanddevil.com</a>
       </p>
     </form>
   );
