@@ -80,7 +80,8 @@ export function EnquiryForm({ service = "General" }: { service?: string }) {
         <label className="EnquiryForm-module__ZxCRSG__field">
           <span>What budget do you have in mind for our help?</span>
           <select name="project_investment" defaultValue="" aria-describedby="enquiry-budget-note">
-            <option value="">Still working this out</option>
+            <option value="" disabled>Choose a budget</option>
+            <option>Still working this out</option>
             <option>Under £10,000</option>
             <option>£10,000–£25,000</option>
             <option>£25,000–£50,000</option>
@@ -109,7 +110,8 @@ export function EnquiryForm({ service = "General" }: { service?: string }) {
           <label className="EnquiryForm-module__ZxCRSG__field EnquiryForm-module__ZxCRSG__fieldWide">
             <span>What would you like our help with?</span>
             <select name="project_interest" defaultValue="">
-              <option value="">Not decided yet</option>
+              <option value="" disabled>See options</option>
+              <option>Not decided yet</option>
               <option>Concept development</option>
               <option>Brand strategy and identity</option>
               <option>Website design and development</option>
