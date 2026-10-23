@@ -3,6 +3,7 @@
 import { FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
 import { trackGA4Event } from "@/lib/analytics";
+import styles from "./EnquiryContactActions.module.css";
 
 export function EnquiryForm({ service = "General" }: { service?: string }) {
   const router = useRouter();
@@ -38,7 +39,7 @@ export function EnquiryForm({ service = "General" }: { service?: string }) {
 
   return (
     <form
-      className="EnquiryForm-module__ZxCRSG__form"
+      className={`EnquiryForm-module__ZxCRSG__form ${styles.form}`}
       name="project-enquiry"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
@@ -129,17 +130,18 @@ export function EnquiryForm({ service = "General" }: { service?: string }) {
         {submitting ? "Sending…" : "Send project enquiry"}<span aria-hidden="true">→</span>
       </button>
       {error ? <p role="alert" className="EnquiryForm-module__ZxCRSG__formNote">{error}</p> : null}
-      <p className="EnquiryForm-module__ZxCRSG__formNote">
+      <div className={styles.actions}>
         <a
+          className={styles.callLink}
           href="https://calendly.com/hello-zkdj"
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => trackGA4Event("book_call_click", { enquiry_service: service, form_location: window.location.pathname })}
         >
-          Book a call <span aria-hidden="true">↗</span>
+          Book a call <span aria-hidden="true">→</span>
         </a>
-        {" or email "}<a href="mailto:hello@smithanddevil.com">hello@smithanddevil.com</a>
-      </p>
+        <a className={styles.emailLink} href="mailto:hello@smithanddevil.com">Send an email</a>
+      </div>
     </form>
   );
 }
