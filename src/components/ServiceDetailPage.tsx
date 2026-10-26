@@ -216,7 +216,7 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
 
       <section className={c.caseStudy}>
         <div className={c.inner}>
-          <div className={`${c.caseMedia}${data.caseStudy.image.src.includes("/t2-design-solutions/") ? " sd-service-case-media--landscape" : ""}`}>
+          <div className={`${c.caseMedia}${(data.caseStudy.image.src.includes("/t2-design-solutions/") || (data.slug === "venue-concept-development" && data.caseStudy.image.src.includes("/fortune-favours/"))) ? " sd-service-case-media--landscape" : ""}`}>
             <img alt={data.caseStudy.image.alt} loading="lazy" width="1400" height="900" src={data.caseStudy.image.src} />
           </div>
           <div className={`Reveal-module__U2Tp6W__base ${c.caseCopy}`}>
