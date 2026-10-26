@@ -1176,7 +1176,7 @@ export const servicePages: Record<string, ServicePageData> = {
         "title": "Mighty Adventures",
         "href": "/work/mighty-adventures/",
         "image": {
-          "src": "/images/work/mighty-adventures/02.webp",
+          "src": "/images/mighty-adventures.jpg",
           "alt": "The dinosaur-themed world created by Smith & Devil for Mighty Adventures"
         },
         "description": "A dinosaur-themed family experience across three venues."
