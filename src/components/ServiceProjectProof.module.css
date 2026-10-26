@@ -1,4 +1,5 @@
 .section {
+  scroll-margin-top: 110px;
   padding: clamp(36px, 5vw, 72px) 0;
 }
 .heading {
