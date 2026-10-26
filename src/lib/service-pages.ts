@@ -162,8 +162,8 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "caseStudy": {
       "image": {
-        "src": "/images/work/fortune-favours/02.webp",
-        "alt": "Fortune Favours entertainment concept and brand"
+        "src": "/images/work/fortune-favours/03.webp",
+        "alt": "Fortune Favours venue concept visualisation"
       },
       "label": "Relevant proof",
       "title": "A concept built to become a business.",
