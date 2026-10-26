@@ -9,6 +9,7 @@ export type ServicePageData =
   actions: { className: string; href: string; label: string }[];
   heroImage: { src: string; alt: string };
   proofLine: string;
+  featuredProjects?: { title: string; href: string; image: { src: string; alt: string }; description: string }[];
   argument: { label: string; title: string; paragraphs: string[] };
   comparison?: { label: string; title: string; intro: string; items: { title: string; body: string }[]; closing: string };
   capabilities: { label: string; title: string; items: { number: string; title: string; body: string }[] };
@@ -939,11 +940,11 @@ export const servicePages: Record<string, ServicePageData> = {
   },
   "mini-golf": {
     "slug": "mini-golf",
-    "title": "Mini Golf Design & Build UK | Smith & Devil",
-    "description": "Commercial mini golf course design from £40,000 for nine holes. Premium 9- and 18-hole mini golf design, experience development and separately quoted construction.",
+    "title": "Mini Golf Course Designers & Builders UK | Smith & Devil",
+    "description": "Premium mini golf course design and build in the UK and internationally. Explore our work for Levels Prague, Pop Playrooms and Mighty Adventures.",
     "kicker": "Mini Golf Design & Build",
-    "heroTitle": "Premium mini golf, designed to perform.",
-    "standfirst": "Commercial mini golf course design from £40,000 for nine holes, with 18-hole design typically £68,000. Construction is costed separately. We create distinctive courses for operators and developers, with branding and launch support when needed.",
+    "heroTitle": "Premium mini golf course design.",
+    "standfirst": "We design and build distinctive mini golf courses in the UK and internationally. From Levels Prague to Pop Playrooms, our work brings together original themes, memorable environments and a game worth playing.",
     "actions": [
       {
         "className": "service-module__T4otXW__primaryAction",
@@ -952,8 +953,8 @@ export const servicePages: Record<string, ServicePageData> = {
       },
       {
         "className": "service-module__T4otXW__secondaryAction",
-        "href": "/work/levels",
-        "label": "See our mini golf work"
+        "href": "#mini-golf-projects",
+        "label": "Explore our mini golf projects"
       }
     ],
     "heroImage": {
@@ -966,7 +967,7 @@ export const servicePages: Record<string, ServicePageData> = {
       "title": "A good course does more than fill a room.",
       "paragraphs": [
         "Mini golf can be a destination, a high-performing secondary spend or the activity that gives an entire venue its identity. The commercial role changes the design.",
-        "We start with the audience, site and business model, then shape the course around flow, capacity, dwell time, replay value and the wider customer experience. The result should be fun to play, distinctive enough to remember and practical enough to operate every day."
+        "We design indoor and outdoor courses around the audience, site and business model. Player flow, capacity, replay value and the wider venue experience shape every decision."
       ]
     },
     "comparison": {
@@ -1126,6 +1127,10 @@ export const servicePages: Record<string, ServicePageData> = {
           "answer": "Yes. We design indoor, outdoor and mixed-format courses. The site conditions, audience and operating model determine the materials, technical approach and level of theming."
         },
         {
+          "question": "Do you work on mini golf projects outside the UK?",
+          "answer": "Yes. We work with UK and international operators, developers and design teams. Our 18-hole course at Levels Prague brings together course design, theming and build delivery inside a major entertainment venue."
+        },
+        {
           "question": "Can you work with an architect or existing contractor?",
           "answer": "Yes. We can lead the mini golf creative and experience work inside a wider design team, or bring trusted specialists into the project where needed."
         },
@@ -1147,7 +1152,36 @@ export const servicePages: Record<string, ServicePageData> = {
       "label": "Start a conversation",
       "title": "Build a course people choose on purpose.",
       "intro": "Tell us about the site, audience and commercial ambition. We will help shape the right mini golf experience around them."
-    }
+    },
+    "featuredProjects": [
+      {
+        "title": "Levels Prague",
+        "href": "/work/levels/",
+        "image": {
+          "src": "/images/work/levels/05.webp",
+          "alt": "Smith & Devil’s 18-hole indoor mini golf course at Levels Prague"
+        },
+        "description": "An 18-hole course inside Prague’s multi-activity entertainment venue."
+      },
+      {
+        "title": "Pop Playrooms",
+        "href": "/work/pop-playrooms/",
+        "image": {
+          "src": "/images/work/pop-playrooms/10.webp",
+          "alt": "Music-inspired mini golf designed by Smith & Devil for Pop Playrooms"
+        },
+        "description": "Music-inspired mini golf in Wembley and Kingston upon Thames."
+      },
+      {
+        "title": "Mighty Adventures",
+        "href": "/work/mighty-adventures/",
+        "image": {
+          "src": "/images/work/mighty-adventures/02.webp",
+          "alt": "The dinosaur-themed world created by Smith & Devil for Mighty Adventures"
+        },
+        "description": "A dinosaur-themed family experience across three venues."
+      }
+    ]
   },
   "themed-experiences": {
     "slug": "themed-experiences",
