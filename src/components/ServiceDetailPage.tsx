@@ -127,9 +127,9 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
 
 
       {data.featuredProjects && (
-        <section className={proofStyles.section} id="mini-golf-projects" aria-labelledby="mini-golf-projects-title">
+        <section className={proofStyles.section} id={`${data.slug}-projects`} aria-labelledby={`${data.slug}-projects-title`}>
           <div className={c.inner}>
-            <h2 className={proofStyles.heading} id="mini-golf-projects-title">Explore our mini golf projects</h2>
+            <h2 className={proofStyles.heading} id={`${data.slug}-projects-title`}>{data.slug === "mini-golf" ? "Explore our mini golf projects" : "Explore our venue and experience projects"}</h2>
             <div className={proofStyles.grid}>
               {data.featuredProjects.map((project) => (
                 <Link className={proofStyles.card} href={project.href} key={project.href}>
