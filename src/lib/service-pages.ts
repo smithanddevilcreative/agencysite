@@ -964,7 +964,7 @@ export const servicePages: Record<string, ServicePageData> = {
     "proofLine": "Our 18-hole course at Levels Prague recorded 13,000 rounds in its first three months.",
     "argument": {
       "label": "Why it matters",
-      "title": "A good course does more than fill a room.",
+      "title": "Mini golf designed to drive revenue.",
       "paragraphs": [
         "Mini golf can be a destination, a high-performing secondary spend or the activity that gives an entire venue its identity. The commercial role changes the design.",
         "We design indoor and outdoor courses around the audience, site and business model. Player flow, capacity, replay value and the wider venue experience shape every decision."
