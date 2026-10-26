@@ -1167,7 +1167,7 @@ export const servicePages: Record<string, ServicePageData> = {
         "title": "Pop Playrooms",
         "href": "/work/pop-playrooms/",
         "image": {
-          "src": "/images/work/pop-playrooms/10.webp",
+          "src": "/images/work/pop-playrooms/03.webp",
           "alt": "Music-inspired mini golf designed by Smith & Devil for Pop Playrooms"
         },
         "description": "Music-inspired mini golf in Wembley and Kingston upon Thames."
