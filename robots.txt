@@ -13,4 +13,4 @@ Allow: /
 User-Agent: GPTBot
 Disallow: /
 
-Sitemap: https://www.smithanddevil.com/sitemap.xml
+Sitemap: https://smithanddevil.com/sitemap.xml
