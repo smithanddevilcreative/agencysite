@@ -1,4 +1,5 @@
 import Link from "next/link";
+import proofStyles from "./ServiceProjectProof.module.css";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import type { ServicePageData } from "@/lib/service-pages";
 import { serviceLinks } from "@/lib/site-data";
@@ -123,6 +124,27 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
           {data.proofLine && <p className={c.proofLine}>{data.proofLine}</p>}
         </div>
       </section>
+
+
+      {data.featuredProjects && (
+        <section className={proofStyles.section} id="mini-golf-projects" aria-labelledby="mini-golf-projects-title">
+          <div className={c.inner}>
+            <h2 className={proofStyles.heading} id="mini-golf-projects-title">Explore our mini golf projects</h2>
+            <div className={proofStyles.grid}>
+              {data.featuredProjects.map((project) => (
+                <Link className={proofStyles.card} href={project.href} key={project.href}>
+                  <div className={proofStyles.media}>
+                    <img src={project.image.src} alt={project.image.alt} width="900" height="600" loading="lazy" />
+                  </div>
+                  <h3 className={proofStyles.title}>{project.title}</h3>
+                  <p className={proofStyles.description}>{project.description}</p>
+                  <span className={proofStyles.link}>View project <span aria-hidden="true">→</span></span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className={c.argument}>
         <div className={`${c.inner} ${c.argumentGrid}`}>
