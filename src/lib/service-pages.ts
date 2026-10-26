@@ -399,7 +399,7 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "enquiry": {
       "label": "Start a conversation",
-      "title": "What would make you proud to put your name on it?",
+      "title": "Give customers a stronger reason to choose you.",
       "intro": "Tell us what is changing in the business and where the current brand is holding it back."
     }
   },
@@ -582,7 +582,7 @@ export const servicePages: Record<string, ServicePageData> = {
     "title": "Web Design for Hospitality & Leisure | Smith & Devil",
     "description": "Digital strategy, UX, website design and build for hospitality, leisure, entertainment and experience-led brands.",
     "kicker": "Digital & Web",
-    "heroTitle": "Turn interest into action.",
+    "heroTitle": "Websites designed to generate bookings, sales and enquiries.",
     "standfirst": "We design and build websites that help people understand the offer, find the right experience and take the next step. Clear strategy, distinctive design and less friction between interest and action.",
     "actions": [
       {
@@ -766,8 +766,8 @@ export const servicePages: Record<string, ServicePageData> = {
     "title": "Venue & Experience Design for Hospitality & Attractions | Smith & Devil",
     "description": "Venue and experience design for hospitality, leisure and attractions. Interior creative direction, branded environments, signage, wayfinding and guest experiences.",
     "kicker": "Venue & Experience Design",
-    "heroTitle": "Design a venue people want to choose.",
-    "standfirst": "Launching a new leisure concept or improving an existing one? We connect the customer proposition to interiors, branding, signage, wayfinding and the moments guests remember.",
+    "heroTitle": "Brand-rich environments designed around your customers.",
+    "standfirst": "We design branded environments for leisure, attractions, competitive socialising and retail. We connect your brand and customer proposition to interiors, signage, wayfinding and the moments customers remember.",
     "actions": [
       {
         "className": "service-module__T4otXW__primaryAction",
@@ -1238,7 +1238,7 @@ export const servicePages: Record<string, ServicePageData> = {
     "proofLine": "Mighty Adventures grew from the first concept to three family mini golf venues in two years.",
     "argument": {
       "label": "Why it matters",
-      "title": "Give the experience a world of its own.",
+      "title": "Give people more reasons to visit—and return.",
       "paragraphs": [
         "The strongest leisure concepts have a clear reason to exist beyond the activity. The story shapes what people expect, how they play, what they remember and why the experience could only belong to that brand.",
         "We build that world around the audience and commercial model. The result may include a proposition, narrative, characters, visual identity, activity design and spatial experience. Every part should support the same customer promise and remain practical to operate."
