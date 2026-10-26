@@ -776,15 +776,15 @@ export const servicePages: Record<string, ServicePageData> = {
       },
       {
         "className": "service-module__T4otXW__secondaryAction",
-        "href": "/work/levels",
+        "href": "#venue-experience-design-projects",
         "label": "See our venue work"
       }
     ],
     "heroImage": {
-      "src": "/images/levels.jpg",
-      "alt": "Guests playing the Smith & Devil-designed mini golf course at Levels Prague"
+      "src": "/images/work/pop-playrooms/03.webp",
+      "alt": "Brand and interior design by Smith & Devil for Pop Playrooms"
     },
-    "proofLine": "The Smith & Devil-designed mini golf course at Levels Prague recorded 13,000 rounds in its first three months.",
+    "proofLine": "Pop Playrooms: brand, mini golf and interior design across Wembley and Kingston upon Thames.",
     "argument": {
       "label": "Why it matters",
       "title": "The space is part of the product.",
@@ -872,22 +872,22 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "caseStudy": {
       "image": {
-        "src": "/images/work/levels/05.webp",
-        "alt": "The interior environment at Levels Prague"
+        "src": "/images/work/pop-playrooms/10.webp",
+        "alt": "Pop Playrooms interior design"
       },
       "label": "Relevant proof",
-      "title": "A destination within a destination.",
+      "title": "Pop Playrooms: one brand across the whole experience.",
       "paragraphs": [
-        "Levels Prague sits inside a 17,000 square metre entertainment centre filled with more than 200 games, simulators, bars, bowling, karaoke and other attractions. Its mini golf needed to earn attention in exceptional company.",
-        "We designed the complete 18-hole course and managed the build and installation of 378 square metres of play. Prague's only indoor mini golf experience recorded 13,000 rounds in its first three months."
+        "Pop Playrooms needed a multi-activity competitive socialising concept anchored by mini golf. We developed the brand, course design and interiors across Wembley and Kingston upon Thames.",
+        "Pop music gave the venues a shared creative direction. Each golf hole places players on the set of a music video, connecting the brand to the game, the environment and the moments customers share."
       ],
       "link": {
-        "href": "/work/levels",
-        "label": "See the Levels Prague project"
+        "href": "/work/pop-playrooms/",
+        "label": "See the Pop Playrooms project"
       },
       "related": [
-        "Pop Playrooms: complete concept and interior design across Wembley and Kingston upon Thames.",
-        "Humbug: brand and interior design support for an immersive London Christmas experience."
+        "Fortune Favours: brand, interior and experience design for a premium entertainment concept.",
+        "Levels Prague: an 18-hole course that recorded 13,000 rounds in its first three months."
       ]
     },
     "fit": {
@@ -936,7 +936,36 @@ export const servicePages: Record<string, ServicePageData> = {
       "label": "Start a conversation",
       "title": "What should happen when people walk through the door?",
       "intro": "Tell us what you’re making, where you’ve got to and what still needs figuring out."
-    }
+    },
+    "featuredProjects": [
+      {
+        "title": "Pop Playrooms",
+        "href": "/work/pop-playrooms/",
+        "image": {
+          "src": "/images/work/pop-playrooms/03.webp",
+          "alt": "The music-inspired environment at Pop Playrooms"
+        },
+        "description": "Brand, mini golf and interiors for a competitive socialising concept across two sites."
+      },
+      {
+        "title": "Fortune Favours",
+        "href": "/work/fortune-favours/",
+        "image": {
+          "src": "/images/work/fortune-favours/03.webp",
+          "alt": "Fortune Favours branded environment concept"
+        },
+        "description": "Brand, interior and experience design for a premium multi-activity entertainment concept."
+      },
+      {
+        "title": "Levels Prague",
+        "href": "/work/levels/",
+        "image": {
+          "src": "/images/work/levels/05.webp",
+          "alt": "The 18-hole mini golf course at Levels Prague"
+        },
+        "description": "An 18-hole attraction that recorded 13,000 rounds in its first three months."
+      }
+    ]
   },
   "mini-golf": {
     "slug": "mini-golf",
