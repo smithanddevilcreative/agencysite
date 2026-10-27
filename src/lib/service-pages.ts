@@ -168,9 +168,9 @@ export const servicePages: Record<string, ServicePageData> = {
       "label": "See Humbug"
     },
     "related": [
-      "Concept development (not launched): Fortune Favours, /work/fortune-favours",
-      "Physical experience and brand: Pop Playrooms, /work/pop-playrooms",
-      "Family entertainment experience: Mighty Adventures, /work/mighty-adventures"
+      "Fortune Favours: proposition and brand for a proposed entertainment concept; the venue did not launch.",
+      "Pop Playrooms: a distinctive brand and physical competitive-socialising experience.",
+      "Mighty Adventures: branded family entertainment and course experience."
     ]
   },
   "fit": {
