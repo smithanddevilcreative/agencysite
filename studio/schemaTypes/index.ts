@@ -92,6 +92,11 @@ export const schemaTypes: SchemaTypeDefinition[] = [
       return field;
     });
     if (type.name === 'project') {
+      fields.splice(0, 0, defineField({
+        name: 'hideFromWebsite', title: 'Hide from website', type: 'boolean',
+        description: 'Removes this project from the Works list and makes its page unavailable (404). Separate from search engine visibility.',
+        initialValue: false,
+      }));
       fields.splice(fields.findIndex(field => field.name === 'leadImage') + 1, 0, defineField({
         name: 'leadImageFit', title: 'Lead image display', type: 'string',
         description: 'Full bleed fills the lead image area edge to edge. Fit entire image shows the whole photograph.',
