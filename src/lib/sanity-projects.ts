@@ -21,6 +21,7 @@ type SanityProject = {
   slug?: string | null;
   category?: string | null;
   displayOrder?: number | null;
+  hideFromWebsite?: boolean | null;
   summary?: string | null;
   services?: string[] | null;
   results?: SanityMetric[] | null;
@@ -41,7 +42,7 @@ type SanityProject = {
   } | null;
 };
 
-const CARD_QUERY = `*[_type == "project" && defined(slug.current)] | order(displayOrder asc, title asc){
+const CARD_QUERY = `*[_type == "project" && defined(slug.current) && hideFromWebsite != true] | order(displayOrder asc, title asc){
   title,
   "slug": slug.current,
   category,
@@ -50,7 +51,7 @@ const CARD_QUERY = `*[_type == "project" && defined(slug.current)] | order(displ
   "hoverImageUrl": hoverImage.asset->url
 }`;
 
-const PROJECT_QUERY = `*[_type == "project" && slug.current == $slug][0]{
+const PROJECT_QUERY = `*[_type == "project" && slug.current == $slug && hideFromWebsite != true][0]{
   title,
   "slug": slug.current,
   category,
@@ -163,7 +164,7 @@ export async function getSanityProject(slug: string): Promise<{
 
   try {
     const item = await sanityQuery<SanityProject | null>(PROJECT_QUERY, { slug });
-    if (!item?.slug) return { project: fallback || null, seo: null };
+    if (!item?.slug) return { project: null, seo: null };
 
     const title = item.title || fallback?.title || slug.replace(/-/g, " ");
     const paragraphs = item.caseText
@@ -201,7 +202,7 @@ export async function getSanityProject(slug: string): Promise<{
 export async function getSanityProjectSlugs(): Promise<string[]> {
   try {
     const items = await sanityQuery<{ slug?: string | null }[]>(
-      `*[_type == "project" && defined(slug.current)] | order(displayOrder asc){"slug": slug.current}`,
+      `*[_type == "project" && defined(slug.current) && hideFromWebsite != true] | order(displayOrder asc){"slug": slug.current}`,
     );
     const slugs = items.map((item) => item.slug).filter((slug): slug is string => Boolean(slug));
     return slugs.length ? slugs : Object.keys(projectPages);
