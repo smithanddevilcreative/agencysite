@@ -1,6 +1,7 @@
+import { Fragment } from "react";
 import Link from "next/link";
 import proofStyles from "./ServiceProjectProof.module.css";
-import { EnquiryForm } from "@/components/EnquiryForm";
+import { EnquiryForm, BookCallLink } from "@/components/EnquiryForm";
 import type { ServicePageData } from "@/lib/service-pages";
 import { serviceLinks } from "@/lib/site-data";
 
@@ -106,13 +107,16 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
             <div>
               <p className={c.standfirst}>{data.standfirst}</p>
               <div className={c.actions}>
-                {data.actions.map((action) =>
-                  action.href.startsWith("/") ? (
+                {data.actions.map((action) => (
+                  <Fragment key={action.href}>
+                  {action.href.startsWith("/") ? (
                     <Link className={action.className} href={action.href} key={action.href}>{action.label}{action.className.includes("primaryAction") ? <> <span aria-hidden="true">→</span></> : null}</Link>
                   ) : (
                     <a className={action.className} href={action.href} key={action.href}>{action.label}{action.className.includes("primaryAction") ? <> <span aria-hidden="true">→</span></> : null}</a>
-                  )
-                )}
+                  )}
+                  {action.className.includes("primaryAction") ? <BookCallLink service={data.kicker} placement="hero" /> : null}
+                  </Fragment>
+                ))}
               </div>
             </div>
           </div>
