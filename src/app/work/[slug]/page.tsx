@@ -2,7 +2,7 @@ import { notFound } from "next/navigation";
 import { ProjectDetailPage } from "@/components/ProjectDetailPage";
 import { getSanityProject, getSanityProjectSlugs } from "@/lib/sanity-projects";
 
-const hiddenProjects = new Set(["draughts", "allstars-sports-bars", "allstars-sports-bowl"]);
+const hiddenProjects = new Set(["draughts", "allstars-sports-bars"]);
 
 export async function generateStaticParams() {
   const slugs = await getSanityProjectSlugs();
