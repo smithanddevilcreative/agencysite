@@ -54,10 +54,10 @@ export const servicePages: Record<string, ServicePageData> = {
   "proofLine": "Proposition development, audience and revenue strategy, brand, investment narrative and go-to-market planning.",
   "argument": {
     "label": "The challenge",
-    "title": "Before you build it, establish who will buy it.",
+    "title": "Give your next big idea a market.",
     "paragraphs": [
-      "Whether you're creating an immersive attraction, developing entertainment technology or launching a new venue, there's a commercial brief to resolve. Who is the customer? What are they buying? What will persuade them to choose it? How will you reach them?",
-      "We bring product, audience, brand and commercial thinking together early, creating a working proposition for investors, designers, technical teams and the people responsible for sales."
+      "We develop the commercial strategies that bring new immersive experiences, entertainment technologies and leisure concepts to market.",
+      "From defining the customer proposition and building the investment story to developing the brand, sales strategy and launch campaign, we help ambitious ideas find their audience and generate revenue."
     ]
   },
   "comparison": {
