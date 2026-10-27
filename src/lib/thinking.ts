@@ -26,6 +26,128 @@ export type ThinkingArticle = {
 };
 
 export const thinkingArticles: ThinkingArticle[] = [
+{
+  "slug": "technology-to-market-customer-proposition",
+  "title": "You've invented the technology. Now what are you selling?",
+  "seoTitle": "Taking Entertainment Technology to Market | Smith & Devil",
+  "description": "How to turn entertainment technology into a proposition customers want and investors can understand.",
+  "eyebrow": "Concept to Market / Technology",
+  "standfirst": "When the technology leads the pitch, it can be easy to overlook the customer product.",
+  "heroImage": {
+    "src": "/images/work/t2-design-solutions/lead.webp",
+    "alt": "T2 Design Solutions technology brand visual"
+  },
+  "sections": [
+    {
+      "paragraphs": [
+        "An exciting technical demonstration can win a room. That does not necessarily tell anyone what business sits behind it.",
+        "The founder knows what the system can do. The architect is asked what the venue might look like. Investors want to understand why people will buy tickets. Those are different questions, and somebody has to connect the answers."
+      ]
+    },
+    {
+      "heading": "Define the customer product",
+      "paragraphs": [
+        "Start with the situations in which somebody would choose the experience. Who comes, with whom, for what occasion, and what will they pay for?",
+        "A technology can support several products. A fan-led event, a family session and a corporate team experience may share the same platform while needing different formats, promises and sales journeys."
+      ]
+    },
+    {
+      "heading": "An architect needs a proposition, not a feature list",
+      "paragraphs": [
+        "Without a defined audience, experience and commercial model, spatial design has to fill in the gaps. That can produce a compelling render without resolving whether the business works.",
+        "Define the proposition and experience principles first. Then architecture can express the right customer experience rather than guess what it should be."
+      ]
+    },
+    {
+      "heading": "Make the investment case understandable",
+      "paragraphs": [
+        "Investors need a credible customer opportunity, a distinct reason to choose the product and a reason to believe the operation can acquire those customers.",
+        "The proposition and investment narrative should connect to independently tested commercial assumptions. A good pitch cannot substitute for evidence, financial planning or technical validation."
+      ]
+    },
+    {
+      "heading": "From prototype to launch plan",
+      "paragraphs": [
+        "Once the offer is clear, map the launch: which audiences come first, what they are being sold, where distribution comes from and how the business converts interest into bookings.",
+        "This is the point where brand, communications, partnerships, website and CRM can begin working from the same commercial plan.",
+        "Smith & Devil's Concept to Market service helps founders connect those decisions before investing heavily in the next stage."
+      ]
+    }
+  ],
+  "relatedProjects": [
+    {
+      "title": "T2 Design Solutions",
+      "href": "/work/t2-design-solutions"
+    },
+    {
+      "title": "Fortune Favours",
+      "href": "/work/fortune-favours"
+    }
+  ]
+},
+{
+  "slug": "before-architect-designs-venue",
+  "title": "Before your architect designs the venue, define the business",
+  "seoTitle": "Define Your Leisure Venue Before Architecture | Smith & Devil",
+  "description": "Why leisure venue founders should define their proposition, audience and commercial model before detailed spatial design.",
+  "eyebrow": "Concept to Market / Venues",
+  "standfirst": "The first expensive design decision is sometimes made before anybody has answered why customers will visit.",
+  "heroImage": {
+    "src": "/images/work/pop-playrooms/10.webp",
+    "alt": "Pop Playrooms venue interior developed with its brand proposition"
+  },
+  "sections": [
+    {
+      "paragraphs": [
+        "A founder brings an activity or a technology. An architect brings spatial expertise. The drawing can start surprisingly quickly.",
+        "But a brief that explains what the venue contains is different from one that explains what customers are buying. The second is the one that makes the first useful."
+      ]
+    },
+    {
+      "heading": "What happens before the floor plan?",
+      "paragraphs": [
+        "Decide the audiences, the occasions and the reasons to choose the experience over other ways of spending an evening or afternoon.",
+        "That helps define the right product mix, experience sequence, dwell time, atmosphere, staffing requirements and opportunities for secondary spend. The architect now has commercial objectives to design around."
+      ]
+    },
+    {
+      "heading": "Make different buying occasions explicit",
+      "paragraphs": [
+        "The same venue may host families at weekends, adults in the evening and businesses during the working week.",
+        "Those customers need different offers and sometimes different physical requirements. A corporate experience may demand meeting space, hosting, catering and a sales process very unlike consumer ticketing."
+      ]
+    },
+    {
+      "heading": "The brand is part of the brief",
+      "paragraphs": [
+        "Positioning should guide the character of the environment, the hierarchy of spaces, signage, storytelling and moments customers will remember.",
+        "At Pop Playrooms, the organising idea brought different competitive-socialising activities together as one coherent brand and venue experience."
+      ],
+      "media": {
+        "src": "/images/work/pop-playrooms/03.webp",
+        "alt": "Pop Playrooms interior",
+        "href": "/work/pop-playrooms"
+      }
+    },
+    {
+      "heading": "The next useful document",
+      "paragraphs": [
+        "Before committing to detailed design, establish a shared proposition and commercial experience brief. It should give architects, operators, investors and creatives consistent answers about the business they are building.",
+        "Smith & Devil develops that brief through Venue Concept Development. Where the challenge extends into audience products, investment narrative and launch strategy, our Concept to Market offer connects the work to the route to revenue."
+      ]
+    }
+  ],
+  "relatedProjects": [
+    {
+      "title": "Pop Playrooms",
+      "href": "/work/pop-playrooms"
+    },
+    {
+      "title": "Fortune Favours",
+      "href": "/work/fortune-favours"
+    }
+  ]
+},
   {
     slug: "hospitality-brand-strategy-value-proposition",
     title: "Getting the value proposition right before you go to market",
