@@ -1,12 +1,52 @@
 "use client";
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { trackGA4Event } from "@/lib/analytics";
 import styles from "./EnquiryContactActions.module.css";
 
+export function BookCallLink({ service, placement = "form" }: { service: string; placement?: "hero" | "form" }) {
+  return (
+    <a
+      className={placement === "hero" ? styles.heroCallLink : styles.callLink}
+      href="https://calendly.com/hello-zkdj"
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={() => trackGA4Event("book_call_click", {
+        enquiry_service: service,
+        form_location: window.location.pathname,
+        cta_location: placement,
+      })}
+    >
+      Book a call <span aria-hidden="true">→</span>
+    </a>
+  );
+}
+
 export function EnquiryForm({ service = "General" }: { service?: string }) {
   const router = useRouter();
+  const started = useRef(false);
+  const reportedErrors = useRef(new Set<string>());
+
+  function trackStart() {
+    if (started.current) return;
+    started.current = true;
+    trackGA4Event("enquiry_form_start", { enquiry_service: service, form_location: window.location.pathname });
+  }
+
+  function trackInvalid(event: FormEvent<HTMLFormElement>) {
+    const field = event.target;
+    if (!(field instanceof HTMLInputElement || field instanceof HTMLSelectElement || field instanceof HTMLTextAreaElement)) return;
+    if (field.name === "bot-field") return;
+    const reason = field.validity.valueMissing ? "required" : field.validity.typeMismatch ? "format" : "invalid";
+    const key = field.name + ":" + reason;
+    if (reportedErrors.current.has(key)) return;
+    reportedErrors.current.add(key);
+    trackGA4Event("enquiry_form_error", {
+      enquiry_service: service, form_location: window.location.pathname,
+      field_name: field.name, error_type: reason,
+    });
+  }
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const isMiniGolf = /mini golf/i.test(service);
@@ -15,6 +55,9 @@ export function EnquiryForm({ service = "General" }: { service?: string }) {
     event.preventDefault();
     if (submitting) return;
 
+    trackStart();
+    reportedErrors.current.clear();
+    trackGA4Event("enquiry_form_submit", { enquiry_service: service, form_location: window.location.pathname });
     setSubmitting(true);
     setError("");
 
@@ -32,6 +75,7 @@ export function EnquiryForm({ service = "General" }: { service?: string }) {
       trackGA4Event("generate_lead", { enquiry_service: service, form_location: window.location.pathname });
       router.push("/thank-you/");
     } catch {
+      trackGA4Event("enquiry_form_error", { enquiry_service: service, form_location: window.location.pathname, error_type: "submission_failed" });
       setError("Something went wrong. Please try again or email hello@smithanddevil.com.");
       setSubmitting(false);
     }
@@ -44,6 +88,11 @@ export function EnquiryForm({ service = "General" }: { service?: string }) {
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       method="POST"
+      onInputCapture={(event) => {
+        const target = event.target;
+        if (target instanceof HTMLElement && target.getAttribute("name") !== "bot-field") trackStart();
+      }}
+      onInvalidCapture={trackInvalid}
       onSubmit={handleSubmit}
     >
       <input type="hidden" name="form-name" value="project-enquiry" />
@@ -133,15 +182,7 @@ export function EnquiryForm({ service = "General" }: { service?: string }) {
       </button>
       {error ? <p role="alert" className="EnquiryForm-module__ZxCRSG__formNote">{error}</p> : null}
       <div className={styles.actions}>
-        <a
-          className={styles.callLink}
-          href="https://calendly.com/hello-zkdj"
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => trackGA4Event("book_call_click", { enquiry_service: service, form_location: window.location.pathname })}
-        >
-          Book a call <span aria-hidden="true">→</span>
-        </a>
+        <BookCallLink service={service} />
         <a className={styles.emailLink} href="mailto:hello@smithanddevil.com">Send an email</a>
       </div>
     </form>
