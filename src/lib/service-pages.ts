@@ -28,6 +28,199 @@ export type ServicePageData =
 }
 
 export const servicePages: Record<string, ServicePageData> = {
+  "concept-to-market": {
+  "slug": "concept-to-market",
+  "title": "Concept to Market | Smith & Devil",
+  "description": "Commercial proposition, investment-ready concept development, brand strategy and go-to-market planning for new entertainment technologies, venues, IP and experiences.",
+  "kicker": "Concept to Market",
+  "heroTitle": "You've got the idea. Let's make it a business.",
+  "standfirst": "We take new technologies, venues, entertainment concepts and experiences from commercial proposition to launch. Defining what customers will buy, why investors should take notice and how to reach the market.",
+  "actions": [
+    {
+      "className": "service-module__T4otXW__primaryAction",
+      "href": "#project-enquiry",
+      "label": "Talk about your concept"
+    },
+    {
+      "className": "service-module__T4otXW__secondaryAction",
+      "href": "/thinking",
+      "label": "Explore our thinking"
+    }
+  ],
+  "heroImage": {
+    "src": "/images/work/fortune-favours/03.webp",
+    "alt": "Fortune Favours entertainment venue concept from Smith & Devil"
+  },
+  "proofLine": "Product. Audience. Proposition. Brand. Investment story. Route to market. One joined-up commercial strategy.",
+  "argument": {
+    "label": "The challenge",
+    "title": "A brilliant idea is not yet a business.",
+    "paragraphs": [
+      "A technology can be extraordinary. A venue can look spectacular. A live experience can have an enthusiastic following. None of that establishes who will pay, why they will choose it or how the business will reach them.",
+      "We help founders, operators, developers and producers resolve those questions early. The resulting proposition gives investors a clearer story, creative teams a sharper brief and commercial teams a route to customers."
+    ]
+  },
+  "comparison": {
+    "label": "Different starting points",
+    "title": "Whatever you are taking to market.",
+    "intro": "The same commercial questions appear in different forms. We adapt the work to the product and the stage of development.",
+    "items": [
+      {
+        "title": "Technology to market",
+        "body": "Find the customer proposition and viable applications for a new technology. Define the experience, purchasing occasions, routes to revenue and a credible investment narrative."
+      },
+      {
+        "title": "Venue to market",
+        "body": "Turn a location, activity or leisure idea into a defined commercial concept, customer proposition and brief for the architects and experience designers."
+      },
+      {
+        "title": "IP and experiences to market",
+        "body": "Create the customer proposition, audience offers and sales strategy for live, immersive and playable IP-led experiences. Fans, families and corporate buyers may need different products and messages."
+      },
+      {
+        "title": "Events and attractions to market",
+        "body": "Develop the brand positioning, pre-sale plan, audience acquisition, partnerships and ticket-selling journey for a new experience or attraction."
+      }
+    ],
+    "closing": "The product changes. The job stays the same: make the opportunity understandable, desirable and commercially credible."
+  },
+  "capabilities": {
+    "label": "What we develop",
+    "title": "The commercial thinking behind the launch.",
+    "items": [
+      {
+        "number": "01",
+        "title": "Proposition and positioning",
+        "body": "Define the product, value proposition, alternatives and reasons customers will choose it."
+      },
+      {
+        "number": "02",
+        "title": "Audience and revenue opportunities",
+        "body": "Identify priority customers, purchase occasions, product packages and routes to revenue."
+      },
+      {
+        "number": "03",
+        "title": "Brand and experience direction",
+        "body": "Shape the positioning, identity brief, tone of voice and experience principles that carry the proposition."
+      },
+      {
+        "number": "04",
+        "title": "Investment narrative",
+        "body": "Express the customer opportunity, commercial assumptions and proposition in a persuasive investor-facing story. Financial forecasts and fundraising remain specialist work."
+      },
+      {
+        "number": "05",
+        "title": "Go-to-market and sales strategy",
+        "body": "Plan launch stages, audience acquisition, fan campaigns, corporate offers, partnerships and booking conversion."
+      },
+      {
+        "number": "06",
+        "title": "Customer lifecycle",
+        "body": "Map discovery, purchase, participation, CRM, repeat visits and advocacy so the launch supports a sustainable business."
+      }
+    ]
+  },
+  "process": {
+    "label": "Our approach",
+    "title": "From uncertainty to a route to market.",
+    "items": [
+      {
+        "number": "1",
+        "title": "Interrogate the opportunity",
+        "body": "Understand the concept, technology or IP, the commercial ambition and what has already been tested."
+      },
+      {
+        "number": "2",
+        "title": "Define the product and its audiences",
+        "body": "Establish the customer propositions, segments, occasions and commercial logic."
+      },
+      {
+        "number": "3",
+        "title": "Build the brand and business story",
+        "body": "Create the proposition, narrative, creative direction and briefs for investment and development."
+      },
+      {
+        "number": "4",
+        "title": "Plan the launch",
+        "body": "Define channels, sales products, partnerships, booking pathways and the pre-launch-to-opening plan."
+      },
+      {
+        "number": "5",
+        "title": "Deliver what matters",
+        "body": "Bring in our branding, campaign, digital and experience-design capabilities, or collaborate with the client's existing teams."
+      }
+    ]
+  },
+  "caseStudy": {
+    "image": {
+      "src": "/images/work/fortune-favours/03.webp",
+      "alt": "Fortune Favours experience concept"
+    },
+    "label": "Relevant experience",
+    "title": "Commercial thinking, made tangible.",
+    "paragraphs": [
+      "For Fortune Favours, we helped develop a brand and entertainment proposition intended to work across multiple destinations. The idea had to inform the customer experience and physical environment as well as its identity.",
+      "The same upstream thinking is relevant when bringing new technology or IP to a market: first define the thing people will buy, then brief the disciplines that will bring it to life."
+    ],
+    "link": {
+      "href": "/work/fortune-favours",
+      "label": "Explore Fortune Favours"
+    },
+    "related": [
+      "Pop Playrooms: a recognisable competitive-socialising proposition expressed through brand and venue design.",
+      "Humbug: positioning and campaign thinking for a distinctive ticketed live experience.",
+      "Mighty Adventures: a family activity developed into a branded, mission-led experience."
+    ]
+  },
+  "fit": {
+    "label": "When to bring us in",
+    "title": "The earlier the question, the greater the opportunity.",
+    "items": [
+      "You have a technology but not yet a clear customer product.",
+      "An architect is designing around a brief that has no proposition.",
+      "You need an investment story grounded in who will buy and why.",
+      "You have licensed IP but need the live commercial experience.",
+      "You are preparing to announce, pre-sell or launch an attraction.",
+      "You need separate fan, family, group and corporate sales propositions.",
+      "You want strategic development before commissioning branding, marketing or fit-out."
+    ]
+  },
+  "faq": {
+    "label": "Questions we hear",
+    "title": "Useful answers before we talk.",
+    "items": [
+      {
+        "question": "Can you help before we have funding?",
+        "answer": "Yes. We can develop a clear commercial proposition, customer case and investment narrative so the concept is better prepared for investor conversations. We do not guarantee funding or act as a financial adviser."
+      },
+      {
+        "question": "Is this the same as venue concept development?",
+        "answer": "Venue Concept Development focuses on the proposition and creative brief for a physical venue, upstream of architecture and fit-out. Concept to Market goes further into commercial audiences, sales products, brand development, launch channels and acquisition strategy."
+      },
+      {
+        "question": "Can you work with our architect or technical team?",
+        "answer": "Yes. We can provide the commercial and brand brief they need, or work alongside them while the experience and operating model develop."
+      },
+      {
+        "question": "What if we already have a brand?",
+        "answer": "We start with what exists. The engagement might focus on audience products, commercial positioning, distribution and go-to-market rather than identity design."
+      },
+      {
+        "question": "Do you deliver the launch as well?",
+        "answer": "We can deliver branding, campaigns, content, digital and customer journeys, or guide the strategy while working with your existing teams."
+      },
+      {
+        "question": "Can we engage you for the initial strategy only?",
+        "answer": "Yes. A defined proposition and go-to-market engagement can stand alone, with delivery commissioned separately if needed."
+      }
+    ]
+  },
+  "enquiry": {
+    "label": "Talk to us",
+    "title": "What are you bringing to market?",
+    "intro": "Tell us about the technology, venue, IP or experience, and where you've got to. We'll discuss the work needed to turn it into a proposition and plan."
+  }
+},
   "venue-concept-development": {
     "slug": "venue-concept-development",
     "title": "Venue Concept Development for Leisure & Hospitality | Smith & Devil",
