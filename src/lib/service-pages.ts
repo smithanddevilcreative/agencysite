@@ -31,10 +31,10 @@ export const servicePages: Record<string, ServicePageData> = {
   "concept-to-market": {
   "slug": "concept-to-market",
   "title": "Concept to Market | Smith & Devil",
-  "description": "Commercial proposition, investment-ready concept development, brand strategy and go-to-market planning for new entertainment technologies, venues, IP and experiences.",
+  "description": "Commercial strategy, proposition development, brand and go-to-market for new immersive experiences, entertainment technology, venues and licensed IP.",
   "kicker": "Concept to Market",
-  "heroTitle": "You've got the idea. Let's make it a business.",
-  "standfirst": "We take new technologies, venues, entertainment concepts and experiences from commercial proposition to launch. Defining what customers will buy, why investors should take notice and how to reach the market.",
+  "heroTitle": "Commercial strategy for new experiences, technology and leisure concepts.",
+  "standfirst": "We help founders, developers and operators define the product, establish the customer proposition, build the brand and plan the launch. From early investment conversations to ticket sales, partnerships and bookings.",
   "actions": [
     {
       "className": "service-module__T4otXW__primaryAction",
@@ -51,42 +51,42 @@ export const servicePages: Record<string, ServicePageData> = {
     "src": "/images/work/fortune-favours/03.webp",
     "alt": "Fortune Favours entertainment venue concept from Smith & Devil"
   },
-  "proofLine": "Product. Audience. Proposition. Brand. Investment story. Route to market. One joined-up commercial strategy.",
+  "proofLine": "Proposition development, audience and revenue strategy, brand, investment narrative and go-to-market planning.",
   "argument": {
     "label": "The challenge",
-    "title": "A brilliant idea is not yet a business.",
+    "title": "Before you build it, establish who will buy it.",
     "paragraphs": [
-      "A technology can be extraordinary. A venue can look spectacular. A live experience can have an enthusiastic following. None of that establishes who will pay, why they will choose it or how the business will reach them.",
-      "We help founders, operators, developers and producers resolve those questions early. The resulting proposition gives investors a clearer story, creative teams a sharper brief and commercial teams a route to customers."
+      "Whether you're creating an immersive attraction, developing entertainment technology or launching a new venue, there's a commercial brief to resolve. Who is the customer? What are they buying? What will persuade them to choose it? How will you reach them?",
+      "We bring product, audience, brand and commercial thinking together early, creating a working proposition for investors, designers, technical teams and the people responsible for sales."
     ]
   },
   "comparison": {
     "label": "Different starting points",
-    "title": "Whatever you are taking to market.",
-    "intro": "The same commercial questions appear in different forms. We adapt the work to the product and the stage of development.",
+    "title": "Four ways we take concepts to market.",
+    "intro": "Our work is shaped by the product, the audiences and the stage you're at.",
     "items": [
       {
+        "title": "Immersive experiences to market",
+        "body": "Develop the commercial proposition for a new immersive or interactive experience. Define fan, consumer, family, group and corporate offers; ticketing and distribution; brand positioning; pre-sales and launch."
+      },
+      {
         "title": "Technology to market",
-        "body": "Find the customer proposition and viable applications for a new technology. Define the experience, purchasing occasions, routes to revenue and a credible investment narrative."
+        "body": "Turn an entertainment technology into a customer product and investor-facing proposition. Identify applications, occasions, commercial assumptions and the experience brief before committing to expensive design."
       },
       {
-        "title": "Venue to market",
-        "body": "Turn a location, activity or leisure idea into a defined commercial concept, customer proposition and brief for the architects and experience designers."
+        "title": "Venues to market",
+        "body": "Establish the concept, customer proposition and revenue opportunities for a new hospitality, leisure or competitive socialising venue. Give the architect a commercially informed brief and the operator a launch plan."
       },
       {
-        "title": "IP and experiences to market",
-        "body": "Create the customer proposition, audience offers and sales strategy for live, immersive and playable IP-led experiences. Fans, families and corporate buyers may need different products and messages."
-      },
-      {
-        "title": "Events and attractions to market",
-        "body": "Develop the brand positioning, pre-sale plan, audience acquisition, partnerships and ticket-selling journey for a new experience or attraction."
+        "title": "IP to market",
+        "body": "Translate licensed entertainment, gaming or cultural IP into live products audiences will pay to experience. Define the fan proposition, wider consumer appeal, partnership opportunities and sales strategy."
       }
     ],
-    "closing": "The product changes. The job stays the same: make the opportunity understandable, desirable and commercially credible."
+    "closing": "Whether the project is seeking investment or preparing to open, we define what you're selling, who you're selling it to and how it will reach customers."
   },
   "capabilities": {
     "label": "What we develop",
-    "title": "The commercial thinking behind the launch.",
+    "title": "A commercial plan that creative teams can deliver.",
     "items": [
       {
         "number": "01",
@@ -153,28 +153,29 @@ export const servicePages: Record<string, ServicePageData> = {
   },
   "caseStudy": {
     "image": {
-      "src": "/images/work/fortune-favours/03.webp",
-      "alt": "Fortune Favours experience concept"
+      "src": "/images/work/humbug/03.webp",
+      "alt": "Humbug live entertainment experience and campaign"
     },
-    "label": "Relevant experience",
-    "title": "Commercial thinking, made tangible.",
+    "label": "Proof from real projects",
+    "title": "From concept development to live audiences.",
     "paragraphs": [
-      "For Fortune Favours, we helped develop a brand and entertainment proposition intended to work across multiple destinations. The idea had to inform the customer experience and physical environment as well as its identity.",
-      "The same upstream thinking is relevant when bringing new technology or IP to a market: first define the thing people will buy, then brief the disciplines that will bring it to life."
+      "Humbug demonstrates our work on a ticketed experience: positioning, brand and campaigns developed to sell a distinctive live Christmas production.",
+      "Fortune Favours is an example of upstream proposition and brand development for a proposed multi-location entertainment concept. It did not launch, so we present it as concept work rather than evidence of ticket sales or commercial performance.",
+      "Pop Playrooms and Mighty Adventures demonstrate how a defined proposition can guide a physical customer experience. Different stages of work call for different evidence."
     ],
     "link": {
-      "href": "/work/fortune-favours",
-      "label": "Explore Fortune Favours"
+      "href": "/work/humbug",
+      "label": "See Humbug"
     },
     "related": [
-      "Pop Playrooms: a recognisable competitive-socialising proposition expressed through brand and venue design.",
-      "Humbug: positioning and campaign thinking for a distinctive ticketed live experience.",
-      "Mighty Adventures: a family activity developed into a branded, mission-led experience."
+      "Concept development (not launched): Fortune Favours, /work/fortune-favours",
+      "Physical experience and brand: Pop Playrooms, /work/pop-playrooms",
+      "Family entertainment experience: Mighty Adventures, /work/mighty-adventures"
     ]
   },
   "fit": {
     "label": "When to bring us in",
-    "title": "The earlier the question, the greater the opportunity.",
+    "title": "Bring us in while decisions are still being made.",
     "items": [
       "You have a technology but not yet a clear customer product.",
       "An architect is designing around a brief that has no proposition.",
@@ -218,7 +219,7 @@ export const servicePages: Record<string, ServicePageData> = {
   "enquiry": {
     "label": "Talk to us",
     "title": "What are you bringing to market?",
-    "intro": "Tell us about the technology, venue, IP or experience, and where you've got to. We'll discuss the work needed to turn it into a proposition and plan."
+    "intro": "Tell us what you are developing, who you expect to buy it and whether you are seeking investment, preparing to build or planning a launch."
   }
 },
   "venue-concept-development": {
