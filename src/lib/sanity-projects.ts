@@ -51,7 +51,8 @@ const CARD_QUERY = `*[_type == "project" && defined(slug.current) && hideFromWeb
   "hoverImageUrl": hoverImage.asset->url
 }`;
 
-const PROJECT_QUERY = `*[_type == "project" && slug.current == $slug && hideFromWebsite != true][0]{
+const PROJECT_QUERY = `*[_type == "project" && slug.current == $slug][0]{
+  hideFromWebsite,
   title,
   "slug": slug.current,
   category,
@@ -164,7 +165,8 @@ export async function getSanityProject(slug: string): Promise<{
 
   try {
     const item = await sanityQuery<SanityProject | null>(PROJECT_QUERY, { slug });
-    if (!item?.slug) return { project: null, seo: null };
+    if (item?.hideFromWebsite === true) return { project: null, seo: null };
+    if (!item?.slug) return { project: fallback || null, seo: null };
 
     const title = item.title || fallback?.title || slug.replace(/-/g, " ");
     const paragraphs = item.caseText
