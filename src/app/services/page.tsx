@@ -11,6 +11,13 @@ export const metadata: Metadata = {
 
 const services = [
   {
+    n: "00",
+    title: "Concept to Market",
+    slug: "concept-to-market",
+    desc: "Commercial propositions, brand strategy and go-to-market plans for new technologies, venues, IP and experiences.",
+    image: "/images/work/fortune-favours/03.webp",
+  },
+  {
     n: "01",
     title: "Venue Concept Development",
     slug: "venue-concept-development",
@@ -149,7 +156,7 @@ export default function ServicesPage() {
         <div className={c.inner}>
           <div className={`Reveal-module__U2Tp6W__base ${c.indexHead}`}>
             <p className={c.sectionLabel}>The connected offer</p>
-            <h2>Seven ways we help.</h2>
+            <h2>Eight ways we help.</h2>
           </div>
           <div className={c.cards}>
             {services.map((service) => (
