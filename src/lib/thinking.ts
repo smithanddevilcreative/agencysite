@@ -27,6 +27,65 @@ export type ThinkingArticle = {
 
 export const thinkingArticles: ThinkingArticle[] = [
 {
+  "slug": "selling-immersive-experience",
+  "title": "Who's responsible for selling the immersive experience?",
+  "seoTitle": "Commercial Strategy for Immersive Experiences | Smith & Devil",
+  "description": "Why immersive experiences need a commercial proposition, clear audiences and a sales strategy before launch.",
+  "eyebrow": "Concept to Market / Immersive experiences",
+  "standfirst": "The creative and technical teams know how to build the experience. Someone still needs to establish exactly what audiences will buy.",
+  "heroImage": {
+    "src": "/images/work/humbug/03.webp",
+    "alt": "Humbug live immersive entertainment experience"
+  },
+  "sections": [
+    {
+      "paragraphs": [
+        "An immersive experience can have extraordinary sets, original technology, recognisable IP and a team capable of bringing it all to life.",
+        "But the commercial questions need just as much attention. Who is paying? What do different audiences expect? How will bookings arrive, and what happens after the first wave of interest?"
+      ]
+    },
+    {
+      "heading": "One experience, several products",
+      "paragraphs": [
+        "A fan buying a ticket for a licensed world is responding to a different promise from a company organising a team day. A family planning an afternoon out is buying something different again.",
+        "That changes the session format, offer, pricing, booking journey, campaign and partnership strategy. Treating them as one general audience leaves revenue opportunities on the table."
+      ]
+    },
+    {
+      "heading": "Corporate sales needs a product",
+      "paragraphs": [
+        "Corporate buyers need a reason to purchase, a clear format, relevant outcomes, reliable fulfilment and someone who can handle an enquiry from beginning to end.",
+        "Employee engagement, team events, client entertainment and private hire each require specific purchasing arguments. A corporate page on a website alone is not a sales strategy."
+      ]
+    },
+    {
+      "heading": "The proposition should inform the experience",
+      "paragraphs": [
+        "When a concept is still being developed, commercial strategy should influence how the customer journey is designed. Capacity, dwell time, group arrangements, food and drink and opportunities to return affect both experience quality and revenue.",
+        "This work belongs in the brief before the physical and technical teams commit to detailed design."
+      ]
+    },
+    {
+      "heading": "Build a launch and a customer lifecycle",
+      "paragraphs": [
+        "Announcement, fan pre-sales, consumer campaigns, corporate outreach, distribution partners, booking conversion and CRM each have distinct jobs.",
+        "The objective is to give the experience a route to its first customers and a plan for keeping audiences engaged once it opens.",
+        "Smith & Devil's Concept to Market service develops the proposition, brand and go-to-market strategy for immersive experiences at every stage from initial commercial definition to launch."
+      ]
+    }
+  ],
+  "relatedProjects": [
+    {
+      "title": "Humbug",
+      "href": "/work/humbug"
+    },
+    {
+      "title": "Pop Playrooms",
+      "href": "/work/pop-playrooms"
+    }
+  ]
+},
+{
   "slug": "technology-to-market-customer-proposition",
   "title": "You've invented the technology. Now what are you selling?",
   "seoTitle": "Taking Entertainment Technology to Market | Smith & Devil",
