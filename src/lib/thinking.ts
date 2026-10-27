@@ -35,7 +35,7 @@ export const thinkingArticles: ThinkingArticle[] = [
   "standfirst": "When the technology leads the pitch, it can be easy to overlook the customer product.",
   "heroImage": {
     "src": "/images/work/fortune-favours/03.webp",
-    "alt": "T2 Design Solutions technology brand visual"
+    "alt": "Fortune Favours entertainment concept visual"
   },
   "sections": [
     {
