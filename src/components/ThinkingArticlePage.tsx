@@ -73,8 +73,8 @@ export function ThinkingArticlePage({ article }: { article: ThinkingArticle }) {
             {article.relatedProjects.map((project) => <Link href={project.href} key={project.href}>{project.title} <span aria-hidden="true">→</span></Link>)}
           </div>
           <div className="sd-thinking-service-link">
-            <p>Building or repositioning an experience-led business?</p>
-            <Link href="/services/brand-strategy-design">Explore Brand Strategy &amp; Design <span aria-hidden="true">→</span></Link>
+            <p>{article.eyebrow.startsWith("Concept to Market") ? "Developing a new product, venue or experience?" : "Building or repositioning an experience-led business?"}</p>
+            <Link href={article.eyebrow.startsWith("Concept to Market") ? "/services/concept-to-market" : "/services/brand-strategy-design"}>{article.eyebrow.startsWith("Concept to Market") ? "Explore Concept to Market" : "Explore Brand Strategy & Design"} <span aria-hidden="true">→</span></Link>
           </div>
         </div>
       </section>
