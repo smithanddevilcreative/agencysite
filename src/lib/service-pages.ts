@@ -30,11 +30,11 @@ export type ServicePageData =
 export const servicePages: Record<string, ServicePageData> = {
   "concept-to-market": {
     "slug": "concept-to-market",
-    "title": "Experience Strategy, Value Proposition & Investment Story | Smith & Devil",
+    "title": "Value Proposition & Brand Strategy | Smith & Devil",
     "description": "Value proposition, brand and launch strategy for immersive experiences, themed attractions, competitive socialising, premium bowling, family entertainment, golf concepts and entertainment technology.",
-    "kicker": "Concept to Market",
+    "kicker": "Value Proposition & Brand Strategy",
     "heroTitle": "A clear value proposition. A compelling investment story.",
-    "standfirst": "Strategy for immersive experiences, themed attractions, competitive socialising, premium bowling, family entertainment, golf concepts and entertainment technology. We define the value proposition and build the brand, investment story and launch strategy around it.",
+    "standfirst": "Research, positioning, brand and launch strategy for the experience economy. Build a clear value proposition and a compelling investment story.",
     "actions": [
       {
         "className": "service-module__T4otXW__primaryAction",
@@ -208,7 +208,7 @@ export const servicePages: Record<string, ServicePageData> = {
         },
         {
           "question": "Is this the same as venue concept development?",
-          "answer": "Venue Concept Development focuses on the proposition and creative brief for a physical venue, upstream of architecture and fit-out. Concept to Market goes further into commercial audiences, sales products, brand development, launch channels and acquisition strategy."
+          "answer": "Venue Concept Development focuses on the proposition and creative brief for a physical venue, upstream of architecture and fit-out. Value Proposition & Brand Strategy focuses on audience research, positioning, brand development, the investment story and launch strategy."
         },
         {
           "question": "Can you work with our architect or technical team?",
