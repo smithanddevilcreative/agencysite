@@ -67,31 +67,27 @@ export const servicePages: Record<string, ServicePageData> = {
       "items": [
         {
           "title": "Immersive experiences",
-          "body": "Define the value proposition for an immersive exhibition, live experience, interactive format or XR concept. Connect the audience, positioning, brand and route to market."
+          "body": "Give audiences a compelling reason to enter your world. We define the audience, occasion and value proposition, then shape an experience whose story, participation and quality fulfil the promise of its marketing."
         },
         {
           "title": "Themed attractions",
-          "body": "Establish the proposition and creative direction for a new visitor attraction or themed experience. Give design teams, investors and partners a clear understanding of the concept."
+          "body": "Build a distinctive attraction around a clear understanding of its visitors. We establish what makes the concept desirable and memorable, giving the story, activities and environment a purposeful creative direction."
         },
         {
           "title": "Competitive socialising",
-          "body": "Develop a distinctive proposition for a mini golf bar, interactive sports concept or multi-activity destination. Connect the activities, hospitality offer, brand and customer experience."
-        },
-        {
-          "title": "Premium bowling",
-          "body": "Shape the positioning and value proposition for a boutique bowling brand or premium bowling concept. Define the audience, atmosphere and role of food, drink and other activities."
+          "body": "Define the night out your customers want. We develop propositions around the people, occasions and social dynamics that should shape the games, atmosphere, hospitality and service."
         },
         {
           "title": "Family entertainment centres",
-          "body": "Create a clear proposition for a family entertainment centre or location-based entertainment concept. Establish the audience priorities, attraction mix, brand and reasons to choose it."
+          "body": "Create an experience children want to revisit and adults feel good about choosing. We develop propositions around different ages, family occasions and practical needs, with clear priorities for play, comfort, service and value."
         },
         {
           "title": "Golf and driving range concepts",
-          "body": "Define the proposition for a driving range, indoor golf concept or golf entertainment destination. Connect the technology, player audiences, hospitality and brand."
+          "body": "Define the experience for the players you want to attract. We establish the right proposition for committed golfers, newcomers or social groups, giving the technology, games, setting and hospitality a clear role."
         },
         {
           "title": "Entertainment technology and IP",
-          "body": "Identify the applications, audiences and value proposition for a new entertainment technology or licensed IP. Build a clear commercial story for customers, operators, investors and partners."
+          "body": "Establish the value of your technology or IP for a specific audience. We identify its strongest applications and develop a proposition that customers, operators and partners can readily understand."
         }
       ],
       "closing": "The project may be seeking investment, developing a brand or preparing to launch. The starting point is a clear value proposition."
