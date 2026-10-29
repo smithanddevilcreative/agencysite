@@ -177,7 +177,7 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
                   <p>{item.body}</p>
                 </div>
               ))}
-              <p><strong>{data.comparison.closing}</strong></p>
+              {data.comparison.closing ? <p><strong>{data.comparison.closing}</strong></p> : null}
             </div>
           </div>
         </section>
