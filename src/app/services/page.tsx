@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 const services = [
   {
     n: "01",
-    title: "Concept to Market",
+    title: "Value Proposition & Brand Strategy",
     slug: "concept-to-market",
-    desc: "Commercial propositions, brand strategy and go-to-market plans for new technologies, venues, IP and experiences.",
+    desc: "Research, positioning, brand and launch strategy for the experience economy. A clear value proposition and a compelling investment story.",
     image: "/images/work/fortune-favours/03.webp",
   },
   {
