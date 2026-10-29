@@ -56,8 +56,8 @@ export const servicePages: Record<string, ServicePageData> = {
       "label": "Start with the proposition",
       "title": "Be clear about what makes your concept valuable.",
       "paragraphs": [
-        "We research the audience, the market and the alternatives to define a clear value proposition. That means understanding who the concept is for, what it offers and why it deserves to be chosen.",
-        "The proposition gives the project a strategic direction. It shapes the brand, guides creative decisions and provides the foundation for a compelling investment story and launch strategy."
+        "We research your audience, market and competition to define what makes your concept valuable and why people should choose it.",
+        "Your value proposition guides decisions about your product, brand and launch. It also gives investors a clear account of your audience and commercial opportunity."
       ]
     },
     "comparison": {
@@ -90,7 +90,7 @@ export const servicePages: Record<string, ServicePageData> = {
           "body": "Establish the value of your technology or IP for a specific audience. We identify its strongest applications and develop a proposition that customers, operators and partners can readily understand."
         }
       ],
-      "closing": "The project may be seeking investment, developing a brand or preparing to launch. The starting point is a clear value proposition."
+      "closing": ""
     },
     "capabilities": {
       "label": "What we develop",
