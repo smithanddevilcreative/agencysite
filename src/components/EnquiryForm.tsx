@@ -50,7 +50,7 @@ export function EnquiryForm({ service = "General" }: { service?: string }) {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
   const isMiniGolf = /mini golf/i.test(service);
-  const isConceptToMarket = /concept to market/i.test(service);
+  const isPropositionStrategy = /concept to market|value proposition/i.test(service);
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -122,8 +122,8 @@ export function EnquiryForm({ service = "General" }: { service?: string }) {
             <option value="" disabled>Choose a stage</option>
             <option>Exploring an idea</option>
             <option>Developing the brief</option>
-            {isConceptToMarket && <option>Seeking investment</option>}
-            {isConceptToMarket && <option>Preparing to launch</option>}
+            {isPropositionStrategy && <option>Seeking investment</option>}
+            {isPropositionStrategy && <option>Preparing to launch</option>}
             <option>Ready to appoint a creative partner</option>
             <option>Ready to get started</option>
             <option>Improving something that already exists</option>
@@ -165,7 +165,7 @@ export function EnquiryForm({ service = "General" }: { service?: string }) {
               <option value="" disabled>See options</option>
               <option>Not decided yet</option>
               <option>Concept development</option>
-              <option>Concept to Market / proposition & launch</option>
+              <option>Value Proposition & Brand Strategy</option>
               <option>Brand strategy and identity</option>
               <option>Website design and development</option>
               <option>Marketing and campaigns</option>
