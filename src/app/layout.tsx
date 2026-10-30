@@ -32,8 +32,8 @@ export const metadata: Metadata = {
       "Creative strategy, branding, campaigns, digital, interiors and themed experiences for the experience economy.",
     images: [
       {
-        url: "/favicon-2026.png",
-        alt: "Smith & Devil S&D monogram",
+        url: "https://cdn.sanity.io/images/6y2dn5q3/production/17694c149c191be000bb6b4c483d8f123b1079ba-400x400.jpg",
+        alt: "Official Smith & Devil S&D logo",
       },
     ],
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Smith & Devil — Win hearts & markets",
     description:
       "Creative strategy, branding, campaigns, digital, interiors and themed experiences for the experience economy.",
-    images: ["/favicon-2026.png"],
+    images: ["https://cdn.sanity.io/images/6y2dn5q3/production/17694c149c191be000bb6b4c483d8f123b1079ba-400x400.jpg"],
   },
   robots: {
     index: true,
