@@ -9,7 +9,7 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const { project, seo } = await getSanityProject(slug);
+  const { project, seo, socialImage } = await getSanityProject(slug);
   if (!project) return {};
 
   return {
@@ -22,7 +22,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       url: `/work/${slug}`,
       title: seo?.title || project.title,
       description: seo?.description || project.description,
+      ...(socialImage ? {images: [{url: socialImage, alt: project.title}]} : {}),
     },
+    ...(socialImage ? {twitter: {card: "summary_large_image" as const, images: [socialImage]}} : {}),
   };
 }
 
