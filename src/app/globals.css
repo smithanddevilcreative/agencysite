@@ -4967,3 +4967,8 @@ input[type="submit"]{
     row-gap:32px!important;
   }
 }
+
+/* Preserve the intended aspect ratio of embedded portrait and square videos. */
+.sd-gallery-video[data-ratio="9:16"]{aspect-ratio:9/16}
+.sd-gallery-video[data-ratio="4:5"]{aspect-ratio:4/5}
+.sd-gallery-video[data-ratio="1:1"]{aspect-ratio:1/1}
