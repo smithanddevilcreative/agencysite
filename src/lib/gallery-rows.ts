@@ -17,6 +17,8 @@ export type GalleryRow = {
   layout?: 'single' | 'pair' | null;
   spaceAbove?: string | null;
   spaceBelow?: string | null;
+  customSpaceAbove?: number | null;
+  customSpaceBelow?: number | null;
   sideMargins?: string | null;
   items?: GalleryMedia[] | null;
 };
@@ -41,12 +43,17 @@ function mediaHtml(item: GalleryMedia, title: string) {
 
 export function renderGalleryRows(rows: GalleryRow[] | null | undefined, title: string) {
   const spacing = (value: string | null | undefined) => ['none', 'small', 'medium', 'large'].includes(value || '') ? value : 'none';
+  const customPixels = (n: number | null | undefined) =>
+    typeof n === 'number' && Number.isInteger(n) && n >= 0 && n <= 300 ? n : null;
   const rendered = (rows || []).map(row => {
     const items = (row.items || []).map(item => mediaHtml(item, title)).filter(Boolean);
     if (!items.length) return '';
     const margins = ['standard', 'wide', 'edge'].includes(row.sideMargins || '') ? row.sideMargins : 'standard';
     // Keep all content visible even if a draft has more items than its selected layout permits.
-    return `<div class="sd-gallery-row" data-layout="${row.layout === 'pair' ? 'pair' : 'single'}" data-above="${spacing(row.spaceAbove)}" data-below="${spacing(row.spaceBelow)}" data-margins="${margins}">${items.join('')}</div>`;
+    const top = customPixels(row.customSpaceAbove);
+    const bottom = customPixels(row.customSpaceBelow);
+    const style = [top !== null ? `--row-above:${top}px` : '', bottom !== null ? `--row-below:${bottom}px` : ''].filter(Boolean).join(';');
+    return `<div class="sd-gallery-row"${style ? ` style="${style}"` : ''} data-layout="${row.layout === 'pair' ? 'pair' : 'single'}" data-above="${spacing(row.spaceAbove)}" data-below="${spacing(row.spaceBelow)}" data-margins="${margins}">${items.join('')}</div>`;
   }).join('');
   return rendered ? `<div class="sd-gallery-rows">${rendered}</div>` : '';
 }
