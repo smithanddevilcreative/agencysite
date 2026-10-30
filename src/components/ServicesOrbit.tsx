@@ -9,8 +9,8 @@ type ServiceOrbitItem = {
   image: string;
 };
 
-const rotations = [-4, 4, 3, -4, 2];
-const startAngles = [-2.45, -1.45, -0.18, 1.18, 2.45];
+// Position every service in the orbit. Avoid undefined angles when services are added.
+const rotations = [-4, 4, 3, -4, 2, -3, 3, -2];
 
 const clamp = (v: number) => Math.max(0, Math.min(1, v));
 const smooth = (v: number) => {
@@ -52,8 +52,8 @@ export function ServicesOrbit({ services }: { services: readonly ServiceOrbitIte
           ? Math.min(Math.max(vh * 0.24, 170), 230)
           : Math.min(Math.max(vh * 0.28, 190), 320);
         const cardSize = mobile
-          ? Math.min(Math.max(vw * 0.27, 104), 132)
-          : Math.min(Math.max(vw * 0.18, 190), 270);
+          ? Math.min(Math.max(vw * 0.24, 86), 108)
+          : Math.min(Math.max(vw * 0.145, 135), 205);
 
         const turn = progress * Math.PI * 1.15;
         const intro = smooth(progress / 0.1);
@@ -62,7 +62,7 @@ export function ServicesOrbit({ services }: { services: readonly ServiceOrbitIte
 
         cardRefs.current.forEach((card, index) => {
           if (!card) return;
-          const angle = startAngles[index] + turn;
+          const angle = -Math.PI / 2 + index * (Math.PI * 2 / services.length) + turn;
           const depth = (Math.sin(angle) + 1) / 2;
           const x = Math.cos(angle) * rx;
           const y = Math.sin(angle) * ry;
@@ -71,7 +71,7 @@ export function ServicesOrbit({ services }: { services: readonly ServiceOrbitIte
           card.style.opacity = String(life);
           card.style.zIndex = String(10 + Math.round(depth * 20));
           card.style.transform =
-            `translate(-50%, -50%) translate3d(${x}px, ${y}px, 0) scale(${scale}) rotate(${rotations[index]}deg)`;
+            `translate(-50%, -50%) translate3d(${x}px, ${y}px, 0) scale(${scale}) rotate(${rotations[index % rotations.length]}deg)`;
         });
 
         if (ampRef.current) {
