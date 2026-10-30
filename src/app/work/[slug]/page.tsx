@@ -2,17 +2,13 @@ import { notFound } from "next/navigation";
 import { ProjectDetailPage } from "@/components/ProjectDetailPage";
 import { getSanityProject, getSanityProjectSlugs } from "@/lib/sanity-projects";
 
-const hiddenProjects = new Set(["draughts", "allstars-sports-bars"]);
-
 export async function generateStaticParams() {
   const slugs = await getSanityProjectSlugs();
-  return slugs.filter((slug) => !hiddenProjects.has(slug)).map((slug) => ({ slug }));
+  return slugs.map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  if (hiddenProjects.has(slug)) return {};
-
   const { project, seo } = await getSanityProject(slug);
   if (!project) return {};
 
@@ -32,8 +28,6 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function ProjectPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  if (hiddenProjects.has(slug)) notFound();
-
   const { project } = await getSanityProject(slug);
   if (!project) notFound();
 
