@@ -160,13 +160,14 @@ function galleryHtml(project: SanityProject, fallback?: ProjectPageData) {
 export async function getSanityProject(slug: string): Promise<{
   project: ProjectPageData | null;
   seo: SanityProject["seo"];
+  socialImage: string | null;
 }> {
   const fallback = projectPages[slug];
 
   try {
     const item = await sanityQuery<SanityProject | null>(PROJECT_QUERY, { slug });
-    if (item?.hideFromWebsite === true) return { project: null, seo: null };
-    if (!item?.slug) return { project: fallback || null, seo: null };
+    if (item?.hideFromWebsite === true) return { project: null, seo: null, socialImage: null };
+    if (!item?.slug) return { project: fallback || null, seo: null, socialImage: null };
 
     const title = item.title || fallback?.title || slug.replace(/-/g, " ");
     const paragraphs = item.caseText
@@ -195,9 +196,9 @@ export async function getSanityProject(slug: string): Promise<{
       galleryHtml: galleryHtml(item, fallback),
     };
 
-    return { project, seo: item.seo || null };
+    return { project, seo: item.seo || null, socialImage: item.cardImageUrl || item.leadImageUrl || null };
   } catch {
-    return { project: fallback || null, seo: null };
+    return { project: fallback || null, seo: null, socialImage: null };
   }
 }
 
