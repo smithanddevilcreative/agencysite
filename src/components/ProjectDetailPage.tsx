@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { CTASection } from "@/components/CTASection";
+import { AutoVideoSizing } from "@/components/AutoVideoSizing";
 import type { ProjectPageData } from "@/lib/project-pages";
 
 const relatedServices: Record<string, { label: string; href: string }[]> = {
@@ -82,6 +83,7 @@ const c = {
 export function ProjectDetailPage({ project }: { project: ProjectPageData }) {
   return (
     <main className={c.main}>
+      <AutoVideoSizing />
       <div className={c.layout}>
         <aside className={c.sticky}>
           <div className={c.stickyInner}>
