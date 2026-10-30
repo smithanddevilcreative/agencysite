@@ -7,6 +7,7 @@ export type GalleryMedia = {
   imageUrl?: string | null;
   vimeoId?: string | null;
   skivId?: string | null;
+  videoAspectRatio?: string | null;
   altText?: string | null;
   caption?: string | null;
 };
@@ -36,7 +37,7 @@ function mediaHtml(item: GalleryMedia, title: string) {
     media = `<img src="${escape(item.imageUrl)}" alt="${escape(item.altText || '')}" loading="lazy" width="1400" height="900"/>`;
   } else {
     const src = videoEmbedUrl(item.kind, item.kind === 'vimeo' ? item.vimeoId : item.skivId);
-    if (src) media = `<div class="sd-gallery-video"><iframe src="${escape(src)}" title="${escape(item.altText || title)}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
+    if (src) media = `<div class="sd-gallery-video" data-ratio="${['9:16', '4:5', '1:1'].includes(item.videoAspectRatio || '') ? item.videoAspectRatio : '16:9'}"><iframe src="${escape(src)}" title="${escape(item.altText || title)}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>`;
   }
   return media ? `<figure class="sd-gallery-media">${media}${caption}</figure>` : '';
 }
