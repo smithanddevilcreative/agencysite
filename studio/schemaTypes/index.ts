@@ -21,6 +21,15 @@ const mediaFields = [
   defineField({name: 'skivId', title: 'Skiv link or video ID', type: 'string', description: 'Paste the Skiv sharing link or video ID.',
     hidden: ({parent}) => parent?.kind !== 'skiv',
     validation: rule => rule.custom((value, context) => (context.parent as {kind?: string})?.kind === 'skiv' && !videoDetails('skiv', value) ? 'Paste a valid HTTPS Skiv link or video ID.' : true)}),
+  defineField({name: 'videoAspectRatio', title: 'Video shape', type: 'string', initialValue: '16:9',
+    description: 'Match the original video format. Portrait films should use 9:16 or 4:5.',
+    hidden: ({parent}) => parent?.kind !== 'vimeo' && parent?.kind !== 'skiv',
+    options: {layout: 'radio', list: [
+      {title: 'Landscape (16:9)', value: '16:9'},
+      {title: 'Portrait (9:16)', value: '9:16'},
+      {title: 'Portrait (4:5)', value: '4:5'},
+      {title: 'Square (1:1)', value: '1:1'},
+    ]}}),
   defineField({name: 'altText', title: 'Image description / video title', type: 'string', description: 'Describe the media for people using assistive technology.'}),
   defineField({name: 'caption', title: 'Caption on website (optional)', type: 'string', description: 'This text appears beneath the image or video. Leave blank for no caption.'}),
 ];
