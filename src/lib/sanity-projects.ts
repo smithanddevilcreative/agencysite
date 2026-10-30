@@ -12,6 +12,7 @@ type SanityGalleryItem = {
   imageUrl?: string | null;
   vimeoId?: string | null;
   skivId?: string | null;
+  videoAspectRatio?: string | null;
   altText?: string | null;
   caption?: string | null;
 };
@@ -70,7 +71,7 @@ const PROJECT_QUERY = `*[_type == "project" && slug.current == $slug][0]{
   heroSkivId,
   galleryRows[]{
     _key, internalName, layout, spaceAbove, spaceBelow, customSpaceAbove, customSpaceBelow, sideMargins,
-    items[]{_key, internalName, kind, altText, caption, vimeoId, skivId, "imageUrl": image.asset->url}
+    items[]{_key, internalName, kind, altText, caption, vimeoId, skivId, videoAspectRatio, "imageUrl": image.asset->url}
   },
   gallery[]{
     kind,
