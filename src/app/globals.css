@@ -4972,3 +4972,7 @@ input[type="submit"]{
 .sd-gallery-video[data-ratio="9:16"]{aspect-ratio:9/16}
 .sd-gallery-video[data-ratio="4:5"]{aspect-ratio:4/5}
 .sd-gallery-video[data-ratio="1:1"]{aspect-ratio:1/1}
+
+/* Gallery videos fill the available row width; runtime uses the film's native aspect ratio. */
+.sd-gallery-video{width:100%;max-width:100%;height:auto;aspect-ratio:16/9}
+.sd-gallery-video iframe{width:100%;height:100%}
