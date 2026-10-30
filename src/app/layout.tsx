@@ -32,8 +32,8 @@ export const metadata: Metadata = {
       "Creative strategy, branding, campaigns, digital, interiors and themed experiences for the experience economy.",
     images: [
       {
-        url: "/brand/sd-logo-2026-black.png",
-        alt: "Smith & Devil logo",
+        url: "/favicon-2026.png",
+        alt: "Smith & Devil S&D monogram",
       },
     ],
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Smith & Devil — Win hearts & markets",
     description:
       "Creative strategy, branding, campaigns, digital, interiors and themed experiences for the experience economy.",
-    images: ["/brand/sd-logo-2026-black.png"],
+    images: ["/favicon-2026.png"],
   },
   robots: {
     index: true,
@@ -94,7 +94,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               "@type": "Organization",
               name: "Smith & Devil",
               url: "https://smithanddevil.com",
-              logo: "https://smithanddevil.com/brand/sd-logo-2026-black.png",
+              logo: "https://smithanddevil.com/favicon-2026.png",
               email: "hello@smithanddevil.com",
               description:
                 "Creative strategy and design studio for the experience economy.",
