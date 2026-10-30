@@ -137,7 +137,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <ServicesOrbit services={services} />
+      <ServicesOrbit services={services.filter((service) => ["concept-to-market", "venue-concept-development", "campaigns-content", "mini-golf", "themed-experiences"].includes(service.slug))} />
 
       <section className={c.argument}>
         <div className={`${c.inner} ${c.twoCol}`}>
