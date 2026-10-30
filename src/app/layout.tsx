@@ -32,8 +32,8 @@ export const metadata: Metadata = {
       "Creative strategy, branding, campaigns, digital, interiors and themed experiences for the experience economy.",
     images: [
       {
-        url: "/images/humbug.jpg",
-        alt: "Smith & Devil creative studio work",
+        url: "/brand/sd-logo-2026-black.png",
+        alt: "Smith & Devil logo",
       },
     ],
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Smith & Devil — Win hearts & markets",
     description:
       "Creative strategy, branding, campaigns, digital, interiors and themed experiences for the experience economy.",
-    images: ["/images/humbug.jpg"],
+    images: ["/brand/sd-logo-2026-black.png"],
   },
   robots: {
     index: true,
