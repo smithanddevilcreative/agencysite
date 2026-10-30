@@ -69,7 +69,7 @@ const PROJECT_QUERY = `*[_type == "project" && slug.current == $slug][0]{
   heroVimeoId,
   heroSkivId,
   galleryRows[]{
-    _key, internalName, layout, spaceAbove, spaceBelow, sideMargins,
+    _key, internalName, layout, spaceAbove, spaceBelow, customSpaceAbove, customSpaceBelow, sideMargins,
     items[]{_key, internalName, kind, altText, caption, vimeoId, skivId, "imageUrl": image.asset->url}
   },
   gallery[]{
