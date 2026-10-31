@@ -33,7 +33,7 @@ export const servicePages: Record<string, ServicePageData> = {
     "title": "Value Proposition & Brand Strategy | Smith & Devil",
     "description": "Value proposition, brand and launch strategy for immersive experiences, themed attractions, competitive socialising, premium bowling, family entertainment, golf concepts and entertainment technology.",
     "kicker": "Value Proposition & Brand Strategy",
-    "heroTitle": "A clear value proposition. A compelling investment story.",
+    "heroTitle": "Give your idea a clear proposition and investors a reason to back it.",
     "standfirst": "Research, positioning, brand and launch strategy for the experience economy. Build a clear value proposition and a compelling investment story.",
     "actions": [
       {
