@@ -35,7 +35,11 @@ const mediaPreview = {
 };
 
 const mediaItem = defineType({name: 'mediaItem', title: 'Image or video', type: 'object',
-  fields: [...mediaFields, defineField({name: 'format', title: 'Existing gallery layout', type: 'string', initialValue: 'standard',
+  fields: [...mediaFields,
+    defineField({name: 'customSpaceBelow', title: 'Custom space after item (px)', type: 'number',
+      description: 'Optional. Default gap is 10px; enter another value to override it for this item.',
+      validation: rule => rule.min(0).max(300).integer()}),
+    defineField({name: 'format', title: 'Existing gallery layout', type: 'string', initialValue: 'standard',
     description: 'Two consecutive Half width items may share a row. For explicit row and spacing controls, use Gallery rows instead.',
     options: {list: [{title: 'Own row — standard', value: 'standard'}, {title: 'Own row — full width', value: 'full'}, {title: 'Half width — pair with another half-width item', value: 'half'}, {title: 'Laptop (existing format)', value: 'laptop'}, {title: 'Phone (existing format)', value: 'phone'}, {title: 'Instagram grid (existing format)', value: 'instagram-grid'}]}})],
   preview: mediaPreview,
@@ -63,7 +67,7 @@ const galleryRow = defineType({name: 'galleryRow', title: 'Gallery row', type: '
       return items?.length === required ? true : `Add exactly ${required} ${required === 1 ? 'item' : 'items'} for this layout.`;
     })}),
   defineField({name: 'spaceAbove', title: 'Space above this row', type: 'string', initialValue: 'none', options: {list: spacing}}),
-  defineField({name: 'spaceBelow', title: 'Space below this row', type: 'string', initialValue: 'medium', options: {list: spacing}}),
+  defineField({name: 'spaceBelow', title: 'Space below this row', type: 'string', initialValue: 'none', options: {list: spacing}}),
   defineField({name: 'customSpaceAbove', title: 'Custom space above (px)', type: 'number',
     description: 'Optional. Enter a precise gap in pixels (for example 4 or 6). Overrides the preset above. 0 removes it.',
     validation: rule => rule.min(0).max(300).integer()}),
