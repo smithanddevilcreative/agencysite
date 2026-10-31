@@ -9,6 +9,7 @@ type SanityMetric = { value?: string | null; label?: string | null };
 type SanityGalleryItem = {
   kind?: "image" | "vimeo" | "skiv" | null;
   format?: "standard" | "full" | "half" | "laptop" | "phone" | "instagram-grid" | null;
+  customSpaceBelow?: number | null;
   imageUrl?: string | null;
   vimeoId?: string | null;
   skivId?: string | null;
@@ -75,6 +76,7 @@ const PROJECT_QUERY = `*[_type == "project" && slug.current == $slug][0]{
   gallery[]{
     kind,
     format,
+    customSpaceBelow,
     altText,
     caption,
     vimeoId,
@@ -135,6 +137,8 @@ function galleryHtml(project: SanityProject, fallback?: ProjectPageData) {
   if (!project.gallery?.length) return fallback?.galleryHtml || "";
 
   const rendered = project.gallery.map((item, index) => {
+    const space = typeof item.customSpaceBelow === "number" && Number.isInteger(item.customSpaceBelow) && item.customSpaceBelow >= 0 && item.customSpaceBelow <= 300
+      ? ` style="margin-bottom:${item.customSpaceBelow - 10}px"` : "";
     const half = item.format === "half" ? " study-module__vTcG6G__slotHalf" : "";
     const caption = item.caption
       ? `<figcaption class="study-module__vTcG6G__caption">${escapeHtml(item.caption)}</figcaption>`
@@ -142,7 +146,7 @@ function galleryHtml(project: SanityProject, fallback?: ProjectPageData) {
     const title = escapeHtml(item.altText || `${project.title || fallback?.title || "Project"} — ${String(index + 1).padStart(2, "0")}`);
 
     if (item.kind === "image" && item.imageUrl) {
-      return `<figure class="study-module__vTcG6G__slot${half}"><div class="RevealMedia-module__8VxjUa__frame"><img alt="${title}" loading="lazy" width="1400" height="900" style="color:transparent" src="${item.imageUrl}"/></div>${caption}</figure>`;
+      return `<figure class="study-module__vTcG6G__slot${half}"${space}><div class="RevealMedia-module__8VxjUa__frame"><img alt="${title}" loading="lazy" width="1400" height="900" style="color:transparent" src="${item.imageUrl}"/></div>${caption}</figure>`;
     }
 
     const id = item.kind === "vimeo" ? item.vimeoId : item.kind === "skiv" ? item.skivId : null;
@@ -151,7 +155,7 @@ function galleryHtml(project: SanityProject, fallback?: ProjectPageData) {
     const src = videoEmbedUrl(item.kind, id);
     if (!src) return "";
 
-    return `<div class="study-module__vTcG6G__slot${half}"><div class="RevealMedia-module__8VxjUa__frame"><div class="StudyVideoEmbed-module__8FDA2W__wrap"><iframe class="StudyVideoEmbed-module__8FDA2W__frame" src="${escapeHtml(src)}" title="${title}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div>${caption}</div>`;
+    return `<div class="study-module__vTcG6G__slot${half}"${space}><div class="RevealMedia-module__8VxjUa__frame"><div class="StudyVideoEmbed-module__8FDA2W__wrap"><iframe class="StudyVideoEmbed-module__8FDA2W__frame" src="${escapeHtml(src)}" title="${title}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div></div>${caption}</div>`;
   }).join("");
 
   return rendered || fallback?.galleryHtml || "";
