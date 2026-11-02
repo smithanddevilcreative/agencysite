@@ -39,8 +39,8 @@ const mediaItem = defineType({name: 'mediaItem', title: 'Image or video', type: 
     defineField({name: 'customSpaceBelow', title: 'Custom space after item (px)', type: 'number',
       description: 'Optional. Default gap is 10px; enter another value to override it for this item.',
       validation: rule => rule.min(0).max(300).integer()}),
-    defineField({name: 'format', title: 'Existing gallery layout', type: 'string', initialValue: 'standard',
-    description: 'Two consecutive Half width items may share a row. For explicit row and spacing controls, use Gallery rows instead.',
+    defineField({name: 'format', title: 'Gallery layout', type: 'string', initialValue: 'full',
+    description: 'Full width is the default. Choose Half width for two consecutive images side by side. Existing layouts are preserved.',
     options: {list: [{title: 'Own row — standard', value: 'standard'}, {title: 'Own row — full width', value: 'full'}, {title: 'Half width — pair with another half-width item', value: 'half'}, {title: 'Laptop (existing format)', value: 'laptop'}, {title: 'Phone (existing format)', value: 'phone'}, {title: 'Instagram grid (existing format)', value: 'instagram-grid'}]}})],
   preview: mediaPreview,
 });
@@ -97,7 +97,7 @@ export const schemaTypes: SchemaTypeDefinition[] = [
         return {...field, options: {hotspot: false}, description: 'Choose an image below, then set how it fills the case-study lead area.'};
       }
       if (type.name === 'project' && field.name === 'gallery') {
-        return {...field, title: 'Existing gallery', description: 'Used when Gallery rows is empty. Existing items are preserved; use Gallery rows for explicit layout and spacing.'};
+        return {...field, title: 'Existing gallery — editable', description: 'All imported images and videos remain editable here. New images default to full width, with 10px gaps and an optional custom spacing override. Existing half-width pairs stay together.'};
       }
       return field;
     });
