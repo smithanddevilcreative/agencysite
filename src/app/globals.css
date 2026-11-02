@@ -5014,3 +5014,22 @@ input[type="submit"]{
     grid-template-columns:48px minmax(0,.65fr) minmax(0,1fr)!important;
   }
 }
+
+/* Services overview: unnumbered rows, retaining the established type scale. */
+.services-module__g8J8Uq__card.sd-service-index-row {
+  grid-template-columns:minmax(0,501fr) minmax(0,524fr) max-content!important;
+}
+.services-module__g8J8Uq__card.sd-service-index-row h3,
+.services-module__g8J8Uq__card.sd-service-index-row p {
+  width:auto!important;
+  min-width:0;
+}
+@media(max-width:900px) {
+  .services-module__g8J8Uq__card.sd-service-index-row {
+    grid-template-columns:minmax(0,1fr)!important;
+  }
+  .services-module__g8J8Uq__card.sd-service-index-row p,
+  .services-module__g8J8Uq__card.sd-service-index-row .services-module__g8J8Uq__cardLink {
+    grid-column:1!important;
+  }
+}
