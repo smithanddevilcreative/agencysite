@@ -11,56 +11,48 @@ export const metadata: Metadata = {
 
 const services = [
   {
-    n: "01",
     title: "Value Proposition & Brand Strategy",
     slug: "concept-to-market",
     desc: "Research, positioning, brand and launch strategy for the experience economy. A clear value proposition and a compelling investment story.",
     image: "/images/work/fortune-favours/03.webp",
   },
   {
-    n: "02",
     title: "Venue Concept Development",
     slug: "venue-concept-development",
     desc: "We turn early-stage leisure and hospitality ideas into clear propositions, brands and experience briefs that can actually be designed, funded and built.",
     image: "/images/work/pop-playrooms/10.webp",
   },
   {
-    n: "03",
     title: "Brand Strategy & Design",
     slug: "brand-strategy-design",
     desc: "We create distinctive brands for hospitality, leisure, entertainment and ambitious businesses built around customer experience. Clear enough to guide the business. Powerful enough to win hearts — and markets.",
     image: "/images/work/fortune-favours/logo-tile.jpg",
   },
   {
-    n: "04",
     title: "Campaigns & Content",
     slug: "campaigns-content",
     desc: "We plan and create launch campaigns, always-on content and customer communications that give people a reason to notice, book and come back.",
     image: "/images/work/pop-golf/popgolf-boxpark.jpg",
   },
   {
-    n: "05",
     title: "Digital & Web",
     slug: "digital-web",
     desc: "We design and build websites that help people understand the offer, find the right experience and take the next step. Clear strategy, distinctive design and less friction between interest and action.",
     image: "/images/work/humbug/06.webp",
   },
   {
-    n: "06",
     title: "Venue & Experience Design",
     slug: "venue-experience-design",
     desc: "From complete hospitality and leisure venues to individual guest experiences within attractions, we design branded environments, signage, wayfinding and places people want to explore.",
     image: "/images/work/pop-playrooms/10.webp",
   },
   {
-    n: "07",
     title: "Mini Golf Design & Build",
     slug: "mini-golf",
     desc: "We design and deliver premium mini golf experiences around the site, audience and commercial model — from first concept to playable course.",
     image: "/images/work/levels/05.webp",
   },
   {
-    n: "08",
     title: "Themed Experiences",
     slug: "themed-experiences",
     desc: "We create original worlds, stories and play experiences that give people more to feel, talk about and come back for.",
@@ -104,7 +96,6 @@ const c = {
   indexHead: "services-module__g8J8Uq__indexHead",
   cards: "services-module__g8J8Uq__cards",
   card: "services-module__g8J8Uq__card",
-  cardNumber: "services-module__g8J8Uq__cardNumber",
   cardLink: "services-module__g8J8Uq__cardLink",
   studioSection: "services-module__g8J8Uq__studioSection",
   textLink: "services-module__g8J8Uq__textLink",
@@ -161,8 +152,7 @@ export default function ServicesPage() {
           <div className={c.cards}>
             {services.map((service) => (
               <div className="Reveal-module__U2Tp6W__base" key={service.slug}>
-                <Link className={c.card} href={`/services/${service.slug}`}>
-                  <span className={c.cardNumber}>{service.n}</span>
+                <Link className={`${c.card} sd-service-index-row`} href={`/services/${service.slug}`}>
                   <h3>{service.title}</h3>
                   <p>{service.desc}</p>
                   <span className={c.cardLink}>
