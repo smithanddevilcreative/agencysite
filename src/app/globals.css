@@ -4998,3 +4998,19 @@ input[type="submit"]{
   max-width:100%;
   height:auto;
 }
+
+/* Campaigns: five full-width capability rows; shared typography stays intact. */
+.service-module__T4otXW__capabilityGrid[data-layout="rows"] {
+  grid-template-columns:minmax(0,1fr)!important;
+}
+.service-module__T4otXW__capabilityGrid[data-layout="rows"] > .service-module__T4otXW__capability {
+  border-left:0!important;
+  border-right:0!important;
+  padding-left:0!important;
+  padding-right:0!important;
+}
+@media(min-width:901px) {
+  .service-module__T4otXW__capabilityGrid[data-layout="rows"] > .service-module__T4otXW__capability {
+    grid-template-columns:48px minmax(0,.65fr) minmax(0,1fr)!important;
+  }
+}
