@@ -208,7 +208,7 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
             <p className={c.sectionLabel}>{data.capabilities.label}</p>
             <h2 className={c.displayHeading}>{data.capabilities.title}</h2>
           </div>
-          <div className={c.capabilityGrid}>
+          <div className={c.capabilityGrid} data-layout={data.slug === "campaigns-content" ? "rows" : undefined}>
             {data.capabilities.items.map((item) => (
               <div className={`Reveal-module__U2Tp6W__base ${c.capability}`} key={item.number}>
                 <span className={c.number}>{item.number}</span>
