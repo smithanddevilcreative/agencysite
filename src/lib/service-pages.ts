@@ -631,10 +631,10 @@ export const servicePages: Record<string, ServicePageData> = {
     "proofLine": "Humbug sold 12,000 tickets and filled 90% of key dates within one week of going on sale.",
     "argument": {
       "label": "Why it matters",
-      "title": "A strong idea makes every channel work harder.",
+      "title": "Make them want in.",
       "paragraphs": [
-        "Campaigns become expensive when every advert, email and post has to find its own reason to exist. A clear creative platform gives the whole programme one recognisable idea and enough flexibility to stay interesting.",
-        "We connect that idea to the commercial job. It might be launching a venue, filling quieter sessions, creating urgency around a seasonal event or giving existing customers a reason to return. Then we create the assets and structure needed to carry it across the customer journey."
+        "We know how to find the appeal in your business and make it hard to ignore. A compelling proposition. Beautifully crafted advertising. Content people give a damn about. In the places that count.",
+        "We want people to feel something about your business. To see an advert and want in. To remember your name when they’re making plans. To choose you when they could spend their money elsewhere."
       ]
     },
     "capabilities": {
@@ -643,48 +643,28 @@ export const servicePages: Record<string, ServicePageData> = {
       "items": [
         {
           "number": "01",
-          "title": "Campaign strategy",
-          "body": "Define the audience, objective, proposition, channel roles and measures that give the creative a clear commercial job."
+          "title": "Standout campaigns",
+          "body": "Audience insight, propositions, campaign concepts and key art."
         },
         {
           "number": "02",
-          "title": "Launch campaigns",
-          "body": "Build anticipation, open the booking window and keep momentum moving through launch and the first weeks of trading."
+          "title": "Advertising that sells",
+          "body": "Paid social, digital, outdoor and print campaigns."
         },
         {
           "number": "03",
-          "title": "Creative platforms and key art",
-          "body": "Create one strong campaign idea with the visual and verbal system to work across paid, owned and physical channels."
+          "title": "Unmissable content",
+          "body": "Content planning, photography, film, reels and posts."
         },
         {
           "number": "04",
-          "title": "Paid social and digital creative",
-          "body": "Develop the concepts, copy, formats and variations media teams need to test and optimise performance."
+          "title": "Hard-working CRM",
+          "body": "Campaign emails, customer journeys and automated communications."
         },
         {
           "number": "05",
-          "title": "Organic social and content",
-          "body": "Plan useful content territories, calendars and repeatable formats that give the brand a recognisable presence."
-        },
-        {
-          "number": "06",
-          "title": "CRM and email",
-          "body": "Create customer journeys, campaigns and copy that move people from awareness to booking, return and advocacy."
-        },
-        {
-          "number": "07",
-          "title": "Film, photography and production",
-          "body": "Plan shoots around the asset list the campaign actually needs, then direct specialist production partners where required."
-        },
-        {
-          "number": "08",
-          "title": "OOH, print and in-venue creative",
-          "body": "Carry the campaign into streets, venues and customer touchpoints with clear hierarchy and a consistent reason to act."
-        },
-        {
-          "number": "09",
-          "title": "Toolkits and ongoing direction",
-          "body": "Give internal teams, media partners and local operators a practical system they can keep using."
+          "title": "Creative firepower",
+          "body": "Campaign toolkits, local adaptations and ongoing support for your marketing team."
         }
       ]
     },
