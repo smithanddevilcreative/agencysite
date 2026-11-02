@@ -37,3 +37,16 @@
   .leadProject .caption, .project .caption { gap: 0; }
   .leadProject .media, .project .media { aspect-ratio: 4 / 3; }
 }
+
+.fit, .faq { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding-bottom: clamp(64px, 9vw, 124px); }
+.fit h2, .faq h2 { font-size: clamp(32px, 4vw, 54px); line-height: 1.1; }
+.fit ul { margin: 0; padding-left: 20px; font-size: clamp(16px, 1.35vw, 19px); line-height: 1.6; }
+.fit li + li { margin-top: 16px; }
+.faq details { border-top: 1px solid #14120f40; }
+.faq details:last-child { border-bottom: 1px solid #14120f40; }
+.faq summary { display: flex; justify-content: space-between; align-items: baseline; gap: 24px; padding-block: 22px; cursor: pointer; font-size: 17px; list-style: none; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq details[open] summary span { transform: rotate(45deg); }
+.faq details p { padding-bottom: 24px; }
+.faq summary:focus-visible { outline: 2px solid currentColor; outline-offset: 6px; }
+@media (max-width: 760px) { .fit, .faq { grid-template-columns: minmax(0, 1fr); gap: 30px; } }
