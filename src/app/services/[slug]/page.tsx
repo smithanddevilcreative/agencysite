@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { CampaignsContentPage } from "@/components/CampaignsContentPage";
 import { ServiceDetailPage } from "@/components/ServiceDetailPage";
 import { servicePages } from "@/lib/service-pages";
 
@@ -29,5 +30,5 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const { slug } = await params;
   const data = servicePages[slug];
   if (!data) notFound();
-  return <ServiceDetailPage data={data} />;
+  return slug === "campaigns-content" ? <CampaignsContentPage data={data} /> : <ServiceDetailPage data={data} />;
 }
