@@ -971,8 +971,8 @@ export const servicePages: Record<string, ServicePageData> = {
       "label": "Why it matters",
       "title": "The space is part of the product.",
       "paragraphs": [
-        "A customer forms an opinion before they reach the main attraction, order a drink or sit down. The entrance, route, atmosphere, signs and small operational details all shape what the business feels worth.",
-        "We connect those moments to the brand and commercial model. That creates a place with a clear idea, a more intuitive customer journey and a design language that can survive contact with the real world."
+        "People feel the difference when a place has been properly considered. The atmosphere draws them in. The details reward their attention. Everything feels like it belongs.",
+        "We give your brand a physical presence, with interiors, graphics and experiences that make the place your own. Somewhere customers want to spend their time, and their money."
       ]
     },
     "capabilities": {
@@ -1175,10 +1175,9 @@ export const servicePages: Record<string, ServicePageData> = {
     "proofLine": "Our 18-hole course at Levels Prague recorded 13,000 rounds in its first three months.",
     "argument": {
       "label": "Why it matters",
-      "title": "Mini golf designed to drive revenue.",
+      "title": "Make more of mini golf.",
       "paragraphs": [
-        "Mini golf can be a destination, a high-performing secondary spend or the activity that gives an entire venue its identity. The commercial role changes the design.",
-        "We design indoor and outdoor courses around the audience, site and business model. Player flow, capacity, replay value and the wider venue experience shape every decision."
+        "We design courses with character, imagination and a great game at their heart. Places people take photos, make memories and come back to play again."
       ]
     },
     "comparison": {
