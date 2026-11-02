@@ -220,6 +220,7 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
         </div>
       </section>
 
+      {data.slug !== "campaigns-content" && (
       <section className={c.process}>
         <div className={c.inner}>
           <div className={`Reveal-module__U2Tp6W__base ${c.sectionHead}`}>
@@ -239,6 +240,7 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
           </ol>
         </div>
       </section>
+      )}
 
       <section className={c.caseStudy}>
         <div className={c.inner}>
