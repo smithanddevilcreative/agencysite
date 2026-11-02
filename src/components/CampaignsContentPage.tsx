@@ -20,14 +20,7 @@ const projects = [
     description: "The players, personalities and local loyalties behind the sports bar. Photography, film, social content and email for the Allstars venues.",
     scope: "Content strategy, photography, film, social & CRM",
   },
-  {
-    name: "Draughts",
-    href: "/work/draughts",
-    image: "/images/work/draughts/draughts-lead.jpg",
-    alt: "Draughts board game bar campaign work",
-    description: "An audience of 18,000 previous customers, left uncontacted. We rebuilt the email programme, with £14,125 in attributed revenue from the first three sends.",
-    scope: "CRM strategy, campaign creative, email design & automation",
-  },
+
 ];
 
 const capabilities = ["Campaign strategy", "Creative concepts & art direction", "Copywriting", "Social content & advertising", "Email & CRM", "Photography & film", "Outdoor, print & in-venue creative"];
