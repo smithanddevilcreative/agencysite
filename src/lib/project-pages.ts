@@ -18,20 +18,7 @@ export const projectPages: Record<string, ProjectPageData> = {
     "title": "Allstars Sports Bars",
     "description": "We transformed the digital presence of four Allstars Sports Bars. A new multi-venue website makes the offer easier to discover and book, personality-led social brings each local venue to life, and a rebuilt CRM programme puts the right message in front of the right people.",
     "services": "Digital Strategy | Website Design | UX & UI | Content Strategy | Social Media | Photography & Film | CRM Strategy | Email Campaigns & Automation",
-    "results": [
-      {
-        "value": "4",
-        "label": "Venue journeys"
-      },
-      {
-        "value": "Monthly",
-        "label": "CRM communications"
-      },
-      {
-        "value": "40×",
-        "label": "Click uplift, engaged vs cold"
-      }
-    ],
+    "results": [],
     "paragraphs": [
       "Allstars Sports Bars had four venues with a much bigger offer than their digital presence suggested. Live sport, competition-standard pool and snooker, real darts, food, drink and a loyal local following were all there. Finding the right venue, understanding what it offered and getting to a booking was not.",
       "We replaced that fragmented experience with one connected website system for Bristol, Exeter, Taunton and Weston-super-Mare. Each venue has its own local content, games, offers, live fixture listings, party spaces, menus and direct routes into booking.",
