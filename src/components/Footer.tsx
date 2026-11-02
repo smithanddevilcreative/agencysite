@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { UnderworldLink } from "@/components/UnderworldLink";
-import { serviceLinks, workLinks } from "@/lib/site-data";
+import { serviceLinks } from "@/lib/site-data";
+import { getSanityProjectCards } from "@/lib/sanity-projects";
 
 const c = {
   footer: "Footer-module__S6Hkya__footer",
@@ -31,7 +32,9 @@ function Column({
   );
 }
 
-export function Footer() {
+export async function Footer() {
+  const projects = await getSanityProjectCards();
+
   return (
     <footer className={c.footer}>
       <div className={c.inner}>
@@ -57,8 +60,8 @@ export function Footer() {
         <nav className={c.nav} aria-label="Footer">
           <Column title="Work">
             <li><Link className={c.link} href="/work">All Work</Link></li>
-            {workLinks.map(([label, href]) => (
-              <li key={href}><Link className={c.link} href={href}>{label}</Link></li>
+            {projects.map((project) => (
+              <li key={project.slug}><Link className={c.link} href={`/work/${project.slug}`}>{project.title}</Link></li>
             ))}
           </Column>
 
