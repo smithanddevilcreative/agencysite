@@ -4984,3 +4984,17 @@ input[type="submit"]{
   column-gap:10px!important;
 }
 .sd-gallery-row{gap:10px;--row-below:10px}
+
+/* Imported CMS galleries: use the same full-width / 10px system as new rows.
+   Keep explicit half-width pairs intact for two-up compositions. */
+.study-module__vTcG6G__gallery:not(:has(> .sd-gallery-rows)) > :not(.study-module__vTcG6G__slotHalf){
+  grid-column:1/-1;
+  width:100%;
+  max-width:100%;
+  min-width:0;
+}
+.study-module__vTcG6G__gallery:not(:has(> .sd-gallery-rows)) > :not(.study-module__vTcG6G__slotHalf) img{
+  width:100%;
+  max-width:100%;
+  height:auto;
+}
