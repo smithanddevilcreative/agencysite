@@ -121,14 +121,14 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
             </div>
           </div>
           {data.slug === "value-proposition-brand-strategy" ? (
-            <div className={c.heroMedia} style={{ aspectRatio: "16 / 9", minHeight: 0, background: "#000" }}>
+            <div className={`${c.heroMedia} sd-strategy-video`} style={{ background: "#000" }}>
               <iframe
                 src="https://skiv.com/embed/Ze3fPaS?search=0&links=0&logo=0&title=0&autoplay=1&loop=1&volume=0&style=no-controls"
                 title="Pop Playrooms brand and positioning film"
                 loading="lazy"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
-                style={{ width: "100%", height: "100%", position: "absolute", inset: 0, border: 0, transform: "scale(1.12)", transformOrigin: "center center" }}
+                style={{ width: "100%", height: "100%", position: "absolute", inset: 0, border: 0 }}
               />
             </div>
           ) : data.heroImage.src ? (
