@@ -99,3 +99,16 @@
 # Netlify's primary domain is smithanddevil.com. Let Netlify handle
 # www -> apex and HTTP -> HTTPS redirects automatically; do not override
 # those redirects here or create a host redirect loop.
+
+# Keep existing links and indexed pages working after the service rename.
+[[redirects]]
+  from = "/services/concept-to-market"
+  to = "/services/value-proposition-brand-strategy/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/concept-to-market/"
+  to = "/services/value-proposition-brand-strategy/"
+  status = 301
+  force = true
