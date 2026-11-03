@@ -119,7 +119,7 @@ export default function HomePage() {
           <p style={{ textTransform: "uppercase", letterSpacing: ".16em", fontSize: 12, marginBottom: 24 }}>Value Proposition &amp; Brand Strategy</p>
           <h2 id="ctm-home-title" style={{ fontFamily: "var(--font-serif)", fontWeight: 400, fontSize: "clamp(42px, 6vw, 88px)", maxWidth: "13ch", lineHeight: 1.05 }}>You’ve got the idea. Let’s make it a business.</h2>
           <p style={{ fontSize: "clamp(16px, 2vw, 23px)", maxWidth: 690, marginTop: 30, lineHeight: 1.5 }}>We develop propositions, brands and launch strategies for immersive experiences, entertainment technologies, licensed IP and new leisure venues.</p>
-          <Link href="/services/concept-to-market" style={{ marginTop: 30, display: "inline-block", color: "#fff", fontSize: 13, textDecoration: "underline", textUnderlineOffset: 7 }}>Explore Value Proposition &amp; Brand Strategy →</Link>
+          <Link href="/services/value-proposition-brand-strategy" style={{ marginTop: 30, display: "inline-block", color: "#fff", fontSize: 13, textDecoration: "underline", textUnderlineOffset: 7 }}>Explore Value Proposition &amp; Brand Strategy →</Link>
         </div>
       </section>
 
