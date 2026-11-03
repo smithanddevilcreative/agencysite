@@ -5033,3 +5033,12 @@ input[type="submit"]{
     grid-column:1!important;
   }
 }
+
+/* Strategy film: override the fixed 1200px desktop image frame with a true 16:9 video frame. */
+.service-module__T4otXW__heroMedia.sd-strategy-video{
+  width:100%!important;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:16/9!important;
+  overflow:hidden;
+}
