@@ -12,7 +12,7 @@ export const workLinks = [
 ] as const;
 
 export const serviceLinks = [
-  ["Value Proposition & Brand Strategy", "/services/concept-to-market"],
+  ["Value Proposition & Brand Strategy", "/services/value-proposition-brand-strategy"],
   ["Venue Concept Development", "/services/venue-concept-development"],
   ["Brand Strategy & Design", "/services/brand-strategy-design"],
   ["Campaigns & Content", "/services/campaigns-content"],
