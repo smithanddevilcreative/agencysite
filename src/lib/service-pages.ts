@@ -28,8 +28,8 @@ export type ServicePageData =
 }
 
 export const servicePages: Record<string, ServicePageData> = {
-  "concept-to-market": {
-    "slug": "concept-to-market",
+  "value-proposition-brand-strategy": {
+    "slug": "value-proposition-brand-strategy",
     "title": "Value Proposition & Brand Strategy | Smith & Devil",
     "description": "Value proposition, brand and launch strategy for immersive experiences, themed attractions, competitive socialising, premium bowling, family entertainment, golf concepts and entertainment technology.",
     "kicker": "Value Proposition & Brand Strategy",
@@ -48,8 +48,8 @@ export const servicePages: Record<string, ServicePageData> = {
       }
     ],
     "heroImage": {
-      "src": "/images/work/fortune-favours/03.webp",
-      "alt": "Fortune Favours entertainment venue concept from Smith & Devil"
+      "src": "/images/work/fortune-favours/logo-tile.jpg",
+      "alt": "Fortune Favours brand identity developed by Smith & Devil"
     },
     "proofLine": "Research, value proposition, positioning, brand, investment narrative and launch strategy.",
     "argument": {
