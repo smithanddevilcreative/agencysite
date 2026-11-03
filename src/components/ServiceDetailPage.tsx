@@ -120,11 +120,19 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
               </div>
             </div>
           </div>
-          {data.heroImage.src && (
+          {data.slug === "value-proposition-brand-strategy" ? (
+            <div className={c.heroMedia} style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "clamp(24px, 4vw, 52px)", background: "#14120f", color: "#fafaf8", padding: "clamp(32px, 7vw, 96px)", textAlign: "center" }}>
+              <span style={{ fontFamily: "var(--font-sans)", fontSize: 11, letterSpacing: ".2em", textTransform: "uppercase", opacity: .65 }}>Fortune Favours / Brand proposition</span>
+              <p style={{ fontFamily: "var(--font-display)", fontSize: "clamp(42px, 8vw, 112px)", lineHeight: .99, letterSpacing: "-.035em", maxWidth: "13ch", margin: 0 }}>
+                Nothing ventured.<br /><em style={{ color: "var(--sd-red)" }}>Nothing gained.</em>
+              </p>
+              <span style={{ fontFamily: "var(--font-sans)", fontSize: 12, opacity: .7 }}>A brand attitude that informs the entire experience.</span>
+            </div>
+          ) : data.heroImage.src ? (
             <div className={c.heroMedia}>
               <img alt={data.heroImage.alt} width="2000" height="1200" src={data.heroImage.src} />
             </div>
-          )}
+          ) : null}
           {data.proofLine && <p className={c.proofLine}>{data.proofLine}</p>}
         </div>
       </section>
