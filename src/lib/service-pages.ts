@@ -161,8 +161,8 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "caseStudy": {
       "image": {
-        "src": "/images/work/humbug/03.webp",
-        "alt": "Humbug live entertainment experience and campaign"
+        "src": "https://cdn.sanity.io/images/6y2dn5q3/production/6dfc4e372e70ffe7ac8870a3899c06f86f3407df-1536x1024.png",
+        "alt": "Humbug 2026 Holy Grail of Christmas Parties billboard campaign in London"
       },
       "label": "Proof from real projects",
       "title": "From concept development to live audiences.",
