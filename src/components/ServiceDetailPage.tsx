@@ -123,7 +123,7 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
           {data.slug === "value-proposition-brand-strategy" ? (
             <div className={c.heroMedia} style={{ aspectRatio: "16 / 9", minHeight: 0, background: "#000" }}>
               <iframe
-                src="https://skiv.com/embed/bMBGcRk?search=0&links=0&logo=0&title=0&autoplay=1&loop=1&volume=0&style=no-controls"
+                src="https://skiv.com/embed/Ze3fPaS?search=0&links=0&logo=0&title=0&autoplay=1&loop=1&volume=0&style=no-controls"
                 title="Pop Playrooms brand and positioning film"
                 loading="lazy"
                 allow="autoplay; fullscreen; picture-in-picture"
