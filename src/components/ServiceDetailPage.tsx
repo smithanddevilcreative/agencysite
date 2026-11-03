@@ -121,12 +121,15 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
             </div>
           </div>
           {data.slug === "value-proposition-brand-strategy" ? (
-            <div className={c.heroMedia} style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: "clamp(24px, 4vw, 52px)", background: "#14120f", color: "#fafaf8", padding: "clamp(32px, 7vw, 96px)", textAlign: "center" }}>
-              <span style={{ fontFamily: "var(--font-sans)", fontSize: 11, letterSpacing: ".2em", textTransform: "uppercase", opacity: .65 }}>Fortune Favours / Brand proposition</span>
-              <p style={{ fontFamily: "var(--font-display)", fontSize: "clamp(42px, 8vw, 112px)", lineHeight: .99, letterSpacing: "-.035em", maxWidth: "13ch", margin: 0 }}>
-                Nothing ventured.<br /><em style={{ color: "var(--sd-red)" }}>Nothing gained.</em>
-              </p>
-              <span style={{ fontFamily: "var(--font-sans)", fontSize: 12, opacity: .7 }}>A brand attitude that informs the entire experience.</span>
+            <div className={c.heroMedia} style={{ aspectRatio: "16 / 9", minHeight: 0, background: "#000" }}>
+              <iframe
+                src="https://skiv.com/embed/bMBGcRk?search=0&links=0&logo=0&title=0&autoplay=1&loop=1&volume=0&style=no-controls"
+                title="Pop Playrooms brand and positioning film"
+                loading="lazy"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                style={{ width: "100%", height: "100%", position: "absolute", inset: 0, border: 0 }}
+              />
             </div>
           ) : data.heroImage.src ? (
             <div className={c.heroMedia}>
