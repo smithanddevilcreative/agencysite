@@ -15,7 +15,7 @@ const panels = [
     slug: "humbug",
     title: "Humbug",
     image: "/images/humbug.jpg",
-    intro: "Our brand sold 12,000 tickets and filled 90% of key dates within one week of on-sale.",
+    intro: "Our brand helped sell 30,000 tickets and sell out key dates across three years of Christmas shows.",
     position: "50% 4%",
     scale: 1.6,
     origin: "0% 34%",
