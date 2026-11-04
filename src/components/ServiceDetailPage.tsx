@@ -139,7 +139,7 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
                 loading="eager"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
-                style={{ width: "100%", height: "100%", position: "absolute", inset: 0, border: 0, transform: "scale(1.8)", transformOrigin: "center", pointerEvents: "none" }}
+                style={{ width: "100%", height: "auto", aspectRatio: "16 / 9", position: "absolute", top: "50%", left: 0, border: 0, transform: "translateY(-50%)", pointerEvents: "none" }}
               />
             </div>
           ) : data.heroImage.src ? (
