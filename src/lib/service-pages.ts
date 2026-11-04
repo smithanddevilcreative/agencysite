@@ -1154,13 +1154,13 @@ export const servicePages: Record<string, ServicePageData> = {
     "title": "Mini Golf Course Designers & Builders UK | Smith & Devil",
     "description": "Premium mini golf course design and build in the UK and internationally. Explore our work for Levels Prague, Pop Playrooms and Mighty Adventures.",
     "kicker": "Mini Golf Design & Build",
-    "heroTitle": "Premium mini golf course design.",
-    "standfirst": "We design and build distinctive mini golf courses in the UK and internationally. From Levels Prague to Pop Playrooms, our work brings together original themes, memorable environments and a game worth playing.",
+    "heroTitle": "Mini Golf Design & Build",
+    "standfirst": "Mini golf is a proven attraction. We make it something people want to photograph, remember and play again. We design and build imaginative courses that bring character to a venue. From the themes and visual details to the game itself, we create golf that adds to the atmosphere, complements the wider experience and gives people another reason to come back.",
     "actions": [
       {
         "className": "service-module__T4otXW__primaryAction",
         "href": "#project-enquiry",
-        "label": "Talk to us about your course"
+        "label": "Discuss your mini golf project"
       },
       {
         "className": "service-module__T4otXW__secondaryAction",
@@ -1174,119 +1174,63 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "proofLine": "Our 18-hole course at Levels Prague recorded 13,000 rounds in its first three months.",
     "argument": {
-      "label": "Why it matters",
-      "title": "Make more of mini golf.",
+      "label": "Why the design matters",
+      "title": "A better course. A richer experience.",
       "paragraphs": [
-        "We design courses with character, imagination and a great game at their heart. Places people take photos, make memories and come back to play again."
+        "A great mini golf course gives people plenty to talk about before, during and after a game.",
+        "The holes are fun to play. The environments invite photographs. The design adds character to the whole venue.",
+        "We consider how people move through the course, how groups interact and where the golf fits alongside the bar, food and other attractions. Good design makes all of those things work together."
       ]
     },
-    "comparison": {
-      "label": "Choosing the right partner",
-      "title": "Not all mini golf designers do the same job.",
-      "intro": "There are several ways to buy a mini golf course. The right choice depends on whether you simply need holes in a space, or a venue people actively choose, remember and return to.",
-      "items": [
-        {
-          "title": "Course builders",
-          "body": "Best when the main requirement is fabrication and installation of a defined course."
-        },
-        {
-          "title": "Specialist mini golf designers",
-          "body": "Focused on course layout, hole design, playability and the golf experience itself."
-        },
-        {
-          "title": "Theming companies",
-          "body": "Strong when scenic treatment, props and spectacle are the main creative requirement."
-        },
-        {
-          "title": "Architects and interior designers",
-          "body": "Useful when mini golf sits inside a wider venue project, although the game may be only one part of their brief."
-        },
-        {
-          "title": "Smith & Devil",
-          "body": "We connect the commercial proposition, brand, course, customer journey, interiors, theming and wider venue experience. The golf is designed as part of the business, not as something dropped into it."
-        }
-      ],
-      "closing": "If all you need is someone to fabricate nine holes, we may be more than you need. If you are building a venue people have to choose, remember and come back to, that is where we are strongest."
-    },
     "capabilities": {
-      "label": "Capabilities",
-      "title": "From first idea to playable course.",
+      "label": "What we do",
+      "title": "From idea to install.",
       "items": [
         {
           "number": "01",
-          "title": "Commercial concept",
-          "body": "Define the audience, occasion, pricing role, capacity needs and place mini golf should occupy within the wider venue."
+          "title": "Course design",
+          "body": "Layouts, routing, pacing and inventive holes that are enjoyable to play, with the capacity and durability a commercial venue needs."
         },
         {
           "number": "02",
-          "title": "Course planning",
-          "body": "Plan hole count, routing, pacing, player flow and footprint around the realities of the site and operating model."
+          "title": "Theming & interiors",
+          "body": "Imaginative environments, scenery, lighting, graphics and details that give the course its own character and complement the surrounding venue."
         },
         {
           "number": "03",
-          "title": "Hole design",
-          "body": "Create varied, intuitive holes with enough challenge, spectacle and rhythm to keep different groups engaged."
+          "title": "Brand & experience",
+          "body": "Naming, identity, customer journey and the wider design of the experience, including how the golf connects with food, drink and other attractions."
         },
         {
           "number": "04",
-          "title": "Theme and world-building",
-          "body": "Develop the visual idea, narrative and environmental language that make the course feel like one complete experience."
-        },
-        {
-          "number": "05",
-          "title": "Brand and naming",
-          "body": "Create or extend the brand so the course has a clear identity before customers ever pick up a putter."
-        },
-        {
-          "number": "06",
-          "title": "Customer journey",
-          "body": "Design arrival, queuing, briefing, gameplay, scoring, photo moments, F&B connections and the route into a return visit."
-        },
-        {
-          "number": "07",
-          "title": "Interior and graphic design",
-          "body": "Carry the concept through materials, signage, wayfinding, graphic surfaces, lighting direction and branded touchpoints."
-        },
-        {
-          "number": "08",
-          "title": "Build coordination",
-          "body": "Work with trusted fabricators, contractors and technical specialists to move the design into a safe, durable playable environment."
-        },
-        {
-          "number": "09",
-          "title": "Turnkey delivery",
-          "body": "Bring strategy, creative direction, course design and delivery together under one joined-up team where the project needs it."
-        },
-        {
-          "number": "10",
-          "title": "Rollout and refresh",
-          "body": "Create repeatable design principles for multi-site operators or evolve an existing course when the offer needs new reasons to return."
+          "title": "Build & delivery",
+          "body": "Detailed designs, technical development and coordination with specialist fabricators and contractors through to installation."
         }
       ]
     },
     "process": {
-      "label": "Process",
-      "title": "How we design a mini golf course.",
+      "label": "How we work",
+      "title": "From idea to install.",
       "items": [
         {
           "number": "1",
-          "title": "Define the commercial job",
-          "body": "We agree who the course is for, what the site needs it to achieve and the constraints that should shape the brief."
+          "title": "Understand your business",
+          "body": "We look at your audience, venue, budget and how mini golf will operate within the wider business."
         },
         {
           "number": "2",
-          "title": "Design the experience",
-          "body": "We create the creative concept, routing, hole ideas, customer journey and visual world as one connected system."
+          "title": "Create the course",
+          "body": "We develop the theme, individual holes, layout and visual design, considering the experience from arrival to the final putt."
         },
         {
           "number": "3",
-          "title": "Develop the course",
-          "body": "We turn the concept into detailed creative and technical information, resolving materials, graphics, theming and operating details."
+          "title": "Develop the detail",
+          "body": "We prepare the drawings, specifications and creative information needed for fabrication, including materials, scenery, lighting and graphics."
         },
         {
           "number": "4",
-          "title": "Build and open",
-          "body": "We coordinate with the delivery team through fabrication, installation, snagging and launch so the final experience stays true to the idea."
+          "title": "Build and install",
+          "body": "We work with specialist suppliers and contractors to manage fabrication, installation and the final details before opening."
         }
       ]
     },
@@ -1312,16 +1256,13 @@ export const servicePages: Record<string, ServicePageData> = {
       ]
     },
     "fit": {
-      "label": "A useful time to talk",
-      "title": "When to bring us in.",
+      "label": "When to bring us in",
+      "title": "Planning a mini golf project?",
       "items": [
-        "A new venue needs a premium mini golf offer.",
-        "Mini golf needs to sit inside a larger hospitality or leisure concept.",
-        "An existing site needs a stronger course and clearer identity.",
-        "A developer needs to understand what will fit the space and commercial model.",
-        "A family attraction needs more story, play value or repeatability.",
-        "A competitive socialising venue needs an experience customers cannot get elsewhere.",
-        "A successful concept needs a design system that can roll into more sites."
+        "You're developing a new mini golf venue or adding a course to an existing business.",
+        "Your mini golf needs to work alongside food, drink and other attractions.",
+        "An existing course needs a fresh concept, better design or a stronger identity.",
+        "You're considering a second venue or a wider rollout."
       ]
     },
     "faq": {
@@ -1360,8 +1301,8 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "enquiry": {
       "label": "Start a conversation",
-      "title": "Build a course people choose on purpose.",
-      "intro": "Tell us about the site, audience and commercial ambition. We will help shape the right mini golf experience around them."
+      "title": "Planning a mini golf project?",
+      "intro": "Whether you're building a new venue, adding mini golf to an existing business or rethinking a tired course, we'd like to hear what you have in mind."
     },
     "featuredProjects": [
       {
