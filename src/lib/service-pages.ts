@@ -1172,7 +1172,7 @@ export const servicePages: Record<string, ServicePageData> = {
       "src": "/images/levels.jpg",
       "alt": "Premium mini golf course designed by Smith & Devil at Levels Prague"
     },
-    "proofLine": "Our 18-hole course at Levels Prague recorded 13,000 rounds in its first three months.",
+    "proofLine": "Wonderball: two imaginative mini golf courses designed for The Park RVA in Richmond, Virginia.",
     "argument": {
       "label": "Why the design matters",
       "title": "A better course. A richer experience.",
