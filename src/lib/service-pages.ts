@@ -1184,7 +1184,7 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "capabilities": {
       "label": "What we do",
-      "title": "How we work",
+      "title": "From idea to install.",
       "items": [
         {
           "number": "01",
@@ -1210,7 +1210,7 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "process": {
       "label": "Our process",
-      "title": "From idea to install.",
+      "title": "How we work",
       "items": [
         {
           "number": "1",
