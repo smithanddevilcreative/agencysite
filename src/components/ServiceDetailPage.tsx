@@ -132,14 +132,14 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
               />
             </div>
           ) : data.slug === "mini-golf" ? (
-            <div className={c.heroMedia} style={{ background: "#000" }}>
+            <div className={c.heroMedia} style={{ background: "#000", overflow: "hidden", isolation: "isolate" }}>
               <iframe
                 src="https://player.vimeo.com/video/1242008565?background=1&autoplay=1&loop=1&muted=1&controls=0&title=0&byline=0&portrait=0"
                 title="Wonderball mini golf course walkthrough"
                 loading="eager"
                 allow="autoplay; fullscreen; picture-in-picture"
                 allowFullScreen
-                style={{ width: "100%", height: "100%", position: "absolute", inset: 0, border: 0 }}
+                style={{ width: "100%", height: "100%", position: "absolute", inset: 0, border: 0, transform: "scale(1.8)", transformOrigin: "center", pointerEvents: "none" }}
               />
             </div>
           ) : data.heroImage.src ? (
