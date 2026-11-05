@@ -2,7 +2,7 @@ import {sanityQuery} from "./sanity";
 import {servicePages, type ServicePageData} from "./service-pages";
 
 type CMSService = Partial<ServicePageData> & {
-  heroMedia?: ServicePageData["heroMedia"];
+  heroMedia?: { kind: "image" | "slideshow" | "skiv" | "vimeo"; videoId?: string; images?: { src: string; alt: string; imageUrl?: string }[] };
   _id?: string;
 };
 
