@@ -757,8 +757,17 @@ export const servicePages: Record<string, ServicePageData> = {
       }
     ],
     "heroImage": {
-      "src": "https://cdn.sanity.io/images/6y2dn5q3/production/607d4374382faa0f9d086deba08a96932c2e403c-2334x1167.jpg",
+      "src": "https://cdn.sanity.io/images/6y2dn5q3/production/c151fc65d638f38bf913e6e37ccfe501251a9fe9-1400x934.webp",
       "alt": "Brand and interior design by Smith & Devil for Pop Playrooms"
+    },
+    "heroMedia": {
+      "kind": "slideshow",
+      "images": [
+        {
+          "src": "https://cdn.sanity.io/images/6y2dn5q3/production/c151fc65d638f38bf913e6e37ccfe501251a9fe9-1400x934.webp",
+          "alt": "Pop Playrooms neon-lit bar interior"
+        }
+      ]
     },
     "proofLine": "Pop Playrooms: brand, mini golf and interior design across Wembley and Kingston upon Thames.",
     "argument": {
