@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import Link from "next/link";
 import proofStyles from "./ServiceProjectProof.module.css";
-import slideshowStyles from "./VenueHeroSlideshow.module.css";
+import {VenueHeroSlideshow} from "./VenueHeroSlideshow";
 import { EnquiryForm, BookCallLink } from "@/components/EnquiryForm";
 import type { ServicePageData } from "@/lib/service-pages";
 import { serviceLinks } from "@/lib/site-data";
@@ -133,11 +133,7 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
               />
             </div>
           ) : data.heroMedia?.kind === "slideshow" && data.heroMedia.images?.length ? (
-            <div className={`${c.heroMedia} ${slideshowStyles.slideshow}`} role="img" aria-label={data.heroImage.alt}>
-              {data.heroMedia.images.map((item, index) => (
-                <img key={index} src={item.src} alt="" width="1400" height="805" loading={index === 0 ? "eager" : "lazy"} />
-              ))}
-            </div>
+            <VenueHeroSlideshow className={c.heroMedia} images={data.heroMedia.images} label={data.heroImage.alt} />
           ) : data.heroMedia?.kind === "skiv" && data.heroMedia.videoId ? (
             <div className={`${c.heroMedia} sd-strategy-video`} style={{ background: "#000" }}>
               <iframe
