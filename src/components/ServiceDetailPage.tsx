@@ -131,17 +131,6 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
                 style={{ width: "100%", height: "100%", position: "absolute", inset: 0, border: 0 }}
               />
             </div>
-          ) : data.slug === "venue-experience-design" ? (
-            <div className={`${c.heroMedia} sd-strategy-video`} style={{ background: "#000" }}>
-              <iframe
-                src="https://skiv.com/embed/bMBGcRk?search=0&links=0&logo=0&title=0&autoplay=1&loop=1&volume=0&style=no-controls"
-                title="Pop Playrooms venue and experience design"
-                loading="eager"
-                allow="autoplay; fullscreen; picture-in-picture"
-                allowFullScreen
-                style={{ width: "100%", height: "100%", position: "absolute", inset: 0, border: 0, pointerEvents: "none" }}
-              />
-            </div>
           ) : data.slug === "mini-golf" ? (
             <div className={`${c.heroMedia} sd-strategy-video`} style={{ background: "#000" }}>
               <iframe
