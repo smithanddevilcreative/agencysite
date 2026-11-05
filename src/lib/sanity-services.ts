@@ -1,8 +1,8 @@
 import {sanityQuery} from "./sanity";
 import {servicePages, type ServicePageData} from "./service-pages";
 
-export type CMSService = Partial<ServicePageData> & {
-  heroMedia?: { kind: "image" | "slideshow" | "skiv" | "vimeo"; videoId?: string; images?: { src: string; alt: string; imageUrl?: string; crop?: {left?: number; right?: number; top?: number; bottom?: number} }[] };
+export type CMSService = Omit<Partial<ServicePageData>, "heroMedia"> & {
+  heroMedia?: { kind: "image" | "slideshow" | "skiv" | "vimeo"; videoId?: string; images?: { src?: string | null; alt?: string | null; imageUrl?: string | null; crop?: {left?: number; right?: number; top?: number; bottom?: number} | null }[] };
   _id?: string;
 };
 
@@ -21,7 +21,7 @@ export const SERVICE_QUERY = `*[_type == "servicePage" && slug.current == $slug]
   enquiry{label,title,intro}
 }`;
 
-function croppedSanityImage(url: string, crop?: {left?: number; right?: number; top?: number; bottom?: number}): string {
+function croppedSanityImage(url: string, crop?: {left?: number; right?: number; top?: number; bottom?: number} | null): string {
   if (!crop || !url.startsWith("https://cdn.sanity.io/images/")) return url;
   const match = url.match(/-(\d+)x(\d+)\.(?:jpg|jpeg|png|webp)(?:\?|$)/i);
   if (!match) return url;
@@ -56,7 +56,8 @@ export function mergeServiceContent(fallback: ServicePageData, cms: CMSService):
   const media = cms.heroMedia;
   const heroMedia = media
     ? {...media, images: media.images?.map((item) => ({
-        ...item, src: croppedSanityImage(item.imageUrl || item.src, item.crop)
+        ...item, src: croppedSanityImage(item.imageUrl || item.src || fallback.heroImage.src, item.crop),
+        alt: item.alt || fallback.heroImage.alt
       }))}
     : fallback.heroMedia;
   // A service slideshow also owns the lead still. Keep the fallback image
