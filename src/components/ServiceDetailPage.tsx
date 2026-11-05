@@ -133,15 +133,15 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
               />
             </div>
           ) : data.slug === "venue-experience-design" ? (
-            <div className={`${c.heroMedia} ${slideshowStyles.slideshow}`} role="img" aria-label="Pop Playrooms branded venue and experience design photography">
-              {[
-                "https://cdn.sanity.io/images/6y2dn5q3/production/607d4374382faa0f9d086deba08a96932c2e403c-2334x1167.jpg",
-                "https://cdn.sanity.io/images/6y2dn5q3/production/d00d8efe76332f66004fe931f8c6ecbe8de8780a-2334x1410.jpg",
-                "https://cdn.sanity.io/images/6y2dn5q3/production/ce8a6cc1c367cc9285a89d86d0745b6e42d0b3d9-1544x1134.jpg",
-                "https://cdn.sanity.io/images/6y2dn5q3/production/7a8f0578370b46962454edaf6aad288cc0da7310-1304x870.webp",
-              ].map((src, index) => (
-                <img key={src} src={src} alt="" width="2000" height="1200" loading={index === 0 ? "eager" : "lazy"} />
-              ))}
+            <div className={`${c.heroMedia} sd-strategy-video`} style={{ background: "#000" }}>
+              <iframe
+                src="https://skiv.com/embed/YYbc5RY?search=0&links=0&logo=0&title=0&autoplay=1&loop=1&volume=0&style=no-controls"
+                title="Pop Playrooms bar and venue photography"
+                loading="eager"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                style={{ width: "100%", height: "100%", position: "absolute", inset: 0, border: 0, pointerEvents: "none" }}
+              />
             </div>
           ) : data.slug === "mini-golf" ? (
             <div className={`${c.heroMedia} sd-strategy-video`} style={{ background: "#000" }}>
