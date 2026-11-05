@@ -1,5 +1,6 @@
 import {defineType, defineField, defineArrayMember, type SchemaTypeDefinition, type PreviewValue} from 'sanity';
 import {recoveredTypes} from './recovered';
+import {serviceContent} from './serviceContent';
 import {videoDetails} from '../../src/lib/gallery-media';
 
 const spacing = [
@@ -124,5 +125,5 @@ export const schemaTypes: SchemaTypeDefinition[] = [
     }
     return {...type, fields} as SchemaTypeDefinition;
   }),
-  mediaItem, galleryMedia, galleryRow,
+  mediaItem, galleryMedia, galleryRow, serviceContent,
 ];
