@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { ServiceDetailPage } from "@/components/ServiceDetailPage";
+import { LiveServicePage } from "@/components/LiveServicePage";
 import { servicePages } from "@/lib/service-pages";
 import { getServicePage } from "@/lib/sanity-services";
 
@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
-  const data = servicePages[slug];
+  const data = await getServicePage(slug);
   if (!data) notFound();
-  return <ServiceDetailPage data={data} />;
+  return <LiveServicePage initialData={data} />;
 }
