@@ -9,7 +9,6 @@ const relatedServices: Record<string, { label: string; href: string }[]> = {
     { label: "Campaigns & Content", href: "/services/campaigns-content" },
   ],
   "pop-playrooms": [
-    { label: "Venue & Experience Design", href: "/services/venue-experience-design" },
     { label: "Brand Strategy & Design", href: "/services/brand-strategy-design" },
     { label: "Venue & Experience Design", href: "/services/venue-experience-design" },
     { label: "Mini Golf Design & Build", href: "/services/mini-golf" },
