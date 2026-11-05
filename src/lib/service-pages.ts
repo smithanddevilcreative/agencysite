@@ -8,6 +8,7 @@ export type ServicePageData =
   standfirst: string;
   actions: { className: string; href: string; label: string }[];
   heroImage: { src: string; alt: string };
+  heroMedia?: { kind: 'image' | 'slideshow' | 'skiv' | 'vimeo'; videoId?: string; images?: { src: string; alt: string }[] };
   proofLine: string;
   featuredProjects?: { title: string; href: string; image: { src: string; alt: string }; description: string }[];
   argument: { label: string; title: string; paragraphs: string[] };
