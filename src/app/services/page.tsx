@@ -5,7 +5,7 @@ import { ServicesOrbit } from "@/components/ServicesOrbit";
 
 export const metadata: Metadata = {
   title: "Creative Services for the Experience Economy",
-  description: "Venue concept development, brand, campaign, digital, interior and themed experience services for hospitality, leisure, entertainment and experience-led businesses.",
+  description: "Brand, campaign, digital, venue design and themed experience services for hospitality, leisure, entertainment and experience-led businesses.",
   alternates: { canonical: "/services" },
 };
 
@@ -15,12 +15,6 @@ const services = [
     slug: "value-proposition-brand-strategy",
     desc: "Research, positioning, brand and launch strategy for the experience economy. A clear value proposition and a compelling investment story.",
     image: "/images/work/fortune-favours/logo-tile.jpg",
-  },
-  {
-    title: "Venue Concept Development",
-    slug: "venue-concept-development",
-    desc: "We turn early-stage leisure and hospitality ideas into clear propositions, brands and experience briefs that can actually be designed, funded and built.",
-    image: "/images/work/pop-playrooms/10.webp",
   },
   {
     title: "Brand Strategy & Design",
@@ -128,7 +122,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <ServicesOrbit services={services.filter((service) => ["concept-to-market", "venue-concept-development", "campaigns-content", "mini-golf", "themed-experiences"].includes(service.slug))} />
+      <ServicesOrbit services={services.filter((service) => ["value-proposition-brand-strategy", "venue-experience-design", "campaigns-content", "mini-golf", "themed-experiences"].includes(service.slug))} />
 
       <section className={c.argument}>
         <div className={`${c.inner} ${c.twoCol}`}>
