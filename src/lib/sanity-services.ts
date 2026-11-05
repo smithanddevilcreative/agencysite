@@ -8,7 +8,7 @@ type CMSService = Partial<ServicePageData> & {
 
 const QUERY = `*[_type == "servicePage" && slug.current == $slug][0]{
   title, description, kicker, heroTitle, standfirst,
-  heroImage, heroMedia{kind,videoId,images[]{src,alt}},
+  heroImage, heroMedia{kind,videoId,images[]{src,alt,"imageUrl":image.asset->url, "crop":image.crop, "hotspot":image.hotspot}},
   actions[]{className,href,label}, proofLine,
   featuredProjects[]{title,href,description,image{src,alt}},
   argument{label,title,paragraphs},
@@ -30,7 +30,9 @@ export async function getServicePage(slug: string): Promise<ServicePageData | nu
     // A complete published CMS record takes precedence. Keep GitHub as a
     // non-destructive fallback until all eight pages have been imported.
     if (!cms?.heroTitle || !cms?.standfirst || !cms?.capabilities?.items?.length || !cms?.faq?.items?.length) return fallback;
-    return {...fallback, ...cms, slug, heroMedia: cms.heroMedia || fallback.heroMedia};
+    const media = cms.heroMedia;
+    const heroMedia = media ? {...media, images: media.images?.map((item) => ({...item, src: item.imageUrl || item.src}))} : fallback.heroMedia;
+    return {...fallback, ...cms, slug, heroMedia};
   } catch {
     return fallback;
   }
