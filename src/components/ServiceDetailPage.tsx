@@ -132,6 +132,10 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
                 style={{ width: "100%", height: "100%", position: "absolute", inset: 0, border: 0 }}
               />
             </div>
+          ) : data.heroMedia?.kind === "slideshow" && data.heroMedia.images?.length === 1 ? (
+            <div className={c.heroMedia}>
+              <img alt={data.heroMedia.images[0].alt || data.heroImage.alt} width="2000" height="1200" src={data.heroMedia.images[0].src} />
+            </div>
           ) : data.heroMedia?.kind === "slideshow" && data.heroMedia.images?.length ? (
             <VenueHeroSlideshow className={c.heroMedia} images={data.heroMedia.images} label={data.heroImage.alt} />
           ) : data.heroMedia?.kind === "skiv" && data.heroMedia.videoId ? (
