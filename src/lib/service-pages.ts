@@ -949,7 +949,7 @@ export const servicePages: Record<string, ServicePageData> = {
     "description": "Venue and experience design for hospitality, leisure and attractions. Interior creative direction, branded environments, signage, wayfinding and guest experiences.",
     "kicker": "Venue & Experience Design",
     "heroTitle": "Brand-rich environments designed around your customers.",
-    "standfirst": "We design branded environments for leisure, attractions, competitive socialising and retail. We connect your brand and customer proposition to interiors, signage, wayfinding and the moments customers remember.",
+    "standfirst": "We design branded environments for hospitality, themed entertainment, visitor attractions, competitive socialising and retail. We connect your brand and customer proposition to interiors, signage, wayfinding and the moments customers remember.",
     "actions": [
       {
         "className": "service-module__T4otXW__primaryAction",
