@@ -23,7 +23,7 @@ const QUERY = `*[_type == "servicePage" && slug.current == $slug][0]{
 
 function croppedSanityImage(url: string, crop?: {left?: number; right?: number; top?: number; bottom?: number}): string {
   if (!crop || !url.startsWith("https://cdn.sanity.io/images/")) return url;
-  const match = url.match(/-(\\d+)x(\\d+)\\.(?:jpg|jpeg|png|webp)(?:\\?|$)/i);
+  const match = url.match(/-(\d+)x(\d+)\.(?:jpg|jpeg|png|webp)(?:\?|$)/i);
   if (!match) return url;
   const width = Number(match[1]), height = Number(match[2]);
   const left = Math.round(width * (crop.left || 0));
