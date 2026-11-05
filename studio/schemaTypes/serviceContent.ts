@@ -10,7 +10,8 @@ const linkFields = [
 ];
 
 const imageFields = [
-  defineField({name: 'src', title: 'Image URL or /images/ path', type: 'string'}),
+  defineField({name: 'image', title: 'Choose or upload an image', type: 'image', options: {hotspot: true}}),
+  defineField({name: 'src', title: 'Existing image URL (fallback)', type: 'string', description: 'The image selector above takes priority.'}),
   defineField({name: 'alt', title: 'Image description', type: 'string'}),
 ];
 
