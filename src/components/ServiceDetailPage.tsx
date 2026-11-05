@@ -132,15 +132,22 @@ export function ServiceDetailPage({ data }: { data: ServicePageData }) {
                 style={{ width: "100%", height: "100%", position: "absolute", inset: 0, border: 0 }}
               />
             </div>
-          ) : data.slug === "venue-experience-design" ? (
-            <div className={`${c.heroMedia} ${slideshowStyles.slideshow}`} role="img" aria-label="Pop Playrooms bar and branded interiors">
-              {[
-                "https://cdn.sanity.io/images/6y2dn5q3/production/01074c93071c565323e6878e207eb4757ae55290-1400x805.webp",
-                "https://cdn.sanity.io/images/6y2dn5q3/production/39005d1bea3e8f3c788c53e5d1d821222d1b283f-1400x498.webp",
-                "https://cdn.sanity.io/images/6y2dn5q3/production/c151fc65d638f38bf913e6e37ccfe501251a9fe9-1400x934.webp",
-              ].map((src, index) => (
-                <img key={src} src={src} alt="" width="1400" height="805" loading={index === 0 ? "eager" : "lazy"} />
+          ) : data.heroMedia?.kind === "slideshow" && data.heroMedia.images?.length ? (
+            <div className={`${c.heroMedia} ${slideshowStyles.slideshow}`} role="img" aria-label={data.heroImage.alt}>
+              {data.heroMedia.images.map((item, index) => (
+                <img key={index} src={item.src} alt="" width="1400" height="805" loading={index === 0 ? "eager" : "lazy"} />
               ))}
+            </div>
+          ) : data.heroMedia?.kind === "skiv" && data.heroMedia.videoId ? (
+            <div className={`${c.heroMedia} sd-strategy-video`} style={{ background: "#000" }}>
+              <iframe
+                src={`https://skiv.com/embed/${data.heroMedia.videoId}?search=0&links=0&logo=0&title=0&autoplay=1&loop=1&volume=0&style=no-controls`}
+                title={data.heroImage.alt}
+                loading="eager"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                style={{ width: "100%", height: "100%", position: "absolute", inset: 0, border: 0, pointerEvents: "none" }}
+              />
             </div>
           ) : data.slug === "mini-golf" ? (
             <div className={`${c.heroMedia} sd-strategy-video`} style={{ background: "#000" }}>
