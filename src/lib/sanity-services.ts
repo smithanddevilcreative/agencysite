@@ -59,5 +59,12 @@ export function mergeServiceContent(fallback: ServicePageData, cms: CMSService):
         ...item, src: croppedSanityImage(item.imageUrl || item.src, item.crop)
       }))}
     : fallback.heroMedia;
-  return {...fallback, ...cms, slug: fallback.slug, heroMedia};
+  // A service slideshow also owns the lead still. Keep the fallback image
+  // synchronised with the first selected slide instead of retaining an older
+  // hard-coded photo in a separate field.
+  const firstSlide = heroMedia?.kind === "slideshow" ? heroMedia.images?.find((item) => item.src) : undefined;
+  const heroImage = firstSlide
+    ? {src: firstSlide.src, alt: firstSlide.alt || cms.heroImage?.alt || fallback.heroImage.alt}
+    : cms.heroImage || fallback.heroImage;
+  return {...fallback, ...cms, slug: fallback.slug, heroMedia, heroImage};
 }
