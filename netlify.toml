@@ -112,3 +112,16 @@
   to = "/services/value-proposition-brand-strategy/"
   status = 301
   force = true
+
+# Retired overlapping service; preserve any existing search links.
+[[redirects]]
+  from = "/services/venue-concept-development"
+  to = "/services/venue-experience-design/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/services/venue-concept-development/"
+  to = "/services/venue-experience-design/"
+  status = 301
+  force = true
