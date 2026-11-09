@@ -236,8 +236,8 @@ export const servicePages: Record<string, ServicePageData> = {
     "title": "Brand Strategy & Design Agency | Smith & Devil",
     "description": "Brand strategy, naming, identity and messaging for hospitality, leisure, entertainment and experience-led businesses.",
     "kicker": "Brand Strategy & Design",
-    "heroTitle": "Build something people choose.",
-    "standfirst": "We create distinctive brands for hospitality, leisure, entertainment and ambitious businesses built around customer experience. Clear enough to guide the business. Powerful enough to win hearts — and markets.",
+    "heroTitle": "Branding for hospitality, attractions and competitive socialising.",
+    "standfirst": "Define your audience, sharpen your value proposition and build a distinctive brand. We help you develop the positioning, name, identity and language for a new launch, a rebrand or your next stage of growth.",
     "actions": [
       {
         "className": "service-module__T4otXW__primaryAction",
@@ -251,10 +251,10 @@ export const servicePages: Record<string, ServicePageData> = {
       }
     ],
     "heroImage": {
-      "src": "/images/t2-design-solutions.jpg",
-      "alt": "T2 Design Solutions living infinity identity"
+      "src": "/images/pop-playrooms.webp",
+      "alt": "Pop Playrooms competitive socialising brand"
     },
-    "proofLine": "T2 Design Solutions used its new brand to support expansion from Worksop to London and Bahrain.",
+    "proofLine": "Pop Playrooms: a music-led brand and competitive socialising concept delivered across Wembley and Kingston upon Thames.",
     "argument": {
       "label": "Why it matters",
       "title": "A brand people can believe in — and a business can use.",
@@ -395,17 +395,55 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "enquiry": {
       "label": "Start a conversation",
-      "title": "Give customers a stronger reason to choose you.",
-      "intro": "Tell us what is changing in the business and where the current brand is holding it back."
-    }
+      "title": "Talk through your brand plans.",
+      "intro": "Tell us what you’re launching or changing. We’ll discuss your audience, the scope of support you need and whether we’re the right fit. You don’t need a finished brief."
+    },
+    "heroMedia": {
+      "kind": "image",
+      "images": [
+        {
+          "src": "/images/pop-playrooms.webp",
+          "alt": "Pop Playrooms competitive socialising brand"
+        }
+      ]
+    },
+    "featuredProjects": [
+      {
+        "title": "Pop Playrooms",
+        "href": "/work/pop-playrooms/",
+        "image": {
+          "src": "/images/pop-playrooms.webp",
+          "alt": "Pop Playrooms"
+        },
+        "description": "Brand strategy, identity and experience design for a music-led competitive socialising concept."
+      },
+      {
+        "title": "Humbug",
+        "href": "/work/humbug/",
+        "image": {
+          "src": "/images/humbug.webp",
+          "alt": "Humbug"
+        },
+        "description": "Positioning, branding and launch creative for Santa’s Christmas Dive Bar."
+      },
+      {
+        "title": "Mighty Adventures",
+        "href": "/work/mighty-adventures/",
+        "image": {
+          "src": "/images/mighty-adventures.webp",
+          "alt": "Mighty Adventures"
+        },
+        "description": "A dinosaur-themed family attraction brand developed across three venues."
+      }
+    ]
   },
   "campaigns-content": {
     "slug": "campaigns-content",
     "title": "Campaign Strategy & Content Agency | Smith & Devil",
     "description": "Campaign strategy, launch creative, social content, CRM and multi-channel campaigns for hospitality, leisure and experience brands.",
     "kicker": "Campaigns & Content",
-    "heroTitle": "Give people a reason to act.",
-    "standfirst": "We plan and create launch campaigns, always-on content and customer communications that give people a reason to notice, book and come back.",
+    "heroTitle": "Marketing campaigns for attractions and immersive experiences.",
+    "standfirst": "Launch a new experience, sell tickets or bring customers back. We develop the proposition, campaign creative, social content and email marketing for attractions, immersive experiences, hospitality and competitive socialising.",
     "actions": [
       {
         "className": "service-module__T4otXW__primaryAction",
@@ -549,9 +587,38 @@ export const servicePages: Record<string, ServicePageData> = {
     },
     "enquiry": {
       "label": "Start a conversation",
-      "title": "Give people a reason to act.",
-      "intro": "Tell us what you need to launch, fill or grow. We will help turn the commercial target into a campaign people want to respond to."
-    }
+      "title": "What do you need your campaign to achieve?",
+      "intro": "Talk through your launch, ticket sales or return visits. We’ll discuss your audience, timing and the support you need, then establish whether we’re the right fit."
+    },
+    "featuredProjects": [
+      {
+        "title": "Humbug",
+        "href": "/work/humbug/",
+        "image": {
+          "src": "/images/humbug.webp",
+          "alt": "Humbug Christmas experience"
+        },
+        "description": "Brand positioning and a launch campaign across outdoor advertising, social, email and web."
+      },
+      {
+        "title": "Pop Playrooms",
+        "href": "/work/pop-playrooms/",
+        "image": {
+          "src": "/images/pop-playrooms.webp",
+          "alt": "Pop Playrooms"
+        },
+        "description": "A music-led competitive socialising brand, website and launch campaign."
+      },
+      {
+        "title": "Strike",
+        "href": "/work/strike/",
+        "image": {
+          "src": "/images/work/strike/strike-card.jpg",
+          "alt": "Strike bowling venue"
+        },
+        "description": "Creative direction, launch film, photography and menu design for a Wandsworth night out."
+      }
+    ]
   },
   "digital-web": {
     "slug": "digital-web",
