@@ -68,7 +68,7 @@ export const projectPages: Record<string, ProjectPageData> = {
   "draughts": {
     "slug": "draughts",
     "title": "Draughts",
-    "description": "We turned an unused customer database into a revenue-generating CRM system. The first three emails generated £14,125.",
+    "description": "We turned an unused customer database into a revenue-generating CRM system. The first three email flows generated £14,125.",
     "services": "CRM Strategy | Campaign Creative | Email Design | Segmentation | Automation",
     "results": [
       {
@@ -81,13 +81,13 @@ export const projectPages: Record<string, ProjectPageData> = {
       },
       {
         "value": "3",
-        "label": "Emails"
+        "label": "Email flows"
       }
     ],
     "paragraphs": [
       "Draughts had 18,000 customer records, but the database had been left cold. The opportunity was not simply to send a newsletter. It was to rebuild a useful commercial relationship with those customers.",
       "Smith & Devil audited the CRM, fixed deliverability issues and rebuilt the email design system. We planned a phased warm-up and split audiences by venue affinity and recency, so each customer received a reason to return that made sense to them.",
-      "The first three emails generated £14,125 in attributed revenue. The work also created a reusable campaign system, improved sender health and identified hundreds of newly engaged customers for future targeting.",
+      "The first three email flows generated £14,125 in attributed revenue. The work also created a reusable campaign system, improved sender health and identified hundreds of newly engaged customers for future targeting.",
       "We then launched welcome and birthday automations. The welcome email achieved a 54.17% open rate in its first weeks, turning sign-up data into an always-on route back to booking."
     ],
     "quote": null,
