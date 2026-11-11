@@ -141,7 +141,7 @@ export default function ServicesPage() {
         <div className={c.inner}>
           <div className={`Reveal-module__U2Tp6W__base ${c.indexHead}`}>
             <p className={c.sectionLabel}>The connected offer</p>
-            <h2>Eight ways we help.</h2>
+            <h2>What we do.</h2>
           </div>
           <div className={c.cards}>
             {services.map((service) => (
