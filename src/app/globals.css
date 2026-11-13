@@ -4778,20 +4778,34 @@ input[type="submit"]{
 .sd-footer-underworld{
   display:inline-flex;
   align-items:center;
-  width:max-content;
+  align-self:flex-start;
+  justify-content:flex-start;
+  max-width:100%;
+  min-height:44px;
   margin-top:-4px;
-  padding:0;
+  padding:8px 0;
   border:0;
   background:transparent;
   color:#ef1111!important;
   font-family:var(--font-sans);
-  font-size:10px;
+  font-size:12px;
   font-weight:700;
-  letter-spacing:.12em;
-  line-height:1.4;
+  letter-spacing:.08em;
+  line-height:1.35;
+  text-align:left;
   text-decoration:none;
   text-transform:uppercase;
   cursor:pointer;
+}
+.sd-footer-underworld > span{
+  max-width:100%;
+  overflow-wrap:normal;
+}
+@media(max-width:620px){
+  .sd-footer-underworld{
+    font-size:12px;
+    letter-spacing:.055em;
+  }
 }
 .sd-footer-underworld__hover,
 .sd-footer-underworld__armed{display:none}
