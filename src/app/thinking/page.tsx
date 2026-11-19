@@ -14,7 +14,7 @@ export default function ThinkingPage() {
     <main className="sd-thinking-index">
       <section className="sd-thinking-index-hero">
         <div className="sd-thinking-inner">
-          <h1>Brand strategy, positioning and practical lessons from the experience economy.</h1>
+          <h1>A few thoughts on building, branding and selling places people want to visit.</h1>
         </div>
       </section>
 
