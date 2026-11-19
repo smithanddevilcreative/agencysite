@@ -144,49 +144,47 @@ export const thinkingArticles: ThinkingArticle[] = [
 },
 {
   "slug": "selling-immersive-experience",
-  "title": "Who's responsible for selling the immersive experience?",
-  "seoTitle": "Commercial Strategy for Immersive Experiences | Smith & Devil",
-  "description": "Why immersive experiences need a commercial proposition, clear audiences and a sales strategy before launch.",
-  "eyebrow": "Concept to Market / Immersive experiences",
-  "standfirst": "The creative and technical teams know how to build the experience. Someone still needs to establish exactly what audiences will buy.",
+  "title": "How do you sell an experience nobody's experienced yet?",
+  "seoTitle": "Selling Immersive Experiences | Smith & Devil",
+  "description": "What Humbug taught us about giving audiences a compelling reason to book an unfamiliar live experience.",
+  "eyebrow": "Immersive experiences / Strategy",
+  "standfirst": "When the show is unusual, the hardest part can be explaining why someone should book it.",
   "heroImage": {
-    "src": "/images/work/humbug/03.webp",
-    "alt": "Humbug live immersive entertainment experience"
+    "src": "https://cdn.sanity.io/images/6y2dn5q3/production/3cb5ada47d21360c09a34a920220d362925c2276-2200x1200.jpg",
+    "alt": "Present-wrapped entrance tunnel at the Humbug Christmas experience",
+    "caption": "Humbug's present-wrapped entrance: the audience steps into the story before the show starts.",
+    "href": "/work/humbug"
   },
   "sections": [
     {
       "paragraphs": [
-        "An immersive experience can have extraordinary sets, original technology, recognisable IP and a team capable of bringing it all to life.",
-        "But the commercial questions need just as much attention. Who is paying? What do different audiences expect? How will bookings arrive, and what happens after the first wave of interest?"
+        "Try explaining Humbug to someone who's never heard of it. There's Santa, a live band, audience games, a bar, a cast of oddballs and a Christmas story that doesn't behave quite like the ones you grew up with.",
+        "It's a cracking night out. It's also a lot to cram into an advert.",
+        "When people are buying a ticket for something unfamiliar, they need enough to imagine the evening. A long list of features is rarely the best way to do that."
       ]
     },
     {
-      "heading": "One experience, several products",
+      "heading": "Sell the night people want to have",
       "paragraphs": [
-        "A fan buying a ticket for a licensed world is responding to a different promise from a company organising a team day. A family planning an afternoon out is buying something different again.",
-        "That changes the session format, offer, pricing, booking journey, campaign and partnership strategy. Treating them as one general audience leaves revenue opportunities on the table."
+        "For Humbug, we started with the kind of evening people were looking for. A Christmas party with live entertainment, plenty of laughs and an excuse to get a group together.",
+        "Santa's dive bar gave us a place, a character and an attitude to hang the whole thing on. As the show evolved, so did the story and the campaign. There was always a clear idea people could explain to their friends.",
+        "You don't have to spoil the surprises to sell an immersive experience. In fact, please don't. But people should have a decent idea of what they're signing up for."
       ]
     },
     {
-      "heading": "Corporate sales needs a product",
+      "heading": "Make the promise easy to believe",
       "paragraphs": [
-        "Corporate buyers need a reason to purchase, a clear format, relevant outcomes, reliable fulfilment and someone who can handle an enquiry from beginning to end.",
-        "Employee engagement, team events, client entertainment and private hire each require specific purchasing arguments. A corporate page on a website alone is not a sales strategy."
+        "Photos and film of the real experience do a different job from key art. An illustration can establish the world. A room full of people laughing, singing or joining in shows what being there actually feels like.",
+        "The website needs to answer the unglamorous questions too. How long is it? What happens when you arrive? Can you bring a group? Are you expected to take part? People are much happier spending money when they know roughly how their evening will work.",
+        "Those decisions are part of the customer experience, and they affect how confidently someone books."
       ]
     },
     {
-      "heading": "The proposition should inform the experience",
+      "heading": "The experience and the marketing should develop together",
       "paragraphs": [
-        "When a concept is still being developed, commercial strategy should influence how the customer journey is designed. Capacity, dwell time, group arrangements, food and drink and opportunities to return affect both experience quality and revenue.",
-        "This work belongs in the brief before the physical and technical teams commit to detailed design."
-      ]
-    },
-    {
-      "heading": "Build a launch and a customer lifecycle",
-      "paragraphs": [
-        "Announcement, fan pre-sales, consumer campaigns, corporate outreach, distribution partners, booking conversion and CRM each have distinct jobs.",
-        "The objective is to give the experience a route to its first customers and a plan for keeping audiences engaged once it opens.",
-        "Smith & Devil's Concept to Market service develops the proposition, brand and go-to-market strategy for immersive experiences at every stage from initial commercial definition to launch."
+        "There's useful creative work to do long before tickets go on sale. The audience, the occasion and the promise can influence the show format, the venue, the booking journey and the campaign.",
+        "With Humbug we've worked across the brand, experience and marketing over three Christmas seasons. That meant the story people saw in the advertising had a proper relationship with the night they came to enjoy.",
+        "Over those three years, the production sold 30,000 tickets. A good reminder that the commercial story and the creative one have to get along."
       ]
     }
   ],
@@ -196,71 +194,67 @@ export const thinkingArticles: ThinkingArticle[] = [
       "href": "/work/humbug"
     },
     {
-      "title": "Pop Playrooms",
-      "href": "/work/pop-playrooms"
+      "title": "Strike",
+      "href": "/work/strike"
     }
   ]
-},
-{
+}{
   "slug": "technology-to-market-customer-proposition",
   "title": "You've invented the technology. Now what are you selling?",
-  "seoTitle": "Taking Entertainment Technology to Market | Smith & Devil",
-  "description": "How to turn entertainment technology into a proposition customers want and investors can understand.",
-  "eyebrow": "Concept to Market / Technology",
-  "standfirst": "When the technology leads the pitch, it can be easy to overlook the customer product.",
+  "seoTitle": "Turning Entertainment Technology Into a Product | Smith & Devil",
+  "description": "How to turn entertainment technology into an experience customers understand, want and are willing to pay for.",
+  "eyebrow": "Technology / Commercial strategy",
+  "standfirst": "A clever system can impress a room. The customer still needs a reason to book.",
   "heroImage": {
-    "src": "/images/work/fortune-favours/03.webp",
-    "alt": "Fortune Favours entertainment concept visual"
+    "src": "/images/work/allstars-sports-bars/omni-darts.jpg",
+    "alt": "OMNI auto-scoring darts technology at Allstars Sports Bar",
+    "caption": "Auto-scoring darts makes the game easier to play. Customers are there for the competition and the company.",
+    "href": "/work/allstars-sports-bars"
   },
   "sections": [
     {
       "paragraphs": [
-        "An exciting technical demonstration can win a room. That does not necessarily tell anyone what business sits behind it.",
-        "The founder knows what the system can do. The architect is asked what the venue might look like. Investors want to understand why people will buy tickets. Those are different questions, and somebody has to connect the answers."
+        "There's something irresistible about a clever piece of entertainment technology. A new way to track players, project a world around them or make a game respond in real time. You can see why the people who build it get excited.",
+        "The trouble starts when the sales pitch sounds like a tour of the engineering department.",
+        "Most customers aren't studying the specifications. They're deciding what to do on Saturday night."
       ]
     },
     {
-      "heading": "Define the customer product",
+      "heading": "What does it let people do?",
       "paragraphs": [
-        "Start with the situations in which somebody would choose the experience. Who comes, with whom, for what occasion, and what will they pay for?",
-        "A technology can support several products. A fan-led event, a family session and a corporate team experience may share the same platform while needing different formats, promises and sales journeys."
+        "Take auto-scoring darts. The cameras and software are impressive, but you don't round up six mates because you're desperate to see a tracking algorithm in action.",
+        "You want a good game, a bit of competition and an evening that's easy to organise. The technology makes that experience possible and, ideally, makes it better.",
+        "That's the difference between demonstrating a system and having something people want to buy."
       ]
     },
     {
-      "heading": "An architect needs a proposition, not a feature list",
+      "heading": "There's a product to work out",
       "paragraphs": [
-        "Without a defined audience, experience and commercial model, spatial design has to fill in the gaps. That can produce a compelling render without resolving whether the business works.",
-        "Define the proposition and experience principles first. Then architecture can express the right customer experience rather than guess what it should be."
+        "A technology might suit a quick game in a bar, a longer ticketed experience, a family attraction or a corporate event. Each comes with different expectations.",
+        "How many people play together? How long should a session last? What does someone pay for? Is the game still enjoyable if half the group has never tried anything like it? What happens if they want another go?",
+        "Those answers affect the space, staffing, booking setup and commercial model. It's better to find the awkward bits while you're still shaping the offer than after you've ordered the fit-out."
       ]
     },
     {
-      "heading": "Make the investment case understandable",
+      "heading": "Give the technology a customer-facing idea",
       "paragraphs": [
-        "Investors need a credible customer opportunity, a distinct reason to choose the product and a reason to believe the operation can acquire those customers.",
-        "The proposition and investment narrative should connect to independently tested commercial assumptions. A good pitch cannot substitute for evidence, financial planning or technical validation."
-      ]
-    },
-    {
-      "heading": "From prototype to launch plan",
-      "paragraphs": [
-        "Once the offer is clear, map the launch: which audiences come first, what they are being sold, where distribution comes from and how the business converts interest into bookings.",
-        "This is the point where brand, communications, partnerships, website and CRM can begin working from the same commercial plan.",
-        "Smith & Devil's Concept to Market service helps founders connect those decisions before investing heavily in the next stage."
+        "Once the format is clear, you can build a story around the experience, decide who it's for and give it a recognisable identity. The website and campaign can then talk about the fun people will have, with the technology doing its job in the background.",
+        "Of course, technical performance and the numbers still have to stack up. A brilliant headline won't fix a game that regularly breaks or a venue that can't serve enough customers.",
+        "Our role is to connect the invention to a proposition someone can understand, a place they'll want to visit and a credible plan for taking it to market."
       ]
     }
   ],
   "relatedProjects": [
     {
-      "title": "T2 Design Solutions",
-      "href": "/work/t2-design-solutions"
+      "title": "Allstars Sports Bars",
+      "href": "/work/allstars-sports-bars"
     },
     {
-      "title": "Fortune Favours",
-      "href": "/work/fortune-favours"
+      "title": "T2 Design Solutions",
+      "href": "/work/t2-design-solutions"
     }
   ]
-},
-{
+}{
   "slug": "before-architect-designs-venue",
   "title": "Before your architect designs the venue, define the business",
   "seoTitle": "Define Your Leisure Venue Before Architecture | Smith & Devil",
@@ -512,83 +506,69 @@ export const thinkingArticles: ThinkingArticle[] = [
       { title: "Pop Playrooms", href: "/work/pop-playrooms" }
     ]
   },
-  {
-    slug: "experience-economy-customer-value",
-    title: "What are people really buying?",
-    seoTitle: "Customer Value in the Experience Economy",
-    description: "Why experience-led brands need to understand the emotional and social value customers are really buying.",
-    eyebrow: "Customer value",
-    standfirst: "People are often buying more than the activity itself.",
-    heroImage: {
-      src: "/images/work/humbug/06.webp",
-      alt: "Guests inside the Humbug Christmas experience",
-      caption: "Humbug: the product is a show, but the value is a shared Christmas night out.",
-      href: "/work/humbug"
-    },
-    sections: [
-      {
-        paragraphs: [
-          "A customer can book bowling and be buying an excuse to get everyone together. They can book mini golf and be buying an easy family afternoon. They can buy a theatre ticket and be buying permission to behave differently for two hours.",
-          "The activity tells you what to operate. The customer value tells you what to build the brand around."
-        ]
-      },
-      {
-        heading: "Features do not explain why people choose you",
-        paragraphs: [
-          "Eighteen holes. Four karaoke rooms. Twenty taps. Live band. Ninety minutes of gameplay.",
-          "Necessary information, sometimes.",
-          "Features become interchangeable quickly. What matters more is the value they create: an easier date, a better family day out, a stronger group occasion or a story worth sharing afterwards."
-        ]
-      },
-      {
-        heading: "The occasion changes what people need",
-        paragraphs: [
-          "The same venue can mean different things at different times.",
-          "A sports bar on a Tuesday afternoon is not selling the same value as the same room during a cup final. A bowling lane for a children's party is not the same product as a late-night date.",
-          "Occasion tells you who matters, what they need, how much friction they will tolerate and what should lead in the message."
-        ],
-        media: {
-          src: "/images/work/pop-playrooms/07.webp",
-          alt: "Guests inside Pop Playrooms",
-          caption: "The activity is part of the offer. The occasion determines what the customer needs from it.",
-          href: "/work/pop-playrooms"
-        }
-      },
-      {
-        heading: "Mighty Adventures: creating more value around the game",
-        paragraphs: [
-          "With Mighty Adventures, the opportunity was not simply to improve a golf course.",
-          "The family value sat in the shared mission: characters to discover, things to learn, moments parents and children could talk about together.",
-          "That gave us more to design and the customer more to remember. It also created material for schools, stories, take-home content and future locations."
-        ],
-        media: {
-          src: "/images/work/mighty-adventures/08.webp",
-          alt: "Mighty Adventures family experience content",
-          caption: "A richer definition of value creates more places for the brand to live.",
-          href: "/work/mighty-adventures"
-        }
-      },
-      {
-        heading: "Why this matters to the business",
-        paragraphs: [
-          "If you know what people value, price becomes easier to defend. Marketing becomes less dependent on offers. New products can be judged against the same idea. Repeat visits can be designed rather than simply hoped for.",
-          "It also helps identify where not to spend. Customers do not need every part of an experience to be extraordinary. They need the parts that carry the value to be right."
-        ]
-      },
-      {
-        heading: "A simple test",
-        paragraphs: [
-          "If you remove the activity name from the proposition, is there still a clear reason to want it?",
-          "If there is, you may be getting close to the real value."
-        ]
-      }
-    ],
-    relatedProjects: [
-      { title: "Humbug", href: "/work/humbug" },
-      { title: "Mighty Adventures", href: "/work/mighty-adventures" },
-      { title: "Pop Playrooms", href: "/work/pop-playrooms" }
-    ]
+{
+  "slug": "experience-economy-customer-value",
+  "title": "What are people really buying?",
+  "seoTitle": "What Customers Really Buy in the Experience Economy | Smith & Devil",
+  "description": "A look at how occasions and customer motivations influence the design and marketing of hospitality and leisure experiences.",
+  "eyebrow": "Customer value",
+  "standfirst": "The same activity can be a family treat, a first date or a Friday night with friends.",
+  "heroImage": {
+    "src": "/images/work/allstars-sports-bowl/cards/allstars_sports_bowl_weston_families_select-7405751.jpg",
+    "alt": "Family enjoying bowling at Allstars Sports Bowl",
+    "caption": "Allstars Sports Bowl: people choose activities for the time they'll have together.",
+    "href": "/work/allstars-sports-bowl"
   },
+  "sections": [
+    {
+      "paragraphs": [
+        "Someone books a bowling lane for their child's birthday. Someone else books the same lane because they can't face another first date conducted across a restaurant table.",
+        "Same activity. Rather different expectations.",
+        "That's worth remembering when you're designing a venue, deciding what to charge or wondering why one offer sells better than another."
+      ]
+    },
+    {
+      "heading": "The occasion does a lot of the selling",
+      "paragraphs": [
+        "A family needs an easy afternoon: a game the children can enjoy, somewhere to sit and a booking that doesn't require a phone call and three follow-up emails.",
+        "A group of friends might care more about music, drinks and whether they can play another round. A couple might want something fun that leaves room for conversation.",
+        "There's no reason a venue can't cater for all of them. There is a good reason to understand what each group needs before expecting the same message to work on everyone."
+      ]
+    },
+    {
+      "heading": "Design around what makes the visit enjoyable",
+      "paragraphs": [
+        "This thinking can affect some surprisingly practical choices. The layout between games and the bar. How groups move through a venue. Whether the experience has moments worth sharing. How a family with younger children navigates the place.",
+        "At Mighty Adventures, the golf is wrapped in a family adventure with characters and a mission. Those details give parents and children something to follow together as they play.",
+        "The activity remains mini golf, but the design gives the visit its own character."
+      ],
+      "media": {
+        "src": "/images/mighty-adventures.jpg",
+        "alt": "Family exploring the Mighty Adventures themed mini golf experience",
+        "caption": "Mighty Adventures: the story becomes part of the family activity.",
+        "href": "/work/mighty-adventures"
+      }
+    },
+    {
+      "heading": "Give the business something useful to work with",
+      "paragraphs": [
+        "Once you know which occasions matter, you can shape packages, opening hours, programming and the way you talk about the venue. You can also spot the gaps: the audience you aren't reaching or the time of week that needs a better reason to visit.",
+        "Marketing still has plenty to do. It simply gets to work with an offer that understands the people buying it.",
+        "And if the visit turns out to be as good as promised, you've got a much better chance of seeing those people again."
+      ]
+    }
+  ],
+  "relatedProjects": [
+    {
+      "title": "Allstars Sports Bowl",
+      "href": "/work/allstars-sports-bowl"
+    },
+    {
+      "title": "Mighty Adventures",
+      "href": "/work/mighty-adventures"
+    }
+  ]
+},
   {
     slug: "branding-new-hospitality-concept",
     title: "Turning a new hospitality concept into a brand",
