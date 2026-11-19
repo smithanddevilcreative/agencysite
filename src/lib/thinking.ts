@@ -264,7 +264,7 @@ export const thinkingArticles: ThinkingArticle[] = [
     "eyebrow": "Venue development / Strategy",
     "standfirst": "The floor plan gets expensive surprisingly quickly. It's worth knowing what the place needs to achieve first.",
     "heroImage": {
-      "src": "https://cdn.sanity.io/images/6y2dn5q3/production/8399b6c9d0f6372b4da2c45ca2b01e97e8d463e8-3087x1931.jpg",
+      "src": "https://cdn.sanity.io/images/6y2dn5q3/production/e20b78d33ad6b767a6dc0a5650c040c95f0fad10-3089x1722.jpg",
       "alt": "Wonderball's bespoke mini golf courses at The Park RVA in Richmond, Virginia",
       "caption": "Wonderball: two courses with a connected park-and-fairground idea, designed and built for The Park RVA.",
       "href": "/work/wonderball-mini-golf"
