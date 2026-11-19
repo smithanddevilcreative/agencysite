@@ -27,6 +27,118 @@ export type ThinkingArticle = {
 
 export const thinkingArticles: ThinkingArticle[] = [
 {
+  "slug": "the-business-of-being-worth-visiting",
+  "title": "The business of being worth visiting.",
+  "seoTitle": "The Business of Being Worth Visiting | Smith & Devil",
+  "description": "How creative strategy, storytelling, venue design and programming give hospitality and attractions businesses stronger reasons for customers to visit and return.",
+  "eyebrow": "Creative strategy / Visitation",
+  "standfirst": "How creative strategy, storytelling and experience design can help hospitality and attractions businesses grow.",
+  "heroImage": {
+    "src": "/images/work/pop-playrooms/03.webp",
+    "alt": "Pop Playrooms competitive socialising venue interior",
+    "caption": "Pop Playrooms: a brand and venue experience shaped around one creative idea.",
+    "href": "/work/pop-playrooms"
+  },
+  "sections": [
+    {
+      "paragraphs": [
+        "I recently saw a presentation at IAAPA that made a rather good point. Visitation isn't inherently a marketing problem. It's a business strategy problem that marketing is often asked to solve.",
+        "It's an interesting way to look at things, particularly when you consider how much time, money and creative energy goes into attracting customers to hospitality venues and visitor attractions.",
+        "Marketing is obviously essential to that process, but visitor numbers are influenced by decisions made right across a business. What you offer, how you price it, how you design the experience and whether people feel it's worth their time and money.",
+        "There's a great deal that can be done to influence those decisions, and some of the most valuable opportunities are discovered before the marketing brief has even been written."
+      ]
+    },
+    {
+      "heading": "What are people really buying?",
+      "paragraphs": [
+        "Consider a mini golf venue. It might be tempting to think you're competing with every other mini golf venue in the area. In reality, your potential customers are choosing between all manner of things they could do with their afternoon or evening.",
+        "A restaurant, a cinema, a few drinks, bowling, or simply staying at home.",
+        "And the customer looking for somewhere to take the kids on a rainy Saturday has quite different priorities from someone planning a first date.",
+        "Understanding those different motivations can open up opportunities to rethink what you're selling.",
+        "Perhaps there's a better way to package the experience for different audiences. Perhaps there's an occasion nobody has really catered for. Or a partnership that could introduce the business to an entirely new customer base.",
+        "These are commercial opportunities that can be uncovered through creative strategy. The findings can influence everything from the proposition and pricing to the venue design, programming and marketing."
+      ]
+    },
+    {
+      "heading": "A venue needs a story",
+      "paragraphs": [
+        "We're particularly interested in the role that creative strategy plays in designing physical experiences.",
+        "There are plenty of attractive venues around. Some have had an extraordinary amount of money spent on their interiors. But being expensive to build and interesting to visit are two quite different achievements.",
+        "The best places have a point of view. Something that gives them character and helps people connect with the experience.",
+        "We often think of this as the story behind the venue.",
+        "That doesn't mean every bar needs a fictional mythology or that the barman needs to be in character. It means developing a compelling idea that gives the experience its own identity.",
+        "In a themed attraction, that story might create an entire world for customers to explore, with opportunities for discovery, interaction and surprise.",
+        "In a hospitality venue, it might come from the building's history, the neighbourhood, a cultural reference or a particular attitude towards hospitality.",
+        "Whatever the starting point, a strong idea can inform the interiors, the customer journey, the food and drink offer, the staff experience and the details people remember afterwards.",
+        "It also gives the business something distinctive to build on.",
+        "A neon sign can make a decent photograph. It's probably going to take a bit more than that to build a lasting relationship with your customers."
+      ],
+      "media": {
+        "src": "/images/work/mighty-adventures/signage-kids.jpg",
+        "alt": "Children exploring the storytelling and characters at Mighty Adventures",
+        "caption": "Mighty Adventures: the story carries through the environment, signage and experience.",
+        "href": "/work/mighty-adventures"
+      }
+    },
+    {
+      "heading": "Design for the next visit",
+      "paragraphs": [
+        "There's another consideration we think deserves a place in the design brief: what will bring people back?",
+        "Imagine opening a beautifully designed attraction. People visit, enjoy themselves, tell their friends and go home happy.",
+        "Excellent. Job done.",
+        "Except, of course, the business needs to keep attracting customers long after the launch party.",
+        "For some venues, the experience itself is naturally repeatable. People return to their favourite pub or bowling alley because they enjoy spending time there. The familiarity is part of the appeal.",
+        "Other attractions face a different challenge. Once you've played the course, explored the rooms or discovered the surprises, you've experienced much of what there is to offer.",
+        "It's worth thinking about that when you're designing the experience.",
+        "Could the environment accommodate changing content? Could new challenges, characters or storylines encourage visitors to explore again? Could the format support different ways of playing?",
+        "There are opportunities to make a venue more adaptable without continually spending a fortune rebuilding it.",
+        "And the creative thinking doesn't stop when the doors open.",
+        "Programming can introduce entirely new reasons to visit. Competitions, social events, seasonal experiences, collaborations and community activities can all help turn an occasional destination into somewhere people visit regularly.",
+        "In fact, a strong creative concept can make programming easier. There's already an identity to play with, a story to develop and an audience whose interests you understand.",
+        "The trick is to keep the things people love while finding new ways for them to enjoy the place."
+      ]
+    },
+    {
+      "heading": "There's a commercial opportunity in all of this",
+      "paragraphs": [
+        "Take a venue that struggles to attract customers early in the week.",
+        "A promotional campaign might help. But perhaps there's an opportunity to create a genuinely appealing reason to visit on a Tuesday. Something aimed at a different audience, or a new occasion that fits naturally with the venue.",
+        "That might involve changes to programming, operations, pricing or the experience itself.",
+        "The same applies to repeat visitation. A loyalty scheme can encourage people to return, but it becomes a much easier sell when there's something they're actually looking forward to.",
+        "And once those opportunities have been developed, marketing has a much richer story to tell.",
+        "You can communicate new experiences to previous visitors, build anticipation for upcoming events, introduce different audiences to different parts of the offer and use customer insight to refine what you're doing.",
+        "You can also start measuring which ideas genuinely influence bookings, spending and return visits.",
+        "That's a useful feedback loop between creative thinking and commercial performance."
+      ]
+    },
+    {
+      "heading": "Bringing creative thinking into the business conversation",
+      "paragraphs": [
+        "At Smith & Devil, our work covers brand strategy, marketing, interior design and the development of experiences for hospitality and attractions businesses.",
+        "We're interested in how all those disciplines can work together to make a business more attractive to its customers and more commercially successful.",
+        "That might mean creating a compelling story for a new venue, developing the experience itself, finding ways to generate repeat business or helping an established operator discover opportunities for growth.",
+        "It means getting involved in the conversation about what the business could offer, as well as how it presents itself to the world.",
+        "Because every decision that makes a venue more desirable, enjoyable or worth returning to has the potential to influence visitation.",
+        "And that's a pretty good reason to get creative strategy involved early."
+      ]
+    }
+  ],
+  "relatedProjects": [
+    {
+      "title": "Pop Playrooms",
+      "href": "/work/pop-playrooms"
+    },
+    {
+      "title": "Mighty Adventures",
+      "href": "/work/mighty-adventures"
+    },
+    {
+      "title": "Fortune Favours",
+      "href": "/work/fortune-favours"
+    }
+  ]
+},
+{
   "slug": "selling-immersive-experience",
   "title": "Who's responsible for selling the immersive experience?",
   "seoTitle": "Commercial Strategy for Immersive Experiences | Smith & Devil",
