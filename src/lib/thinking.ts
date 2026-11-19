@@ -71,13 +71,14 @@ export const thinkingArticles: ThinkingArticle[] = [
         "In a hospitality venue, it might come from the building's history, the neighbourhood, a cultural reference or a particular attitude towards hospitality.",
         "Whatever the starting point, a strong idea can inform the interiors, the customer journey, the food and drink offer, the staff experience and the details people remember afterwards.",
         "It also gives the business something distinctive to build on.",
+      "For Wonderball at The Park RVA in Virginia, we took the familiar idea of a day in the park and turned it into two mini golf courses, moving from parkland play to the colour of the fairground. The setting gave us a world of details to design around, including skate ramps, giant ice creams and a carousel horse.",
         "A neon sign can make a decent photograph. It's probably going to take a bit more than that to build a lasting relationship with your customers."
       ],
       "media": {
-        "src": "/images/work/mighty-adventures/signage-kids.jpg",
-        "alt": "Children exploring the storytelling and characters at Mighty Adventures",
-        "caption": "Mighty Adventures: the story carries through the environment, signage and experience.",
-        "href": "/work/mighty-adventures"
+        "src": "https://cdn.sanity.io/images/6y2dn5q3/production/8399b6c9d0f6372b4da2c45ca2b01e97e8d463e8-3087x1931.jpg",
+        "alt": "Wonderball mini golf attraction at The Park RVA, Richmond",
+        "caption": "Wonderball: two mini golf courses inspired by a day in the park, from skate ramps to fairground spectacle.",
+        "href": "/work/wonderball-mini-golf"
       }
     },
     {
@@ -129,8 +130,8 @@ export const thinkingArticles: ThinkingArticle[] = [
       "href": "/work/levels"
     },
     {
-      "title": "Mighty Adventures",
-      "href": "/work/mighty-adventures"
+      "title": "Wonderball mini golf",
+      "href": "/work/wonderball-mini-golf"
     },
     {
       "title": "Fortune Favours",
