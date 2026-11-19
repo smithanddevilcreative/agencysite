@@ -20,6 +20,8 @@ export type ThinkingArticle = {
   description: string;
   eyebrow: string;
   standfirst: string;
+  /** Date an article should enter the RSS feed; earlier undated articles stay on the site. */
+  publishedAt?: string;
   heroImage: ThinkingMedia;
   sections: ThinkingSection[];
   relatedProjects: { title: string; href: string }[];
@@ -28,6 +30,7 @@ export type ThinkingArticle = {
 export const thinkingArticles: ThinkingArticle[] = [
 {
   "slug": "the-business-of-being-worth-visiting",
+  "publishedAt": "2026-11-19",
   "title": "The business of being worth visiting.",
   "seoTitle": "The Business of Being Worth Visiting | Smith & Devil",
   "description": "How creative strategy, storytelling, venue design and programming give hospitality and attractions businesses stronger reasons for customers to visit and return.",
