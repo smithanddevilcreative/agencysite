@@ -1,0 +1,42 @@
+name: Release Thinking articles to RSS
+
+# Tuesdays and Thursdays at approximately 09:20 GMT during this release.
+# The articles already exist on the site; this only adds each to RSS.
+on:
+  schedule:
+    - cron: "20 9 * * 2,4"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: thinking-rss-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Release articles due today
+        run: node scripts/release-thinking-rss.mjs
+
+      - name: Commit release dates for Netlify to rebuild the feed
+        run: |
+          if git diff --quiet -- src/lib/thinking.ts; then
+            echo "No article due for release."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/lib/thinking.ts
+          git commit -m "Release scheduled Thinking article to RSS"
+          git push origin HEAD:main
