@@ -54,6 +54,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en">
       <head>
+        <link rel="alternate" type="application/rss+xml" title="Smith & Devil Thinking RSS" href="/rss.xml" />
         <link
           rel="preload"
           href="/fonts/NaNSuperXSerifDisplay-Regular.woff2"
