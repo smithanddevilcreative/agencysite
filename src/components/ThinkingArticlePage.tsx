@@ -10,8 +10,8 @@ export function ThinkingArticlePage({ article }: { article: ThinkingArticle }) {
     description: article.description,
     author: { "@type": "Organization", name: "Smith & Devil" },
     publisher: { "@type": "Organization", name: "Smith & Devil" },
-    mainEntityOfPage: `https://www.smithanddevil.com/thinking/${article.slug}`,
-    image: `https://www.smithanddevil.com${article.heroImage.src}`,
+    mainEntityOfPage: `https://smithanddevil.com/thinking/${article.slug}/`,
+    image: new URL(article.heroImage.src, "https://smithanddevil.com").toString(),
   };
 
   return (
