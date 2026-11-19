@@ -1,0 +1,42 @@
+{
+  "timezone": "Europe/London",
+  "note": "RSS releases only. Articles remain available on the site; LinkedIn remains on manual approval.",
+  "releases": [
+    {
+      "slug": "hospitality-brand-strategy-value-proposition",
+      "releaseAt": "2026-11-24T09:00:00Z"
+    },
+    {
+      "slug": "competitive-socialising-brand-strategy",
+      "releaseAt": "2026-11-26T09:00:00Z"
+    },
+    {
+      "slug": "selling-immersive-experience",
+      "releaseAt": "2026-12-01T09:00:00Z"
+    },
+    {
+      "slug": "before-architect-designs-venue",
+      "releaseAt": "2026-12-03T09:00:00Z"
+    },
+    {
+      "slug": "experience-economy-customer-value",
+      "releaseAt": "2026-12-08T09:00:00Z"
+    },
+    {
+      "slug": "technology-to-market-customer-proposition",
+      "releaseAt": "2026-12-10T09:00:00Z"
+    },
+    {
+      "slug": "branding-new-hospitality-concept",
+      "releaseAt": "2026-12-15T09:00:00Z"
+    },
+    {
+      "slug": "hospitality-brand-experience-strategy",
+      "releaseAt": "2026-12-17T09:00:00Z"
+    },
+    {
+      "slug": "hospitality-brand-positioning",
+      "releaseAt": "2026-12-22T09:00:00Z"
+    }
+  ]
+}
