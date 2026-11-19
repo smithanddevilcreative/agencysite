@@ -58,7 +58,7 @@ for (const { slug, releaseAt } of schedule.releases) {
   }
 
   const indent = match[1].match(/^[ \\t]*/)[0];
-  source = source.replace(line, '$1\\n' + indent + '"publishedAt": "' + releaseAt + '",');
+  source = source.replace(line, '$1\n' + indent + '"publishedAt": "' + releaseAt + '",');
   released++;
   console.log("RSS release: " + slug + " (" + releaseAt + ")");
 }
