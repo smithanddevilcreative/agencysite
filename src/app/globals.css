@@ -5154,3 +5154,20 @@ input[type="submit"]{
 }
 /* Trial reduction: results statistics at 30pt (40 CSS pixels). */
 .study-module__vTcG6G__resultValue{font-size:40px!important}
+
+/* Mobile results: smaller figures and full-width rows avoid awkward line breaks. */
+@media (max-width:640px){
+  .study-module__vTcG6G__results{
+    grid-template-columns:minmax(0,1fr)!important;
+    gap:22px!important;
+  }
+  .study-module__vTcG6G__resultValue{
+    font-size:32px!important;
+    line-height:1.08;
+    overflow-wrap:normal;
+  }
+  .study-module__vTcG6G__resultLabel{
+    margin-top:8px;
+    line-height:1.5;
+  }
+}
