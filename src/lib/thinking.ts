@@ -198,7 +198,8 @@ export const thinkingArticles: ThinkingArticle[] = [
       "href": "/work/strike"
     }
   ]
-}{
+},
+{
   "slug": "technology-to-market-customer-proposition",
   "title": "You've invented the technology. Now what are you selling?",
   "seoTitle": "Turning Entertainment Technology Into a Product | Smith & Devil",
@@ -254,7 +255,8 @@ export const thinkingArticles: ThinkingArticle[] = [
       "href": "/work/t2-design-solutions"
     }
   ]
-}{
+},
+{
   "slug": "before-architect-designs-venue",
   "title": "Before your architect designs the venue, define the business",
   "seoTitle": "Define Your Leisure Venue Before Architecture | Smith & Devil",
