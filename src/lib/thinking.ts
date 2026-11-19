@@ -34,10 +34,10 @@ export const thinkingArticles: ThinkingArticle[] = [
   "eyebrow": "Creative strategy / Visitation",
   "standfirst": "How creative strategy, storytelling and experience design can help hospitality and attractions businesses grow.",
   "heroImage": {
-    "src": "/images/work/pop-playrooms/03.webp",
-    "alt": "Pop Playrooms competitive socialising venue interior",
-    "caption": "Pop Playrooms: a brand and venue experience shaped around one creative idea.",
-    "href": "/work/pop-playrooms"
+    "src": "/images/levels.webp",
+    "alt": "Levels @ Máj mini golf venue experience in Prague",
+    "caption": "Levels @ Máj: an 18-hole mini golf experience inside Prague's entertainment complex.",
+    "href": "/work/levels"
   },
   "sections": [
     {
@@ -125,8 +125,8 @@ export const thinkingArticles: ThinkingArticle[] = [
   ],
   "relatedProjects": [
     {
-      "title": "Pop Playrooms",
-      "href": "/work/pop-playrooms"
+      "title": "Levels @ Máj",
+      "href": "/work/levels"
     },
     {
       "title": "Mighty Adventures",
