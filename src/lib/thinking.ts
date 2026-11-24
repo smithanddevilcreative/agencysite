@@ -315,6 +315,7 @@ export const thinkingArticles: ThinkingArticle[] = [
 },
 {
   "slug": "hospitality-brand-strategy-value-proposition",
+  "publishedAt": "2026-11-24T09:00:00Z",
   "title": "How to identify a compelling value proposition",
   "seoTitle": "Developing a Compelling Hospitality Value Proposition | Smith & Devil",
   "description": "How to identify a compelling value proposition for a hospitality or attractions business, and use it to shape the experience, brand and marketing.",
