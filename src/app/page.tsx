@@ -17,8 +17,6 @@ const panels = [
     image: "/images/humbug.jpg",
     intro: "Our brand helped sell 30,000 tickets and sell out key dates across three years of Christmas shows.",
     position: "50% 4%",
-    scale: 1.6,
-    origin: "0% 34%",
   },
   {
     slug: "pop-playrooms",
@@ -40,7 +38,6 @@ const panels = [
     image: "/images/t2-design-solutions.jpg",
     intro: "Our rebrand helped this Nottinghamshire based 3D visualisation studio grow into a global creative technology brand.",
     position: "62% 50%",
-    contain: true,
   },
 ];
 
@@ -66,15 +63,13 @@ export default function HomePage() {
           <div className="sd-home-project-stack">
             {panels.map((project) => (
               <Link key={project.slug} className="sd-home-project" href={`/work/${project.slug}`}>
-                <span className="sd-home-project-media" style={project.contain ? { background: "#fff" } : undefined}>
+                <span className="sd-home-project-media" >
                   <img
                     alt={project.title}
                     src={project.image}
                     style={{
-                      objectFit: project.contain ? "contain" : "cover",
+                      objectFit: "cover",
                       objectPosition: project.position,
-                      transform: project.scale ? `scale(${project.scale})` : undefined,
-                      transformOrigin: project.origin,
                     }}
                   />
                 </span>
