@@ -575,6 +575,7 @@ export const thinkingArticles: ThinkingArticle[] = [
 },
 {
   "slug": "competitive-socialising-brand-strategy",
+  "publishedAt": "2026-11-26T09:00:00Z",
   "title": "Making competitive socialising work as a night out",
   "seoTitle": "Designing a Competitive Socialising Venue | Smith & Devil",
   "description": "How the games, bar, layout and experience combine to make a competitive socialising venue an enjoyable night out.",
